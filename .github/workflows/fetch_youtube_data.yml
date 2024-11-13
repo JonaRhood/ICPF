@@ -2,7 +2,7 @@ name: Fetch YouTube Data
 
 on:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 0 */3 * *'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
-         curl "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=9&playlistId=UUB52lQ_buqcN4OPceA-c-Iw&key=${YOUTUBE_API_KEY}" -o src/public/data/youtubeData.json
+         curl "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=9&playlistId=UUWSUXhZASXrVS0Y63HBgzoQ&key=${YOUTUBE_API_KEY}" -o src/public/data/youtubeData.json
 
       - name: Commit and push changes
         run: |
