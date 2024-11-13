@@ -42,36 +42,51 @@ export const sermonsYT = () => {
         .then(response => response.json())
         .then(data => {
 
-            // Latest Sermon
-            h2Latest.innerHTML = data.items[0].snippet.title;
-            if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
-                divLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
-                divSermons[0].querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
-                divSermons[0].style.pointerEvents = "none";
-                divSermons[0].classList.remove("sermonsHover");
-                divSermons[0].querySelector(".nowPlaying").style.display = "flex";
+            // Searches for the fist video of uploads exceptuating Highlights
+            const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+            if (firstValidItem) {
+                
+                h2Latest.innerHTML = firstValidItem.snippet.title;
+
+                if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
+                    divLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    divSermons[0].querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
+                    divSermons[0].style.pointerEvents = "none";
+                    divSermons[0].classList.remove("sermonsHover");
+                    divSermons[0].querySelector(".nowPlaying").style.display = "flex";
+                } else {
+                    divLatest.appendChild(createCookieBackground());
+                    divSermons.forEach((div) => {
+                        div.style.pointerEvents = "none";
+                    });
+                }
             } else {
-                divLatest.appendChild(createCookieBackground())
-                divSermons.forEach((div) => {
-                    div.style.pointerEvents = "none";
-                })
+                // Si no se encuentra ningún item válido
+                console.log("No hay items válidos que mostrar.");
             }
 
-            // Sermons
-            data.items.forEach((item, index) => {
-                titleSermons[index].innerText = item.snippet.title;
+            let visibleIndex = 0;
+
+            data.items.forEach((item) => {
+                // Ignorar elementos que contengan "Highlight" en el título
+                if (item.snippet.title.includes("Highlight")) {
+                    return; // Salta al siguiente elemento en el forEach
+                }
+
+                titleSermons[visibleIndex].innerText = item.snippet.title;
 
                 const thumbnail = document.createElement("img");
                 thumbnail.src = item.snippet.thumbnails.maxres.url;
                 thumbnail.alt = `Thumbnail for ${item.snippet.title}`;
                 thumbnail.classList.add("thumbnail-class", "object-cover", "w-full");
 
-                const sermonDivContent = titleSermons[index].nextElementSibling;
+                const sermonDivContent = titleSermons[visibleIndex].nextElementSibling;
                 sermonDivContent.innerHTML = "";
                 sermonDivContent.appendChild(thumbnail);
 
                 // Click Event Listener to each divSermon
-                divSermons[index].addEventListener("click", () => {
+                divSermons[visibleIndex].addEventListener("click", () => {
                     // Changing title
                     h2Latest.innerHTML = item.snippet.title;
 
@@ -90,17 +105,20 @@ export const sermonsYT = () => {
                         div.style.pointerEvents = "auto";
                         div.querySelector(".nowPlaying").style.display = "none";
                     });
-                    divSermons[index].querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
-                    divSermons[index].style.pointerEvents = "none";
-                    divSermons[index].classList.remove("sermonsHover");
-                    divSermons[index].querySelector(".nowPlaying").style.display = "flex";
+                    divSermons[visibleIndex].querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
+                    divSermons[visibleIndex].style.pointerEvents = "none";
+                    divSermons[visibleIndex].classList.remove("sermonsHover");
+                    divSermons[visibleIndex].querySelector(".nowPlaying").style.display = "flex";
 
                     // Move scroll to top
                     document.querySelector('#mainH1').scrollIntoView({
                         behavior: 'smooth'
                     });
-                })
+                });
+
+                visibleIndex++;
             });
+
 
 
         })
