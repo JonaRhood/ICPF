@@ -24,6 +24,7 @@ export const animationScroll = () => {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
+                start: "top -100px",
                 end: "top -500px",
             },
             backgroundColor: "transparent",
