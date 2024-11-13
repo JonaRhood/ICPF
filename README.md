@@ -3,9 +3,9 @@
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/232bd46e-23c2-4478-9490-61fdcbf23020/deploy-status)](https://app.netlify.com/sites/flashcards-cp/deploys) -->
 
 
-# <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHlxZnUzc3NlZm95YzU3Z3psOG41eGY2dTFzd2NmZ3V4bTdlZzVpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gdTD9BIMWfPEnWmV4e/giphy.gif" width="30">&nbsp; Life in Christ Community Church - Official Website
+# <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHlxZnUzc3NlZm95YzU3Z3psOG41eGY2dTFzd2NmZ3V4bTdlZzVpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gdTD9BIMWfPEnWmV4e/giphy.gif" width="30">&nbsp; ICPF
 
-
+<!-- 
 <div align="center">
     <img src="/src/public/img/screenshotLCCC.jpg" alt="Logo" width="800" >
 </div>
@@ -121,4 +121,4 @@ Jonathan Cano -  jonathancanofreta@gmail.com
 [Git.js]: https://img.shields.io/badge/git-20232A?style=for-the-badge&logo=git&logoColor=e8571f
 [Git-url]: https://git-scm.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue.svg?style=for-the-badge&logo=linkedin&colorBlue
-[linkedin-url]: https://www.linkedin.com/in/jonathancanocalduch
+[linkedin-url]: https://www.linkedin.com/in/jonathancanocalduch -->
