@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 export const animationScroll = () => {
 
     // Home Page
+    const header = document.querySelector("header");
     const sectionNews = document.querySelector("#sectionNews");
     const divSectionNews = document.querySelector("#divSectionNews");
     const div1 = document.querySelector("#section2Slide1");
@@ -17,6 +18,19 @@ export const animationScroll = () => {
     const nowPlaying = document.querySelector(".nowPlaying")
 
     gsap.registerPlugin(ScrollTrigger)
+
+    if (header) {
+        gsap.from(header, {
+            scrollTrigger: {
+                // trigger: header,
+                scrub: true,
+                end: "top -500px",
+            },
+            backgroundColor: "transparent",
+            boxShadow: "none",
+            duration: 1,
+        })
+    }
 
     if (!/Android|iPhone|iPad|Tablet/i.test(navigator.userAgent)) {
         if (div1) {
