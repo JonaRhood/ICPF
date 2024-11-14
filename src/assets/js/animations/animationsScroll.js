@@ -4,9 +4,9 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 export const animationScroll = () => {
 
     // NavBar
-    const header = document.querySelector("header");
-    const span1 = document.querySelector("#headerSpan1")
-    const span2 = document.querySelector("#headerSpan2")
+    const header = document.querySelector("#headerFirstDiv");
+    const span1 = document.querySelector("#headerSpan1");
+    const span2 = document.querySelector("#headerSpan2");
 
     // Home Page
     const sectionNews = document.querySelector("#sectionNews");

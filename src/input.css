@@ -262,6 +262,8 @@ main {
     background-color: #fff;
   }
   
+
+  /* GOLD BUTTONS BANNER */
   .btnBanner {
     width: 220px;
     height: 40px;
@@ -301,6 +303,9 @@ main {
 
   .btnBanner3::before {
     content: "SERMONES" !important;
+  }
+  .btnBannerContact::before {
+    content: "" !important;
   }
   
   .btnBanner:hover {

@@ -3,6 +3,10 @@
     position: relative;
 }
 
+/* #headerFirstDiv {
+    transition: background-color .5s ease-in-out;
+} */
+
 .line {
     transition: transform 0.3s ease;
     transform-origin: center;
@@ -40,6 +44,10 @@
     .hiddenNavBar {
         display: none;
     }
+
+    .h2HeaderDisplay {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -58,24 +66,14 @@
 
     #divLogoChurch {
         justify-content: flex-start;
-        width: 70px;
+        width: 240px;
+        margin-left: 20px !important;
         display: flex;
-        margin-left: 5px;
     }
     
     #divLogoChurch div {
         display: flex;
         justify-content: center;
-    }
-
-    header h2 {
-        align-self:  center;
-        font-size: 1.3rem;
-        color: rgb(40, 93, 186);
-        
-        span {
-            color: rgb(31, 44, 143);
-        }
     }
 
     #menuListButton {
@@ -91,14 +89,13 @@
 
     .hiddenMenu {
         display: flex;
-        position: fixed;
-        width: 70% !important;
+        position: absolute;
+        width: 100% !important;
         background-color: white !important;
-        height: 100%;
         right: 0;
         top: 80px;
-        z-index: 20;
-        transform: translateX(120%);
+        z-index: 1 !important;
+        transform: translateY(-150%);
         transition: transform .5s linear;
     }
 

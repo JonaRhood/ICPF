@@ -15,10 +15,19 @@ export const initResponsiveMenu = () => {
             setTimeout(() => {
                 menuListButton.toggle("open");
             }, 300);
+
+            if (window.scrollY === 0) {
+                setTimeout(() => {
+                    document.querySelector("#headerFirstDiv").style.transition = "background-color .5s ease-in-out";
+                    document.querySelector("#headerFirstDiv").style.backgroundColor = "transparent";
+                }, 500);
+            }
         } else {
             // Open Menu Mobile
             divMenuList.toggle("active");
             menuListButton.toggle("open");
+            document.querySelector("#headerFirstDiv").style.transition = "none";
+            document.querySelector("#headerFirstDiv").style.backgroundColor = "#212121";
 
             setTimeout(() => {
                 document.querySelector(".line1").classList.toggle('rotate1');
