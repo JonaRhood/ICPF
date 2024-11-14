@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: Times, 'Times New Roman', 'Georgia', serif;
-    background-color: #232d3f;
+    background-color: #212121;
 }
 
 main {
@@ -260,4 +260,59 @@ main {
   .checkboxPrivacy:checked + .sliderPrivacy:before {
     transform: translateX(1.4em);
     background-color: #fff;
+  }
+  
+  .btnBanner {
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .btnBanner::before {
+    position: absolute;
+    content: "SOBRE NOSOTROS";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+
+  .btnBanner2::before {
+    content: "AGENDA" !important;
+  }
+
+  .btnBanner3::before {
+    content: "SERMONES" !important;
+  }
+  
+  .btnBanner:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btnBanner:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .btnBanner:active {
+    transform: scale(0.95);
   }

@@ -3,8 +3,12 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export const animationScroll = () => {
 
-    // Home Page
+    // NavBar
     const header = document.querySelector("header");
+    const span1 = document.querySelector("#headerSpan1")
+    const span2 = document.querySelector("#headerSpan2")
+
+    // Home Page
     const sectionNews = document.querySelector("#sectionNews");
     const divSectionNews = document.querySelector("#divSectionNews");
     const div1 = document.querySelector("#section2Slide1");
@@ -21,6 +25,27 @@ export const animationScroll = () => {
 
     if (header) {
         gsap.from(header, {
+            scrollTrigger: {
+                // trigger: header,
+                scrub: true,
+                start: "top -100px",
+                end: "top -500px",
+            },
+            backgroundColor: "transparent",
+            boxShadow: "none",
+            duration: 1,
+        })
+        gsap.from(span1, {
+            scrollTrigger: {
+                // trigger: header,
+                scrub: true,
+                end: "top -100px",
+            },
+            backgroundImage: "none",
+            boxShadow: "none",
+            duration: 1,
+        })
+        gsap.from(span2, {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,

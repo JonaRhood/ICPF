@@ -31,18 +31,18 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-        const acceptCookiesBtn = document.querySelector("#accept-cookies");
-        if (acceptCookiesBtn) {
-            acceptCookiesBtn.addEventListener("click", () => {
-                userConsentGiven();
-            });
-        }
+            const acceptCookiesBtn = document.querySelector("#accept-cookies");
+            if (acceptCookiesBtn) {
+                acceptCookiesBtn.addEventListener("click", () => {
+                    userConsentGiven();
+                });
+            }
 
-        if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
-            console.log("Ok");
-                userConsentGiven(); 
-        }
-    });
+            if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
+                console.log("Ok");
+                userConsentGiven();
+            }
+        });
     </script>
 
     <!-- META -->
@@ -156,26 +156,35 @@
     <div class="wrapper" data-router="container" data-router-namespace="home">
 
         <!-- HEADER AND NAVBAR -->
-        
-        <header class="flex fixed w-full h-20 justify-between align-center p-2 shadow-md text-sm text-gray-700 bg-gray-800"
-        style="z-index: 200;">
 
-             <!-- LOGO -->
+        <header
+            class="flex fixed w-full h-20 justify-between align-center p-2 shadow-md text-sm text-gray-700 bg-[#212121]"
+            style="z-index: 200;">
+
+            <!-- LOGO -->
             <div class="flex justify-center ml-[20px]" id="divLogoChurch">
-            <div class="flex ">
-                <span id="logoChurchBanner" class="flex rounded-3xl hover:cursor-pointer w-[75px]">
-                    <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M70.5 79.5L43.5 247C131.634 233.91 138.883 236.402 215.5 242.5C187.797 182.897 182.195 148.532 325 89.5C264.584 46.5178 183.817 48.6106 70.5 79.5Z" fill="white"/>
-                        <path d="M622.5 248.5C563.832 239.103 525.742 237.053 447.5 251C410.918 217.415 385.667 201.048 333 175C272.135 133.241 361.179 3.25206 593 82.9999C604.5 147.5 610.5 182 622.5 248.5Z" fill="white"/>
-                        <path d="M341 29.5V79.5L352 74.5V29.5H376V20H352V0.5H341V20H316.5V29.5H341Z" fill="white"/>
-                        <path d="M333 335.5C248.02 256.255 158.26 246.445 39.5 268.5L29 335.5C177.486 319.969 242.093 339.577 333 411.5C423.336 344.666 477.592 317.685 635.5 335.5L625 268.5C489.235 247.553 422.774 264.317 333 335.5Z" fill="white"/>
-                        <path d="M0 360.5V384.5C124.549 358.475 226.972 377.849 333 470C420.431 391.018 527.807 355.149 663.5 384.5L670 360.5C549.328 333.232 431.7 352.006 333 433C234.057 351.428 123.957 332.622 0 360.5Z" fill="white"/>
-                    </svg>
-                </span>
-            </div>
-            <div class="text-white text-[0.8rem] flex items-center ml-[10px]">
-                <h2>IGLESIA CRISTIANA <br /> <span class="text-[0.9rem]">CAMINANDO POR FE</span></h2>
-            </div>
+                <div class="flex ">
+                    <span id="logoChurchBanner" class="flex rounded-3xl hover:cursor-pointer w-[75px]">
+                        <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M70.5 79.5L43.5 247C131.634 233.91 138.883 236.402 215.5 242.5C187.797 182.897 182.195 148.532 325 89.5C264.584 46.5178 183.817 48.6106 70.5 79.5Z"
+                                fill="white" />
+                            <path
+                                d="M622.5 248.5C563.832 239.103 525.742 237.053 447.5 251C410.918 217.415 385.667 201.048 333 175C272.135 133.241 361.179 3.25206 593 82.9999C604.5 147.5 610.5 182 622.5 248.5Z"
+                                fill="white" />
+                            <path d="M341 29.5V79.5L352 74.5V29.5H376V20H352V0.5H341V20H316.5V29.5H341Z" fill="white" />
+                            <path
+                                d="M333 335.5C248.02 256.255 158.26 246.445 39.5 268.5L29 335.5C177.486 319.969 242.093 339.577 333 411.5C423.336 344.666 477.592 317.685 635.5 335.5L625 268.5C489.235 247.553 422.774 264.317 333 335.5Z"
+                                fill="white" />
+                            <path
+                                d="M0 360.5V384.5C124.549 358.475 226.972 377.849 333 470C420.431 391.018 527.807 355.149 663.5 384.5L670 360.5C549.328 333.232 431.7 352.006 333 433C234.057 351.428 123.957 332.622 0 360.5Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="text-white text-[0.8rem] flex items-center ml-[10px]">
+                    <h2>IGLESIA CRISTIANA <br /> <span class="text-[0.9rem]">CAMINANDO POR FE</span></h2>
+                </div>
             </div>
 
             <!-- NavBar -->
@@ -183,12 +192,12 @@
                 <ul class="flex w-full justify-around gap-12">
                     <li
                         class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out relative">
-                        <span class="is-active" aria-label="Link to Home Page">
+                        <span class="is-active text-[#DFA878]" aria-label="Link to Home Page">
                             INICIO
-                            <span
+                            <span id="headerSpan1"
                                 class="bg-gradient-to-t from-blue-500/10 absolute flex w-full h-[55px] transform translate-y-[-20px] top-0  scale-150">&nbsp;</span>
-                            <span
-                                class="bg-[#dca570] absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
+                            <span id="headerSpan2"
+                                class="bg-[#F2F1E7] absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
                         </span>
                     </li>
                     <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
@@ -310,18 +319,18 @@
                     <div class="parallax-bg" data-swiper-parallax="-23%"></div>
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
-                        <div class="swiper-slide content-end p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
-                            style="background-image: url(/img/icpf-banner-1.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                        <div class="swiper-slide content-end text-gray-100 bg-no-repeat bg-cover bg-center"
+                            style="background-image: url(/img/icpf-1.webp);">
+                            <div class="parallaxDiv w-full p-8 px-[50px] bg-gradient-to-r from-[#374045]/90" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0" id="firstDivBanner">
 
-                                <div class="title titleBanner w-[450px] leading-[1]" data-swiper-parallax="-300"
+                                <div class="title titleBanner leading-[1] w-[500px]" data-swiper-parallax="-300"
                                     data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8"
                                     style="font-family: 'Georgia', Times, serif;">
-                                    <h1 class="text-[3rem] mb-2">ICPF</h1>
+                                    <h1 class="text-[3rem] mb-2"><span class="text-gray-300 text-[2.3rem]">Iglesia Cristiana</span> Caminando por Fe</h1>
                                 </div>
                                 <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
-                                <div class="text mb-4" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
+                                <div class="text mb-6" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
                                     <p class="text-[1.1rem] text-gray-300">
                                         Committed to the expository preaching of the Holy Scriptures, the doctrines of
                                         grace, and Reformed teachings.
@@ -329,45 +338,43 @@
                                         Grounded in the 1689 London Baptist Confession of Faith.
                                     </p>
                                 </div>
-                                <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                <div class="buttonsBanner text mb-4" data-swiper-parallax="-100"
                                     data-swiper-parallax-opacity="0">
                                     <a href="/about/" aria-label="Link to About Us Page">
-                                        <button
-                                            class="bg-[#a46628] px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-[#dca570] transition-all hover:bg-blue-500 hover:outline-blue-200">About
-                                            us</button>
+                                        <button class="btnBanner">
+                                            SOBRE NOSOTROS
+                                        </button>
                                     </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Slide 2 -->
-                        <div class="swiper-slide content-start p-[6rem] lg:p-[9rem]  pt-[11rem] text-gray-100 bg-no-repeat bg-cover bg-center"
-                            style="background-image: url(/img/icpf-banner-2.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                        <div class="swiper-slide content-end text-gray-100 bg-no-repeat bg-cover bg-center"
+                            style="background-image: url(/img/icpf-3.webp);">
+                            <div class="parallaxDiv w-full p-8 px-[50px] bg-gradient-to-r from-[#374045]/90" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0">
 
-                                <div class="title titleBanner w-[500px] leading-[1]" data-swiper-parallax="-300"
+                                <div class="title titleBanner leading-[1]" data-swiper-parallax="-300"
                                     data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8"
                                     style="font-family: 'Georgia', Times, serif;">
-                                    <h2 class="text-[3rem]">The Gospel of Matthew</h2>
+                                    <h2 class="text-[3rem]">El Libro de Génesis</h2>
                                 </div>
-                                <div class="subtitle text-[1.8rem] mb-2 text-gray-400" data-swiper-parallax="-200"
+                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300" data-swiper-parallax="-200"
                                     data-swiper-parallax-opacity="0">
-                                    <h3>Expository Preaching Series</h3>
+                                    <h3>Estudio Bíblico cada Jueves a las 19:30</h3>
                                 </div>
                                 <div class="text mb-4" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
                                     <p class="text-[1.1rem] text-gray-300">
-                                        Join us as we dive deep into the Gospel of Matthew with clear, verse-by-verse
-                                        expository preaching. Discover the life and teachings of Jesus Christ and how
-                                        they
-                                        apply to us today.
+                                        Te invitamos a nuestro estudio del libro de Génesis, cada jueves a las 19:30.<br/>
+                                        Un espacio dedicado a la comprensión y el crecimiento espiritual en la Palabra.
                                     </p>
                                 </div>
-                                <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                <div class="buttonsBanner text mb-4" data-swiper-parallax="-100"
                                     data-swiper-parallax-opacity="0">
                                     <a href="/sermons/" aria-label="Link to Sermons Page">
-                                        <button
-                                            class="bg-[#a46628] px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Sermons
+                                        <button class="btnBanner btnBanner2">
+                                            SOBRE NOSOTROS
                                         </button>
                                     </a>
                                 </div>
@@ -375,35 +382,31 @@
                         </div>
 
                         <!-- Slide 3 -->
-                        <div class="swiper-slide content-center p-[6rem] lg:p-[9rem] text-gray-100 bg-no-repeat bg-cover bg-center"
-                            style="background-image: url(/img/icpf-banner-3.webp);">
-                            <div class="parallaxDiv w-[600px] p-6 bg-gray-800/60 rounded-lg" data-swiper-parallax=""
+                        <div class="swiper-slide content-end text-gray-100 bg-no-repeat bg-cover bg-center"
+                            style="background-image: url(/img/icpf-2.webp);">
+                            <div class="parallaxDiv w-full p-8 px-[50px] bg-gradient-to-r from-[#374045]/90" data-swiper-parallax=""
                                 data-swiper-parallax-opacity="0">
 
-                                <div class="title titleBanner w-[550px] leading-[1]" data-swiper-parallax="-300"
+                                <div class="title titleBanner leading-[1]" data-swiper-parallax="-300"
                                     data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8"
                                     style="font-family: 'Georgia', Times, serif;">
-                                    <h2 class="text-[3rem]">Wednesday Bible Study</h2>
+                                    <h2 class="text-[3rem]">Predicación Expositiva</h2>
                                 </div>
-                                <div class="subtitle text-[1.8rem] mb-2 text-gray-400" data-swiper-parallax="-200"
+                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300" data-swiper-parallax="-200"
                                     data-swiper-parallax-opacity="0">
-                                    <h3>The Doctrines of Grace</h3>
+                                    <h3>Conociendo a Dios a través de Su Palabra</h3>
                                 </div>
                                 <div class="text mb-4" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
                                     <p class="text-[1.1rem] text-gray-300">
-                                        Join us every Wednesday at 20:00 for an online Bible study on the Doctrines of
-                                        Grace. Learn about God's sovereignty and grace in salvation through Scripture.
-                                        All
-                                        sessions are online via Teams.
+                                        Nuestro enfoque en la predicación expositiva ofrece una enseñanza centrada en Cristo y en Su obra,<br/> guiándonos a vivir conforme a Su voluntad revelada en cada libro de la Biblia
                                     </p>
                                 </div>
-                                <div class="buttonsBanner text mb-1" data-swiper-parallax="-100"
+                                <div class="buttonsBanner text mb-4" data-swiper-parallax="-100"
                                     data-swiper-parallax-opacity="0">
                                     <a href="https://teams.live.com/meet/9483198388421?p=unmvEMicasrO0zyX5k"
                                         aria-label="Link to Teams meeting" target="_blank">
-                                        <button
-                                            class="bg-[#a46628] px-5 py-1.5 rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Join
-                                            us via Teams
+                                        <button class="btnBanner btnBanner3">
+                                            SOBRE NOSOTROS
                                         </button>
                                     </a>
                                 </div>
@@ -423,104 +426,104 @@
                     </div>
             </section>
 
-            
-            
+
+
             <!-- Section 3: Videos -->
             <section class="flex justify-center align-center" style="background: url(/img/paper.webp);">
                 <div class="h-[600px] pb-10 flex gap-8 items-center" id="section3">
                     <div class="flex-col" id="divLatestSermons">
                         <h4 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Latest Sermon</h4>
                         <div class="flex bg-white w-[600px] h-[400px] mt-4 border-8 border-white relative"
-                        id="videoLatestSermon">
-                        
-                    </div>
-                </div>
-                <div id="youtube-iframe" class="flex flex-col">
-                    <h4 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Selected Messages
-                    </h4>
-                    <div class="flex flex-col gap-8  mt-4 h-full justify-center" id="divSelectedMessages">
-                        <div id="player2" class="flex bg-white w-[320px] h-[184px] border-8 border-white relative">
-                            
-                        </div>
-                        <div id="player3" class="flex bg-white w-[320px] h-[184px] border-8 border-white relative">
-                            
+                            id="videoLatestSermon">
+
                         </div>
                     </div>
-                </div>
-                
-            </div>
-        </section>
-        
-        <!-- Section 2: Activities -->
-        <section id="sectionNews" class="my-10 bg-white">
-            <h2 class="text-center text-[2.2rem] text-blue-800 p-2 pb-10">NEWS & EVENTS</h2>
-            <div id="divSectionNews" class="carousel-3D-swiper-section">
-                <!-- Slider main container -->
-                <div class="carousel-3D-swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper gap-10" style="max-width: 1200px;">
-                        <!-- Slides -->
-                        <div id="section2Slide1"
-                            class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
-                            <div class="aspect-video divBannerPages rounded-t-2xl">
-                                <img class="aspect-video rounded-t-xl" src="/img/aboutus-cross.webp"
-                                    alt="Learn about our beliefs" loading="lazy" width="400" height="300" />
+                    <div id="youtube-iframe" class="flex flex-col">
+                        <h4 class="text-[1.8rem] p-1 text-blue-800 border-b-[1px] border-blue-800">Selected Messages
+                        </h4>
+                        <div class="flex flex-col gap-8  mt-4 h-full justify-center" id="divSelectedMessages">
+                            <div id="player2" class="flex bg-white w-[320px] h-[184px] border-8 border-white relative">
+
                             </div>
-                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
-                                <h3 class="p-6">Learn what we believe about God, <br /> salvation, and Christian
-                                    living.
-                                </h3>
-                                <a href="/about/" aria-label="Link to About us Page">
-                                    <button
-                                        class="w-full bg-[#a46628] text-white p-3 transition-colors rounded-b-xl hover:bg-blue-500">ABOUT
-                                        US</button>
-                                </a>
+                            <div id="player3" class="flex bg-white w-[320px] h-[184px] border-8 border-white relative">
+
                             </div>
                         </div>
-                        <div id="section2Slide2"
-                            class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
-                            <div class="aspect-video divBannerPages rounded-t-2xl">
-                                <img class="aspect-video rounded-t-xl" src="/img/mathew.webp"
-                                    alt="Worship service every Sunday" loading="lazy" width="400" height="300" />
-                            </div>
-                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
-                                <div class="p-6">
-                                    <h3>Worship Service</h3>
-                                    <p class="text-blue-600">Every Sunday at 11:00 AM</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Section 2: Activities -->
+            <section id="sectionNews" class="my-10 bg-white">
+                <h2 class="text-center text-[2.2rem] text-blue-800 p-2 pb-10">NEWS & EVENTS</h2>
+                <div id="divSectionNews" class="carousel-3D-swiper-section">
+                    <!-- Slider main container -->
+                    <div class="carousel-3D-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper gap-10" style="max-width: 1200px;">
+                            <!-- Slides -->
+                            <div id="section2Slide1"
+                                class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
+                                <div class="aspect-video divBannerPages rounded-t-2xl">
+                                    <img class="aspect-video rounded-t-xl" src="/img/aboutus-cross.webp"
+                                        alt="Learn about our beliefs" loading="lazy" width="400" height="300" />
                                 </div>
-                                <a href="/about/?schedule">
-                                    <button id="buttonSchedule"
-                                        class="w-full bg-[#a46628] text-white p-3 transition-colors rounded-b-xl hover:bg-blue-500">SUNDAY
-                                        SERVICE</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="section2Slide3"
-                            class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
-                            <div class="aspect-video divBannerPages rounded-t-2xl">
-                                <img class="aspect-video rounded-t-xl" src="/img/biblestudy.webp"
-                                    alt="Bible study every Wednesday" loading="lazy" width="400" height="300" />
-                            </div>
-                            <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
-                                <div class="p-6">
-                                    <h3>Bible Study</h3>
-                                    <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
+                                <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
+                                    <h3 class="p-6">Learn what we believe about God, <br /> salvation, and Christian
+                                        living.
+                                    </h3>
+                                    <a href="/about/" aria-label="Link to About us Page">
+                                        <button
+                                            class="w-full bg-[#826F66] text-white p-3 transition-colors rounded-b-xl hover:bg-blue-500">ABOUT
+                                            US</button>
+                                    </a>
                                 </div>
-                                <a href="https://teams.live.com/meet/9483198388421?p=unmvEMicasrO0zyX5k"
-                                    aria-label="Link to Teams Meeting for Bible Study" target="_blank">
-                                    <button
-                                        class="w-full bg-[#a46628] text-white p-3 rounded-b-xl transition-colors hover:bg-blue-500">JOIN
-                                        US VIA TEAMS</button>
-                                </a>
+                            </div>
+                            <div id="section2Slide2"
+                                class="divSwiper swiper-slide  min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
+                                <div class="aspect-video divBannerPages rounded-t-2xl">
+                                    <img class="aspect-video rounded-t-xl" src="/img/mathew.webp"
+                                        alt="Worship service every Sunday" loading="lazy" width="400" height="300" />
+                                </div>
+                                <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
+                                    <div class="p-6">
+                                        <h3>Worship Service</h3>
+                                        <p class="text-blue-600">Every Sunday at 11:00 AM</p>
+                                    </div>
+                                    <a href="/about/?schedule">
+                                        <button id="buttonSchedule"
+                                            class="w-full bg-[#826F66] text-white p-3 transition-colors rounded-b-xl hover:bg-blue-500">SUNDAY
+                                            SERVICE</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="section2Slide3"
+                                class="divSwiper swiper-slide min-w-[19rem] max-w-[19rem] shadow-xl rounded-b-2xl">
+                                <div class="aspect-video divBannerPages rounded-t-2xl">
+                                    <img class="aspect-video rounded-t-xl" src="/img/biblestudy.webp"
+                                        alt="Bible study every Wednesday" loading="lazy" width="400" height="300" />
+                                </div>
+                                <div class="text-[1.1rem] text-center bg-white rounded-b-2xl">
+                                    <div class="p-6">
+                                        <h3>Bible Study</h3>
+                                        <p class="text-blue-600">Every Wednesday at 20:00 PM</p>
+                                    </div>
+                                    <a href="https://teams.live.com/meet/9483198388421?p=unmvEMicasrO0zyX5k"
+                                        aria-label="Link to Teams Meeting for Bible Study" target="_blank">
+                                        <button
+                                            class="w-full bg-[#826F66] text-white p-3 rounded-b-xl transition-colors hover:bg-blue-500">JOIN
+                                            US VIA TEAMS</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <!-- pagination -->
+                        <div class="swiper-pagination" style="bottom: -50px;"></div>
                     </div>
-                    <!-- pagination -->
-                    <div class="swiper-pagination" style="bottom: -50px;"></div>
                 </div>
-            </div>
-        </section>
-        
+            </section>
+
             <!-- Section 4: City Landscape -->
             <section class="flex justify-center items-center">
                 <div class="absolute z-50 text-white text-center flex-col justify-center">
@@ -545,7 +548,7 @@
                     </p>
                     <div class="flex justify-center">
                         <button id="divButtonContact"
-                            class="flex overflow-hidden content-center align-center items-center bg-blue-600 w-[220px] h-[35px] relative rounded-lg outline outline-2 outline-offset-2 transition-all outline-blue-400">
+                            class="flex overflow-hidden content-center align-center items-center bg-[#826F66] w-[220px] h-[35px] relative rounded-lg outline outline-2 outline-offset-2 transition-all outline-blue-400">
                             <span id="divSpanContact" class="flex w-full h-full items-center justify-center">
                                 <span id="spanContactDesktop">
                                     lifeinchrist.lccc@gmail.com
@@ -809,8 +812,8 @@
         <!-- FOOTER -->
         <footer class="flex-1 w-full sticky">
             <div id="logoBackgroundFooter"
-                class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
-                style="background-image: url(/lccc-logo-outline-softbrown.svg); 
+                class="flex w-full p-10 bg-[#374045] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
+                style="background-image: url(); 
             background-position: 70vw 300px; background-size: 600px auto;
             transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
 
@@ -822,8 +825,8 @@
                         <!-- Location -->
                         <div class="flex items-start w-[9rem] lg:w-[13rem]" id="divLocationFooter">
                             <address class="not-italic text-gray-800">
-                                <h5>LOCATION</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">LOCATION</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <h6>Life in Christ Community Church</h6>
                                     <p>Kruisweg 14 <br /> 2665 HB, Bleiswijk <br /> Zuid-Holland </p>
                                 </div>
@@ -832,8 +835,8 @@
                         <!-- Church Service -->
                         <div class="flex items-start w-[10rem] lg:w-[9rem]" id="divService">
                             <div class="not-italic text-gray-800">
-                                <h5>SERVICE</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">SERVICE</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <p>Every Sunday</p>
                                     <p>Prayer: 10:30 AM <br /> Service: 11:00 AM </p>
                                 </div>
@@ -843,8 +846,8 @@
                         <!-- Contact Info-->
                         <div class="flex items-start w-[10rem] lg:w-[10rem] order-4">
                             <div class="not-italic text-gray-800">
-                                <h5>CONTACT</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">CONTACT</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <p>
                                         <a href="tel:+31626271891" aria-label="Link to Church Phone">(+31) 626 27 18
                                             91</a><br />
@@ -858,8 +861,8 @@
                         <!-- Social Media -->
                         <div class="flex items-start w-[9rem] lg:order-4" id="divSocial">
                             <div class="not-italic text-gray-800">
-                                <h5>SOCIAL MEDIA</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">SOCIAL MEDIA</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <p class="flex align-center">
 
                                         <!-- FB -->
@@ -917,19 +920,19 @@
                 </div>
 
                 <!-- Gradient background -->
-                <div class="w-[90%] absolute right-0 h-full z-0" style="
+                <!-- <div class="w-[90%] absolute right-0 h-full z-0" style="
                 display: block;
                 position: absolute;
                 bottom: 0;
                 background: radial-gradient(farthest-side at 100% 100%, #00e5ff, rgba(242, 93, 227, 0));
                 opacity: .3;
                 pointer-events: none;
-                "></div>
+                "></div> -->
 
             </div>
 
             <!-- Copyright -->
-            <div class="flex w-ful justify-center bg-[#232d3f] text-center">
+            <div class="flex w-ful justify-center bg-[#212121] text-center">
                 <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church <span
                         class="hidden sm:inline">-</span>
                     <span class="inline sm:hidden"><br></span>
