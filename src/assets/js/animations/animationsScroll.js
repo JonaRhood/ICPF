@@ -14,6 +14,10 @@ export const animationScroll = () => {
     const div1 = document.querySelector("#section2Slide1");
     const div2 = document.querySelector("#section2Slide2");
     const div3 = document.querySelector("#section2Slide3");
+    const latestSermon = document.querySelector("#videoLatestSermon");
+    const player2 = document.querySelector("#player2");
+    const player3 = document.querySelector("#player3");
+    const activeCardItems = document.querySelectorAll(".item");
     
 
     // Sermon Page
@@ -60,6 +64,52 @@ export const animationScroll = () => {
             duration: 1,
         })
     }
+
+    if (latestSermon) {
+        gsap.from(latestSermon, {
+            scrollTrigger: {
+                trigger: latestSermon,
+                // scrub: true,
+                end: "top 200px",
+            },
+            y: 30, 
+            duration: 0.5,
+            ease: true,
+        });
+        gsap.from(player2, {
+            scrollTrigger: {
+                trigger: latestSermon,
+                // scrub: true,
+                end: "top 200px",
+            },
+            y: 30, 
+            delay: 0.2,
+            duration: 0.5,
+            ease: true,
+        });
+        gsap.from(player3, {
+            scrollTrigger: {
+                trigger: latestSermon,
+                // scrub: true,
+                end: "top 200px",
+            },
+            y: 30, 
+            delay: 0.4,
+            duration: 0.5,
+            ease: true,
+        });
+    }
+    
+    // Animated Cards
+        if (activeCardItems) {
+            gsap.from(activeCardItems, {
+                scrollTrigger: {
+                    trigger: activeCardItems
+                },
+               opacity: 0,
+               duration: 1,
+              });
+        }
 
     if (logoFooter) {
         gsap.from(logoFooter, {

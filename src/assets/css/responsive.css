@@ -57,10 +57,11 @@
     }
 }
 
-@media only screen and (max-width: 1135px) {
+@media only screen and (max-width: 1250px) {
     #contactBackground {
-        background-size: 250% !important;
-        background-position: -350px 50px !important;
+        background-size: contain 100% !important;
+        background-position: left -100px !important;
+        background-attachment: local !important;
     }
 }
 

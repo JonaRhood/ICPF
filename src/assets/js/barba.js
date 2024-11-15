@@ -12,6 +12,7 @@ import { animationScroll } from './animations/animationsScroll';
 import { initCookies } from './cookies';
 import { buttonPrivacy } from './buttonPrivacy';
 import { sermonsYT } from './sermonsYT';
+import { initAnimatedCard } from './animatedCards';
 
 barba.hooks.once(() => {
     initCookies();
@@ -52,6 +53,7 @@ barba.init({
         beforeEnter(data) {
             initSwipers();
             emailContactAnimation();
+            initAnimatedCard();
         }
     },{
         namespace: 'about',

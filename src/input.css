@@ -321,3 +321,189 @@ main {
   .btnBanner:active {
     transform: scale(0.95);
   }
+
+
+  /* Animated Card */
+
+  .game-section img {
+    max-width: 100%;
+    border: 0px;
+  }
+  .game-section ul,
+  .game-section ol {
+    list-style: none;
+  }
+  .game-section a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+  }
+  .game-section a:focus,
+  .game-section a:active,
+  .game-section a:visited,
+  .game-section a:hover {
+    text-decoration: none;
+    outline: none;
+  }
+  .game-section a:hover {
+    color: #e73700;
+  }
+  .game-section h2 {
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+  }
+  .game-section h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .game-section button {
+    outline: none !important;
+  }
+  /******* Common Element CSS End *********/
+  
+  /* -------- title style ------- */
+  .line-title {
+    position: relative;
+    width: 400px;
+  }
+  .line-title::before,
+  .line-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+  }
+  .line-title::before {
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .line-title::after {
+    width: 32px;
+    background: #e73700;
+  }
+  
+  /******* Middle section CSS Start ******/
+  /* -------- Landing page ------- */
+  .game-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 50px;
+    /* border: 2px solid green; */
+    
+  }
+  .game-section .owl-stage {
+    margin: 15px 0;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+  }
+  .game-section .item {
+    margin: 0 15px;
+    width: 33%;
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    background: #343434 no-repeat center center / cover;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    cursor: pointer;
+    /* border: 2px solid red; */
+  }
+  .game-section .item.active {
+    width: 80%;
+  }
+  .game-section .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
+  .game-section .item-desc {
+    padding: 0 24px 12px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 54px));
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+  }
+  .game-section .item.active .item-desc {
+    transform: none;
+    -webkit-transform: none;
+  }
+  .game-section .item-desc p {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+    transform: translateY(32px);
+    transition: all 0.4s ease-in-out 0.2s;
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+  }
+  .game-section .item.active .item-desc p {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .game-section .owl-theme.custom-carousel .owl-dots {
+    margin-top: -20px;
+    position: relative;
+    z-index: 5;
+  }
+  /******** Middle section CSS End *******/
+  
+  /***** responsive css Start ******/
+  
+@media (max-width: 1100px) {
+  .custom-carousel {
+    flex-direction: column;
+  }
+
+  .game-section {
+    padding: 30px 15px 20px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+  }
+
+  .game-section .item {
+    flex: 0 0 auto; 
+    margin: 0; 
+    width: 100%; 
+    height: 10vh;
+    margin-bottom: 10px;
+  }
+
+  .game-section .item.active {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+  

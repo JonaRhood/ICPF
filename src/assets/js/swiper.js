@@ -50,48 +50,6 @@ export const initSwipers = () => {
             el: '.swiper-scrollbar',
         },
     });
-    
-    const secondSwiper = new Swiper('.carousel-3D-swiper', {
-        loop: false,
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 3,
-        cache: true,
-        autoHeight:false, 
-        preloadImages: false,
-    
-        coverflowEffect: {
-            rotate: 30,
-            stretch: 12,
-            depth: 350,
-            modifier: 1,
-            slideShadows: false
-        },
-    
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    
-        breakpoints: {
-            1040: {
-                loop: false,
-                effect: "coverflow",
-                grabCursor: false,
-                centeredSlides: false,
-                slidesPerView: 3,
-    
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 350,
-                    modifier: 0,
-                    slideShadows: false
-                },
-            }
-        }
-    });
 }
 
 // initSwipers();
