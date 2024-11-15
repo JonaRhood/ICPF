@@ -95,7 +95,11 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
             .then(response => response.json())
             .then(data => {
-                latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+                if (firstValidItem) {
+                    latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                }
             })
             .catch(error => {
                 console.error("Error Fetching Data", error);
@@ -105,11 +109,11 @@ export const initCookies = () => {
         }
 
         if (mapsAbout) {
-            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.712588243938!2d2.112206!3d41.3556063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f1ac1a1593%3A0xfc55cde8257bbf39!2sIglesia%20Caminando%20por%20Fe!5e0!3m2!1ses!2ses!4v1731659801026!5m2!1ses!2ses",
                 "Google Maps", 1));
         }
 
-        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.712588243938!2d2.112206!3d41.3556063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f1ac1a1593%3A0xfc55cde8257bbf39!2sIglesia%20Caminando%20por%20Fe!5e0!3m2!1ses!2ses!4v1731659801026!5m2!1ses!2ses",
             "Google Maps", 0));
 
         // Privacy-Page logic
@@ -120,11 +124,16 @@ export const initCookies = () => {
             cookieCheck2.innerHTML = "disable"
         }
 
+        // Sermons Page
         if (sermonsDivLatest) {
             fetch('/data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+
+                    if (firstValidItem) {
+                        sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    }
                     sermonsDivSermons.forEach((div) => {
                         div.style.pointerEvents = "auto";
                     })
@@ -154,7 +163,6 @@ export const initCookies = () => {
         }, 2000)
     });
 
-
     // Local Storage Cookie
     if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
 
@@ -166,21 +174,34 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${data.items[0].snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
-                })
-                .catch(error => {
-                    console.error("Error Fetching Data", error);
-                })
-            message1.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/5dXA1pPNs3Q?si=mrZBpvX5p4t2r2Bi", "YouTube video player: Selected message 1"));
-            message2.appendChild(createYouTubeIframe("https://www.youtube-nocookie.com/embed/OV_FTsieQw8?si=HA3AB_rCVLMeZXgP", "YouTube video player: Selected message 2"));
+                    // Filtrar todos los elementos que no incluyen "Highlight" en el título
+                    const validItems = data.items.filter(item => !item.snippet.title.includes("Highlight"));
+        
+                    // Obtener el primer, segundo y tercer elemento de los elementos válidos
+                    const firstValidItem = validItems[0];
+                    const secondValidItem = validItems[1];
+                    const thirdValidItem = validItems[2];
+        
+                    // Asegurarse de que existen los elementos antes de usarlos
+                    if (firstValidItem) {
+                        latestSermon.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
+                    }
+                    if (secondValidItem) {
+                        message1.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${secondValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 1"));
+                    }
+                    if (thirdValidItem) {
+                        message2.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${thirdValidItem.snippet.resourceId.videoId}`, "YouTube video player: Selected message 2"));
+                    }
+                });
         }
+        
 
         if (mapsAbout) {
-            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+            mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.712588243938!2d2.112206!3d41.3556063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f1ac1a1593%3A0xfc55cde8257bbf39!2sIglesia%20Caminando%20por%20Fe!5e0!3m2!1ses!2ses!4v1731659801026!5m2!1ses!2ses",
                 "Google Maps", 1));
         }
 
-        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.29915019311886!2d4.542581021718042!3d52.03976054622692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5ce8b51db2aab%3A0x68f7bce1aeb98992!2sKruisweg%2014%2C%202665%20HC%20Bleiswijk%2C%20Pa%C3%ADses%20Bajos!5e0!3m2!1ses!2ses!4v1728495288642!5m2!1ses!2ses",
+        mapsFooter.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.712588243938!2d2.112206!3d41.3556063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f1ac1a1593%3A0xfc55cde8257bbf39!2sIglesia%20Caminando%20por%20Fe!5e0!3m2!1ses!2ses!4v1731659801026!5m2!1ses!2ses",
             "Google Maps", 0));
 
     } else {

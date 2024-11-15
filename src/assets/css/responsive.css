@@ -1,27 +1,236 @@
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+    #pictureBannersPages {
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-attachment: fixed !important;
+        transform: none !important;
+    }
+
+    .pictureBannersPages-about {
+        background-position: center -100px !important;
+    }
+
+    .pictureBannersPages-leaders {
+        background-position: center -200px !important;
+    }
+
+    .pictureBannersPages-sermons {
+        background-position: center -90px !important;
+    }
+
+    .pictureBannersPages-gospel {
+        background-position: center -40px !important;
+    }
+
+    .pictureBannersPages-give {
+        background-position: center -200px !important;
+    }
+
+    .pictureBannersPages-privacy {
+        background-position: center -100px !important;
+    }
+
+    .pictureBannersPages-anbi {
+        background-position: center -150px !important;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+        .pictureBannersPages-sermons {
+            background-position: center -40px !important;
+        }
+
+        .pictureBannersPages-leaders {
+            background-position: center -100px !important;
+        }
+
+        .pictureBannersPages-give {
+            background-position: center -100px !important;
+        }
+
+        pictureBannersPages-privacy {
+            background-position: center -200px !important;
+        }
+
+        .pictureBannersPages-anbi {
+            background-position: center -100px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    #contactBackground {
+        background-size: 250% !important;
+        background-position: -350px 50px !important;
+    }
+}
+
+@media only screen and (max-width: 1094px) {
+    .divGospelBlocks {
+        width: 50%;
+    }
+
+    .divGospelImg {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #divLogoChurch {
+        margin-left: 5px;
+    }
+
+    nav {
+        margin-right: 10px !important;
+    }
+
+    nav ul {
+        gap: 10px !important;
+    }
+
+    .divGospelBlocks {
+        width: 100%;
+    }
+
+    .divGospelImg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
     #section3 {
-        padding: 2rem 20px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #divLatestSermons {
+        width: 100%;
     }
 
     #videoLatestSermon {
-        height: 300px;
-    }
-
-    #youtube-iframe {
-        width: 100%;
+        width: 100% !important;
     }
 
     #divSelectedMessages {
-        height: 300px;
+        flex-direction: row;
+        padding-bottom: 20px;
     }
 
-    #divSelectedMessages #player2 {
+    #cookieDivRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cookieDivP {
         width: 100%;
-        height: 300px;
+        margin-bottom: 30px;
     }
 
-    #cookieDiv {
-        padding: 30px;
+    #cookieDivButton {
+        width: 100%;
+    }
+
+    .divPrivacy {
+        padding: 40px 100px;
+    }
+}
+
+@media only screen and (max-width: 932px) {
+    #divContainerLeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divContainerLeader div h2 {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        background-color: rgb(255, 255, 255);
+        width: 40%;
+    }
+
+    #leaderMinistry {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        background-color: rgb(255, 255, 255);
+        width: 55%;
+    }
+
+    #divContainerImageLeader {
+        z-index: 10;
+    }
+
+    #divLeaders {
+        width: 80%;
+        margin-top: -25px;
+        padding: 30px 30px;
+        z-index: 0;
+        border: 0;
+    }
+
+    #divLeaders p {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 823px) {
+
+    #map {
+        display: flex;
+        height: 300px;
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    #logoBackgroundFooter {
+        background-attachment: local !important;
+        background-position: 30vw 305px !important;
+        background-size: 500px auto;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #footerInfo {
+        height: 300px;
+        width: 400px;
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        padding: 0;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    #divLocationFooter {
+        width: 160px;
+    }
+
+    #divSocial div p {
+        justify-content: center !important;
+    }
+
+    #divLocationFooter address div h6 {
+        color: #ffd277;
+    }
+
+    #footerInfo div {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .divPrivacy {
+        padding: 40px 30px !important;
+        text-align: left;
+    }
+
+    #logoOutlineBackground {
+        width: 100%;
+        align-content: flex-start;
+    }
+
+    #logoOutlineBackground svg{
+        height: auto;
     }
 }
 
@@ -38,8 +247,8 @@
     } */
 
     #contactBackground {
-        background-size: auto;
-        background-position: center;
+        background-size: cover !important;
+        background-position: top !important;
         background-attachment: local !important;
     }
 
@@ -83,189 +292,42 @@
     #divSelectedMessages #player3 {
         display: none !important;
     }
-
-    
-
 }
 
-@media only screen and (max-width: 823px) {
-
-    #map {
-        display: flex;
-        height: 300px;
-        width: 90%;
-        padding-bottom: 30px;
+@media only screen and (max-width: 680px) {
+    .divGospelBlocks {
+        padding: 10%;
     }
 
-    #logoBackgroundFooter {
-        background-attachment: local !important;
-        background-position: 30vw 305px !important;
-        background-size: 500px auto;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    #footerInfo {
-        height: 300px;
-        width: 400px;
-        flex-wrap: wrap !important;
-        flex-direction: row !important;
-        padding: 0;
-        justify-content: center !important;
-        text-align: center;
-    }
-
-    #divSocial div p {
-        justify-content: center !important;
-    }
-
-    #divLocationFooter address div h6 {
-        color: rgb(2, 42, 154);
-    }
-
-    #footerInfo div {
-        justify-content: center;
-        padding: 0;
-    }
-
-    .divPrivacy {
-        padding: 40px 30px !important;
+    .divGospelBlocks p {
         text-align: left;
     }
 }
 
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 550px) {
     #section3 {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #divLatestSermons {
-        width: 100%;
+        padding: 2rem 20px;
     }
 
     #videoLatestSermon {
-        width: 100% !important;
+        height: 300px;
+    }
+
+    #youtube-iframe {
+        width: 100%;
     }
 
     #divSelectedMessages {
-        flex-direction: row;
-        padding-bottom: 20px;
+        height: 300px;
     }
 
-    #cookieDivRow {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #cookieDivP {
+    #divSelectedMessages #player2 {
         width: 100%;
-        margin-bottom: 30px;
+        height: 300px;
     }
 
-    #cookieDivButton {
-        width: 100%;
-    } 
-
-    .divPrivacy {
-        padding: 40px 100px;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 2000px) {
-    #pictureBannersPages {
-        background-repeat: no-repeat !important;
-        background-size: contain !important;
-        background-attachment: fixed !important;
-        transform: none !important;
-    }
-
-    .pictureBannersPages-about {
-        background-position: center -100px !important;
-    }
-
-    .pictureBannersPages-leaders {
-        background-position: center -200px !important;
-    }
-
-    .pictureBannersPages-sermons {
-        background-position: center -90px !important;
-    }
-
-    .pictureBannersPages-gospel {
-        background-position: center -40px !important;
-    }
-
-    .pictureBannersPages-give {
-        background-position: center -200px !important;
-    }
-
-    .pictureBannersPages-privacy {
-        background-position: center -100px !important;
-    }
-
-    .pictureBannersPages-anbi {
-        background-position: center -150px !important;
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-        .pictureBannersPages-sermons {
-            background-position: center -40px !important;
-        }
-        .pictureBannersPages-leaders {
-            background-position: center -100px !important;
-        }
-        .pictureBannersPages-give {
-            background-position: center -100px !important;
-        }
-        pictureBannersPages-privacy {
-            background-position: center -200px !important;
-        }
-        .pictureBannersPages-anbi {
-            background-position: center -100px !important;
-        }
-    }
-}
-
-
-@media only screen and (max-width: 932px) {
-    #divContainerLeader {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #divContainerLeader div h2 {
-        display: block;
-        position: absolute;
-        bottom: 50px;
-        padding: 0px 0px;
-        margin: 0px 0px;
-        background-color: rgb(255, 255, 255);
-        width: 40%;
-    }
-
-    #leaderMinistry {
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        background-color: rgb(255, 255, 255);
-        width: 55%;
-    }
-
-    #divContainerImageLeader {
-        z-index: 10;
-    }
-
-    #divLeaders {
-        width: 80%;
-        margin-top: -25px;
-        padding: 30px 30px;
-        z-index: 0;
-        border: 0;
-    }
-
-    #divLeaders p {
-        text-align: left;
+    #cookieDiv {
+        padding: 30px;
     }
 }
 
@@ -279,44 +341,3 @@
     }
 }
 
-@media only screen and (max-width: 1094px) {
-    .divGospelBlocks {
-        width: 50%;
-    }
-
-    .divGospelImg {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    #divLogoChurch {
-        margin-left: 5px;
-    }
-
-    nav {
-        margin-right: 10px !important;
-    }
-
-    nav ul {
-        gap: 10px !important;
-    }
-
-    .divGospelBlocks {
-        width: 100%;
-    }
-
-    .divGospelImg {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 680px) {
-    .divGospelBlocks {
-        padding: 10%;
-    }
-
-    .divGospelBlocks p {
-        text-align: left;
-    }
-}

@@ -21,6 +21,9 @@ export const initResponsiveMenu = () => {
                     document.querySelector("#headerFirstDiv").style.transition = "background-color .5s ease-in-out";
                     document.querySelector("#headerFirstDiv").style.backgroundColor = "transparent";
                 }, 500);
+                setTimeout(() => {
+                    document.querySelector("#headerFirstDiv").style.transition = "none";
+                }, 1000)
             }
         } else {
             // Open Menu Mobile

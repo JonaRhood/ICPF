@@ -21,6 +21,9 @@ export const animationScroll = () => {
     const sermons = document.querySelectorAll(".firstDivChildSermons")
     const nowPlaying = document.querySelector(".nowPlaying")
 
+    // Footer
+    const logoFooter = document.querySelector("#logoOutlineBackground");
+
     gsap.registerPlugin(ScrollTrigger)
 
     if (header) {
@@ -54,6 +57,20 @@ export const animationScroll = () => {
             },
             backgroundColor: "transparent",
             boxShadow: "none",
+            duration: 1,
+        })
+    }
+
+    if (logoFooter) {
+        gsap.from(logoFooter, {
+            scrollTrigger: {
+                trigger: logoFooter,
+                scrub: true,
+                // start: "top -100px",
+                end: "bottom 600px",
+            },
+            x: -50,
+            opacity: 0,
             duration: 1,
         })
     }

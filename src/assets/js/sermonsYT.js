@@ -66,6 +66,7 @@ export const sermonsYT = () => {
                 console.log("No hay items válidos que mostrar.");
             }
 
+            // Sermons
             let visibleIndex = 0;
             const maxDivs = 15;
 
