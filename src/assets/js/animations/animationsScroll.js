@@ -17,7 +17,8 @@ export const animationScroll = () => {
     const latestSermon = document.querySelector("#videoLatestSermon");
     const player2 = document.querySelector("#player2");
     const player3 = document.querySelector("#player3");
-    const activeCardItems = document.querySelectorAll(".item");
+    const firstCard = document.querySelector(".item")
+    const cardItems = document.querySelectorAll(".item");
     
 
     // Sermon Page
@@ -31,36 +32,34 @@ export const animationScroll = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     if (header) {
-        gsap.from(header, {
+        gsap.to(header, {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
                 start: "top -100px",
                 end: "top -500px",
             },
-            backgroundColor: "transparent",
-            boxShadow: "none",
+            backgroundColor: "#212121",
+            boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
             duration: 1,
         })
-        gsap.from(span1, {
+        gsap.to(span1, {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
                 end: "top -100px",
             },
-            backgroundImage: "none",
-            boxShadow: "none",
+            background: "linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent)",
             duration: 1,
         })
-        gsap.from(span2, {
+        gsap.to(span2, {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
                 start: "top -100px",
                 end: "top -500px",
             },
-            backgroundColor: "transparent",
-            boxShadow: "none",
+            backgroundColor: "#F2F1E7",
             duration: 1,
         })
     }
@@ -101,13 +100,13 @@ export const animationScroll = () => {
     }
     
     // Animated Cards
-        if (activeCardItems) {
-            gsap.from(activeCardItems, {
+        if (cardItems) {
+            gsap.from(cardItems, {
                 scrollTrigger: {
-                    trigger: activeCardItems
+                    trigger: cardItems
                 },
                opacity: 0,
-               duration: 1,
+               duration: 0.6,
               });
         }
 

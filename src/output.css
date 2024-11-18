@@ -1636,6 +1636,10 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2207,7 +2211,7 @@ main {
 
 .game-section h3 {
   margin: 0 0 10px;
-  font-size: 28px;
+  font-size: 1.7rem;
   line-height: 36px;
 }
 
