@@ -96,7 +96,8 @@ export const sermonsYT = () => {
                 divSermons[visibleIndex].addEventListener("click", (e) => {
                     // Changing title
                     h2Latest.innerHTML = item.snippet.title;
-                    
+
+                    const clickedDiv = e.currentTarget;
 
                     // Adding new video to top
                     if (document.cookie.includes("viewed_cookie_policy=ACCEPTED")) {
@@ -113,13 +114,11 @@ export const sermonsYT = () => {
                         div.style.pointerEvents = "auto";
                         div.querySelector(".nowPlaying").style.display = "none";
                     });
-                    
-                    // if (divSermons[length].id) {
-                    //     divSermons[length].id.querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
-                    //     divSermons[length].id.style.pointerEvents = "none";
-                    //     divSermons[length].id.classList.remove("sermonsHover");
-                    //     divSermons[length].id.querySelector(".nowPlaying").style.display = "flex";
-                    // }
+
+                    clickedDiv.querySelector(".firstDivChildSermons").style.filter = "brightness(70%)";
+                    clickedDiv.style.pointerEvents = "none";
+                    clickedDiv.classList.remove("sermonsHover");
+                    clickedDiv.querySelector(".nowPlaying").style.display = "flex";
 
                     // Move scroll to top
                     document.querySelector('#mainH1').scrollIntoView({
