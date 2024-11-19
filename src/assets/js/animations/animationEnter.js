@@ -43,6 +43,8 @@ const animationEnter = (container) => {
     // Under construction animations
     const construction = container.querySelector(".underConstruction")
 
+    const isSafari = /Safari/i.test(navigator.userAgent) && !/Chrome|CriOS/i.test(navigator.userAgent);
+
 
 
     const timeline = gsap.timeline({ defaults: { ease: `power1.out`, duration: 0.5 } });
@@ -62,10 +64,10 @@ const animationEnter = (container) => {
     // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
     animate(mainH1, { opacity: 0 }, "<")
     animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
-    animate(overlayAnimation, { backgroundColor: "rgba(33, 33, 33, 1)" }, "<")
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
-        animate(firstDivBanner, { duration: 2, opacity: 0.5 }, "<");
+            animate(firstDivBanner, { duration: 2, opacity: 0.5 }, "<");
+            animate(overlayAnimation, { backgroundColor: "rgba(33, 33, 33, 1)" }, "<")
     }
     animate(bannerPages, { opacity: 0, duration: 1.5 }, "<");
     animate(span, { opacity: 0, scaleX: 0 }, "<");
