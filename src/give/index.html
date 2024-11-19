@@ -296,10 +296,27 @@
         <!-- FOOTER -->
         <footer class="flex-1 w-full sticky">
             <div id="logoBackgroundFooter"
-                class="flex w-full p-10 bg-[#b2998a] justify-center items-center relative bg-no-repeat bg-contain bg-fixed"
-                style="background-image: url(/lccc-logo-outline-softbrown.svg); 
-            background-position: 70vw 300px; background-size: 600px auto;
-            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;">
+                class="flex w-full p-10 bg-[#374045] justify-center items-center relative bg-no-repeat bg-contain bg-fixed">
+                <!-- Logo Outline Background -->
+                <div id="logoOutlineBackground" class="absolute h-full left-0 content-center p-4 opacity-50">
+                    <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-[90%]">
+                        <path
+                            d="M74.9227 83.4819C181.577 54.758 257.431 52.534 314.495 88.4779C282.94 101.867 258.922 114.08 241.02 125.739C221.551 138.418 208.984 150.652 201.937 163.361C188.85 186.961 195.706 210.477 207.423 236.834C204.07 236.562 200.853 236.298 197.758 236.045C170.452 233.807 152.591 232.344 133.763 232.555C112.179 232.797 89.372 235.231 49.5223 241.058L74.9227 83.4819Z"
+                            stroke="#475258" stroke-width="10" />
+                        <path
+                            d="M598.806 144.258C604.302 175.261 609.283 203.357 616.332 242.469C561.577 234.038 523.162 232.613 449.056 245.647C413.092 212.856 387.431 196.359 335.544 170.68C322.239 161.406 317.247 147.58 320.248 132.787C323.319 117.648 334.925 101.01 355.926 87.6538C397.492 61.218 475.056 48.3576 588.595 86.7799C592.467 108.503 595.717 126.839 598.806 144.258Z"
+                            stroke="#475258" stroke-width="10" />
+                        <path
+                            d="M342.75 76.7822V29.5V27.75H341H318.25V21.75H341H342.75V20V2.25H350.25V20V21.75H352H374.25V27.75H352H350.25V29.5V73.3732L342.75 76.7822Z"
+                            stroke="#475258" stroke-width="3.5" />
+                        <path
+                            d="M620.627 272.891L629.548 329.816C553.842 321.722 501.764 324.182 457.524 336.953C413.054 349.789 376.945 372.926 333.098 405.213C288.624 370.371 249.823 347.79 203.847 335.865C158.291 324.048 106.099 322.802 34.9437 329.868L43.8906 272.778C101.505 262.334 151.831 259.675 197.935 268.915C244.859 278.319 287.72 300.113 329.59 339.157L332.736 342.09L336.107 339.418C380.664 304.087 419.057 282.563 462.891 272.32C506.013 262.243 554.845 262.979 620.627 272.891Z"
+                            stroke="#475258" stroke-width="10" />
+                        <path
+                            d="M335.22 435.706C431.983 356.301 547.121 337.22 665.664 363.122L660.988 380.387C526.86 352.305 420.067 387.702 332.957 465.336C280.401 420.165 228.53 392.602 174.265 379.532C120.444 366.568 64.4945 367.916 3.5 380.209V363.307C125.445 336.517 233.51 355.513 330.774 435.701L332.995 437.532L335.22 435.706Z"
+                            stroke="#475258" stroke-width="7" />
+                    </svg>
+                </div>
 
 
                 <!-- Div Info -->
@@ -309,20 +326,22 @@
                         <!-- Location -->
                         <div class="flex items-start w-[9rem] lg:w-[13rem]" id="divLocationFooter">
                             <address class="not-italic text-gray-800">
-                                <h5>LOCATION</h5>
-                                <div class="mt-2 text-[0.9rem]">
-                                    <h6>Life in Christ Community Church</h6>
-                                    <p>Kruisweg 14 <br /> 2665 HB, Bleiswijk <br /> Zuid-Holland </p>
+                                <h5 class="text-white">DIRECCIÓN</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
+                                    <h6>Iglesia Cristiana Caminando por Fe</h6>
+                                    <p>C/ de França, 41B <br />L'Hospitalet de Llobregat <br /> 08907, Barcelona </p>
                                 </div>
                             </address>
                         </div>
                         <!-- Church Service -->
                         <div class="flex items-start w-[10rem] lg:w-[9rem]" id="divService">
                             <div class="not-italic text-gray-800">
-                                <h5>SERVICE</h5>
-                                <div class="mt-2 text-[0.9rem]">
-                                    <p>Every Sunday</p>
-                                    <p>Prayer: 10:30 AM <br /> Service: 11:00 AM </p>
+                                <h5 class="text-white">AGENDA</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
+                                    <p>Martes y jueves:</p>
+                                    <p>Estudio Bíblico - 19:30</p>
+                                    <p>Domingo:</p>
+                                    <p>Culto Dominical - 10:00</p>
                                 </div>
                             </div>
                         </div>
@@ -330,12 +349,12 @@
                         <!-- Contact Info-->
                         <div class="flex items-start w-[10rem] lg:w-[10rem] order-4">
                             <div class="not-italic text-gray-800">
-                                <h5>CONTACT</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">CONTACTO</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <p>
-                                        <a href="tel:+31626271891" aria-label="Link to Church Phone">(+31) 626 27 18
-                                            91</a><br />
-                                        lifeinchrist.lccc@gmail.com
+                                        <a href="tel:+31626271891" aria-label="Link to Church Phone">+36 000 00 00
+                                            00</a><br />
+                                        email@correo.com
                                     </p>
                                 </div>
                             </div>
@@ -345,44 +364,44 @@
                         <!-- Social Media -->
                         <div class="flex items-start w-[9rem] lg:order-4" id="divSocial">
                             <div class="not-italic text-gray-800">
-                                <h5>SOCIAL MEDIA</h5>
-                                <div class="mt-2 text-[0.9rem]">
+                                <h5 class="text-white">REDES SOCIALES</h5>
+                                <div class="mt-2 text-[0.9rem] text-white">
                                     <p class="flex align-center">
 
-                                        <!-- FB -->
-                                        <a href="https://wa.me/31626271891" aria-label="Link to Whatsapp"
+                                        <!-- Whatsapp -->
+                                        <a href="https://wa.me/34658647797" aria-label="Link to Whatsapp"
                                             target="_blank" id="footerWALink">
                                             <svg width="20" viewBox="0 0 48 48" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                                 <path
                                                     d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z"
-                                                    fill="#383D38" />
+                                                    fill="white" />
                                             </svg>
 
                                         </a>
 
                                         <!-- FB -->
-                                        <a href="https://www.facebook.com/profile.php?id=61567265812457"
+                                        <a href="https://www.facebook.com/icaminandoporfe"
                                             aria-label="Link to Facebook Page" target="_blank" id="footerFBLink">
                                             <svg width="20" viewBox="0 0 198 199" fill="none" class="mr-2"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M197.97 99.76C197.97 149.652 160.997 190.899 112.968 197.592C108.477 198.215 103.882 198.54 99.2182 198.54C93.8346 198.54 88.548 198.111 83.3997 197.281C36.3802 189.708 0.466797 148.925 0.466797 99.76C0.466797 45.2026 44.6838 0.972595 99.2251 0.972595C153.766 0.972595 197.983 45.2026 197.983 99.76H197.97Z"
-                                                    fill="#383D38" style="transition: fill 0.1s ease-in-out;" />
+                                                    fill="white" style="transition: fill 0.1s ease-in-out;" />
                                                 <path
                                                     d="M112.968 80.296V101.816H139.581L135.367 130.804H112.968V197.592C108.477 198.215 103.882 198.54 99.2182 198.54C93.8347 198.54 88.548 198.111 83.3997 197.281V130.804H58.8555V101.816H83.3997V75.4854C83.3997 59.1501 96.6372 45.9018 112.975 45.9018V45.9157C113.023 45.9157 113.065 45.9018 113.113 45.9018H139.588V70.9724H122.289C117.147 70.9724 112.975 75.1463 112.975 80.2891L112.968 80.296Z"
-                                                    fill="#b2998a" />
+                                                    fill="#374045" />
                                             </svg>
                                         </a>
 
                                         <!-- YT -->
-                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch"
+                                        <a href="https://www.youtube.com/@IglesiaCaminandoPorFe"
                                             aria-label="Link to  Page" target="_blank" id="footerYTLink">
                                             <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M47.5219 7.4001C47.5219 7.4001 47.0531 4.09072 45.6094 2.6376C43.7812 0.725098 41.7375 0.715722 40.8 0.603222C34.0875 0.115722 24.0094 0.115723 24.0094 0.115723H23.9906C23.9906 0.115723 13.9125 0.115722 7.2 0.603222C6.2625 0.715722 4.21875 0.725098 2.39062 2.6376C0.946875 4.09072 0.4875 7.4001 0.4875 7.4001C0.4875 7.4001 0 11.2907 0 15.172V18.8095C0 22.6907 0.478125 26.5813 0.478125 26.5813C0.478125 26.5813 0.946875 29.8907 2.38125 31.3438C4.20937 33.2563 6.60938 33.1907 7.67813 33.397C11.5219 33.7626 24 33.8751 24 33.8751C24 33.8751 34.0875 33.8563 40.8 33.3782C41.7375 33.2657 43.7812 33.2563 45.6094 31.3438C47.0531 29.8907 47.5219 26.5813 47.5219 26.5813C47.5219 26.5813 48 22.7001 48 18.8095V15.172C48 11.2907 47.5219 7.4001 47.5219 7.4001ZM19.0406 23.2251V9.73447L32.0062 16.5032L19.0406 23.2251Z"
-                                                    fill="#383D38" style="transition: fill 0.1s ease-in-out;" />
+                                                    fill="white" style="transition: fill 0.1s ease-in-out;" />
                                             </svg>
                                         </a>
                                     </p>
@@ -404,23 +423,26 @@
                 </div>
 
                 <!-- Gradient background -->
-                <div class="w-[90%] absolute right-0 h-full z-0" style="
+                <!-- <div class="w-[90%] absolute right-0 h-full z-0" style="
                 display: block;
                 position: absolute;
                 bottom: 0;
                 background: radial-gradient(farthest-side at 100% 100%, #00e5ff, rgba(242, 93, 227, 0));
                 opacity: .3;
                 pointer-events: none;
-                "></div>
+                "></div> -->
 
             </div>
 
             <!-- Copyright -->
-            <div class="flex w-ful justify-center bg-[#232d3f] text-center">
-                <p class="text-gray-100 p-2">Copyright &copy; 2024 Life in Christ Community Church <span class="hidden sm:inline">-</span>
-                    <span class="inline sm:hidden"><br></span> 
+            <div class="flex w-ful justify-center bg-[#212121] text-center">
+                <p class="text-gray-100 p-2">Copyright &copy; 2024 Iglesia Cristiana Caminando por Fe <span
+                        class="hidden sm:inline">-</span>
+                    <span class="inline sm:hidden"><br></span>
                     <a href="/privacy-policy/" class="underline" aria-label="Link to Privacy Policy">
-                        Privacy & Cookie Policy</a></p>
+                        Política de Privacidad y Cookies
+                    </a>
+                </p>
             </div>
         </footer>
 
