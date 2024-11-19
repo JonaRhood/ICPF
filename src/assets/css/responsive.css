@@ -7,19 +7,19 @@
     }
 
     .pictureBannersPages-about {
-        background-position: center -100px !important;
+        background-position: center -50px !important;
     }
 
     .pictureBannersPages-leaders {
-        background-position: center -200px !important;
+        background-position: center -15px !important;
     }
 
     .pictureBannersPages-sermons {
-        background-position: center -90px !important;
+        background-position: center -150px !important;
     }
 
     .pictureBannersPages-gospel {
-        background-position: center -40px !important;
+        background-position: center -150px !important;
     }
 
     .pictureBannersPages-give {
@@ -40,7 +40,7 @@
         }
 
         .pictureBannersPages-leaders {
-            background-position: center -100px !important;
+            background-position: center -15px !important;
         }
 
         .pictureBannersPages-give {
@@ -240,7 +240,7 @@
         height: 200px !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
-        background-position: center 30px !important;
+        background-position: center 0px !important;
     }
 
     /* .pictureBannersPages-leaders {
