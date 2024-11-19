@@ -4,6 +4,7 @@ const animationEnter = (container) => {
     // Global Menu animations
     const span = container.querySelectorAll("span.is-active span")
     const aSpan = container.querySelectorAll("span.is-active")
+    const overlayAnimation = container.querySelector("#overlayAnimation");
 
     // Global page transition
     const main = container.querySelector("main");
@@ -61,6 +62,7 @@ const animationEnter = (container) => {
     // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
     animate(mainH1, { opacity: 0 }, "<")
     animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
+    animate(overlayAnimation, { backgroundColor: "rgba(33, 33, 33, 1)" }, "<")
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
         animate(firstDivBanner, { duration: 2, opacity: 0.5 }, "<");

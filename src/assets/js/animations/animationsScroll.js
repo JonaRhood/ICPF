@@ -19,6 +19,10 @@ export const animationScroll = () => {
     const player3 = document.querySelector("#player3");
     const firstCard = document.querySelector(".item")
     const cardItems = document.querySelectorAll(".item");
+
+    // Banner Pages
+    const pathBanner75 = document.querySelector("#pathBanner75");
+    const pathBanner50 = document.querySelector("#pathBanner50")
     
 
     // Sermon Page
@@ -36,8 +40,8 @@ export const animationScroll = () => {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
-                start: "top -100px",
-                end: "top -500px",
+                start: "top -10px",
+                end: "top -200px",
             },
             backgroundColor: "#212121",
             boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -47,7 +51,7 @@ export const animationScroll = () => {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
-                end: "top -100px",
+                end: "top -200px",
             },
             background: "linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent)",
             duration: 1,
@@ -56,10 +60,29 @@ export const animationScroll = () => {
             scrollTrigger: {
                 // trigger: header,
                 scrub: true,
-                start: "top -100px",
-                end: "top -500px",
+                start: "top -10px",
+                end: "top -200px",
             },
             backgroundColor: "#F2F1E7",
+            duration: 1,
+        })
+    }
+
+    if (pathBanner50) {
+        gsap.to(pathBanner50, {
+            scrollTrigger: {
+                // trigger: header,
+                scrub: true,
+            },
+            y: 80,
+            duration: 1,
+        })
+        gsap.to(pathBanner75, {
+            scrollTrigger: {
+                // trigger: header,
+                scrub: true,
+            },
+            y: 50,
             duration: 1,
         })
     }

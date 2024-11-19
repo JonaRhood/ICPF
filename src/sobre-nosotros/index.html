@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- META -->
@@ -7,56 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- TITLE -->
-    <title>About Us - Life in Christ Church</title>
+    <title>Sobre Nosotros - Iglesia Caminando Por Fe</title>
     <meta name="description"
-        content="Learn about the mission and vision of Life in Christ Community Church in the Netherlands. Discover our history and our values centered on Jesus Christ and community." />
-    <link rel="canonical" href="https://lifeinchrist.nl/sobre-nosotros/">
+        content="Bienvenidos a la Iglesia Caminando por Fe, una Iglesia Bautista Reformada en Barcelona. Únete a nosotros para recibir predicación expositiva, enseñanzas bíblicas y disfrutar de una comunidad centrada en la fe." />
+    <!-- <link rel="canonical" href="https://lifeinchrist.nl/sobre-nosotros/"> -->
 
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="About Us - Life in Christ Church">
     <meta property="og:description"
-        content="Learn about the mission and vision of Life in Christ Community Church in the Netherlands. Discover our history and our values centered on Jesus Christ and community.">
+        content="Learn about the mission and vision of Iglesia Caminando por Fe in the Netherlands. Discover our history and our values centered on Jesus Christ and community.">
     <meta property="og:url" content="https://lifeinchrist.nl">
     <meta property="og:image" content="/img/meta-logo.jpg">
-    <meta property="og:image:alt" content="Life in Christ Community Church Logo">
-    <meta property="og:site_name" content="Life in Christ Community Church">
+    <meta property="og:image:alt" content="Iglesia Caminando por Fe Logo">
+    <meta property="og:site_name" content="Iglesia Caminando por Fe">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Us - Life in Christ Church">
     <meta name="twitter:description"
-        content="Learn about the mission and vision of Life in Christ Community Church in the Netherlands. Discover our history and our values centered on Jesus Christ and community.">
+        content="Learn about the mission and vision of Iglesia Caminando por Fe in the Netherlands. Discover our history and our values centered on Jesus Christ and community.">
     <meta name="twitter:image" content="/img/meta-logo.jpg">
-    <meta name="twitter:image:alt" content="Life in Christ Community Church Logo">
+    <meta name="twitter:image:alt" content="Iglesia Caminando por Fe Logo">
 
     <!-- ADITIONAL SEO -->
     <meta name="robots" content="index, follow">
     <meta name="keywords"
-        content="Life in Christ Community Church, Reformed Baptist Church, About, about us, reformed baptist church netherlands, church in Netherlands, biblical church, expository preaching, baptist church, Baptist Church, Life in Christ, life in Christ church">
+        content="Iglesia Caminando por Fe, Reformed Baptist Church, About, about us, reformed baptist church netherlands, church in Netherlands, biblical church, expository preaching, baptist church, Baptist Church, Life in Christ, life in Christ church">
 
     <!-- Structured Data for About Page -->
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "AboutPage",
           "mainEntity": {
             "@type": "Church",
-            "name": "Life in Christ Community Church",
+            "name": "Iglesia Caminando por Fe",
             "url": "https://lifeinchrist.nl/sobre-nosotros/",
             "logo": "https://lifeinchrist.nl/logopng.png",
             "sameAs": [
             "https://www.youtube.com/@LifeinChristCommunityChurch",
             "https://www.facebook.com/profile.php?id=61567265812457"
             ],
-            "description": "Life in Christ Community Church is a Reformed Baptist church dedicated to sharing the gospel and serving our community in the Netherlands."
+            "description": "Iglesia Caminando por Fe is a Reformed Baptist church dedicated to sharing the gospel and serving our community in the Netherlands."
           }
         }
-        </script>
+        </script> -->
 
     <!-- FAVICON -->
-    <link rel="icon" href="/lccc-logo-curated.svg" type="image/svg">
+    <link rel="icon" href="/icpf-logo.svg" type="image/svg">
 
     <!-- IMAGE PRELOADING -->
     <link rel="preload" href="/img/sheep-blue.webp" as="image" type="image/webp">
@@ -240,7 +240,10 @@
         </header>
 
         <!-- MAIN AREA -->
-        <main class="project bg-white">
+        <main class="project">
+
+            <!-- OVERLAY ANIMATION -->
+            <div id="overlayAnimation"></div>
 
             <!-- COOKIES -->
             <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
@@ -278,19 +281,9 @@
                     <!-- Divider -->
                     <div class="w-full z-20 bottom-0 absolute transform translate-y-[1px]">
                         <svg viewBox="0 0 1000 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_2)">
-                                <path d="M500 96L0 50V150H1000V50L500 96Z" fill="white" />
-                                <path d="M0 28L500 96L0 50V28Z" fill="white" fill-opacity="0.5" />
-                                <path d="M1000 28L500 96L1000 50V28Z" fill="white" fill-opacity="0.5" />
-                                <path d="M0 8L500 96L0 28V8Z" fill="white" fill-opacity="0.25" />
-                                <path d="M1000 8L500 96L1000 28V8Z" fill="white" fill-opacity="0.25" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1_2">
-                                    <rect width="1000" height="100" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                            <path id="pathBanner75" d="M499 72.14L0 72V100H1000V72L499 72.14Z" fill="white" fill-opacity="0.75"/>
+                            <path id="pathBanner50" d="M499 56.22L0 56V100H1000V56L499 56.22Z" fill="white" fill-opacity="0.5"/>
+                            </svg>     
                     </div>
                     <div id="pictureBannersPages"
                         style="background-image: url(/img/sheep-blue.webp); height: 300px; background-position: center -350px;"
@@ -301,8 +294,8 @@
 
             <!-- Section 1 -->
             <section>
-                <h1 id="mainH1" class="text-center text-[2.2rem] text-blue-800 p-8 pb-10 w-full">
-                    ABOUT US
+                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#212121] p-8 pb-10 w-full">
+                    SOBRE NOSOTROS
                 </h1>
                 <div class="flex h-[650px] justify-center" id="containerAbout">
                     <div class="flex-col w-[900px] h-[550px]" id="containerAbout2">
@@ -364,10 +357,10 @@
                             <div id="divAbout-1"
                                 class="absolute w-full h-full py-8 pl-8 flex opacity-0 invisible scrollableDiv">
                                 <div class="w-[550px] flex-col ">
-                                    <h2 class="text-blue-800 text-[1.6rem] mb-3">Life in Christ Community Church</h2>
+                                    <h2 class="text-blue-800 text-[1.6rem] mb-3">Iglesia Caminando por Fe</h2>
                                     <p class="text-[1.1rem] text-justify">
                                         &nbsp;&nbsp;&nbsp;
-                                        Life in Christ Community Church was founded on
+                                        Iglesia Caminando por Fe was founded on
                                         20th of
                                         October 2024 with the purpose
                                         of glorifying the triune God of the Bible through the promotion of His worship,
@@ -385,7 +378,7 @@
                                         &nbsp;&nbsp;&nbsp;
                                         In this sense, as an international
                                         Baptist
-                                        Reformed congregation, Life in Christ Community Church declares that the London
+                                        Reformed congregation, Iglesia Caminando por Fe declares that the London
                                         Baptist Confession of Faith of 1689 is a faithful expression of the set of
                                         truths
                                         that we believe and proclaim.
@@ -1341,7 +1334,7 @@
                                     </p>
                                     <h4 class="text-[1.1rem]">Location:</h4>
                                     <p class="text-[1.1rem] text-justify mb-6">
-                                        Life in Christ Community Church<br />Kruisweg 14<br />
+                                        Iglesia Caminando por Fe<br />Kruisweg 14<br />
                                         2665 HB, Bleiswijk<br />
                                         Zuid-Holland
                                     </p>
