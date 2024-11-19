@@ -18,7 +18,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'src/index.html'),
-                about: resolve(__dirname, 'src/about/index.html'),
+                sobreNosotros: resolve(__dirname, 'src/sobre-nosotros/index.html'),
                 leaders: resolve(__dirname, 'src/leaders/index.html'),
                 sermons: resolve(__dirname, 'src/sermons/index.html'),
                 gospel: resolve(__dirname, 'src/gospel/index.html'),
