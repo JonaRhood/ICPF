@@ -457,8 +457,9 @@ main {
     opacity: 0;
     -webkit-transform: translateY(32px);
     transform: translateY(32px);
-    transition: all 0.4s ease-in-out 0.2s;
-    -webkit-transition: all 0.4s ease-in-out 0.2s;
+    transition: opacity 0.4s ease-in-out 0.2s, transform 0.4s ease-in-out 0.2s;
+    -webkit-transition: opacity 0.4s ease-in-out 0.2stransform 0.4s ease-in-out 0.2s;
+    margin-bottom: 10px;
   }
   .game-section .item.active .item-desc p {
     opacity: 1;

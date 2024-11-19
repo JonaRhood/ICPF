@@ -91,12 +91,17 @@
         display: flex;
         position: absolute;
         width: 100% !important;
-        background-color: white !important;
+        color: white;
+        background-color: #393939 !important;
         right: 0;
         top: 80px;
         z-index: 1 !important;
         transform: translateY(-150%);
         transition: transform .5s linear;
+    }
+
+    #navBarToShow ul li:not(:last-child) {
+        border-bottom: 1px rgba(255,255,255,0.1) solid;
     }
 
     .active {

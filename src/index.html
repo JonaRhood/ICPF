@@ -190,11 +190,11 @@
                 </div>
 
                 <!-- NavBar -->
-                <nav class="flex justify-center items-center text-white mr-[50px]">
+                <nav id="firstNav" class="flex justify-center items-center text-white mr-[50px]">
                     <ul class="flex w-full justify-around gap-12">
                         <li
-                            class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out relative">
-                            <span class="is-active text-[#DFA878]" aria-label="Link to Home Page">
+                            class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out relative ">
+                            <span class="is-active text-[#DFA878] hover:cursor-default" aria-label="Link to Home Page">
                                 INICIO
                                 <span id="headerSpan1"
                                     class="absolute flex w-full h-[55px] transform translate-y-[-20px] top-0  scale-150">&nbsp;</span>
@@ -202,18 +202,18 @@
                                     class="absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
                             </span>
                         </li>
-                        <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
                             <a href="/about/" aria-label="Link to About Page">SOBRE NOSOTROS</a>
                         </li>
-                        <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out">
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
                             <a href="/leaders/" aria-label="Link to Leaders Page">PASTORES</a>
                         </li>
 
-                        <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
                                 href="/sermons/" aria-label="Link to Sermons Page">SERMONES</a></li>
-                        <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
                                 href="/gospel/" aria-label="Link to Gospel Page">AGENDA</a></li>
-                        <li class="hover:text-blue-500 transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
                                 href="/give/" aria-label="Link to Give Page">OFRENDAR</a></li>
                     </ul>
                 </nav>
@@ -228,46 +228,88 @@
                 </svg>
             </div>
 
-            <div class="hiddenNavBar hiddenMenu" id="divMenuList">
+            <div class="hiddenNavBar hiddenMenu flex" id="divMenuList">
                 <nav class="flex w-full" id="navBarToShow">
                     <ul class="flex-col w-full text-center text-lg">
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <span href=""
-                                class="flex w-full h-full p-3 justify-center liHiddenMenu bg-blue-100 text-blue-800"
+                                class="flex w-full h-full p-3 justify-center liHiddenMenu bg-amber-100/10 text-[#DFA878]"
                                 aria-label="Link to Home Page">
                                 INICIO
                             </span>
                         </li>
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <a href="./about/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to About Page">
                                 SOBRE NOSOTROS
                             </a>
                         </li>
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <a href="./leaders/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to Leaders Page">
                                 PASTORES
                             </a>
                         </li>
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <a href="./sermons/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to Sermons Page">
                                 SERMONES
 
                             </a>
                         </li>
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <a href="./gospel/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to Gospel Page">
                                 AGENDA
                             </a>
                         </li>
-                        <li class="hover:bg-blue-100 flex">
+                        <li class="hover:bg-amber-100/10 flex">
                             <a href="./give/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to Give Page">
                                 OFRENDAR
                             </a>
+                        </li>
+                        <li class="flex p-[10px] bg-[#212121]">
+                            <div class="text-[0.9rem] text-white w-full justify-center flex">
+                                <p class="flex align-center gap-2">
+
+                                    <!-- WHATSAPP -->
+                                    <a href="https://wa.me/34658647797" aria-label="Link to Whatsapp"
+                                        target="_blank" id="footerWALink">
+                                        <svg width="20" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                            <path
+                                                d="M0 48L3.374 35.674C1.292 32.066 0.198 27.976 0.2 23.782C0.206 10.67 10.876 0 23.986 0C30.348 0.002 36.32 2.48 40.812 6.976C45.302 11.472 47.774 17.448 47.772 23.804C47.766 36.918 37.096 47.588 23.986 47.588C20.006 47.586 16.084 46.588 12.61 44.692L0 48ZM13.194 40.386C16.546 42.376 19.746 43.568 23.978 43.57C34.874 43.57 43.75 34.702 43.756 23.8C43.76 12.876 34.926 4.02 23.994 4.016C13.09 4.016 4.22 12.884 4.216 23.784C4.214 28.234 5.518 31.566 7.708 35.052L5.71 42.348L13.194 40.386ZM35.968 29.458C35.82 29.21 35.424 29.062 34.828 28.764C34.234 28.466 31.312 27.028 30.766 26.83C30.222 26.632 29.826 26.532 29.428 27.128C29.032 27.722 27.892 29.062 27.546 29.458C27.2 29.854 26.852 29.904 26.258 29.606C25.664 29.308 23.748 28.682 21.478 26.656C19.712 25.08 18.518 23.134 18.172 22.538C17.826 21.944 18.136 21.622 18.432 21.326C18.7 21.06 19.026 20.632 19.324 20.284C19.626 19.94 19.724 19.692 19.924 19.294C20.122 18.898 20.024 18.55 19.874 18.252C19.724 17.956 18.536 15.03 18.042 13.84C17.558 12.682 17.068 12.838 16.704 12.82L15.564 12.8C15.168 12.8 14.524 12.948 13.98 13.544C13.436 14.14 11.9 15.576 11.9 18.502C11.9 21.428 14.03 24.254 14.326 24.65C14.624 25.046 18.516 31.05 24.478 33.624C25.896 34.236 27.004 34.602 27.866 34.876C29.29 35.328 30.586 35.264 31.61 35.112C32.752 34.942 35.126 33.674 35.622 32.286C36.118 30.896 36.118 29.706 35.968 29.458Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+
+                                    <!-- FB -->
+                                    <a href="https://www.facebook.com/icaminandoporfe"
+                                        aria-label="Link to Facebook Page" target="_blank" id="footerFBLink">
+                                        <svg width="20" viewBox="0 0 198 199" fill="none" class="mr-2"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M197.97 99.76C197.97 149.652 160.997 190.899 112.968 197.592C108.477 198.215 103.882 198.54 99.2182 198.54C93.8346 198.54 88.548 198.111 83.3997 197.281C36.3802 189.708 0.466797 148.925 0.466797 99.76C0.466797 45.2026 44.6838 0.972595 99.2251 0.972595C153.766 0.972595 197.983 45.2026 197.983 99.76H197.97Z"
+                                                fill="white" style="transition: fill 0.1s ease-in-out;" />
+                                            <path
+                                                d="M112.968 80.296V101.816H139.581L135.367 130.804H112.968V197.592C108.477 198.215 103.882 198.54 99.2182 198.54C93.8347 198.54 88.548 198.111 83.3997 197.281V130.804H58.8555V101.816H83.3997V75.4854C83.3997 59.1501 96.6372 45.9018 112.975 45.9018V45.9157C113.023 45.9157 113.065 45.9018 113.113 45.9018H139.588V70.9724H122.289C117.147 70.9724 112.975 75.1463 112.975 80.2891L112.968 80.296Z"
+                                                fill="#374045" />
+                                        </svg>
+                                    </a>
+
+                                    <!-- YT -->
+                                    <a href="https://www.youtube.com/@IglesiaCaminandoPorFe"
+                                        aria-label="Link to  Page" target="_blank" id="footerYTLink">
+                                        <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M47.5219 7.4001C47.5219 7.4001 47.0531 4.09072 45.6094 2.6376C43.7812 0.725098 41.7375 0.715722 40.8 0.603222C34.0875 0.115722 24.0094 0.115723 24.0094 0.115723H23.9906C23.9906 0.115723 13.9125 0.115722 7.2 0.603222C6.2625 0.715722 4.21875 0.725098 2.39062 2.6376C0.946875 4.09072 0.4875 7.4001 0.4875 7.4001C0.4875 7.4001 0 11.2907 0 15.172V18.8095C0 22.6907 0.478125 26.5813 0.478125 26.5813C0.478125 26.5813 0.946875 29.8907 2.38125 31.3438C4.20937 33.2563 6.60938 33.1907 7.67813 33.397C11.5219 33.7626 24 33.8751 24 33.8751C24 33.8751 34.0875 33.8563 40.8 33.3782C41.7375 33.2657 43.7812 33.2563 45.6094 31.3438C47.0531 29.8907 47.5219 26.5813 47.5219 26.5813C47.5219 26.5813 48 22.7001 48 18.8095V15.172C48 11.2907 47.5219 7.4001 47.5219 7.4001ZM19.0406 23.2251V9.73447L32.0062 16.5032L19.0406 23.2251Z"
+                                                fill="white" style="transition: fill 0.1s ease-in-out;" />
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -325,20 +367,21 @@
                             style="background-image: url(/img/icpf-1.webp);">
                             <div class="parallaxDiv w-full p-8 px-[50px] bg-gradient-to-r from-[#374045]/90"
                                 data-swiper-parallax="" data-swiper-parallax-opacity="0" id="firstDivBanner">
-
+                                <div class="subtitle text-[2.3rem] text-gray-300 leading-[1.2]" data-swiper-parallax="-200"
+                                    data-swiper-parallax-opacity="0">
+                                    <h3 >Iglesia Cristiana</h3>
+                                </div>
                                 <div class="title titleBanner leading-[1] w-[500px]" data-swiper-parallax="-300"
                                     data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.8"
                                     style="font-family: 'Georgia', Times, serif;">
-                                    <h1 class="text-[3rem] mb-2"><span class="text-gray-300 text-[2.3rem]">Iglesia
-                                            Cristiana</span> Caminando por Fe</h1>
+                                    <h1 class="text-[3rem] mb-2">Caminando por Fe</h1>
                                 </div>
-                                <!-- <div class="subtitle" data-swiper-parallax="-200">Subtitle</div> -->
                                 <div class="text mb-6" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
-                                    <p class="text-[1.1rem] text-gray-300">
-                                        Committed to the expository preaching of the Holy Scriptures, the doctrines of
-                                        grace, and Reformed teachings.
+                                    <p class="text-[1.1rem] text-gray-100">
+                                        Comprometidos con la predicación expositiva de las Sagradas Escrituras, las
+                                        doctrinas de la gracia y las enseñanzas reformadas.
                                         <br />
-                                        Grounded in the 1689 London Baptist Confession of Faith.
+                                        Fundamentados en la Confesión de Fe Bautista de Londres de 1689.
                                     </p>
                                 </div>
                                 <div class="buttonsBanner text mb-4" data-swiper-parallax="-100"
@@ -362,12 +405,12 @@
                                     style="font-family: 'Georgia', Times, serif;">
                                     <h2 class="text-[3rem]">El Libro de Génesis</h2>
                                 </div>
-                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300" data-swiper-parallax="-200"
+                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300 leading-[1]" data-swiper-parallax="-200"
                                     data-swiper-parallax-opacity="0">
                                     <h3>Estudio Bíblico cada Jueves a las 19:30</h3>
                                 </div>
                                 <div class="text mb-4" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
-                                    <p class="text-[1.1rem] text-gray-300">
+                                    <p class="text-[1.1rem] text-gray-100">
                                         Te invitamos a nuestro estudio del libro de Génesis, cada jueves a las
                                         19:30.<br />
                                         Un espacio dedicado a la comprensión y el crecimiento espiritual en la Palabra.
@@ -394,12 +437,12 @@
                                     style="font-family: 'Georgia', Times, serif;">
                                     <h2 class="text-[3rem]">Predicación Expositiva</h2>
                                 </div>
-                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300" data-swiper-parallax="-200"
+                                <div class="subtitle text-[1.8rem] mb-2 text-gray-300 leading-[1]" data-swiper-parallax="-200"
                                     data-swiper-parallax-opacity="0">
                                     <h3>Conociendo a Dios a través de Su Palabra</h3>
                                 </div>
                                 <div class="text mb-4" data-swiper-parallax="-100" data-swiper-parallax-opacity="0">
-                                    <p class="text-[1.1rem] text-gray-300">
+                                    <p class="text-[1.1rem] text-gray-100">
                                         Nuestro enfoque en la predicación expositiva ofrece una enseñanza centrada en
                                         Cristo y en Su obra,<br /> guiándonos a vivir conforme a Su voluntad revelada en
                                         cada libro de la Biblia
@@ -848,8 +891,8 @@
                                 <div class="mt-2 text-[0.9rem] text-white">
                                     <p class="flex align-center">
 
-                                        <!-- FB -->
-                                        <a href="https://wa.me/31626271891" aria-label="Link to Whatsapp"
+                                        <!-- Whatsapp -->
+                                        <a href="https://wa.me/34658647797" aria-label="Link to Whatsapp"
                                             target="_blank" id="footerWALink">
                                             <svg width="20" viewBox="0 0 48 48" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg" class="mr-2">
@@ -861,7 +904,7 @@
                                         </a>
 
                                         <!-- FB -->
-                                        <a href="https://www.facebook.com/profile.php?id=61567265812457"
+                                        <a href="https://www.facebook.com/icaminandoporfe"
                                             aria-label="Link to Facebook Page" target="_blank" id="footerFBLink">
                                             <svg width="20" viewBox="0 0 198 199" fill="none" class="mr-2"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -875,7 +918,7 @@
                                         </a>
 
                                         <!-- YT -->
-                                        <a href="https://www.youtube.com/@LifeinChristCommunityChurch"
+                                        <a href="https://www.youtube.com/@IglesiaCaminandoPorFe"
                                             aria-label="Link to  Page" target="_blank" id="footerYTLink">
                                             <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
                                                 xmlns="http://www.w3.org/2000/svg">
