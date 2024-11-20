@@ -299,10 +299,11 @@
             </section>
 
             <!-- Section 1 -->
-            <section style="background: url(/img/paper.webp);">
-                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full">
+            <section style="background: url(/img/paper.webp);" class="relative">
+                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full relative" style="z-index: 10;">
                     SOBRE NOSOTROS
                 </h1>
+                <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
                 <div class="flex h-[650px] justify-center" id="containerAbout">
                     <div class="flex-col w-[900px] h-[550px]" id="containerAbout2">
                         <!-- Container Links -->
@@ -368,7 +369,7 @@
                             <div id="divAbout-1"
                                 class="absolute w-full h-full py-8 pl-8 flex opacity-0 invisible scrollableDiv">
                                 <div class="w-[550px] flex-col ">
-                                    <h2 class="text-[#4b362e] text-[1.6rem] mb-3">Iglesia Cristiana Caminando por Fe
+                                    <h2 id="h2Title-About-1" class="text-[#4b362e] text-[1.6rem] mb-3">Iglesia Caminando por Fe (ICPF)
                                     </h2>
                                     <p class="text-[1.1rem] text-justify">
                                         &nbsp;&nbsp;&nbsp;

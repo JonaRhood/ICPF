@@ -374,6 +374,12 @@
         height: 100px;
         margin-top: 10px;
     }
+
+    /* #h2Title-About-1 span::before {
+        content: "\A";
+        white-space: pre;
+
+    } */
 }
 
 @media only screen and (max-width: 440px) {
