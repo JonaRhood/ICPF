@@ -94,6 +94,23 @@
 
     .divGospelImg {
         display: none;
+        border-bottom: none;
+    }
+
+    .divAgenda1 {
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+
+    .divAgenda1Img {
+        display: flex;
+        width: 90%;
+    }
+
+    .divAgenda {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
