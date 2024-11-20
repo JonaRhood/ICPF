@@ -27,10 +27,10 @@ export const initAboutContainer = () => {
             }
 
             document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-                li.classList.replace("bg-gray-100", "bg-gray-200")
+                li.classList.replace("bg-gray-100/80", "bg-gray-200/80")
             });
 
-            this.classList.replace("bg-gray-200", "bg-gray-100");
+            this.classList.replace("bg-gray-200/80", "bg-gray-100/80");
 
 
             const targetId = this.getAttribute('id').substring(8);
@@ -75,8 +75,8 @@ export const initAboutUrlCheck = () => {
 
     if (search === "") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-1").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-1").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;
@@ -86,8 +86,8 @@ export const initAboutUrlCheck = () => {
     }
     if (search === "?iglesia") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-1").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-1").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;
@@ -97,8 +97,8 @@ export const initAboutUrlCheck = () => {
     }
     if (search === "?mision") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-2").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-2").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;
@@ -108,8 +108,8 @@ export const initAboutUrlCheck = () => {
     }
     if (search === "?creencia") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-3").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-3").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;
@@ -121,8 +121,8 @@ export const initAboutUrlCheck = () => {
     }
     if (search === "?confesion") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-4").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-4").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;
@@ -132,8 +132,8 @@ export const initAboutUrlCheck = () => {
     }
     if (search === "?horarios") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
-            li.classList.replace("bg-gray-100", "bg-gray-200");
-            document.querySelector("#liAbout-5").classList.replace("bg-gray-200", "bg-gray-100");
+            li.classList.replace("bg-gray-100/80", "bg-gray-200/80");
+            document.querySelector("#liAbout-5").classList.replace("bg-gray-200/80", "bg-gray-100/80");
         })
         document.querySelectorAll("[id^='divAbout-']").forEach(div => {
             div.style.opacity = 0;

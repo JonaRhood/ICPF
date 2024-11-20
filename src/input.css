@@ -304,6 +304,10 @@ main {
   .btnBanner3::before {
     content: "SERMONES" !important;
   }
+
+  .btnBannerConfesion::before {
+    content: "Leer la Confesión" !important;
+  }
   .btnBannerContact::before {
     content: "" !important;
   }
