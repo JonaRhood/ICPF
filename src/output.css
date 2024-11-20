@@ -760,6 +760,14 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -946,6 +954,18 @@ video {
 
 .h-\[230px\] {
   height: 230px;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .min-h-\[80\%\] {
@@ -1301,6 +1321,18 @@ video {
   border-left-width: 1px;
 }
 
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
 .border-\[\#e5e0d6\] {
   --tw-border-opacity: 1;
   border-color: rgb(229 224 214 / var(--tw-border-opacity));
@@ -1391,6 +1423,22 @@ video {
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.border-amber-900\/30 {
+  border-color: rgb(120 53 15 / 0.3);
+}
+
+.border-amber-900\/50 {
+  border-color: rgb(120 53 15 / 0.5);
+}
+
+.border-amber-900\/20 {
+  border-color: rgb(120 53 15 / 0.2);
+}
+
+.border-amber-900\/10 {
+  border-color: rgb(120 53 15 / 0.1);
 }
 
 .bg-\[\#212121\] {
@@ -1521,6 +1569,46 @@ video {
 
 .bg-gray-100\/60 {
   background-color: rgb(243 244 246 / 0.6);
+}
+
+.bg-amber-100\/50 {
+  background-color: rgb(254 243 199 / 0.5);
+}
+
+.bg-amber-900\/0 {
+  background-color: rgb(120 53 15 / 0);
+}
+
+.bg-amber-900\/10 {
+  background-color: rgb(120 53 15 / 0.1);
+}
+
+.bg-amber-800\/10 {
+  background-color: rgb(146 64 14 / 0.1);
+}
+
+.bg-amber-200\/10 {
+  background-color: rgb(253 230 138 / 0.1);
+}
+
+.bg-gray-900\/10 {
+  background-color: rgb(17 24 39 / 0.1);
+}
+
+.bg-gray-100\/10 {
+  background-color: rgb(243 244 246 / 0.1);
+}
+
+.bg-gray-200\/10 {
+  background-color: rgb(229 231 235 / 0.1);
+}
+
+.bg-gray-300\/10 {
+  background-color: rgb(209 213 219 / 0.1);
+}
+
+.bg-gray-400\/10 {
+  background-color: rgb(156 163 175 / 0.1);
 }
 
 .bg-gradient-to-b {
@@ -1736,6 +1824,10 @@ video {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -2705,6 +2797,22 @@ main {
 
   .xl\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .xl\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .xl\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .xl\:w-\[55\%\] {
+    width: 55%;
   }
 
   .xl\:flex-nowrap {
