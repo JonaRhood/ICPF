@@ -6,7 +6,7 @@ export const initAboutContainer = () => {
             const divId = li.getAttribute("id");
 
             if (divId === "liAbout-1") {
-                history.pushState(null, '', '?church');
+                history.pushState(null, '', '?iglesia');
                 document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-2") {
@@ -14,15 +14,15 @@ export const initAboutContainer = () => {
                 document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-3") {
-                history.pushState(null, '', '?beliefs');
+                history.pushState(null, '', '?creencia');
                 document.querySelector("#arrowBeliefs").classList.replace("hidden", 'flex');
             }
             if (divId === "liAbout-4") {
-                history.pushState(null, '', '?confession');
+                history.pushState(null, '', '?confesion');
                 document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
             if (divId === "liAbout-5") {
-                history.pushState(null, '', '?schedule');
+                history.pushState(null, '', '?horarios');
                 document.querySelector("#arrowBeliefs").classList.replace('flex', 'hidden');
             }
 
@@ -84,7 +84,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-1").style.opacity = 1;
         })
     }
-    if (search === "?church") {
+    if (search === "?iglesia") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-1").classList.replace("bg-gray-200", "bg-gray-100");
@@ -106,7 +106,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-2").style.opacity = 1;
         })
     }
-    if (search === "?beliefs") {
+    if (search === "?creencia") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-3").classList.replace("bg-gray-200", "bg-gray-100");
@@ -119,7 +119,7 @@ export const initAboutUrlCheck = () => {
         document.querySelector(".scrollableDivJs").scrollTo(0,0);
         document.querySelector("#arrowBeliefs").classList.replace("hidden", 'flex');
     }
-    if (search === "?confession") {
+    if (search === "?confesion") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-4").classList.replace("bg-gray-200", "bg-gray-100");
@@ -130,7 +130,7 @@ export const initAboutUrlCheck = () => {
             document.querySelector("#divAbout-4").style.opacity = 1;
         })
     }
-    if (search === "?schedule") {
+    if (search === "?horarios") {
         document.querySelectorAll("[id^='liAbout-']").forEach(li => {
             li.classList.replace("bg-gray-100", "bg-gray-200");
             document.querySelector("#liAbout-5").classList.replace("bg-gray-200", "bg-gray-100");
