@@ -148,7 +148,15 @@
         padding: 0px 0px;
         margin: 0px 0px;
         background-color: rgb(255, 255, 255);
-        width: 40%;
+        padding: 0 5px;
+    }
+
+    #divContainerLeader div h3 {
+        padding: 0 10px;
+    }
+
+    #divContainerImageLeader2 {
+        order: 0;
     }
 
     #leaderMinistry {
@@ -334,7 +342,7 @@
 
 @media only screen and (max-width: 510px) {
     #divLeaders {
-        width: 93%;
+        width: 98%;
     }
 
     #divLeaders p {

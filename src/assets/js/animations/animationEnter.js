@@ -20,10 +20,10 @@ const animationEnter = (container) => {
     const aboutContainer = container.querySelector("#containerAbout")
 
     // Leaders animations
-    const divLeaders = container.querySelector("#divLeaders")
-    const leaderPicture = container.querySelector("#leaderPicture")
-    const leaderName = container.querySelector("#leaderName")
-    const leaderMinistry = container.querySelector("#leaderMinistry")
+    const divLeaders = container.querySelectorAll("#divLeaders")
+    const leaderPicture = container.querySelectorAll("#leaderPicture")
+    const leaderName = container.querySelectorAll("#leaderName")
+    const leaderMinistry = container.querySelectorAll("#leaderMinistry")
 
     // Gospel animations
     const divGospel = container.querySelector("#divGospelPage");
