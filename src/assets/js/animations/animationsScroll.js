@@ -30,6 +30,23 @@ export const animationScroll = () => {
     const sermons = document.querySelectorAll(".firstDivChildSermons")
     const nowPlaying = document.querySelector(".nowPlaying")
 
+    // Agenda Page
+    const agendaImg1 = document.querySelector("#agendaImg1");
+    const agendaImg2 = document.querySelector("#agendaImg2");
+    const agendaImg3 = document.querySelector("#agendaImg3");
+    const agendaImg4 = document.querySelector("#agendaImg4");
+    const agendaImg5 = document.querySelector("#agendaImg5");
+    const agendaImg6 = document.querySelector("#agendaImg6");
+    const agendaImg7 = document.querySelector("#agendaImg7");
+
+    const agendaFont1 = document.querySelectorAll(".gospelFontAnimateEnter1");
+    const agendaFont2 = document.querySelectorAll(".gospelFontAnimateEnter2");
+    const agendaFont3 = document.querySelectorAll(".gospelFontAnimateEnter3");
+    const agendaFont4 = document.querySelectorAll(".gospelFontAnimateEnter4");
+    const agendaFont5 = document.querySelectorAll(".gospelFontAnimateEnter5");
+    const agendaFont6 = document.querySelectorAll(".gospelFontAnimateEnter6");
+    const agendaFont7 = document.querySelectorAll(".gospelFontAnimateEnter7");
+
     // Footer
     const logoFooter = document.querySelector("#logoOutlineBackground");
 
@@ -68,24 +85,24 @@ export const animationScroll = () => {
         })
     }
 
-    if (pathBanner50) {
-        gsap.to(pathBanner50, {
-            scrollTrigger: {
-                // trigger: header,
-                scrub: true,
-            },
-            y: 80,
-            duration: 1,
-        })
-        gsap.to(pathBanner75, {
-            scrollTrigger: {
-                // trigger: header,
-                scrub: true,
-            },
-            y: 50,
-            duration: 1,
-        })
-    }
+    // if (pathBanner50) {
+    //     gsap.to(pathBanner50, {
+    //         scrollTrigger: {
+    //             // trigger: header,
+    //             scrub: true,
+    //         },
+    //         y: 80,
+    //         duration: 1,
+    //     })
+    //     gsap.to(pathBanner75, {
+    //         scrollTrigger: {
+    //             // trigger: header,
+    //             scrub: true,
+    //         },
+    //         y: 50,
+    //         duration: 1,
+    //     })
+    // }
 
     if (latestSermon) {
         gsap.from(latestSermon, {
@@ -206,7 +223,7 @@ export const animationScroll = () => {
                 opacity: 0,
                 duration: 0.3,
                 ease: true,
-                stagger: 0.1
+                stagger: 0.08
             });
             gsap.from(nowPlaying, {
                 scrollTrigger: {
@@ -221,5 +238,128 @@ export const animationScroll = () => {
                 stagger: 0.1
             });
         }
+    }
+    // Agenda Page 
+    
+    if (agendaImg2) {
+        gsap.from(agendaImg1, {
+            scrollTrigger: {
+                trigger: agendaImg1
+            },
+            opacity: 0,
+            clipPath: 'inset(0 100% 0 0)',
+            duration: 0.8
+        });
+        gsap.from(agendaFont1, {
+            scrollTrigger: {
+                trigger: agendaImg1
+            },
+            opacity: 0,
+            x: 30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg2, {
+            scrollTrigger: {
+                trigger: agendaImg2
+            },
+            opacity: 0,
+            clipPath: 'inset(0 0 0 100%)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont2, {
+            scrollTrigger: {
+                trigger: agendaImg2
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg3, {
+            scrollTrigger: {
+                trigger: agendaImg3
+            },
+            opacity: 0,
+            clipPath: 'inset(0 100% 0 0)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont3, {
+            scrollTrigger: {
+                trigger: agendaImg3
+            },
+            opacity: 0,
+            x: 30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg4, {
+            scrollTrigger: {
+                trigger: agendaImg4
+            },
+            opacity: 0,
+            clipPath: 'inset(0 0 0 100%)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont4, {
+            scrollTrigger: {
+                trigger: agendaImg4
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg5, {
+            scrollTrigger: {
+                trigger: agendaImg5
+            },
+            opacity: 0,
+            clipPath: 'inset(0 0 0 100%)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont5, {
+            scrollTrigger: {
+                trigger: agendaImg5
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg6, {
+            scrollTrigger: {
+                trigger: agendaImg6
+            },
+            opacity: 0,
+            clipPath: 'inset(0 100% 0 0)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont6, {
+            scrollTrigger: {
+                trigger: agendaImg6
+            },
+            opacity: 0,
+            x: 30,
+            duration: 1
+        });
+        
+        gsap.from(agendaImg7, {
+            scrollTrigger: {
+                trigger: agendaImg7
+            },
+            opacity: 0,
+            clipPath: 'inset(0 0 0 100%)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont7, {
+            scrollTrigger: {
+                trigger: agendaImg7
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1
+        });
+        
     }
 }

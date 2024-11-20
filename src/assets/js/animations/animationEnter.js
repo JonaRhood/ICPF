@@ -6,6 +6,9 @@ const animationEnter = (container) => {
     const aSpan = container.querySelectorAll("span.is-active")
     const overlayAnimation = container.querySelector("#overlayAnimation");
 
+    const pathBanner75 = document.querySelectorAll("#pathBanner75");
+    const pathBanner50 = document.querySelectorAll("#pathBanner50");
+
     // Global page transition
     const main = container.querySelector("main");
     const mainH1 = container.querySelector("#mainH1");
@@ -30,7 +33,7 @@ const animationEnter = (container) => {
     const gospelFont1 = container.querySelectorAll(".gospelFontAnimateEnter1");
     const gospelFont2 = container.querySelectorAll(".gospelFontAnimateEnter2");
     const divGospelImg1 = container.querySelectorAll(".divGospelPageImgAnimate1");
-    const divGospelImg2 = container.querySelectorAll(".divGospelPageImgAnimate2")
+    const divGospelImg2 = container.querySelectorAll(".divGospelPageImgAnimate2");
 
     // Sermons animations
     const sermonsLatestH2 = container.querySelector("#sermonsLatestH2")
@@ -62,7 +65,9 @@ const animationEnter = (container) => {
 
     // Añadir animaciones
     // animate(main, { autoAlpha: 0, clearProps: 'all' }, "<");
-    animate(mainH1, { opacity: 0 }, "<")
+    animate(mainH1, { opacity: 0 }, "<");
+    animate(pathBanner75, {opacity: 0, y: 50 }, "<");
+    animate(pathBanner50, { opacity: 0, y: 50, duration: 1}, "<");
     animate(sectionBanner, { y: 0, duration: 0.3 }, "<");
     animate(footer, { autoAlpha: 0, clearProps: 'all' }, "<");
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
@@ -80,10 +85,6 @@ const animationEnter = (container) => {
     animate(sermonsLatestH2, { opacity: 0, x: 30, duration: 1}, "<");
     animate(sermonsLatestDiv, { opacity: 0 }, "<");
     animate(sermonsDivSermons, { opacity: 0, duration: 1 }, "<")
-    animate(gospelFont1, { opacity: 0, x: 30, duration: 1 }, "<");
-    animate(gospelFont2, { opacity: 0, x: -30, duration: 1 }, "<");
-    animate(divGospelImg1, { autoAlpha: 0, xPercent: -101, duration: 1 }, "<");
-    animate(divGospelImg2, { autoAlpha: 0, xPercent: 101, duration: 1 }, "<");
     animate(sectionPrivacy, { opacity: 0 }, "<")
         
 
