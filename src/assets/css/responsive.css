@@ -76,8 +76,10 @@
 }
 
 @media only screen and (max-width: 1050px) {
-    #divLogoChurch {
-        margin-left: 5px;
+
+    .is-active span {
+        width: 75%;
+        margin-left: 12%;
     }
 
     #firstNav {
@@ -85,7 +87,7 @@
     }
 
     #firstNav ul {
-        gap: 10px !important;
+        gap: 12px;
     }
 
     .divGospelBlocks {

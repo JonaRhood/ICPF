@@ -1,5 +1,4 @@
 export const initAnimatedCard = () => {
-    console.log("Inicializando tarjetas...");
 
     const items = document.querySelectorAll(".custom-carousel .item");
 
@@ -14,7 +13,7 @@ export const initAnimatedCard = () => {
     });
 
     function toggleActiveClass(event) {
-        items.forEach(i => i.classList.remove("active"));
+        items.forEach(i => {i.classList.remove("active")});
         event.currentTarget.classList.toggle("active");
     }
 };
