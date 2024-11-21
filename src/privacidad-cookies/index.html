@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- META -->
@@ -59,7 +59,7 @@
 
         <!-- HEADER AND NAVBAR -->
         <header class="flex fixed w-full h-20 justify-between align-center text-sm text-gray-700"
-            style="z-index: 200 !important;">
+            style="z-index: 2000 !important;">
 
             <div id="headerFirstDiv" class="flex justify-between align-center w-full" style="z-index: 50;">
                 <!-- LOGO -->
@@ -98,7 +98,7 @@
                     <ul class="flex w-full justify-around gap-12">
                         <li
                             class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out relative ">
-                            <a href="/sobre-nosotros/" aria-label="Link to Home Page">INICIO</a>
+                            <a href="/" aria-label="Link to Home Page">INICIO</a>
                         </li>
                         <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
                             <a href="/sobre-nosotros/" aria-label="Link to About Page">SOBRE NOSOTROS</a>
@@ -222,30 +222,27 @@
             <div id="overlayAnimation"></div>
 
             <!-- COOKIES -->
-            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
+            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#2b3236] w-full p-8 px-20 text-white hidden"
                 style="z-index: 200;">
                 <span class="font-bold text-[1.1rem]">
-                    COOKIE CONSENT
+                    CONSENTIMIENTO DE COOKIES
                 </span>
                 <div id="cookieDivRow" class="flex w-full justify-between items-center">
                     <div id="cookieDivP" class="flex w-[65%] mr-8">
                         <p class="text-gray-200 mt-1">
-                            We use cookies to improve your experience, including third-party services like
-                            <strong>YouTube</strong> and <strong>Google Maps</strong>. By clicking "Accept All," you
-                            agree to all cookies.
-                            <a href="/privacidad-cookies/" class="underline" aria-label="Link to Privacy Policy">Privacy
-                                &
-                                Cookie Policy</a>
+                            Usamos cookies para mejorar su experiencia, incluyendo servicios de terceros como
+                            <strong>YouTube</strong> y <strong>Google Maps</strong>. Al hacer clic en "Aceptar todas",
+                            acepta todas las cookies.
+                            <a href="/privacidad-cookies/" class="underline"
+                                aria-label="Link to Privacy Policy">Política de Privacidad
+                                y Cookies</a>
                         </p>
 
                     </div>
                     <div id="cookieDivButton" class="flex justify-end text-[1.1rem]">
-                        <button id="reject-cookies"
-                            class=" h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500/20 mr-4 hover:outline-blue-200">Reject
-                            All</button>
-                        <button id="accept-cookies"
-                            class="bg-blue-600 h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Accept
-                            All</button>
+                        <button id="reject-cookies" class="btnBanner btnBannerReject">Rechazar Todas</button>
+                        <button id="accept-cookies" class="btnBanner btnBannerAccept">Aceptar Todas
+                        </button>
                     </div>
                 </div>
             </div>
@@ -272,214 +269,156 @@
             </section>
 
             <!-- Section 1 -->
-            <section id="sectionPrivacy">
-                <h1 id="mainH1" class="text-center text-[2.2rem] text-blue-800 p-8 pb-10 w-full">
-                    PRIVACY & COOKIE POLICY
+            <section style="background: url(/img/paper.webp);" class="relative">
+                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full relative"
+                    style="z-index: 10;">
+                    POLÍTICA DE PRIVACIDAD Y COOKIES
                 </h1>
+                <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
+
                 <div class="divPrivacy w-full pb-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
-                    <p>This Privacy & Cookies Statement (“this Statement”) explains our use of personal information,
-                        including how such information will be used, how we determine for how long we keep it and what
-                        your related rights are.</p>
+                    <p>Esta Declaración de Privacidad y Cookies explica nuestro uso de información
+                        personal, incluyendo cómo se usará dicha información, cómo determinamos el tiempo que la
+                        conservamos y cuáles son sus derechos relacionados.</p>
                 </div>
 
-                <!-- 1. Who are we? -->
+
+                <!-- 1. ¿Quiénes somos? -->
                 <div
-                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify bg-blue-100/40 text-[1.1rem]">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">1. Who are we?</span>
+                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify bg-gray-300/30 text-[1.1rem]">
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">1. ¿Quiénes somos?</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>1.1 We are Life in Christ Community Church. Our head office and address for
-                            correspondence is at Kruisweg 14, Bleiswijk, 2665 HB.</li>
-                        <li>1.2 We are committed to ensuring that all personal information we hold is treated properly
-                            and in accordance with applicable data protection legislation. We are registered as a data
-                            controller with the Netherlands Chamber of Commerce (KvK), with registration number KvK:
-                            84203188. In accordance with applicable data protection legislation, we are required to
-                            explain how we will treat any personal data we collect about you.</li>
-                        <li>
-                            1.3 This Statement applies to anybody who submits information to us (whether it is submitted
-                            via our
-                            website, by e-mail, over the telephone, in person or by any other means). However, please
-                            note that
-                            in certain circumstances we may process your information for additional purposes not
-                            mentioned in
-                            this Statement (e.g. if you become a member), in which case we
-                            will
-                            provide you with additional details of how we will process your personal data in that
-                            context at the
-                            appropriate time.</li>
-                        <li> 1.4 You have the right to lodge a complaint with the Dutch Data Protection Authority
-                            (Autoriteit Persoonsgegevens) if you have any concerns regarding how we process your
-                            personal information. However, we would appreciate the opportunity to address your concerns
-                            before you approach the authority, so please contact us in the first instance.</li>
-                        <li>
-                            1.5 You warrant that any information you supply to us is accurate and up to date (whether or
-                            not the
-                            information is about you), that you will inform us if any information that we hold about you
-                            requires updating, and that if you submit a third party’s details to us (including but not
-                            limited
-                            to via our website) you have that third party’s permission or another legal justification
-                            for doing
-                            so.</li>
+                        <li>1.1 Somos la Iglesia Cristiana Caminando por Fe. Nuestra oficina principal y dirección para
+                            correspondencia está en C/ de França, 41B, L'Hospitalet de Llobregat, 08907, Barcelona,
+                            España.</li>
+                        <li>1.2 Estamos comprometidos a garantizar que toda la información personal que poseemos sea
+                            tratada adecuadamente y de acuerdo con la legislación aplicable sobre protección de datos.
+                            Estamos registrados como controlador de datos en la Agencia Española de Protección de Datos
+                            (AEPD).</li>
+                        <li>1.3 Esta Declaración se aplica a cualquier persona que nos proporcione información (ya sea
+                            que se envíe a través de nuestro sitio web, por correo electrónico, por teléfono, en persona
+                            o por cualquier otro medio). Sin embargo, tenga en cuenta que en ciertas circunstancias
+                            podemos procesar su información para fines adicionales no mencionados en esta Declaración
+                            (por ejemplo, si se convierte en miembro), en cuyo caso le proporcionaremos detalles
+                            adicionales en el momento adecuado.</li>
+                        <li>1.4 Usted tiene derecho a presentar una queja ante la Agencia Española de Protección de
+                            Datos si tiene alguna preocupación sobre cómo procesamos su información personal. Sin
+                            embargo, agradeceríamos la oportunidad de abordar sus preocupaciones antes de que acuda a la
+                            autoridad, así que por favor contáctenos en primera instancia.</li>
+                        <li>1.5 Usted garantiza que cualquier información que nos proporcione es precisa y está
+                            actualizada (ya sea sobre usted u otra persona), que nos informará si alguna información que
+                            poseemos necesita ser actualizada, y que si proporciona datos de terceros (incluidos, entre
+                            otros, a través de nuestro sitio web), tiene el permiso de ese tercero o una justificación
+                            legal para hacerlo.</li>
                     </ul>
                 </div>
 
-                <!-- 2. Information Collected -->
+                <!-- 2. ¿Qué información recolectamos y cómo la usamos? -->
                 <div class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">2. What information do we collect and how do we
-                        use it?</span>
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">2. ¿Qué información recolectamos y cómo la
+                        usamos?</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>2.1 It is possible to visit and browse some sections of our website without being required
-                            to tell us who you are or reveal any information about you.</li>
-                        <li>2.2 We may collect information from you when you interact with our website or when you
-                            correspond with us by telephone, email or otherwise. This may include your name, contact
-                            details and information connected with any related enquiry. We may use this information
-                            where necessary for our legitimate interests (so long as our interests are not overridden by
-                            the impact on you), for example in responding to any related enquiry.</li>
-                        <li>2.3 Where you use our website, we may also collect information about where you are on the
-                            internet (e.g. the URL you came from, IP address and domain names like .nl and .com),
-                            your browser type, the country where your computer is located, the parts of our website that
-                            were viewed during your visit and any search terms that you entered on our website. We may
-                            collect this information even if you do not submit any information to us using our website,
-                            and will use it for our legitimate interests in administering and improving our website, for
-                            internal operations (including troubleshooting, analysis of how our website is used,
-                            testing, research and statistical purposes) and as part of our efforts to keep our website
-                            safe and secure.</li>
+                        <li>2.1 Es posible visitar y navegar algunas secciones de nuestro sitio web sin tener que
+                            identificarse o revelar información alguna.</li>
+                        <li>2.2 Podemos recopilar información cuando interactúa con nuestro sitio web o se comunica con
+                            nosotros por teléfono, correo electrónico u otros medios. Esto puede incluir su nombre,
+                            detalles de contacto e información relacionada con cualquier consulta. Usamos esta
+                            información cuando es necesario para nuestros intereses legítimos (siempre que no afecten
+                            sus derechos), como responder a consultas.</li>
+                        <li>2.3 Si utiliza nuestro sitio web, también podemos recopilar información como la URL desde
+                            donde accedió, su dirección IP, tipo de navegador, ubicación del equipo, las partes de
+                            nuestro sitio web que visitó y cualquier término de búsqueda usado. Esta información se
+                            utiliza para mejorar nuestro sitio web, realizar análisis internos y mantener la seguridad
+                            del sitio.</li>
                     </ul>
                 </div>
 
-                <!-- 3. Disclose Information-->
+                <!-- 3. ¿Con quién compartimos la información? -->
                 <div
-                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem] bg-blue-100/40">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">3. To whom may we disclose information?</span>
+                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]  bg-gray-300/30">
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">3. ¿Con quién compartimos la
+                        información?</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>We may disclose information relating to you:</li>
-                        <li>3.1 with third parties who are directly involved in dealing with any request, enquiry,
-                            complaint or other correspondence submitted by you which the information is relevant to;
-                        </li>
-                        <li>3.2 with third parties who are providing us with professional advice which the information
-                            is relevant to where necessary for our legitimate interests and permitted by law;
-                        </li>
-                        <li>3.3 where we are legally required to do so;
-                        </li>
-                        <li>3.4 in connection with criminal investigations, legal proceedings or prospective legal
-                            proceedings which the information is relevant to where necessary for the related legitimate
-                            interests of us or a third party and permitted by law;
-                        </li>
-                        <li>3.5 in order to establish, exercise or defend our legal rights where necessary for our
-                            legitimate interests and permitted by law;
-                        </li>
-                        <li>3.6 where we have stated or informed you otherwise.
-                        </li>
+                        <li>Podemos compartir su información con:</li>
+                        <li>3.1 Terceros directamente involucrados en atender cualquier solicitud, consulta o queja
+                            suya.</li>
+                        <li>3.2 Asesores profesionales, cuando sea necesario y permitido por la ley.</li>
+                        <li>3.3 Autoridades legales, si estamos obligados a hacerlo.</li>
+                        <li>3.4 Investigaciones criminales o procedimientos legales, donde sea relevante y permitido por
+                            la ley.</li>
+                        <li>3.5 Para establecer, ejercer o defender derechos legales.</li>
+                        <li>3.6 Otros casos, cuando le informemos específicamente.</li>
                     </ul>
                 </div>
 
-                <!-- 4. Your rights -->
+                <!-- 4. Sus derechos -->
                 <div class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">4. Your rights</span>
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">4. Sus derechos</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>4.1 You have a legal right to see a copy of the personal information that we keep about you
-                            and to require us to correct any inaccuracies, subject to certain exemptions. In some
-                            circumstances you may also have the right to:</li>
-                        <li class="ml-4">(a) request that we erase any personal information held about you;</li>
-                        <li class="ml-4">(b) restrict our processing of your personal information (for example to ask to
-                            suspend
-                            the processing of personal information to establish its accuracy or the reasons for
-                            processing it);</li>
-                        <li class="ml-4">(c) data portability (i.e. to request the transfer of personal information to a
-                            third
-                            party);</li>
-                        <li class="ml-4">(d) object to our processing of your personal information where we are relying
-                            on a
-                            legitimate interest (or those of a third party) or the processing is carried out on the
-                            basis that it is necessary for the performance of a task in the public interest.</li>
-                        <li>4.2 Requests regarding the above should be made in writing to us,
-                            Life in Christ Community Church, Kruisweg 14, Bleiswijk, 2665 HB, Netherlands, or via
-                            email to lifeinchrist.lccc@gmail.com. Please contact the same address if you have any reason
-                            to
-                            believe that the information we hold about you is inaccurate. We will respond to your
-                            request as soon as possible and, in any event, within one month from the date of receiving
-                            the request. Please note that we may, where legally permitted, reject any such request or
-                            limit the scope of our response (e.g., if, in the circumstances, the right does not apply to
-                            you).</li>
-                        <li>4.3 In accordance with applicable data protection legislation, we follow security procedures
-                            in the storage and disclosure of your information. We may therefore request proof of your
-                            identity and rights before complying with any request of a nature described in section 4.1
-                            above.</li>
+                        <li>4.1 Usted tiene derecho a acceder a la información personal que guardamos sobre usted,
+                            corregir errores y, en algunas circunstancias, a:</li>
+                        <li class="ml-4">(a) Solicitar que eliminemos su información personal.</li>
+                        <li class="ml-4">(b) Restringir nuestro uso de sus datos personales.</li>
+                        <li class="ml-4">(c) Solicitar la transferencia de sus datos a un tercero.</li>
+                        <li class="ml-4">(d) Oponerse al tratamiento de sus datos cuando sea basado en intereses
+                            legítimos.</li>
+                        <li>4.2 Puede contactarnos en C/ de França, 41B, L'Hospitalet de Llobregat, 08907, Barcelona, o
+                            por email a contacto@iglesiacaminandoporfe.es. Responderemos en el plazo de un mes.</li>
+                        <li>4.3 Podemos solicitar pruebas de identidad antes de responder a ciertas solicitudes.</li>
                     </ul>
                 </div>
 
-                <!-- 5. Security and Retention-->
+                <!-- 5. Seguridad y Retención -->
                 <div
-                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem] bg-blue-100/40">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">5. Security and Retention</span>
+                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]  bg-gray-300/30">
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">5. Seguridad y Retención</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>5.1 We have put in place appropriate security measures to prevent personal information from
-                            being accidentally lost, used or accessed in an unauthorised way, altered or disclosed. In
-                            addition, we limit access to such personal information to those employees, agents,
-                            contractors and other third parties who have a valid need to know that information. However,
-                            the internet is global and no data transmitted via the internet can be guaranteed by us to
-                            be completely secure during transmission. We cannot guarantee the security of any
-                            information that you disclose online and we will not be responsible for any breach of
-                            security unless due to our negligence or wilful default. It is possible that the information
-                            that you provide to us will be temporarily transferred via a route outside the European
-                            Economic Area as it passes between us.</li>
-                        <li>5.2 In certain circumstances we may use the services of a supplier outside the European
-                            Economic Area (EEA) for purposes referred to in this Statement (for example, we may use the
-                            services of SurveyMonkey and MailChimp from time to time to send certain types of electronic
-                            communications). This may involve your personal information being processed by the relevant
-                            supplier on our behalf outside of the EEA. If we do this, we will require the relevant
-                            supplier to put in place appropriate technical and organisational data protection security
-                            measures (for example, as part of our contract with the relevant supplier or by verifying
-                            that they operate under the EU-U.S. Privacy Shield framework (please see
-                            www.privacyshield.gov for further details).
-                        </li>
-                        <li>5.3 We have put in place procedures to deal with any suspected data security breach and will
-                            notify you and/or any applicable regulator of a suspected breach where we are legally
-                            required to do so.
-                        </li>
-                        <li>5.4 Information submitted for a purpose described in this Statement will be retained for a
-                            reasonable period having regard to the relevant purpose for the information being used,
-                            following which it will be securely destroyed.
-                        </li>
-                        <li>5.5 Whilst taking into consideration our legal obligations, we will on an ongoing basis:
-                            review the length of time that we retain personal data; consider the purpose or purposes for
-                            which we hold the personal data in deciding whether (and for how long) to retain it;
-                            securely delete personal data that is no longer needed for such purpose or purposes; and
-                            update, archive or securely delete information if it goes out of date.
-                        </li>
-                        </li>
+                        <li>5.1 Hemos implementado medidas de seguridad adecuadas para evitar que la información
+                            personal se pierda, use o acceda de manera no autorizada, se altere o se divulgue. Limitamos
+                            el acceso a los datos personales a empleados, agentes, contratistas y terceros que tengan
+                            una necesidad legítima de conocer dicha información. Sin embargo, debido a la naturaleza
+                            global de Internet, no podemos garantizar completamente la seguridad de la información
+                            transmitida en línea.</li>
+                        <li>5.2 En algunas circunstancias, podemos utilizar servicios de proveedores fuera del Espacio
+                            Económico Europeo (EEE) para fines indicados en esta Declaración. Si lo hacemos,
+                            requeriremos que dichos proveedores implementen medidas de protección adecuadas.</li>
+                        <li>5.3 Tenemos procedimientos para gestionar cualquier sospecha de violación de seguridad de
+                            datos y le notificaremos a usted y/o a cualquier autoridad reguladora si estamos legalmente
+                            obligados a hacerlo.</li>
+                        <li>5.4 La información recopilada se retendrá durante un período razonable, teniendo en cuenta
+                            el propósito para el cual se usó, y luego será destruida de manera segura.</li>
+                        <li>5.5 Revisamos periódicamente el tiempo de retención de datos personales, considerando los
+                            propósitos para los que se almacenan y eliminándolos de manera segura si ya no son
+                            necesarios.</li>
                     </ul>
                 </div>
 
-                <!-- 6. Statement changes -->
+                <!-- 6. Cambios en esta Declaración -->
                 <div class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">6. How will you know if we make any changes to
-                        this Statement?</span>
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">6. Cambios en esta Declaración</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>6.1 This Statement does not form part of any contract.</li>
-                        <li>6.2 We may amend this Statement at any time. If we make any changes to the way in which we
-                            use information submitted to any of our websites we will post a related update on our
-                            website’s home page.</li>
+                        <li>6.1 Esta Declaración no forma parte de ningún contrato.</li>
+                        <li>6.2 Podemos modificar esta Declaración en cualquier momento. Si hacemos cambios en cómo
+                            usamos la información proporcionada a través de nuestro sitio web, publicaremos un aviso en
+                            la página principal de nuestro sitio web.</li>
                     </ul>
                 </div>
 
-                <!-- 7. What about third party websites?-->
+
+                <!-- 7. ¿Qué pasa con sitios web de terceros? -->
                 <div
-                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem] bg-blue-100/40">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">7. What about third party websites?</span>
+                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]  bg-gray-300/30">
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">7. ¿Qué pasa con sitios web de terceros?</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>7.1 Our website may contain links to other websites which are outside our control and are
-                            not covered by this Statement. If you access other websites using the links provided the
-                            operators of those websites may collect personal data from you which will be used in
-                            accordance with their respective privacy policies which you should read. We are not liable
-                            for the practices of such third party website operators in respect of your personal
-                            information..</li>
-                        <li>7.2 You acknowledge that any information that you post or submit using any of our social
-                            media facilities (such as any of our Facebook, Twitter, Instagram, YouTube or Google Maps
-                            pages) will be
-                            viewable by anybody that visits those facilities and that such information is also subject
-                            to the relevant provider’s privacy policy. You are advised to consult each such privacy
-                            policy to see how they will use your data.
-                        </li>
+                        <li>7.1 Nuestro sitio web puede contener enlaces a otros sitios web fuera de nuestro control y
+                            que no están cubiertos por esta Declaración. Si accede a otros sitios mediante los enlaces
+                            proporcionados, los operadores de dichos sitios pueden recopilar información personal que
+                            estará sujeta a sus políticas de privacidad. No somos responsables por las prácticas de
+                            privacidad de esos sitios web.</li>
+                        <li>7.2 La información que publique o envíe en nuestras redes sociales será visible para
+                            cualquiera que las visite y estará sujeta a las políticas de privacidad del proveedor
+                            correspondiente. Le recomendamos que revise esas políticas para comprender cómo se
+                            utilizarán sus datos.</li>
                     </ul>
                 </div>
 
@@ -487,114 +426,109 @@
                 <div class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
                     <span class="flex font-bold text-[1.2rem] mb-[15px]">8. Cookies</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>This website uses cookies for our legitimate interests in ensuring that you receive the best
-                            possible visitor experience. A cookie is a small file which is sent by a web server to an
-                            individual’s computer which is then stored on that computer’s hard drive.</li>
-                        <li>When using this website, you will always receive the following cookies (these are necessary
-                            for functionality and cannot be turned off):</li>
+                        <li>Este sitio web utiliza cookies para nuestros intereses legítimos de garantizar que reciba la
+                            mejor experiencia posible como visitante. Una cookie es un pequeño archivo que un servidor
+                            web envía al ordenador de una persona y que luego se almacena en el disco duro de ese
+                            ordenador.</li>
 
                         <table class="border-[1px] border-[#e5e0d6]">
                             <thead class="border-[1px] border-[#e5e0d6] bg-[#e5e0d6]">
                                 <tr>
                                     <th class="border-[1px] p-2">Cookie</th>
-                                    <th>Purpose</th>
+                                    <th>Propósito</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="p-2">viewed_cookie_policy</td>
-                                    <td>Tracks whether or not you have accepted or denied the use of other cookies which
-                                        the website may use</td>
+                                    <td>Registra si ha aceptado o rechazado el uso de otras cookies que puede utilizar
+                                        el sitio web.</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <li>You may also receive cookies from third parties if you choose to accept their use. These
-                            cookies are used primarily for analytics purposes so that we can help improve your
-                            experience while using this website. However, some third parties may also use cookies for
-                            marketing purposes or to help improve your experience when using their own websites.</li>
+                        <li>También puede recibir cookies de terceros si elige aceptar su uso. Estas cookies se utilizan
+                            principalmente con fines analíticos para ayudarnos a mejorar su experiencia mientras utiliza
+                            este sitio web. Sin embargo, algunos terceros también pueden usar cookies con fines de
+                            marketing o para mejorar su experiencia al usar sus propios sitios web.</li>
 
                         <table class="border-[1px] border-[#e5e0d6] text-left">
                             <thead class="border-[1px] border-[#e5e0d6] bg-[#e5e0d6]">
                                 <tr>
-                                    <th class="p-2">Source</th>
-                                    <th>Cookie Examples</th>
-                                    <th>Purpose(s)</th>
+                                    <th class="p-2">Fuente</th>
+                                    <th>Ejemplos de Cookies</th>
+                                    <th>Propósito(s)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="p-2">Youtube</td>
-                                    <td>yt-player-bandwidth, yt-remote-device-id, yt-player-headers-readable </td>
-                                    <td>Analytics, personalisation, marketing</td>
+                                    <td>yt-player-bandwidth, yt-remote-device-id, yt-player-headers-readable</td>
+                                    <td>Análisis, personalización, marketing</td>
                                 </tr>
                                 <tr class="border-[1px] border-[#e5e0d6] bg-[#e5e0d6]">
                                     <td class="p-2">Google Maps</td>
                                     <td></td>
-                                    <td>Site usage analytics, marketing</td>
+                                    <td>Análisis del uso del sitio, marketing</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <li>In the event that you opt out of allowing the use of cookies, we make extensive effort to
-                            accommodate for this. Opting out of cookies will not affect the ability to use the website,
-                            however a small amount of content is provided by third-party vendors. Such features include,
-                            but are not limited to, Google Maps and YouTube. As we cannot control what cookies
-                            these third-party vendors use, we block them altogether if you do not wish to allow the use
-                            of cookies. If you wish to control cookies on a per-vendor basis, you should visit their
-                            respective websites.</li>
+                        <li>En caso de que opte por no permitir el uso de cookies, hacemos un esfuerzo extenso para
+                            adaptarnos a esta preferencia. Rechazar las cookies no afectará la capacidad de usar el
+                            sitio web; sin embargo, una pequeña cantidad de contenido es proporcionada por proveedores
+                            externos. Dichas características incluyen, entre otras, Google Maps y YouTube. Como no
+                            podemos controlar qué cookies usan estos proveedores, las bloqueamos por completo si no
+                            desea permitir su uso. Si desea controlar las cookies según el proveedor, debe visitar sus
+                            respectivos sitios web.</li>
 
-                        <li>For up-to-date information about the cookies third-party vendors may use on this website,
-                            please visit the respective privacy policies:</li>
+                        <li>Para información actualizada sobre las cookies que los proveedores externos pueden usar en
+                            este sitio web, visite sus políticas de privacidad respectivas:</li>
 
                         <li class="list-disc list-inside">Google:
-                            <a href="http://policies.google.com/privacy" target="_blank"
+                            <a href="https://policies.google.com/privacy" target="_blank"
                                 aria-label="Link to Google Privacy Policy"
                                 class="text-blue-700 underline hover:text-blue-500">
                                 http://policies.google.com/privacy
                             </a>
                         </li>
-                        <!-- Button Cookies -->
+
+                        <!-- Botón de Cookies -->
                         <div class="flex justify-end flex-col items-end">
-                            <span>Cookies are currently <span id="cookieCheck" class="font-bold">deactivated</span> on
-                                this site.
-                                Press the button to <span id="cookieCheck2">enable</span> cookies:</span>
+                            <span>Las cookies están actualmente <span id="cookieCheck"
+                                    class="font-bold">desactivadas</span> en este sitio.
+                                Pulse el botón para <span id="cookieCheck2">activarlas</span>:</span>
                             <label class="switchPrivacy self-center sm:self-auto mt-6 sm:mt-2">
                                 <input class="checkboxPrivacy" type="checkbox">
                                 <span class="sliderPrivacy"></span>
                             </label>
                         </div>
                         <li></li>
-
                     </ul>
                 </div>
 
-                <!-- 9. Data Processing-->
+
+                <!-- 9. Procesamiento de datos de personas no miembros -->
                 <div
-                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem] bg-blue-100/40">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">9. Data Processing in respect of Individuals
-                        other than Members</span>
+                    class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]  bg-gray-300/30">
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">9. Procesamiento de datos de personas no
+                        miembros</span>
                     <ul class="flex flex-col gap-[15px]">
-                        <li>9.1 We may also hold and use personal information in relation to individuals who are not
-                            Members of the Church but who otherwise have a connection to a Member or the
-                            Church services. This information may include such a person’s name, telephone number,
-                            e-mail address and other contact details. We will collect and use this information where
-                            necessary for our legitimate interests in the following circumstances:</li>
-                        <li class="ml-4">(a) personal information relating to a member’s nominated emergency
-                            contacts will be used as necessary to contact them in relation to any emergency involving
-                            that member.</li>
-                        <li>9.2 The information described above will be collected using the appropriate form
-                            related to the relevant processing activity.</li>
+                        <li>9.1 También podemos guardar y utilizar información personal de personas que no son miembros
+                            de la Iglesia pero que tienen una conexión con un miembro o con los servicios de la Iglesia.
+                            Esta información puede incluir el nombre, número de teléfono, dirección de correo
+                            electrónico y otros datos de contacto.</li>
+                        <li>9.2 Recopilamos y utilizamos esta información para intereses legítimos, como en situaciones
+                            de emergencia relacionadas con un miembro.</li>
                     </ul>
                 </div>
 
-                <!-- 10. Contact -->
+                <!-- 10. Contacto -->
                 <div class="divPrivacy w-full py-[40px] flex-1 justify-center px-[200px] text-justify text-[1.1rem]">
-                    <span class="flex font-bold text-[1.2rem] mb-[15px]">10. Contact</span>
-                    <p>If you have any questions about this Statement or our use of personal information, please contact
-                        us at lifeinchrist.lccc@gmail.com or by writing to Life in Christ Community Church, Kruisweg 14,
-                        Bleiswijk, 2665 HB.
-                    </p>
+                    <span class="flex font-bold text-[1.2rem] mb-[15px]">10. Contacto</span>
+                    <p>Si tiene preguntas sobre esta Declaración o sobre nuestro uso de información personal, puede
+                        contactarnos en C/ de França, 41B, L'Hospitalet de Llobregat, 08907, Barcelona, España, o por
+                        correo electrónico a contacto@iglesiacaminandoporfe.es.</p>
                 </div>
 
             </section>

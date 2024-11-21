@@ -59,7 +59,7 @@
 
         <!-- HEADER AND NAVBAR -->
         <header class="flex fixed w-full h-20 justify-between align-center text-sm text-gray-700"
-            style="z-index: 200 !important;">
+            style="z-index: 2000 !important;">
 
             <div id="headerFirstDiv" class="flex justify-between align-center w-full" style="z-index: 50;">
                 <!-- LOGO -->
@@ -67,7 +67,8 @@
                     <a href="/" class="flex" aria-label="Logo Link to Home Page">
                         <div class="flex ">
                             <span id="logoChurchBanner" class="flex rounded-3xl hover:cursor-pointer w-[75px]">
-                                <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+                                <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="w-full">
                                     <path
                                         d="M70.5 79.5L43.5 247C131.634 233.91 138.883 236.402 215.5 242.5C187.797 182.897 182.195 148.532 325 89.5C264.584 46.5178 183.817 48.6106 70.5 79.5Z"
                                         fill="white" />
@@ -95,8 +96,7 @@
                 <!-- NavBar -->
                 <nav id="firstNav" class="flex justify-center items-center text-white mr-[50px]">
                     <ul class="flex w-full justify-around gap-12">
-                        <li
-                            class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
+                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
                             <a href="/" aria-label="Link to About Page">INICIO</a>
                         </li>
                         <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
@@ -106,7 +106,8 @@
                             <a href="/pastores/" aria-label="Link to Leaders Page">PASTORES</a>
                         </li>
 
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out relative">
+                        <li
+                            class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out relative">
                             <span class="is-active text-[#DFA878] hover:cursor-default" aria-label="Link to Home Page">
                                 SERMONES
                                 <span id="headerSpan1"
@@ -155,8 +156,8 @@
                         </li>
                         <li class="hover:bg-amber-100/10 flex">
                             <span href=""
-                            class="flex w-full h-full p-3 justify-center liHiddenMenu bg-amber-100/10 text-[#DFA878]"
-                            aria-label="Link to Home Page">
+                                class="flex w-full h-full p-3 justify-center liHiddenMenu bg-amber-100/10 text-[#DFA878]"
+                                aria-label="Link to Home Page">
                                 SERMONES
                             </span>
                         </li>
@@ -177,8 +178,8 @@
                                 <p class="flex align-center gap-2">
 
                                     <!-- WHATSAPP -->
-                                    <a href="https://wa.me/34658647797" aria-label="Link to Whatsapp"
-                                        target="_blank" id="footerWALink">
+                                    <a href="https://wa.me/34658647797" aria-label="Link to Whatsapp" target="_blank"
+                                        id="footerWALink">
                                         <svg width="20" viewBox="0 0 48 48" fill="none"
                                             xmlns="http://www.w3.org/2000/svg" class="mr-2">
                                             <path
@@ -202,8 +203,8 @@
                                     </a>
 
                                     <!-- YT -->
-                                    <a href="https://www.youtube.com/@IglesiaCaminandoPorFe"
-                                        aria-label="Link to  Page" target="_blank" id="footerYTLink">
+                                    <a href="https://www.youtube.com/@IglesiaCaminandoPorFe" aria-label="Link to  Page"
+                                        target="_blank" id="footerYTLink">
                                         <svg width="20" viewBox="0 0 48 34" fill="none" class="mr-2 mt-1"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -228,29 +229,27 @@
             <div id="overlayAnimation"></div>
 
             <!-- COOKIES -->
-            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
+            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#2b3236] w-full p-8 px-20 text-white hidden"
                 style="z-index: 200;">
                 <span class="font-bold text-[1.1rem]">
-                    COOKIE CONSENT
+                    CONSENTIMIENTO DE COOKIES
                 </span>
                 <div id="cookieDivRow" class="flex w-full justify-between items-center">
                     <div id="cookieDivP" class="flex w-[65%] mr-8">
                         <p class="text-gray-200 mt-1">
-                            We use cookies to improve your experience, including third-party services like
-                            <strong>YouTube</strong> and <strong>Google Maps</strong>. By clicking "Accept All," you
-                            agree to all cookies.
-                            <a href="/privacidad-cookies/" class="underline" aria-label="Link to Privacy Policy">Privacy &
-                                Cookie Policy</a>
+                            Usamos cookies para mejorar su experiencia, incluyendo servicios de terceros como
+                            <strong>YouTube</strong> y <strong>Google Maps</strong>. Al hacer clic en "Aceptar todas",
+                            acepta todas las cookies.
+                            <a href="/privacidad-cookies/" class="underline"
+                                aria-label="Link to Privacy Policy">Política de Privacidad
+                                y Cookies</a>
                         </p>
 
                     </div>
                     <div id="cookieDivButton" class="flex justify-end text-[1.1rem]">
-                        <button id="reject-cookies"
-                            class=" h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500/20 mr-4 hover:outline-blue-200">Reject
-                            All</button>
-                        <button id="accept-cookies"
-                            class="bg-blue-600 h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Accept
-                            All</button>
+                        <button id="reject-cookies" class="btnBanner btnBannerReject">Rechazar Todas</button>
+                        <button id="accept-cookies" class="btnBanner btnBannerAccept">Aceptar Todas
+                        </button>
                     </div>
                 </div>
             </div>
@@ -262,9 +261,11 @@
                     <!-- Divider -->
                     <div class="w-full z-20 bottom-0 absolute transform translate-y-[1px]">
                         <svg viewBox="0 0 1000 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="pathBanner75" d="M499 72.14L0 72V100H1000V72L499 72.14Z" fill="white" fill-opacity="0.25"/>
-                            <path id="pathBanner50" d="M499 56.22L0 56V100H1000V56L499 56.22Z" fill="white" fill-opacity="0.5"/>
-                            </svg>     
+                            <path id="pathBanner75" d="M499 72.14L0 72V100H1000V72L499 72.14Z" fill="white"
+                                fill-opacity="0.25" />
+                            <path id="pathBanner50" d="M499 56.22L0 56V100H1000V56L499 56.22Z" fill="white"
+                                fill-opacity="0.5" />
+                        </svg>
                     </div>
                     <div id="pictureBannersPages"
                         style="background-image: url(/img/sermones.jpg); height: 300px; background-position: center -90px;"
@@ -276,11 +277,12 @@
 
             <!-- Section 1 -->
             <section style="background: url(/img/paper.webp);" class="relative">
-                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full relative" style="z-index: 10;">
+                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full relative"
+                    style="z-index: 10;">
                     SERMONES
                 </h1>
                 <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
-                
+
                 <!-- Latest Sermon -->
                 <div class="w-full flex flex-col items-center pb-[20px]">
                     <h2 id="sermonsLatestH2"

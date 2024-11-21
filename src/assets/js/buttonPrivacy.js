@@ -4,6 +4,7 @@ export const buttonPrivacy = () => {
     const cookieCheck = document.querySelector("#cookieCheck");
     const cookieCheck2 = document.querySelector("#cookieCheck2");
     const mapsFooter = document.querySelector("#divMap");
+    const cookieDiv = document.querySelector("#cookieDiv")
 
     function createCookieBackground(rounded, index) {
         const cookieBackground = document.createElement("div");
@@ -38,9 +39,9 @@ export const buttonPrivacy = () => {
 
     if (document.cookie.includes("viewed_cookie_policy")) {
         button.checked = true;
-        cookieCheck.innerHTML = "activated";
+        cookieCheck.innerHTML = "activadas";
         cookieCheck.style.color = "green"
-        cookieCheck2.innerHTML = "disable"
+        cookieCheck2.innerHTML = "desactivarlas"
     }
 
     button.addEventListener("click", () => {
@@ -50,9 +51,11 @@ export const buttonPrivacy = () => {
             document.cookie = "viewed_cookie_policy=ACCEPTED; path=/; max-age=" + 60 * 60 * 24 * 365 * 10;
             sessionStorage.removeItem("COOKIES")
 
-            cookieCheck.innerHTML = "activated";
+            cookieCheck.innerHTML = "activadas";
             cookieCheck.style.color = "green"
-            cookieCheck2.innerHTML = "disable"
+            cookieCheck2.innerHTML = "desactivarlas"
+
+            cookieDiv.style.display = "none";
 
             mapsFooter.removeChild(mapsFooter.children[1]);
 
@@ -65,9 +68,9 @@ export const buttonPrivacy = () => {
             document.cookie = "viewed_cookie_policy=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             sessionStorage.setItem("COOKIES", "REJECTED");
 
-            cookieCheck.innerHTML = "deactivated";
+            cookieCheck.innerHTML = "desactivadas";
             cookieCheck.style.color = ""
-            cookieCheck2.innerHTML = "enable"
+            cookieCheck2.innerHTML = "activarlas"
 
             mapsFooter.removeChild(mapsFooter.children[1]);
             mapsFooter.appendChild(createCookieBackground("rounded-3xl", -1));

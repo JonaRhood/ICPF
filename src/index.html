@@ -158,7 +158,7 @@
         <!-- HEADER AND NAVBAR -->
 
         <header class="flex fixed w-full h-20 justify-between align-center text-sm text-gray-700"
-            style="z-index: 200 !important;">
+            style="z-index: 2000 !important;">
 
             <div id="headerFirstDiv" class="flex justify-between align-center w-full"
                 style="z-index: 50; background-color: none;">
@@ -326,30 +326,27 @@
             <div id="overlayAnimation"></div>
 
             <!-- COOKIES -->
-            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#232d3f] w-full p-8 px-20 text-white hidden"
+            <div id="cookieDiv" class="flex-1 fixed bottom-0 bg-[#2b3236] w-full p-8 px-20 text-white hidden"
                 style="z-index: 200;">
                 <span class="font-bold text-[1.1rem]">
-                    COOKIE CONSENT
+                    CONSENTIMIENTO DE COOKIES
                 </span>
                 <div id="cookieDivRow" class="flex w-full justify-between items-center">
                     <div id="cookieDivP" class="flex w-[65%] mr-8">
                         <p class="text-gray-200 mt-1">
-                            We use cookies to improve your experience, including third-party services like
-                            <strong>YouTube</strong> and <strong>Google Maps</strong>. By clicking "Accept All," you
-                            agree to all cookies.
-                            <a href="/privacidad-cookies/" class="underline" aria-label="Link to Privacy Policy">Privacy
-                                &
-                                Cookie Policy</a>
+                            Usamos cookies para mejorar su experiencia, incluyendo servicios de terceros como
+                            <strong>YouTube</strong> y <strong>Google Maps</strong>. Al hacer clic en "Aceptar todas",
+                            acepta todas las cookies.
+                            <a href="/privacidad-cookies/" class="underline"
+                                aria-label="Link to Privacy Policy">Política de Privacidad
+                                y Cookies</a>
                         </p>
 
                     </div>
                     <div id="cookieDivButton" class="flex justify-end text-[1.1rem]">
-                        <button id="reject-cookies"
-                            class=" h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500/20 mr-4 hover:outline-blue-200">Reject
-                            All</button>
-                        <button id="accept-cookies"
-                            class="bg-blue-600 h-[40px] w-[200px] rounded-lg outline outline-2 outline-offset-2 outline-blue-400 transition-all hover:bg-blue-500 hover:outline-blue-200">Accept
-                            All</button>
+                        <button id="reject-cookies" class="btnBanner btnBannerReject">Rechazar Todas</button>
+                        <button id="accept-cookies" class="btnBanner btnBannerAccept">Aceptar Todas
+                        </button>
                     </div>
                 </div>
             </div>

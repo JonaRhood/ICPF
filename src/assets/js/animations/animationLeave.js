@@ -7,6 +7,8 @@ const animationLeave = (container) => {
     const sectionBanner = container.querySelector("#sectionBanner");
     const span = container.querySelectorAll("span.is-active span");
 
+    const cookieDiv = container.querySelector("#cookieDiv");
+
     const pathBanner75 = document.querySelectorAll("#pathBanner75");
     const pathBanner50 = document.querySelectorAll("#pathBanner50")
 

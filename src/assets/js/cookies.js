@@ -127,9 +127,9 @@ export const initCookies = () => {
         // Privacy-Page logic
         if (button) {
             button.checked = true;
-            cookieCheck.innerHTML = "activated";
+            cookieCheck.innerHTML = "activadas";
             cookieCheck.style.color = "green"
-            cookieCheck2.innerHTML = "disable"
+            cookieCheck2.innerHTML = "desactivarlas"
         }
 
         // Sermons Page

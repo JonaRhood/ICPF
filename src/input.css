@@ -59,15 +59,15 @@ main {
 @keyframes shimmerBanner {
     0%
     {
-        background-color: #232d3f;
+        background-color: #212121;
     }
     60%
     {
-        background-color: #303f5a;
+        background-color: #303030;
     }
     100%
     {
-        background-color: #232d3f;
+        background-color: #212121;
     }
 }
 
@@ -311,6 +311,31 @@ main {
   .btnBannerContact::before {
     content: "" !important;
   }
+
+  .btnBannerReject::before {
+    content: "RECHAZAR TODAS" !important;
+    background-color: #2b3236;
+    color: #bb9345;
+  }
+
+  .btnBannerReject {
+    width: 220px;
+    margin-right: 15px;
+    background: #bb9345;
+    transition: background .5s ease-in-out;
+  }
+
+  .btnBannerReject:hover::before {
+    background-color: #3e474d
+  }
+
+  .btnBannerAccept {
+    width: 220px;
+  }
+
+  .btnBannerAccept::before {
+    content: "ACEPTAR TODAS" !important;
+  }
   
   .btnBanner:hover {
     background-position: right;
@@ -520,5 +545,5 @@ main {
     height: 100%;
     background-color: rgba(33, 33, 33, 0); /* Fondo transparente inicial */
     pointer-events: none; /* Para que no interfiera con los clics */
-    z-index: 100; /* Asegúrate de que esté por encima de todo */
+    z-index: 1000; /* Asegúrate de que esté por encima de todo */
 }
