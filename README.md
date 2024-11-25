@@ -63,7 +63,7 @@ git clone https://github.com/JonaRhood/ICPF
 ```
 
 2. Cambia la playlist actual de YouTube por la playlist correspondiente:
-    - En el archivo .github/workflows/fetch_youtube_data.yml, añade tu playlist ID en el siguiente codigo:
+    - En el archivo: .github/workflows/fetch_youtube_data.yml, añade tu playlist ID en el siguiente codigo:
 ```yml
 steps:
     run: |
