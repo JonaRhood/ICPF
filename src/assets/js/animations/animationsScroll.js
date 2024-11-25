@@ -23,7 +23,7 @@ export const animationScroll = () => {
     // Banner Pages
     const pathBanner75 = document.querySelector("#pathBanner75");
     const pathBanner50 = document.querySelector("#pathBanner50")
-    
+
 
     // Sermon Page
     const sermonsH3 = document.querySelectorAll(".sermonsDivSermon h3")
@@ -64,25 +64,27 @@ export const animationScroll = () => {
             boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
             duration: 1,
         })
-        gsap.to(span1, {
-            scrollTrigger: {
-                // trigger: header,
-                scrub: true,
-                end: "top -200px",
-            },
-            background: "linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent)",
-            duration: 1,
-        })
-        gsap.to(span2, {
-            scrollTrigger: {
-                // trigger: header,
-                scrub: true,
-                start: "top -10px",
-                end: "top -200px",
-            },
-            backgroundColor: "#F2F1E7",
-            duration: 1,
-        })
+        if (span1) {
+            gsap.to(span1, {
+                scrollTrigger: {
+                    // trigger: header,
+                    scrub: true,
+                    end: "top -200px",
+                },
+                background: "linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent)",
+                duration: 1,
+            })
+            gsap.to(span2, {
+                scrollTrigger: {
+                    // trigger: header,
+                    scrub: true,
+                    start: "top -10px",
+                    end: "top -200px",
+                },
+                backgroundColor: "#F2F1E7",
+                duration: 1,
+            })
+        }
     }
 
     // if (pathBanner50) {
@@ -111,7 +113,7 @@ export const animationScroll = () => {
                 // scrub: true,
                 end: "top 200px",
             },
-            y: 30, 
+            y: 30,
             duration: 0.5,
             ease: true,
         });
@@ -121,7 +123,7 @@ export const animationScroll = () => {
                 // scrub: true,
                 end: "top 200px",
             },
-            y: 30, 
+            y: 30,
             delay: 0.2,
             duration: 0.5,
             ease: true,
@@ -132,23 +134,23 @@ export const animationScroll = () => {
                 // scrub: true,
                 end: "top 200px",
             },
-            y: 30, 
+            y: 30,
             delay: 0.4,
             duration: 0.5,
             ease: true,
         });
     }
-    
+
     // Animated Cards
-        if (cardItems) {
-            gsap.from(cardItems, {
-                scrollTrigger: {
-                    trigger: cardItems
-                },
-               opacity: 0,
-               duration: 0.6,
-              });
-        }
+    if (cardItems.length) {
+        gsap.from(cardItems, {
+            scrollTrigger: {
+                trigger: cardItems
+            },
+            opacity: 0,
+            duration: 0.5,
+        });
+    }
 
     if (logoFooter) {
         gsap.from(logoFooter, {
@@ -183,7 +185,7 @@ export const animationScroll = () => {
                     scrub: true,
                     end: "top 200px",
                 },
-                y: 100,  
+                y: 100,
                 duration: 1,
             });
         }
@@ -194,21 +196,21 @@ export const animationScroll = () => {
                     scrub: true,
                     end: "top 200px",
                 },
-                y: 150, 
+                y: 150,
                 duration: 1,
             });
-        }   
+        }
     }
 
     if (!/Android|iPhone/i.test(navigator.userAgent)) {
-        if (sermons) {
+        if (sermons.length) {
             gsap.from(sermonsH3, {
                 scrollTrigger: {
                     trigger: sermons,
                     // scrub: true,
                     end: "top 200px",
                 },
-                x: 10, 
+                x: 10,
                 duration: 1,
                 ease: true,
                 stagger: 0.1
@@ -219,7 +221,7 @@ export const animationScroll = () => {
                     // scrub: true,
                     end: "top 200px",
                 },
-                x: -500, 
+                x: -500,
                 opacity: 0,
                 duration: 0.3,
                 ease: true,
@@ -240,7 +242,7 @@ export const animationScroll = () => {
         }
     }
     // Agenda Page 
-    
+
     if (agendaImg2) {
         gsap.from(agendaImg1, {
             scrollTrigger: {
@@ -258,7 +260,7 @@ export const animationScroll = () => {
             x: 30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg2, {
             scrollTrigger: {
                 trigger: agendaImg2
@@ -275,7 +277,7 @@ export const animationScroll = () => {
             x: -30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg3, {
             scrollTrigger: {
                 trigger: agendaImg3
@@ -292,7 +294,7 @@ export const animationScroll = () => {
             x: 30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg4, {
             scrollTrigger: {
                 trigger: agendaImg4
@@ -309,7 +311,7 @@ export const animationScroll = () => {
             x: -30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg5, {
             scrollTrigger: {
                 trigger: agendaImg5
@@ -326,7 +328,7 @@ export const animationScroll = () => {
             x: -30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg6, {
             scrollTrigger: {
                 trigger: agendaImg6
@@ -343,7 +345,7 @@ export const animationScroll = () => {
             x: 30,
             duration: 1
         });
-        
+
         gsap.from(agendaImg7, {
             scrollTrigger: {
                 trigger: agendaImg7
@@ -360,6 +362,6 @@ export const animationScroll = () => {
             x: -30,
             duration: 1
         });
-        
+
     }
 }
