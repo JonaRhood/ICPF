@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1210px) {
+    .parallaxDiv {
+        background: linear-gradient(to right, rgba(55, 64, 69, 0.9), rgba(55, 64, 69, 0.7));
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .parallaxDiv {
         padding: 30px;
@@ -5,9 +11,9 @@
         position: absolute;
         left: 0;
         bottom: 0px;
-        border-radius: 0px;           
+        border-radius: 0px;
     }
-    
+
     .interactionsBanner {
         display: none !important;
     }
@@ -20,8 +26,13 @@
     .titleBanner {
         width: 97%;
 
-        h1, h2 {
+        h1,
+        h2 {
             font-size: 2rem !important;
         }
     }
-}      
+
+    .subtitleBanner {
+        font-size: 1.6rem;
+    }
+}

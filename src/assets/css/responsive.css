@@ -1,4 +1,12 @@
+@media only screen and (min-width: 1471px) {
+    .owl-carousel {
+        width: 1400px;
+    }
 
+    .game-section h3 {
+        font-size: 1.7rem;
+    }
+}
 
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
     #pictureBannersPages {
@@ -64,6 +72,46 @@
         background-size: contain 100% !important;
         background-position: left -100px !important;
         background-attachment: local !important;
+    }
+}
+
+@media only screen and (max-width: 1145px) {
+    .game-section .item.active .item-desc {
+        height: 170px !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .custom-carousel {
+        flex-direction: column;
+    }
+
+    .game-section {
+        padding: 30px 100px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .game-section .item {
+        flex: 0 0 auto;
+        margin: 0;
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 10px;
+    }
+
+    .game-section .item.active {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .game-section .item.active .item-desc {
+        height: 130px !important;
+    }
+
+    .game-section h3 {
+        font-size: 1.7rem;
     }
 }
 
@@ -153,6 +201,12 @@
 
     .divPrivacy {
         padding: 40px 100px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .game-section .item.active .item-desc {
+        height: 140px !important;
     }
 }
 
@@ -259,8 +313,14 @@
         align-content: flex-start;
     }
 
-    #logoOutlineBackground svg{
+    #logoOutlineBackground svg {
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .game-section {
+        padding: 30px 50px !important;
     }
 }
 
@@ -334,6 +394,18 @@
     }
 }
 
+@media only screen and (max-width: 649px) {
+    .game-section {
+        padding: 30px 20px !important;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .game-section .item.active .item-desc {
+        height: 165px !important;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     #section3 {
         padding: 2rem 20px;
@@ -371,3 +443,28 @@
     }
 }
 
+@media only screen and (max-width: 482px) {
+    .game-section .item.active .item-desc {
+        height: 190px !important;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .game-section {
+        padding: 30px 10px !important;
+    }
+
+    .game-section .item.active .item-desc {
+        height: 215px !important;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .game-section {
+        padding: 30px 5px !important;
+    }
+
+    .game-section .item.active .item-desc {
+        height: 245px !important;
+    }
+}
