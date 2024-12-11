@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "rQYT_iZoyoVq3vLJ9H_zLSzj1ZY",
-  "nextPageToken": "EAAaelBUOkNESWlFRFF3UVVJelFqWXhSakJCTkVJelFUa29BVWl6aElmYXA1dUtBMUFCV2pZaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFEzZHFORFk1ZVRaQ2FFTTBlblZPU1NJ",
+  "etag": "8xxDgCT5rQ1K40GBydnBCJ8wiU0",
+  "nextPageToken": "EAAaelBUOkNESWlFRVkxTmtNek5VRkJNVFEyTWtSQlJEa29BVWl1cXF5ZHlaMktBMUFCV2pZaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFEzZHBVSGt0UnpaQ2FFTjNlVFJqTlNJ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "8dDfzEUjmpkOvvAFAOqYIgLPxZ0",
+      "etag": "iRSVJFck4iqc-dXliDcd03jFApo",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmZDdDUwNVQ2RXM4",
+      "snippet": {
+        "publishedAt": "2024-12-10T13:00:06Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "No debemos servir solos al Señor - Juan Manuel Vaz",
+        "description": "En la iglesia hay hermanos, colaboradores, compañeros de milicia. ¡Servimos en equipo!\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fCt505T6Es8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fCt505T6Es8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fCt505T6Es8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fCt505T6Es8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fCt505T6Es8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fCt505T6Es8"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "GqdVyjAewNKQlJP_uUntJ0d5dCM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkt2WkdPVFRELVM0",
       "snippet": {
         "publishedAt": "2024-12-09T15:30:11Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KvZGOTTD-S4"
@@ -52,54 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "kOPpRbZGnnal_9ouYnnE65CcPKE",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmZDdDUwNVQ2RXM4",
-      "snippet": {
-        "publishedAt": "2024-12-08T22:59:43Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "No debemos servir solos al Señor - Juan Manuel Vaz",
-        "description": "En la iglesia hay hermanos, colaboradores, compañeros de milicia. ¡Servimos en equipo!\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/fCt505T6Es8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/fCt505T6Es8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/fCt505T6Es8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/fCt505T6Es8/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/fCt505T6Es8/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 1,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "fCt505T6Es8"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "kSG6-RTR3ar8junLMPdsRWmD8S4",
+      "etag": "_3pZsLURNR4yJw5TJy3BIZXWk20",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9VT0RGbzB6THVN",
       "snippet": {
         "publishedAt": "2024-12-08T13:00:45Z",
