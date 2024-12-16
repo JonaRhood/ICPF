@@ -95,7 +95,7 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
             .then(response => response.json())
             .then(data => {                     
-                const validItems = data.items.filter(item => !item.snippet.title.includes("Highlight"));
+                const validItems = data.items.filter(item => !item.snippet.title.includes("/"));
         
                 const firstValidItem = validItems[0];
                 const secondValidItem = validItems[1];
@@ -137,7 +137,7 @@ export const initCookies = () => {
             fetch('/data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+                    const firstValidItem = data.items.find(item => !item.snippet.title.includes("/"));
 
                     if (firstValidItem) {
                         sermonsDivLatest.appendChild(createYouTubeIframe(`https://www.youtube-nocookie.com/embed/${firstValidItem.snippet.resourceId.videoId}`, "YouTube video player: Latest Sermon"));
@@ -182,7 +182,7 @@ export const initCookies = () => {
             fetch('data/youtubeData.json')
                 .then(response => response.json())
                 .then(data => {
-                    const validItems = data.items.filter(item => !item.snippet.title.includes("Highlight"));
+                    const validItems = data.items.filter(item => !item.snippet.title.includes("/"));
         
                     const firstValidItem = validItems[0];
                     const secondValidItem = validItems[1];
