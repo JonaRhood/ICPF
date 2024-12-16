@@ -43,7 +43,9 @@ export const sermonsYT = () => {
         .then(data => {
 
             // Searches for the fist video of uploads exceptuating Highlights
-            const firstValidItem = data.items.find(item => !item.snippet.title.includes("Highlight"));
+            const firstValidItem = data.items.find(item =>
+                !item.snippet.title.includes("/")
+            );
 
             if (firstValidItem) {
 
@@ -72,7 +74,10 @@ export const sermonsYT = () => {
 
             data.items.forEach((item) => {
                 // Ignorar elementos que contengan "Highlight" en el título
-                if (item.snippet.title.includes("Highlight")) {
+                const validSermon =
+                    item.snippet.title.includes("/")
+
+                if (validSermon) {
                     return; // Salta al siguiente elemento en el forEach
                 }
 
@@ -84,7 +89,14 @@ export const sermonsYT = () => {
                 titleSermons[visibleIndex].innerText = item.snippet.title;
 
                 const thumbnail = document.createElement("img");
-                thumbnail.src = item.snippet.thumbnails.maxres.url;
+                const thumbnails = item.snippet.thumbnails;
+
+                const thumbnailUrl =
+                    (thumbnails.maxres && thumbnails.maxres.url) ||
+                    (thumbnails.standard && thumbnails.standard.url) ||
+                    "";
+
+                thumbnail.src = thumbnailUrl;
                 thumbnail.alt = `Thumbnail for ${item.snippet.title}`;
                 thumbnail.classList.add("thumbnail-class", "object-cover", "w-full");
 
