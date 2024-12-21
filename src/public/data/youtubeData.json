@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "d41n6Fn2Z6pWJPz_pE9SM0gUjOg",
-  "nextPageToken": "EAAafVBUOkNESWlFRU0wTkRKRVFrVTBPRUl6UWtVelFUUW9BVWozMU5uX21iU0tBMUFCV2pnaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFJFRnBTMmh3UnpkQ2FFUlpMVnBtWkVGUkln",
+  "etag": "_GwODo3-mV30L31KjL3jRWYbC0k",
+  "nextPageToken": "EAAaelBUOkNESWlFRUV5T1RrMk5ETTVPRFZCUmpGQ05qSW9BVWlZZ01Yc3M3YUtBMUFCV2pZaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFEzZHBWakZhVnpkQ2FFUkJiRFZ6YkNJ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "K_dlvoyIAM9AxfxkQtQTDrdVvas",
+      "etag": "JvfCaMFWL8sxS0djxSuiFoiWIdg",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnBHVkc2d2pRN0ow",
+      "snippet": {
+        "publishedAt": "2024-12-20T13:01:05Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "Dios me hizo ver mi pecado / Highlight",
+        "description": "Sermón completo: https://www.youtube.com/watch?v=AZ4CKTgy2t0\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pGVG6wjQ7J0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pGVG6wjQ7J0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pGVG6wjQ7J0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pGVG6wjQ7J0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pGVG6wjQ7J0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "pGVG6wjQ7J0"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "teBo4VQp322cdbd37s-ap3Vcm4M",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFaNENLVGd5MnQw",
       "snippet": {
         "publishedAt": "2024-12-19T13:00:06Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AZ4CKTgy2t0"
@@ -52,7 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uQv6VGT5ZBFKiTUsDGjIWY0534I",
+      "etag": "xAdWPoLVB-EVoMyjtIieH534XEI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnJKTU53Z2JiTTA4",
       "snippet": {
         "publishedAt": "2024-12-18T13:01:12Z",
@@ -88,7 +135,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "rJMNwgbbM08"
@@ -99,7 +146,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "_r0_aOKwD09QInmo01Um7aeuF98",
+      "etag": "4dxnyo6xd1qWcG2fQQEVde0FCk4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlotb0w3c2VGNzcw",
       "snippet": {
         "publishedAt": "2024-12-17T13:00:06Z",
@@ -135,7 +182,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Z-oL7seF770"
@@ -146,7 +193,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "KkJVM6Mz-u8pcXvWTgI5JkAofsA",
+      "etag": "FhrkShsQkhTPYZSqAVFl37uYXEE",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjVJWEp4YmljaXlJ",
       "snippet": {
         "publishedAt": "2024-12-16T18:00:06Z",
@@ -182,7 +229,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 3,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5IXJxbiciyI"
@@ -193,7 +240,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "NOs6cYAxyBuVAem9FuGAwPY1_i0",
+      "etag": "hJWgX_ay8_W6pkQoKYKsBJAVqAs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmhJVGE5OHcwR3Nn",
       "snippet": {
         "publishedAt": "2024-12-16T12:00:52Z",
@@ -229,7 +276,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 4,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "hITa98w0Gsg"
@@ -240,7 +287,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GX537qhQOTgbgSDeEJHFi93RhmY",
+      "etag": "RYh56jaKqSraDQ4D3sMNOgwaIFI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLi1MbC1BVUZYWWdj",
       "snippet": {
         "publishedAt": "2024-12-15T13:00:00Z",
@@ -276,7 +323,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 5,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "-Ll-AUFXYgc"
@@ -287,7 +334,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "aVLh-fLG69-MvDSKf5SSS16HUJc",
+      "etag": "6utJzM1C_EEpVDLtgh-0e8IzF8w",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmpVSkVkNUtjNVow",
       "snippet": {
         "publishedAt": "2024-12-14T13:00:07Z",
@@ -323,7 +370,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 6,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "jUJEd5Kc5Z0"
@@ -334,7 +381,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "yyt5tdGFS7NPtYar6iCAQ1E6TAM",
+      "etag": "P3uXTSSOSPEJiP5pNQ2yImOJEqY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLm1oelhxWE5ELVVF",
       "snippet": {
         "publishedAt": "2024-12-13T13:01:03Z",
@@ -370,7 +417,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 7,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "mhzXqXND-UE"
@@ -381,7 +428,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "bCQc-cftJTq6vWRE8W6Y_FNPzXk",
+      "etag": "xl4dTcX2rfzBgpaI0PMDD4xTcYk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLm1MMXA4SzBtaEE0",
       "snippet": {
         "publishedAt": "2024-12-12T13:00:07Z",
@@ -417,7 +464,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 8,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "mL1p8K0mhA4"
@@ -428,7 +475,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vCykeWekH70szW7L3yHYuIC5tvA",
+      "etag": "NNDtUi4iWhFCj5iEmz_4YBVmLzI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLldCQlo0Z1R5U1g0",
       "snippet": {
         "publishedAt": "2024-12-12T06:24:19Z",
@@ -459,7 +506,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 9,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "WBBZ4gTySX4"
@@ -470,7 +517,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "355OCAapTtywtbLxWeXK4-gxlgs",
+      "etag": "aN7ia9gqrOJ8oSRJFKYLZbqXr4k",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLm5SZU1NaWZudTdZ",
       "snippet": {
         "publishedAt": "2024-12-11T13:01:03Z",
@@ -506,7 +553,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 10,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nReMMifnu7Y"
@@ -517,7 +564,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "MIbL7HxX3lqTKFEEt-n9v8kWcWg",
+      "etag": "f9hNi9DQdMtLX6UKrqYijKaeQPc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmZDdDUwNVQ2RXM4",
       "snippet": {
         "publishedAt": "2024-12-10T13:00:06Z",
@@ -553,7 +600,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 11,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fCt505T6Es8"
@@ -564,7 +611,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "hCqAw7xglweNnDhTgBN0pZUHcwM",
+      "etag": "AodilN4w2IGe94ay--tJOaHKdQ0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkt2WkdPVFRELVM0",
       "snippet": {
         "publishedAt": "2024-12-09T15:30:11Z",
@@ -600,7 +647,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 12,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KvZGOTTD-S4"
@@ -611,7 +658,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "K37PaKoEyDgILnLnUfEryb72KcI",
+      "etag": "ZYh-BT5yDH49-GIUGyn3uDBZd7k",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9VT0RGbzB6THVN",
       "snippet": {
         "publishedAt": "2024-12-08T13:00:45Z",
@@ -647,7 +694,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 13,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_UODFo0zLuM"
@@ -658,7 +705,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "6bSLZnGFLjNOx6DFlLCnuO7eZ7c",
+      "etag": "pGL5OSC56VK9pTPtzuUfvmfHh9M",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjRoUUY0VEI0eGxz",
       "snippet": {
         "publishedAt": "2024-12-07T13:00:07Z",
@@ -694,7 +741,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 14,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "4hQF4TB4xls"
@@ -705,7 +752,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "eWifwQbsD6gOYEN6VJYDjJySz2s",
+      "etag": "H1iJ5iGFs02BeXmNKAHw9Az8rZ0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkpTdUhqaW5IaUpZ",
       "snippet": {
         "publishedAt": "2024-12-06T13:00:17Z",
@@ -741,7 +788,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 15,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "JSuHjinHiJY"
@@ -752,7 +799,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "sLf8joPpli3bHc7NroX0WSWB7cA",
+      "etag": "h7MAdZAbTGWgOdYCH04WYZEV2yI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkJpTHV3OGxTbVRB",
       "snippet": {
         "publishedAt": "2024-12-05T13:00:06Z",
@@ -788,7 +835,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 16,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "BiLuw8lSmTA"
@@ -799,7 +846,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UvZTQzUt4GattkWBJJ06-YDol5U",
+      "etag": "AYw13tsmuDSeZcz4UwUeuDYFN0w",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZodFpWekxiQV9F",
       "snippet": {
         "publishedAt": "2024-12-04T13:01:08Z",
@@ -835,7 +882,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 17,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vhtZVzLbA_E"
@@ -846,7 +893,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "f5p903L1YHtX3THxVq-3bbOBncQ",
+      "etag": "f3v4woxyCisBxeu6KGYQakgUhR4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkM4Nm9tT3JSY0Jv",
       "snippet": {
         "publishedAt": "2024-12-03T13:00:06Z",
@@ -882,7 +929,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 18,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "C86omOrRcBo"
@@ -893,7 +940,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Srn3jfvUrTrGiKdsxXrjRnufLzc",
+      "etag": "khLACHDLo7dJVbyjOqN8ZjI0xbY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkw1VUk1RFlqSlMw",
       "snippet": {
         "publishedAt": "2024-12-02T13:00:06Z",
@@ -929,7 +976,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 19,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "L5UI5DYjJS0"
@@ -940,7 +987,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "BxwW2UP71EzkUq2nwfrVQCOOJyc",
+      "etag": "N9loUs0rVniDohz3h6gpKHuU76E",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkJmX2Z6NDI1dHBn",
       "snippet": {
         "publishedAt": "2024-12-01T13:00:11Z",
@@ -976,7 +1023,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 20,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Bf_fz425tpg"
@@ -987,7 +1034,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "zGYWUNWbepuaiOh6rqLvT8LBcLw",
+      "etag": "rvoSAfovKh7ce-n7TNiHoPkBtpU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZ3c1R2OWNkcEo4",
       "snippet": {
         "publishedAt": "2024-11-30T13:00:06Z",
@@ -1023,7 +1070,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 21,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vwsTv9cdpJ8"
@@ -1034,7 +1081,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pIeWRYwtZM0SLdAnIjaKgYzgRbw",
+      "etag": "PgfcC1T-uAFdAAWN_cRiv7apnE4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkpNS2I1cG05U204",
       "snippet": {
         "publishedAt": "2024-11-29T13:00:30Z",
@@ -1070,7 +1117,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 22,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "JMKb5pm9Sm8"
@@ -1081,7 +1128,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TZV66MWmTXg4F8XO67BeAfaokUA",
+      "etag": "EwWpAjq1aAY9_LBLmfSvflHlhyk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkZ2VFVwaFFxWXBv",
       "snippet": {
         "publishedAt": "2024-11-28T13:00:06Z",
@@ -1117,7 +1164,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 23,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "FvTUphQqYpo"
@@ -1128,7 +1175,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "FBWyanIx43FPR16x1kg1Fvb7ogo",
+      "etag": "kY8mf-5cKzbFUu9exTRF9qXpBv8",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9OVV9FYlZTYkdz",
       "snippet": {
         "publishedAt": "2024-11-27T13:00:45Z",
@@ -1164,7 +1211,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 24,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_NU_EbVSbGs"
@@ -1175,7 +1222,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Qi5308hHkLHhokyDwNGAn84LVSU",
+      "etag": "CKHGZIF6VU7dsi1mGmTFaepUnOg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmlxdjB1MS1weDk4",
       "snippet": {
         "publishedAt": "2024-11-26T13:00:06Z",
@@ -1211,7 +1258,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 25,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "iqv0u1-px98"
@@ -1222,7 +1269,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "2nZypsDfVECv8iizEMUZwD9BiQU",
+      "etag": "boHsarcrQS5n1OnJhCWq3ImZdxc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9SaVhMcWxJTzA4",
       "snippet": {
         "publishedAt": "2024-11-25T13:00:06Z",
@@ -1258,7 +1305,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 26,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_RiXLqlIO08"
@@ -1269,7 +1316,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "sXocujqNe7_eDAt1DgaQgqTrpKk",
+      "etag": "8R48nTQohmLhxLX-5Uj2676jXrQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjZfaWZIRFY2UzRB",
       "snippet": {
         "publishedAt": "2024-11-24T13:00:12Z",
@@ -1305,7 +1352,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 27,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6_ifHDV6S4A"
@@ -1316,7 +1363,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "EfQ2MYn6dwwZj-YzgaLJttVnhPk",
+      "etag": "vK0BQMI4ELvck8BMhz-4DLt68g0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjl0ZVlXUDkzeEVB",
       "snippet": {
         "publishedAt": "2024-11-23T13:00:07Z",
@@ -1352,7 +1399,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 28,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "9teYWP93xEA"
@@ -1363,7 +1410,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "lcB0tONDLTr1J3QjgGonwRctK_U",
+      "etag": "JcAAuXmJRHYCbzPcBg3wnypoKtY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlFvaFNPWXptRkdF",
       "snippet": {
         "publishedAt": "2024-11-22T13:00:34Z",
@@ -1399,7 +1446,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 29,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QohSOYzmFGE"
@@ -1410,7 +1457,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DbK28s-R10LK5sn-Pu42V4aDFfA",
+      "etag": "SkKv1abmmdg5dedz4uUUXt_1jgU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZ6M2I2U0lNRjVn",
       "snippet": {
         "publishedAt": "2024-11-21T13:00:06Z",
@@ -1446,7 +1493,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 30,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vz3b6SIMF5g"
@@ -1457,7 +1504,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "SfzgmTdbg3l1mtlrRBzpyY8NJYI",
+      "etag": "oqbc_ltasz9gou3F_GRqdB5uilU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjZ1MXVyU3NnUWEw",
       "snippet": {
         "publishedAt": "2024-11-20T13:00:17Z",
@@ -1493,7 +1540,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 31,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6u1urSsgQa0"
@@ -1504,7 +1551,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QF6W5aE5G418dxkyofLMSrocYFk",
+      "etag": "L2USnjseGl7FNIiUN_ucGFc6vdg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjJaaDR1YjZ4Snow",
       "snippet": {
         "publishedAt": "2024-11-19T13:00:06Z",
@@ -1540,7 +1587,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 32,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "2Zh4ub6xJz0"
@@ -1551,7 +1598,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "K5nRFaZi9a3Q7bSk7Sk0oBe2jdY",
+      "etag": "FuSbU_QkwNH7Fjyo3WF3Pt_i3l0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjZDOFNZb2pfWEZn",
       "snippet": {
         "publishedAt": "2024-11-18T13:00:06Z",
@@ -1587,7 +1634,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 33,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6C8SYoj_XFg"
@@ -1598,7 +1645,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "oyYqr9_qdAn7xq4HAmk465u0MWo",
+      "etag": "sYRsfllwSEIb4cH3U0YcILcA6Hw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmhONDlZeEl4TDFR",
       "snippet": {
         "publishedAt": "2024-11-17T13:00:47Z",
@@ -1634,7 +1681,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 34,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "hN49YxIxL1Q"
@@ -1645,7 +1692,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "r92PHq7ovHCwlWiOKiTPuHYZtWk",
+      "etag": "Zxqeq311FPjPFuVNG_Jvakrps3Q",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkhJRnNlYzVEMF84",
       "snippet": {
         "publishedAt": "2024-11-16T13:00:06Z",
@@ -1681,7 +1728,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 35,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "HIFsec5D0_8"
@@ -1692,7 +1739,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DFN8IJ_dUO_96SqMxo0cmYoxNx0",
+      "etag": "NDM8zD1hIxmd_lT6wuw-EgYsxfo",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk1yX3RrTTFQUGI4",
       "snippet": {
         "publishedAt": "2024-11-15T13:00:33Z",
@@ -1728,7 +1775,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 36,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Mr_tkM1PPb8"
@@ -1739,7 +1786,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "d0u6q6vUiRAwa4LgZUrCZ_pSt38",
+      "etag": "esendzJDWpx6V5YzjiXFBYWIyTQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnhPSXdNa2JjQ1pB",
       "snippet": {
         "publishedAt": "2024-11-14T13:00:06Z",
@@ -1775,7 +1822,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 37,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "xOIwMkbcCZA"
@@ -1786,7 +1833,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "I1p12Itq5gbRWxAKFG2V971jWL0",
+      "etag": "yaCiI3XbnuxFJhVUGI6_SDzZnOY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLllJaWlNYXp0czNr",
       "snippet": {
         "publishedAt": "2024-11-13T13:00:43Z",
@@ -1822,7 +1869,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 38,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "YIiiMazts3k"
@@ -1833,7 +1880,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "bWEi53MdmTtfGRUsuLdISSGF7to",
+      "etag": "q2iaw3F85FwqP5U4lFWEYQ3uBY0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmtiVGlXb2tlZEpN",
       "snippet": {
         "publishedAt": "2024-11-12T13:00:06Z",
@@ -1869,7 +1916,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 39,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "kbTiWokedJM"
@@ -1880,7 +1927,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "qOfC8EWS0S2KgmUM5UkYAoobByw",
+      "etag": "MXf3pO_F-_nyokxMMK_sI7C2NE4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnhmRWIzMncyZmJr",
       "snippet": {
         "publishedAt": "2024-11-11T13:00:06Z",
@@ -1916,7 +1963,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 40,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "xfEb32w2fbk"
@@ -1927,7 +1974,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "zMLRy35NBMCOxoJL_ydssqNLjGg",
+      "etag": "lCEMp8-pDJpwvmDGLMmuK4aimMk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmhzRndfakhVZTZZ",
       "snippet": {
         "publishedAt": "2024-11-10T12:15:04Z",
@@ -1963,7 +2010,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 41,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "hsFw_jHUe6Y"
@@ -1974,7 +2021,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DTSAaZcSqLehpA_1mf4PNusNfcE",
+      "etag": "XsKSGKEsvtv-4faF3e4yRfJsrXQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlVmTTdFZ2lZbEpz",
       "snippet": {
         "publishedAt": "2024-11-09T13:00:06Z",
@@ -2010,7 +2057,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 42,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "UfM7EgiYlJs"
@@ -2021,7 +2068,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "j8DwjAOgL3KjnooyfqUg-Z5tHxA",
+      "etag": "FJ02yUBbK8WPeB4nlCCa8Tb3g_A",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkZsM1ZrQTdQbTVJ",
       "snippet": {
         "publishedAt": "2024-11-08T20:00:13Z",
@@ -2057,7 +2104,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 43,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Fl3VkA7Pm5I"
@@ -2068,7 +2115,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "jExEGPOytVi7c0IxV3of_jTSoYU",
+      "etag": "QXPuBeAkQ-I9uIQKSajXv8xbMZk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlNFcUh4Z3BqVng0",
       "snippet": {
         "publishedAt": "2024-11-08T12:00:06Z",
@@ -2104,7 +2151,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 44,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SEqHxgpjVx4"
@@ -2115,7 +2162,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "AK3fBAQaJ1Qqct1kXP12-BdlVX0",
+      "etag": "MA5dTeZtosFA4fBxzbt-LQfeguY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlR6cWxKQU84ZmF3",
       "snippet": {
         "publishedAt": "2024-11-07T13:00:06Z",
@@ -2151,7 +2198,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 45,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "TzqlJAO8faw"
@@ -2162,7 +2209,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uDT2qFUGgaachOIH0cZWaykjZk0",
+      "etag": "7k_oS2Eg7Xzaym-eUDo_mR1wNew",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjUtQUZWenFrUHlr",
       "snippet": {
         "publishedAt": "2024-11-06T13:00:09Z",
@@ -2198,7 +2245,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 46,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5-AFVzqkPyk"
@@ -2209,7 +2256,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GuS4IMDXBTKAuTs4MwLghuKoUmY",
+      "etag": "z2ChcJlxYovo4duAwf2j0bZBk8g",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnhURzRHbGNfVTM4",
       "snippet": {
         "publishedAt": "2024-11-05T13:00:07Z",
@@ -2245,7 +2292,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 47,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "xTG4Glc_U38"
@@ -2256,7 +2303,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PH4edpWzRxaSE0u7WcCC3jFtL8c",
+      "etag": "OKO5peeG-FStKzBxhPDYolqjpDs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmkxQ2JwM2o3UUhr",
       "snippet": {
         "publishedAt": "2024-11-04T12:00:06Z",
@@ -2292,7 +2339,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 48,
+        "position": 49,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "i1Cbp3j7QHk"
@@ -2300,57 +2347,10 @@
         "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "vP5O0kGJm-vmJflByyabGGIPsvs",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlpJR1NsOXl6ajBZ",
-      "snippet": {
-        "publishedAt": "2024-11-03T12:00:39Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "Sirven a Dios sin estar con Dios / Highlight",
-        "description": "Sermón Completo: https://youtu.be/tPAc4s8DWrM?si=DRPEnYiVXql1WWMK\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ZIGSl9yzj0Y/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ZIGSl9yzj0Y/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ZIGSl9yzj0Y/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/ZIGSl9yzj0Y/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/ZIGSl9yzj0Y/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 49,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "ZIGSl9yzj0Y"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 1935,
+    "totalResults": 1936,
     "resultsPerPage": 50
   }
 }
