@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "e0aCGi-06mCvtqBcuS9D1zc_Uac",
-  "nextPageToken": "EAAafVBUOkNESWlFREZHT0VORk5UWkRRelZFT0VRd1JqZ29BVWl6ME1INzRPR0tBMUFCV2pnaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFJFRnFRWGwyUXpkQ2FFTTBhbk54U2tGM0ln",
+  "etag": "AepSpytvnkEAHBtBTauO0bZ-U8E",
+  "nextPageToken": "EAAafVBUOkNESWlFRU5ETjBGRU4wVXpPREZDUXpRM01rRW9BVWlpa19xNl9lT0tBMUFCV2pnaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFJFRnBVbTVmVnpkQ2FFUlJOMXA1UTBGbkln",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "IjZOV_apSH6sXGuSFPj2MWUEHDA",
+      "etag": "ywj7DUs7otI9od66V4FTXDLcDRY",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmtXT2V3aDg2R3dF",
+      "snippet": {
+        "publishedAt": "2025-01-07T13:00:06Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "Se ha ido la gloria de Dios - Juan Manuel Vaz",
+        "description": "ICABOD. La gloria de Dios se ha ido de Israel.\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kWOewh86GwE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kWOewh86GwE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kWOewh86GwE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kWOewh86GwE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kWOewh86GwE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "kWOewh86GwE"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "v4nNH0ZobmbEmWWLogCT58Zl5yg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjV6aHVYcXVCUklR",
       "snippet": {
         "publishedAt": "2025-01-06T13:00:11Z",
@@ -41,57 +88,10 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "5zhuXquBRIQ"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "mj3vXTfhEYUE6zjAATjkN-_Tvs0",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmtXT2V3aDg2R3dF",
-      "snippet": {
-        "publishedAt": "2025-01-05T23:46:23Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "Se ha ido la gloria de Dios - Juan Manuel Vaz",
-        "description": "ICABOD. La gloria de Dios se ha ido de Israel.\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/kWOewh86GwE/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/kWOewh86GwE/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/kWOewh86GwE/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/kWOewh86GwE/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/kWOewh86GwE/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
         "position": 1,
         "resourceId": {
           "kind": "youtube#video",
-          "videoId": "kWOewh86GwE"
+          "videoId": "5zhuXquBRIQ"
         },
         "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
@@ -146,7 +146,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "hh7jfYX-u3rWtksxmphLc4C77HU",
+      "etag": "QAS72wfpYC9axyacWtnhiAPvX-Q",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk9ZamFXN3Q2ZjZz",
       "snippet": {
         "publishedAt": "2025-01-04T13:00:26Z",
