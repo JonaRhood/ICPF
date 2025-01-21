@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "CUechaWzSKpfFs2ZHyq3198w3Rc",
-  "nextPageToken": "EAAaelBUOkNESWlFRU5CUXpkRE1qTTRSRUpETkRJM09EWW9BVWlrMU9pRXE0S0xBMUFCV2pZaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFEzZHFhemczVXpoQ2FFTm5ObVp3WVNJ",
+  "etag": "FrbaOTZbfnBAumiXoIDrMW5JAvk",
+  "nextPageToken": "EAAafVBUOkNESWlFRVJGTlRoRE1EVXpPRVF3TnpaRlJURW9BVWpYNDlyWTFZU0xBMUFCV2pnaVEyaG9WbFpXWkZSV1ZtaHZWMnRHVkZkSVNsZFZla0phVG1wT1NWRnRaRFppTVVWVFJFRnBUalZ5YlRoQ2FFUlpNamRIYjBGM0ln",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "aTtsqhiHy_5TGBFbWK8Ip8r7BcE",
+      "etag": "ZN5QBGVMOFyRLSisuEdokglNdAg",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk9UU2RFMWpGbEFV",
+      "snippet": {
+        "publishedAt": "2025-01-20T13:00:06Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "Clamando por la libertad de los cautivos - Juan Manuel Vaz",
+        "description": "Celebramos que somos libres pero clamamos y lloramos por los que siguen presos.\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "OTSdE1jFlAU"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "pjagoNiHswM2eGLWrBdAR4m6-yg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnMyWlVRTDF5eEZj",
       "snippet": {
         "publishedAt": "2025-01-19T13:01:09Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "s2ZUQL1yxFc"
@@ -52,7 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "0mrhw6n054wWTs-bNvRX_5YWqEo",
+      "etag": "uP12wuvQ4XDqJcWsfUrWlPyzYas",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnRWSDdsRTFUV053",
       "snippet": {
         "publishedAt": "2025-01-18T13:00:06Z",
@@ -88,7 +135,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "tVH7lE1TWNw"
@@ -99,7 +146,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dGw6rK7ruZbIcep7IQAGyOIr8MQ",
+      "etag": "cGRUCVff3pxyeue5cqgBdt7UOhw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjFBczJadngwS1JB",
       "snippet": {
         "publishedAt": "2025-01-17T13:00:01Z",
@@ -135,57 +182,10 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 2,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "1As2Zvx0KRA"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "9JfltBBfbwoF88d07o8GxUG9NQc",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk9UU2RFMWpGbEFV",
-      "snippet": {
-        "publishedAt": "2025-01-17T07:24:33Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "Clamando por la libertad de los cautivos - Juan Manuel Vaz",
-        "description": "Celebramos que somos libres pero clamamos y lloramos por los que siguen presos.\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/OTSdE1jFlAU/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
         "position": 3,
         "resourceId": {
           "kind": "youtube#video",
-          "videoId": "OTSdE1jFlAU"
+          "videoId": "1As2Zvx0KRA"
         },
         "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
@@ -757,7 +757,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Fw5nok8UqhfyvrQeEV-965HjVLs",
+      "etag": "taxnHjjEDYN8wQytnNV8SnJbumU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk9ZamFXN3Q2ZjZz",
       "snippet": {
         "publishedAt": "2025-01-04T13:00:26Z",
