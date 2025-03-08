@@ -1,3 +1,7 @@
+#mainDivLibrary {
+    overflow: hidden;
+}
+
 #insideDivLibrary .divBooks {
     width: 250px;
     height: 520px;
