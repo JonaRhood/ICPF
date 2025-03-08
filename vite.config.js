@@ -23,6 +23,7 @@ export default defineConfig({
                 sermones: resolve(__dirname, 'src/sermones/index.html'),
                 agenda: resolve(__dirname, 'src/agenda/index.html'),
                 ofrendar: resolve(__dirname, 'src/ofrendar/index.html'),
+                libreria: resolve(__dirname, 'src/libreria/index.html'),
                 privacidadCookies: resolve(__dirname, 'src/privacidad-cookies/index.html'),
             },
             output: {

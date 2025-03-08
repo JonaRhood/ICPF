@@ -13,6 +13,7 @@ import { initCookies } from './cookies';
 import { buttonPrivacy } from './buttonPrivacy';
 import { sermonsYT } from './sermonsYT';
 import { initAnimatedCard } from './animatedCards';
+import { library } from './library';
 
 barba.hooks.once(() => {
     initCookies();
@@ -37,12 +38,12 @@ barba.init({
     },
     transitions: [
         {
-            once({next}){
+            once({ next }) {
                 animationEnter(next.container);
                 // initResponsiveMenu();
             },
-            leave: ({current}) => animationLeave(current.container),
-            enter({next}){
+            leave: ({ current }) => animationLeave(current.container),
+            enter({ next }) {
                 animationEnter(next.container);
                 window.scrollTo(0, 0)
             },
@@ -55,17 +56,25 @@ barba.init({
             emailContactAnimation();
             initAnimatedCard();
         }
-    },{
+    },
+    {
         namespace: 'about',
         beforeEnter(data) {
             initAboutScrollAnchor();
             initAboutContainer();
             initAboutUrlCheck();
         },
-    },{
+    },
+    {
         namespace: 'sermons',
         beforeEnter(data) {
             sermonsYT();
+        }
+    },
+    {
+        namespace: 'library',
+        beforeEnter(data) {
+            library();
         }
     }]
 })
