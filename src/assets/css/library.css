@@ -1,5 +1,8 @@
 #mainDivLibrary {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #insideDivLibrary .divBooks {
@@ -17,30 +20,111 @@
 
 #insideDivLibrary .divImageBooks img {
     width: 100%;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.10), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
 }
 
 #insideDivLibrary .divDetailsBooks {
     margin-top: 10px;
 }
 
+#insideDivLibrary .divTitleBooks {
+    height: 55px;
+    overflow-x: auto;
+}
+
+#insideDivLibrary .divTitleBooks::-webkit-scrollbar {
+    display: none;
+}
+
 #insideDivLibrary .bookTitleSpan {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+}
+
+#insideDivLibrary .authorsUlBooks {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#insideDivLibrary .authorsUlBooks::-webkit-scrollbar {
+    display: none;
 }
 
 #insideDivLibrary .authorLiBooks {
-    color: #0068ff;
+    color: rgb(0, 104, 255);
     font-size: 1.3rem;
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    flex-shrink: 0;
 }
 
 #insideDivLibrary .authorLiBooks:hover {
-    color: #468ffb;
+    color: rgb(70, 143, 251);
     cursor: pointer;
 }
 
 #insideDivLibrary .categoryUlBooks {
     display: flex;
     gap: 10px;
+    overflow-x: auto;
+    margin-top: 8px;
+}
+
+#insideDivLibrary .categoryUlBooks::-webkit-scrollbar {
+    display: none;
+}
+
+#insideDivLibrary .categoryLiBooks {
+    flex-shrink: 0;
+}
+
+#divPackPaginationLibrary {
+    display: flex;
+    gap: 15px;
+}
+
+#divLibraryPagination {
+    margin: 80px 0;
+    display: flex;
+    gap: 20px;
+}
+
+#divNumbersPagination {
+    display: flex;
+    align-items: center;
+}
+
+#divLibraryPagination .arrowsPagination {
+    color: rgb(0, 104, 255);
+    transition: color 0.2s ease-in-out;
+}
+
+#divLibraryPagination .arrowsPagination:hover {
+    cursor: pointer;
+    color: rgb(70, 143, 251);
+}
+
+#divLibraryPagination .ulPaginationLibrary {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+#divLibraryPagination .liPaginationLibrary {
+    color: rgb(0, 104, 255);
+    transition: color 0.2s ease-in-out;
+}
+
+
+#divLibraryPagination .liPaginationLibrary:hover {
+    cursor: pointer;
+    color: rgb(70, 143, 251);
+}
+
+#divLibraryPagination .divArrowsLibrary {
+    gap: 6px !important;
+    display: flex;
+    align-items: center;
 }
