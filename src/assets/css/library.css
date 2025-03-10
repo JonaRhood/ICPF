@@ -5,6 +5,67 @@
     align-items: center;
 }
 
+.categoriesDivScroller {
+    width: 80%;
+}
+
+.categoriesDivScroller .scroller_inner {
+    display: flex;
+    padding-block: 10px; flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categoriesDivScroller .ulCategoriesTagList {
+    width: 100%;
+    position: relative;
+}
+
+.categoriesDivScroller .liCategoriesLibrary {
+    white-space: nowrap;
+    padding: 0px 8px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 4px 5px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.categoriesDivScroller .liCategoriesLibrary:hover {
+    cursor: pointer;
+    filter: saturate(300%) brightness(150%);
+}
+
+.categoriesDivScroller .ulCategoriesLibrary::-webkit-scrollbar {
+    display: none;
+}
+
+.categoriesDivScroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.categoriesDivScroller[data-animated="true"] .ulCategoriesTagList {
+    flex-wrap: nowrap;
+    width: fit-content;
+    animation: scroll var(--animation-duration, 350s) var(--animation-direction, forwards) linear infinite;
+}
+
+.categoriesDivScroller[data-direction="right"] {
+    --animation-direction: reverse;
+}
+
+.categoriesDivScroller[data-direction="left"] {
+    --animation-direction: forwards;
+}
+
+@keyframes scroll {
+    100% {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+#insideDivLibrary {
+    margin-top: 60px;
+}
+
 #insideDivLibrary .divBooks {
     width: 250px;
     height: 520px;
@@ -46,7 +107,6 @@
     gap: 10px;
     white-space: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 #insideDivLibrary .authorsUlBooks::-webkit-scrollbar {
@@ -78,6 +138,8 @@
 
 #insideDivLibrary .categoryLiBooks {
     flex-shrink: 0;
+    padding: 0px 8px;
+    border-radius: 10px;
 }
 
 #divPackPaginationLibrary {
@@ -86,7 +148,7 @@
 }
 
 #divLibraryPagination {
-    margin: 80px 0;
+    margin: 80px 0px;
     display: flex;
     gap: 20px;
 }
@@ -117,14 +179,13 @@
     transition: color 0.2s ease-in-out;
 }
 
-
 #divLibraryPagination .liPaginationLibrary:hover {
     cursor: pointer;
     color: rgb(70, 143, 251);
 }
 
 #divLibraryPagination .divArrowsLibrary {
-    gap: 6px !important;
     display: flex;
     align-items: center;
+    gap: 6px !important;
 }
