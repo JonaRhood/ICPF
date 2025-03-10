@@ -2,6 +2,7 @@ export const library = () => {
     console.log("Library")
     const insideDivLibrary = document.querySelector("#insideDivLibrary");
     const divNumbersPagination = document.querySelector("#divNumbersPagination");
+    const categoriesDivScroller = document.querySelectorAll(".categoriesDivScroller");
 
     let page = 1;
     let limit = 24;
@@ -18,16 +19,49 @@ export const library = () => {
             createPagination();
 
         } catch (err) {
-            console.log("Error fetching library data", err);
+            console.log("Error fetching library data: ", err);
         }
     }
     fetchInitialData();
 
+    const fetchCategories = async () => {
+        try {
+            const response = await fetch("https://icpf-api-production.up.railway.app/categorias");
+            const data = await response.json();
+
+            console.log(data);
+            if (response.ok) {
+                categoriesDivScroller.forEach(div => {
+                    const ul = document.createElement("ul");
+                    ul.className = "ulCategoriesTagList scroller_inner";
+    
+                    data.forEach((category, i) => {
+                        const li = document.createElement("li");
+                        li.className = "liCategoriesLibrary";
+                        li.textContent = `${category.categoria.toUpperCase()}`;
+                        li.style.backgroundColor = `${category.color}50`
+                        ul.appendChild(li);
+                    })
+    
+                    div.appendChild(ul);
+                })
+            }
+            
+            if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                addScrollerAnimation();
+            }
+
+        } catch(err) {
+            console.log("Error fetching categories: ", err)
+        }
+    }
+    fetchCategories();
+
     const createLibrary = () => {
+        insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
+
         const dataMax = page * limit;
-        console.log(dataMax);
         const dataMin = dataMax - limit;
-        console.log(dataMin);
 
         dataFetch.slice(dataMin, dataMax).forEach(Book => {
             const div = document.createElement("div");
@@ -83,7 +117,7 @@ export const library = () => {
                 categoryLi.className = "categoryLiBooks"
                 categoryLi.id = `${category.id}`;
                 categoryLi.textContent = `${category.categoria.toUpperCase()}`;
-                categoryLi.style.backgroundColor = ``
+                categoryLi.style.backgroundColor = `${category.color}50`
                 categoryUl.appendChild(categoryLi);
             })
 
@@ -96,6 +130,9 @@ export const library = () => {
     };
 
     const createPagination = () => {
+        const existingPagination = divNumbersPagination.querySelector(".ulPaginationLibrary");
+        if (existingPagination) existingPagination.remove();
+
         const ul = document.createElement("ul");
         ul.className = "ulPaginationLibrary"
 
@@ -107,11 +144,17 @@ export const library = () => {
             const li = document.createElement("li");
             li.dataset.id = i;
             li.textContent = i;
-            if (page !== i) {
+            console.log(page, i)
+            if (page != i) {
                 li.className = "liPaginationLibrary";
                 li.addEventListener("click", (e) => {
                     page = e.target.dataset.id;
                     createLibrary();
+                    createPagination();
+                    window.scrollTo({
+                        top: 200,
+                        behavior: "smooth"
+                    })
                 })
             }
             ul.appendChild(li);
@@ -120,5 +163,21 @@ export const library = () => {
         divNumbersPagination.appendChild(ul);
     }
 
+    const addScrollerAnimation = () => {
+        categoriesDivScroller.forEach(div => {
+            div.setAttribute("data-animated", true);
+            const scrollerInner = document.querySelectorAll(".scroller_inner");
+            
+            scrollerInner.forEach(scroller => {
+                const scrollerContent = Array.from(scroller.children);
+        
+                scrollerContent.forEach(item => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scroller.appendChild(duplicatedItem);
+            })
+            })
+        })
+    }
 
 };
