@@ -18,6 +18,7 @@
 .categoriesDivScroller .ulCategoriesTagList {
     width: 100%;
     position: relative;
+    scrollbar-width: none;
 }
 
 .categoriesDivScroller .liCategoriesLibrary {
@@ -78,14 +79,14 @@
     justify-content: center;
     height: 380px;
     transition-property: transform, filter;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
 #insideDivLibrary .divImageBooks:hover {
     cursor: pointer;
-    transform: scale(102%);
-    filter: brightness(105%);
+    transform: scale(1.02);
+    filter: brightness(102%);
 }
 
 #insideDivLibrary .divImageBooks img {
@@ -100,6 +101,7 @@
 #insideDivLibrary .divTitleBooks {
     height: 55px;
     overflow-x: auto;
+    scrollbar-width: none;
 }
 
 #insideDivLibrary .divTitleBooks::-webkit-scrollbar {
@@ -116,6 +118,7 @@
     gap: 10px;
     white-space: nowrap;
     overflow-x: auto;
+    scrollbar-width: none;
 }
 
 #insideDivLibrary .authorsUlBooks::-webkit-scrollbar {
@@ -139,6 +142,7 @@
     gap: 10px;
     overflow-x: auto;
     margin-top: 8px;
+    scrollbar-width: none;
 }
 
 #insideDivLibrary .categoryUlBooks::-webkit-scrollbar {
