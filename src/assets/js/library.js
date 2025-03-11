@@ -7,12 +7,14 @@ export const library = () => {
     const arrowRightPagination = document.querySelector("#arrowRightPagination");
     const doubleArrowLeftPagination = document.querySelector("#doubleArrowLeftPagination");
     const doubleArrowRightPagination = document.querySelector("#doubleArrowRightPagination");
+    const divCategorySelected = document.querySelector("#divCategorySelected");
 
 
     let page = 1;
     let totalPages = 0;
     let limit = 24;
     let dataFetch = [];
+    let dataByCategory = [];
 
     const fetchInitialData = async () => {
         try {
@@ -44,10 +46,37 @@ export const library = () => {
                     data.forEach((category, i) => {
                         const li = document.createElement("li");
                         li.className = "liCategoriesLibrary";
+                        li.setAttribute("data-id", `${category.id}`);
                         li.textContent = `${category.categoria.toUpperCase()}`;
                         li.style.backgroundColor = `${category.color}50`
                         ul.appendChild(li);
                     })
+
+                    ul.addEventListener("click", (e) => {
+                        if (e.target.classList.contains("liCategoriesLibrary")) {
+                            divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
+                            createLibraryByCategory(e.target.dataset.id);
+                            createPagination();
+
+                            const spanCategory = document.createElement("span");
+                            spanCategory.className = "spanCategorySelected"
+                            spanCategory.textContent = e.target.textContent;;
+
+                            const spanCross = document.createElement("span");
+                            spanCross.className = "crossCategoryLibrary";
+                            spanCross.textContent = "-";
+
+                            divCategorySelected.style.backgroundColor =  e.target.style.backgroundColor;
+                            divCategorySelected.appendChild(spanCategory);
+                            divCategorySelected.appendChild(spanCross);
+
+                            divCategorySelected.addEventListener("click", () => {
+                                divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
+                                createLibrary();
+                                createPagination();
+                            })
+                        }
+                    });
 
                     div.appendChild(ul);
                 })
@@ -62,6 +91,86 @@ export const library = () => {
         }
     }
     fetchCategories();
+
+    const createLibraryByCategory = (categoryId) => {
+        insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
+
+        dataByCategory = dataFetch.filter(Book => 
+            Book.categorias.some(categoria => categoria.id == categoryId)
+        );
+
+        totalPages = Math.ceil(dataByCategory.length / limit);
+
+        page = 1;
+
+        const dataMax = page * limit;
+        const dataMin = dataMax - limit;
+
+        dataByCategory.slice(dataMin, dataMax).forEach(Book => {
+            const div = document.createElement("div");
+            div.className = "divBooks";
+
+            // Image Div
+            const divImage = document.createElement("div");
+            divImage.className = "divImageBooks";
+
+            const img = document.createElement("img");
+            img.className = "imgBooks";
+            img.src = `${Book.libro_imagen}`;
+
+            divImage.appendChild(img);
+
+            // Details Div
+            const divDetails = document.createElement("div");
+            divDetails.className = "divDetailsBooks";
+
+            const divTitle = document.createElement("div");
+            divTitle.className = "divTitleBooks";
+            const title = document.createElement("span");
+            title.className = "bookTitleSpan"
+            title.textContent = `${Book.libro_titulo}`;
+
+            divTitle.appendChild(title)
+            divDetails.appendChild(divTitle);
+
+            const authorsUl = document.createElement("ul");
+            authorsUl.className = "authorsUlBooks"
+            Book.autores.forEach((author, index) => {
+                const authorLi = document.createElement("li");
+                authorLi.className = "authorLiBooks"
+                authorLi.id = `${author.id}`
+                authorLi.textContent = `${author.nombre} ${author.apellidos}`
+                if (Book.autores.length > 1) {
+                    if (index < Book.autores.length - 1) {
+                        authorLi.textContent += ",";
+                    }
+                }
+                authorsUl.appendChild(authorLi);
+            })
+
+            divDetails.appendChild(authorsUl);
+
+            const categoryUl = document.createElement("ul");
+            categoryUl.className = "categoryUlBooks"
+            Book.categorias.forEach(category => {
+                if (category.id === null) {
+                    return;
+                }
+                const categoryLi = document.createElement("li");
+                categoryLi.className = "categoryLiBooks"
+                categoryLi.id = `${category.id}`;
+                categoryLi.textContent = `${category.categoria.toUpperCase()}`;
+                categoryLi.style.backgroundColor = `${category.color}50`
+                categoryUl.appendChild(categoryLi);
+            })
+
+            divDetails.appendChild(categoryUl);
+
+            div.appendChild(divImage);
+            div.appendChild(divDetails);
+            insideDivLibrary.appendChild(div);
+        })
+    };
 
     const addScrollerAnimation = () => {
         categoriesDivScroller.forEach(div => {
@@ -85,6 +194,8 @@ export const library = () => {
 
         const dataMax = page * limit;
         const dataMin = dataMax - limit;
+
+        totalPages = Math.ceil(dataFetch.length / limit);
 
         dataFetch.slice(dataMin, dataMax).forEach(Book => {
             const div = document.createElement("div");
@@ -159,7 +270,6 @@ export const library = () => {
         const ul = document.createElement("ul");
         ul.className = "ulPaginationLibrary"
 
-        totalPages = Math.ceil(dataFetch.length / limit);
         console.log(totalPages)
 
         for (let i = 0; i < totalPages; i++) {
