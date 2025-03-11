@@ -102,6 +102,28 @@
     position: absolute;
 }
 
+#divSearchInputLibrary #iconXLibrary {
+    position: absolute;
+    display: flex;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#divSearchInputLibrary #iconXLibrary svg {
+    height: 100%;
+    padding: 4px;
+    transition: fill .1s ease-in-out;
+}
+
+#divSearchInputLibrary #iconXLibrary:hover {
+    cursor: pointer;
+    svg path {
+        fill: red;
+    }
+}
+
 #divSearchInputLibrary #iconSearchLibrary:hover {
     cursor: text;
 }

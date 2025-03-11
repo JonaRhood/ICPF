@@ -10,6 +10,7 @@ export const library = () => {
     const divCategorySelected = document.querySelector("#divCategorySelected");
     const iconSearchLibrary = document.querySelector("#iconSearchLibrary");
     const inputSearchLibrary = document.querySelector("#inputSearchLibrary");
+    const iconXLibrary = document.querySelector("#iconXLibrary");
 
 
     let page = 1;
@@ -64,6 +65,15 @@ export const library = () => {
             createPagination(dataBySearch)
         }
     });
+
+    iconXLibrary.addEventListener("click", () => {
+        inputSearchLibrary.value = "";
+        isDataFetch = true;
+        isDataBySearch = false;
+        isDataByCategory = false;
+        createLibrary(dataFetch);
+        createPagination(dataFetch);
+    })
 
 
     const fetchCategories = async () => {
