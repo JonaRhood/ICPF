@@ -11,6 +11,8 @@ export const library = () => {
     const iconSearchLibrary = document.querySelector("#iconSearchLibrary");
     const inputSearchLibrary = document.querySelector("#inputSearchLibrary");
     const iconXLibrary = document.querySelector("#iconXLibrary");
+    const modalBook = document.querySelector("#modalBook");
+    const iconXModalBook = document.querySelector("#iconXModalBook");
 
 
     let page = 1;
@@ -42,6 +44,7 @@ export const library = () => {
 
     inputSearchLibrary.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
+            divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
             isDataFetch = false;
             isDataBySearch = true;
             isDataByCategory = false;
@@ -177,6 +180,13 @@ export const library = () => {
             // Image Div
             const divImage = document.createElement("div");
             divImage.className = "divImageBooks";
+            divImage.setAttribute("book-id", Book.libro_id);
+
+            // Book Modal
+            divImage.addEventListener("click", (e) => {
+                modalBook.style.display = "flex";
+                iconXModalBook.addEventListener("click", () => modalBook.style.display = "none");
+            })
 
             const img = document.createElement("img");
             img.className = "imgBooks";

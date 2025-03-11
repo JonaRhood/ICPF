@@ -271,3 +271,42 @@
     align-items: center;
     gap: 6px !important;
 }
+
+#modalBook {
+    border: 1px solid orange;
+    border-radius: 20px;
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -45%); 
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 1000; 
+}
+
+#modalBook #iconXModalBook {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+#modalBook #iconXModalBook svg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    path{
+        transition: .2s fill ease-in-out;   
+    }
+}
+
+#modalBook #iconXModalBook svg:hover {
+    cursor: pointer;
+    path {
+        fill: red;
+    }
+}
