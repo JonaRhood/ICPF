@@ -286,7 +286,7 @@
 
             <!-- Section 1 -->
             <section style="background: url(/img/paper.webp);" class="relative">
-                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 pb-10 w-full relative"
+                <h1 id="mainH1" class="text-center text-[2.2rem] text-[#4b362e] p-8 w-full relative"
                     style="z-index: 10;">
                     LIBRERÍA BALUARTE DE LA FE
                 </h1>
@@ -294,8 +294,11 @@
 
                 <!-- Library Content -->
                 <div id="mainDivLibrary" class="flex justify-center">
+                    <div id="divSearchInputLibrary"><input type="text" placeholder="Buscar libro por título..."></div>
+
                     <div class="categoriesDivScroller" data-direction="right"></div>
                     <div class="categoriesDivScroller" data-direction="left"></div>
+                    <div id="divCategorySelected"></div>
 
                     <div id="insideDivLibrary" class="flex w-[80%] flex-wrap justify-between gap-[50px]">
                     </div>
