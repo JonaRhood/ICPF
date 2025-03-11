@@ -8,13 +8,20 @@ export const library = () => {
     const doubleArrowLeftPagination = document.querySelector("#doubleArrowLeftPagination");
     const doubleArrowRightPagination = document.querySelector("#doubleArrowRightPagination");
     const divCategorySelected = document.querySelector("#divCategorySelected");
+    const iconSearchLibrary = document.querySelector("#iconSearchLibrary");
+    const inputSearchLibrary = document.querySelector("#inputSearchLibrary");
 
 
     let page = 1;
     let totalPages = 0;
     let limit = 24;
     let dataFetch = [];
+    let dataBySearch = [];
     let dataByCategory = [];
+
+    let isDataFetch = true;
+    let isDataBySearch = false;
+    let isDataByCategory = false;
 
     const fetchInitialData = async () => {
         try {
@@ -23,14 +30,41 @@ export const library = () => {
 
             console.log(data);
             dataFetch = data;
-            createLibrary();
-            createPagination();
+            createLibrary(dataFetch);
+            createPagination(dataFetch);
 
         } catch (err) {
             console.log("Error fetching library data: ", err);
         }
     }
     fetchInitialData();
+
+    inputSearchLibrary.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            isDataFetch = false;
+            isDataBySearch = true;
+            isDataByCategory = false;
+            const searchWords = e.target.value.toLowerCase().split(" ").filter(word => word.length > 0);
+            console.log(searchWords);
+
+            page = 1
+
+            dataBySearch = dataFetch.filter(Book => {
+                const titleMatch = searchWords.every(word => Book.libro_titulo.toLowerCase().includes(word));
+                const authorMatch = Book.autores.some(author =>
+                    searchWords.every(word =>
+                        author.nombre.toLowerCase().includes(word) ||
+                        author.apellidos.toLowerCase().includes(word)
+                    )
+                );
+                return titleMatch || authorMatch;
+            });
+
+            createLibrary(dataBySearch);
+            createPagination(dataBySearch)
+        }
+    });
+
 
     const fetchCategories = async () => {
         try {
@@ -55,8 +89,14 @@ export const library = () => {
                     ul.addEventListener("click", (e) => {
                         if (e.target.classList.contains("liCategoriesLibrary")) {
                             divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
-                            createLibraryByCategory(e.target.dataset.id);
-                            createPagination();
+                            isDataFetch = false;
+                            isDataBySearch = false;
+                            isDataByCategory = true;
+                            dataByCategory = dataFetch.filter(Book =>
+                                Book.categorias.some(categoria => categoria.id == e.target.dataset.id)
+                            );
+                            createLibrary(dataByCategory);
+                            createPagination(dataByCategory);
 
                             const spanCategory = document.createElement("span");
                             spanCategory.className = "spanCategorySelected"
@@ -66,14 +106,17 @@ export const library = () => {
                             spanCross.className = "crossCategoryLibrary";
                             spanCross.textContent = "-";
 
-                            divCategorySelected.style.backgroundColor =  e.target.style.backgroundColor;
+                            divCategorySelected.style.backgroundColor = e.target.style.backgroundColor;
                             divCategorySelected.appendChild(spanCategory);
                             divCategorySelected.appendChild(spanCross);
 
                             divCategorySelected.addEventListener("click", () => {
                                 divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
-                                createLibrary();
-                                createPagination();
+                                isDataFetch = true;
+                                isDataBySearch = false;
+                                isDataByCategory = false;
+                                createLibrary(dataFetch);
+                                createPagination(dataFetch);
                             })
                         }
                     });
@@ -92,86 +135,6 @@ export const library = () => {
     }
     fetchCategories();
 
-    const createLibraryByCategory = (categoryId) => {
-        insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
-
-        dataByCategory = dataFetch.filter(Book => 
-            Book.categorias.some(categoria => categoria.id == categoryId)
-        );
-
-        totalPages = Math.ceil(dataByCategory.length / limit);
-
-        page = 1;
-
-        const dataMax = page * limit;
-        const dataMin = dataMax - limit;
-
-        dataByCategory.slice(dataMin, dataMax).forEach(Book => {
-            const div = document.createElement("div");
-            div.className = "divBooks";
-
-            // Image Div
-            const divImage = document.createElement("div");
-            divImage.className = "divImageBooks";
-
-            const img = document.createElement("img");
-            img.className = "imgBooks";
-            img.src = `${Book.libro_imagen}`;
-
-            divImage.appendChild(img);
-
-            // Details Div
-            const divDetails = document.createElement("div");
-            divDetails.className = "divDetailsBooks";
-
-            const divTitle = document.createElement("div");
-            divTitle.className = "divTitleBooks";
-            const title = document.createElement("span");
-            title.className = "bookTitleSpan"
-            title.textContent = `${Book.libro_titulo}`;
-
-            divTitle.appendChild(title)
-            divDetails.appendChild(divTitle);
-
-            const authorsUl = document.createElement("ul");
-            authorsUl.className = "authorsUlBooks"
-            Book.autores.forEach((author, index) => {
-                const authorLi = document.createElement("li");
-                authorLi.className = "authorLiBooks"
-                authorLi.id = `${author.id}`
-                authorLi.textContent = `${author.nombre} ${author.apellidos}`
-                if (Book.autores.length > 1) {
-                    if (index < Book.autores.length - 1) {
-                        authorLi.textContent += ",";
-                    }
-                }
-                authorsUl.appendChild(authorLi);
-            })
-
-            divDetails.appendChild(authorsUl);
-
-            const categoryUl = document.createElement("ul");
-            categoryUl.className = "categoryUlBooks"
-            Book.categorias.forEach(category => {
-                if (category.id === null) {
-                    return;
-                }
-                const categoryLi = document.createElement("li");
-                categoryLi.className = "categoryLiBooks"
-                categoryLi.id = `${category.id}`;
-                categoryLi.textContent = `${category.categoria.toUpperCase()}`;
-                categoryLi.style.backgroundColor = `${category.color}50`
-                categoryUl.appendChild(categoryLi);
-            })
-
-            divDetails.appendChild(categoryUl);
-
-            div.appendChild(divImage);
-            div.appendChild(divDetails);
-            insideDivLibrary.appendChild(div);
-        })
-    };
-
     const addScrollerAnimation = () => {
         categoriesDivScroller.forEach(div => {
             div.setAttribute("data-animated", true);
@@ -189,15 +152,15 @@ export const library = () => {
         })
     }
 
-    const createLibrary = () => {
+    const createLibrary = (data) => {
         insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
 
         const dataMax = page * limit;
         const dataMin = dataMax - limit;
 
-        totalPages = Math.ceil(dataFetch.length / limit);
+        totalPages = Math.ceil(data.length / limit);
 
-        dataFetch.slice(dataMin, dataMax).forEach(Book => {
+        data.slice(dataMin, dataMax).forEach(Book => {
             const div = document.createElement("div");
             div.className = "divBooks";
 
@@ -263,7 +226,7 @@ export const library = () => {
         })
     };
 
-    const createPagination = () => {
+    const createPagination = (data) => {
         const existingPagination = divNumbersPagination.querySelector(".ulPaginationLibrary");
         if (existingPagination) existingPagination.remove();
 
@@ -280,8 +243,8 @@ export const library = () => {
                 li.className = "liPaginationLibrary";
                 li.addEventListener("click", (e) => {
                     page = e.target.dataset.id;
-                    createLibrary();
-                    createPagination();
+                    createLibrary(data);
+                    createPagination(data);
                     window.scrollTo({
                         top: 200,
                         behavior: "smooth"
@@ -297,8 +260,16 @@ export const library = () => {
     arrowLeftPagination.addEventListener("click", () => {
         if (page !== 1) {
             page--;
-            createLibrary();
-            createPagination();
+            if (isDataFetch) {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else if (isDataByCategory) {
+                createLibrary(dataByCategory);
+                createPagination(dataByCategory);
+            } else if (isDataBySearch) {
+                createLibrary(dataBySearch);
+                createPagination(dataBySearch);
+            }
             window.scrollTo({
                 top: 200,
                 behavior: "smooth"
@@ -309,8 +280,16 @@ export const library = () => {
     arrowRightPagination.addEventListener("click", () => {
         if (page !== totalPages) {
             page++;
-            createLibrary();
-            createPagination();
+            if (isDataFetch) {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else if (isDataByCategory) {
+                createLibrary(dataByCategory);
+                createPagination(dataByCategory);
+            } else if (isDataBySearch) {
+                createLibrary(dataBySearch);
+                createPagination(dataBySearch);
+            }
             window.scrollTo({
                 top: 200,
                 behavior: "smooth"
@@ -322,8 +301,16 @@ export const library = () => {
     doubleArrowLeftPagination.addEventListener("click", () => {
         if (page !== 1) {
             page = 1;
-            createLibrary();
-            createPagination();
+            if (isDataFetch) {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else if (isDataByCategory) {
+                createLibrary(dataByCategory);
+                createPagination(dataByCategory);
+            } else if (isDataBySearch) {
+                createLibrary(dataBySearch);
+                createPagination(dataBySearch);
+            }
             window.scrollTo({
                 top: 200,
                 behavior: "smooth"
@@ -334,12 +321,22 @@ export const library = () => {
     doubleArrowRightPagination.addEventListener("click", () => {
         if (page !== totalPages) {
             page = totalPages;
-            createLibrary();
-            createPagination();
+            if (isDataFetch) {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else if (isDataByCategory) {
+                createLibrary(dataByCategory);
+                createPagination(dataByCategory);
+            } else if (isDataBySearch) {
+                createLibrary(dataBySearch);
+                createPagination(dataBySearch);
+            }
             window.scrollTo({
                 top: 200,
                 behavior: "smooth"
             })
         }
     })
+
+    iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
 };
