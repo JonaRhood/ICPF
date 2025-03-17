@@ -94,8 +94,9 @@ export const library = () => {
                         const li = document.createElement("li");
                         li.className = "liCategoriesLibrary";
                         li.setAttribute("data-id", `${category.id}`);
-                        li.textContent = `${category.categoria.toUpperCase()}`;
-                        li.style.backgroundColor = `${category.color}50`
+                        li.textContent = `${category.categoria}`;
+                        li.style.backgroundColor = `#402e18`;
+                        li.style.color = "white";
                         ul.appendChild(li);
                     })
 
@@ -113,7 +114,7 @@ export const library = () => {
 
                             const spanCategory = document.createElement("span");
                             spanCategory.className = "spanCategorySelected"
-                            spanCategory.textContent = e.target.textContent;;
+                            spanCategory.textContent = e.target.textContent;
 
                             const spanCross = document.createElement("span");
                             spanCross.className = "crossCategoryLibrary";
@@ -125,6 +126,7 @@ export const library = () => {
 
                             divCategorySelected.addEventListener("click", () => {
                                 divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
+                                divCategorySelected.style.backgroundColor = "";
                                 isDataFetch = true;
                                 isDataBySearch = false;
                                 isDataByCategory = false;
@@ -184,8 +186,72 @@ export const library = () => {
 
             // Book Modal
             divImage.addEventListener("click", (e) => {
+                const divBookModalImg = document.querySelector("#divBookModalImg");
+                const divBookModalDetails = document.querySelector("#divBookModalDetails");
+
                 modalBook.style.display = "flex";
-                iconXModalBook.addEventListener("click", () => modalBook.style.display = "none");
+                iconXModalBook.addEventListener("click", () => {
+                    modalBook.style.display = "none"
+                    divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
+                    divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+                });
+
+                const img = document.createElement("img");
+                img.className = "imgBooks";
+                img.src = `${Book.libro_imagen}`;
+
+                divBookModalImg.appendChild(img);
+
+                const div = document.createElement("div");
+                div.id = "ModalBookDetailInfo";
+
+                const h3 = document.createElement("h3");
+                h3.textContent = Book.libro_titulo;
+                const p = document.createElement("p");
+                p.textContent = Book.libro_descripcion;
+                const spanPages = document.createElement("span");
+                spanPages.id = "pagesBookModal";
+                spanPages.textContent = Book.libro_paginas;
+
+                const authorsUl = document.createElement("ul");
+                authorsUl.className = "authorsUlBooksModal"
+                Book.autores.forEach((author, index) => {
+                    const authorLi = document.createElement("li");
+                    authorLi.className = "authorLiBooksModal"
+                    authorLi.id = `${author.id}`
+                    authorLi.textContent = `${author.nombre} ${author.apellidos}`
+                    if (Book.autores.length > 1) {
+                        if (index < Book.autores.length - 1) {
+                            authorLi.textContent += ",";
+                        }
+                    }
+                    authorsUl.appendChild(authorLi);
+                })
+    
+                divDetails.appendChild(authorsUl);
+    
+                const categoryUl = document.createElement("ul");
+                categoryUl.className = "categoryUlBooksModal"
+                Book.categorias.forEach(category => {
+                    if (category.id === null) {
+                        return;
+                    }
+                    const categoryLi = document.createElement("li");
+                    categoryLi.className = "categoryLiBooksModal"
+                    categoryLi.id = `${category.id}`;
+                    categoryLi.textContent = `${category.categoria}`;
+                    categoryLi.style.backgroundColor = `#402e18`;
+                    categoryLi.style.color = "white";
+                    categoryUl.appendChild(categoryLi);
+                })
+                
+                
+                div.appendChild(h3);
+                div.appendChild(authorsUl);
+                div.appendChild(spanPages);
+                div.appendChild(p);
+                div.appendChild(categoryUl);
+                divBookModalDetails.appendChild(div);
             })
 
             const img = document.createElement("img");
@@ -233,8 +299,9 @@ export const library = () => {
                 const categoryLi = document.createElement("li");
                 categoryLi.className = "categoryLiBooks"
                 categoryLi.id = `${category.id}`;
-                categoryLi.textContent = `${category.categoria.toUpperCase()}`;
-                categoryLi.style.backgroundColor = `${category.color}50`
+                categoryLi.textContent = `${category.categoria}`;
+                categoryLi.style.backgroundColor = `#402e18`;
+                categoryLi.style.color = "white";
                 categoryUl.appendChild(categoryLi);
             })
 

@@ -23,15 +23,15 @@
 
 .categoriesDivScroller .liCategoriesLibrary {
     white-space: nowrap;
-    padding: 0px 8px;
-    border-radius: 20px;
+    padding: 2px 12px;
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.05) 2px 4px 5px;
     transition: filter 0.2s ease-in-out;
 }
 
 .categoriesDivScroller .liCategoriesLibrary:hover {
     cursor: pointer;
-    filter: saturate(300%) brightness(150%);
+    filter: saturate(150%) brightness(110%);
 }
 
 .categoriesDivScroller .ulCategoriesLibrary::-webkit-scrollbar {
@@ -58,16 +58,16 @@
 }
 
 #divCategorySelected {
-    padding: 0px 8px;
-    border-radius: 20px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    color: white;
     margin-top: 15px;
     gap: 5px;
     display: flex;
-    transition: background-color 0.1s ease-in-out;
 }
 
 #divCategorySelected:hover {
-    background-color: rgba(255, 0, 0, 0.5) !important;
+    background-color: rgb(255 0 0 / 80%) !important;
     cursor: pointer;
 }
 
@@ -219,9 +219,9 @@
 
 #insideDivLibrary .categoryLiBooks {
     flex-shrink: 0;
-    padding: 0px 8px;
-    border-radius: 10px;
-    font-size: 0.9rem;
+    padding: 2px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 #divPackPaginationLibrary {
@@ -273,8 +273,8 @@
 }
 
 #modalBook {
-    border: 1px solid orange;
-    border-radius: 20px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 10px;
     display: none; 
     position: fixed; 
     top: 50%; 
@@ -282,7 +282,7 @@
     transform: translate(-50%, -45%); 
     width: 70%;
     height: 70%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,1);
     z-index: 1000; 
 }
 
@@ -309,4 +309,79 @@
     path {
         fill: red;
     }
+}
+
+#modalBook #divBookModalContent {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+#modalBook #divBookModalImg {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#modalBook #divBookModalImg img {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+}
+
+#modalBook #divBookModalDetails {
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+#modalBook #divBookModalDetails h3{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#modalBook #divBookModalDetails .authorsUlBooksModal {
+    display: flex; 
+    gap: 5px;
+    color: rgb(0, 104, 255);
+    font-size: 1.2rem;
+}
+
+#modalBook #divBookModalDetails .authorsUlBooksModal::before {
+    content: "Autor/es:\00a0";
+    color: black;
+    font-weight: bold;
+}
+
+#modalBook #divBookModalDetails #pagesBookModal::before {
+    content: "Cantidad de PÃ¡ginas:\00a0";
+    color: black;
+    font-weight: bold;
+}
+
+#modalBook #divBookModalDetails p {
+    margin-top: 15px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 5px;
+    mask: linear-gradient(360deg, transparent, white 20%);
+}
+
+#modalBook #divBookModalDetails .categoryUlBooksModal {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+#modalBook #divBookModalDetails .categoryLiBooksModal {
+    padding: 2px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
