@@ -332,7 +332,7 @@
 #modalBook #divBookModalDetails {
     height: 100%;
     width: 70%;
-    padding: 20px;
+    padding: 0px 20px;
     font-size: 1.1rem;
 }
 
@@ -347,9 +347,25 @@
     gap: 5px;
     color: rgb(0, 104, 255);
     font-size: 1.2rem;
+    overflow: auto hidden;
     white-space: nowrap !important;
-    overflow: hidden;
-    overflow-x: auto;
+}
+
+#modalBook #divBookModalDetails .authorsUlBooksModal::-webkit-scrollbar {
+    height: 4px;
+}
+
+#modalBook #divBookModalDetails .authorsUlBooksModal::-webkit-scrollbar-thumb {
+    background-color: lightgray !important;
+}
+
+#modalBook #divBookModalDetails .authorsUlBooksModal::-webkit-scrollbar-track {
+    background-color: rgb(250, 250, 250) !important;
+}
+
+#modalBook #divBookModalDetails .authorLiBooksModal:hover {
+    cursor: pointer;
+    color: rgb(59, 139, 255);
 }
 
 #modalBook #divBookModalDetails .authorsUlBooksModal::before {
@@ -365,11 +381,22 @@
 }
 
 #modalBook #divBookModalDetails p {
-    margin-top: 15px;
-    height: 200px;
+    height: 170px;
     overflow: hidden auto;
-    padding: 5px;
+    padding: 5px 5px 50px;
     mask: linear-gradient(360deg, transparent, white 20%);
+}
+
+#modalBook #divBookModalDetails p::-webkit-scrollbar {
+    width: 4px;
+}
+
+#modalBook #divBookModalDetails p::-webkit-scrollbar-thumb {
+    background-color: lightgray !important;
+}
+
+#modalBook #divBookModalDetails p::-webkit-scrollbar-track {
+    background-color: rgb(250, 250, 250) !important;
 }
 
 #modalBook #divBookModalDetails .categoryUlBooksModal {
@@ -384,4 +411,54 @@
     padding: 2px 12px;
     border-radius: 5px;
     font-size: 0.8rem;
+}
+
+#divImgModalAuthor .imgAuthor {
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+}
+
+#divBooksAuthors {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 230px;
+    overflow: hidden auto;
+    mask: linear-gradient(360deg, transparent, white 20%);
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+#divBooksAuthors::-webkit-scrollbar {
+    width: 4px;
+}
+
+#divBooksAuthors::-webkit-scrollbar-thumb {
+    background-color: lightgray !important;
+}
+
+#divBooksAuthors::-webkit-scrollbar-track {
+    background-color: rgb(250, 250, 250) !important;
+}
+
+#divBooksAuthors .divEachBookAuthors {
+    width: 130px;
+}
+
+#divBooksAuthors .divTitleAuthorBook {
+    height: 60px;
+    overflow: hidden auto;
+}
+
+#divBooksAuthors .divTitleAuthorBook::-webkit-scrollbar {
+    display: none;
+}
+
+#divBooksAuthors .imgAuthorBook {
+    height: 180px;
+    margin-top: 20px;
+}
+
+#divBooksAuthors .imgAuthorBook:hover {
+    cursor: pointer;
 }

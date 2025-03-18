@@ -14,7 +14,12 @@ export const library = () => {
     const modalBook = document.querySelector("#modalBook");
     const iconXModalBook = document.querySelector("#iconXModalBook");
 
+    // URL Logic
+    const hash = window.location.search;
+    const hashSplit = hash.split("/");
+    const hashNumber = hashSplit[1];
 
+    // Metadata and Flags
     let page = 1;
     let totalPages = 0;
     let limit = 24;
@@ -26,6 +31,7 @@ export const library = () => {
     let isDataBySearch = false;
     let isDataByCategory = false;
 
+    // Functions and Library Logic
     const fetchInitialData = async () => {
         try {
             const response = await fetch("https://icpf-api-production.up.railway.app/libros");
@@ -35,6 +41,16 @@ export const library = () => {
             dataFetch = data;
             createLibrary(dataFetch);
             createPagination(dataFetch);
+
+            if (hash.includes("libro")) {
+                dataFetch.filter(book => {
+                    if (book.libro_id == hashNumber) {
+                        createBookModal(null, book);
+                    }
+                })
+            } else if (hash.includes("autor")) {
+               createAuthorModal(null, hashNumber);
+            }
 
         } catch (err) {
             console.log("Error fetching library data: ", err);
@@ -53,9 +69,9 @@ export const library = () => {
 
             page = 1
 
-            dataBySearch = dataFetch.filter(Book => {
-                const titleMatch = searchWords.every(word => Book.libro_titulo.toLowerCase().includes(word));
-                const authorMatch = Book.autores.some(author =>
+            dataBySearch = dataFetch.filter(book => {
+                const titleMatch = searchWords.every(word => book.libro_titulo.toLowerCase().includes(word));
+                const authorMatch = book.autores.some(author =>
                     searchWords.every(word =>
                         author.nombre.toLowerCase().includes(word) ||
                         author.apellidos.toLowerCase().includes(word)
@@ -106,8 +122,8 @@ export const library = () => {
                             isDataFetch = false;
                             isDataBySearch = false;
                             isDataByCategory = true;
-                            dataByCategory = dataFetch.filter(Book =>
-                                Book.categorias.some(categoria => categoria.id == e.target.dataset.id)
+                            dataByCategory = dataFetch.filter(book =>
+                                book.categorias.some(categoria => categoria.id == e.target.dataset.id)
                             );
                             createLibrary(dataByCategory);
                             createPagination(dataByCategory);
@@ -175,88 +191,21 @@ export const library = () => {
 
         totalPages = Math.ceil(data.length / limit);
 
-        data.slice(dataMin, dataMax).forEach(Book => {
+        data.slice(dataMin, dataMax).forEach(book => {
             const div = document.createElement("div");
             div.className = "divBooks";
 
             // Image Div
             const divImage = document.createElement("div");
             divImage.className = "divImageBooks";
-            divImage.setAttribute("book-id", Book.libro_id);
+            divImage.setAttribute("book-id", book.libro_id);
 
-            // Book Modal
-            divImage.addEventListener("click", (e) => {
-                const divBookModalImg = document.querySelector("#divBookModalImg");
-                const divBookModalDetails = document.querySelector("#divBookModalDetails");
-
-                modalBook.style.display = "flex";
-                iconXModalBook.addEventListener("click", () => {
-                    modalBook.style.display = "none"
-                    divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
-                    divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
-                });
-
-                const img = document.createElement("img");
-                img.className = "imgBooks";
-                img.src = `${Book.libro_imagen}`;
-
-                divBookModalImg.appendChild(img);
-
-                const div = document.createElement("div");
-                div.id = "ModalBookDetailInfo";
-
-                const h3 = document.createElement("h3");
-                h3.textContent = Book.libro_titulo;
-                const p = document.createElement("p");
-                p.textContent = Book.libro_descripcion;
-                const spanPages = document.createElement("span");
-                spanPages.id = "pagesBookModal";
-                spanPages.textContent = Book.libro_paginas;
-
-                const authorsUl = document.createElement("ul");
-                authorsUl.className = "authorsUlBooksModal"
-                Book.autores.forEach((author, index) => {
-                    const authorLi = document.createElement("li");
-                    authorLi.className = "authorLiBooksModal"
-                    authorLi.id = `${author.id}`
-                    authorLi.textContent = `${author.nombre} ${author.apellidos}`
-                    if (Book.autores.length > 1) {
-                        if (index < Book.autores.length - 1) {
-                            authorLi.textContent += ",";
-                        }
-                    }
-                    authorsUl.appendChild(authorLi);
-                })
-    
-                divDetails.appendChild(authorsUl);
-    
-                const categoryUl = document.createElement("ul");
-                categoryUl.className = "categoryUlBooksModal"
-                Book.categorias.forEach(category => {
-                    if (category.id === null) {
-                        return;
-                    }
-                    const categoryLi = document.createElement("li");
-                    categoryLi.className = "categoryLiBooksModal"
-                    categoryLi.id = `${category.id}`;
-                    categoryLi.textContent = `${category.categoria}`;
-                    categoryLi.style.backgroundColor = `#402e18`;
-                    categoryLi.style.color = "white";
-                    categoryUl.appendChild(categoryLi);
-                })
-                
-                
-                div.appendChild(h3);
-                div.appendChild(authorsUl);
-                div.appendChild(spanPages);
-                div.appendChild(p);
-                div.appendChild(categoryUl);
-                divBookModalDetails.appendChild(div);
-            })
+            // book Modal
+            divImage.addEventListener("click", (e) => createBookModal(e, book));
 
             const img = document.createElement("img");
             img.className = "imgBooks";
-            img.src = `${Book.libro_imagen}`;
+            img.src = `${book.libro_imagen}`;
 
             divImage.appendChild(img);
 
@@ -268,23 +217,24 @@ export const library = () => {
             divTitle.className = "divTitleBooks";
             const title = document.createElement("span");
             title.className = "bookTitleSpan"
-            title.textContent = `${Book.libro_titulo}`;
+            title.textContent = `${book.libro_titulo}`;
 
             divTitle.appendChild(title)
             divDetails.appendChild(divTitle);
 
             const authorsUl = document.createElement("ul");
             authorsUl.className = "authorsUlBooks"
-            Book.autores.forEach((author, index) => {
+            book.autores.forEach((author, index) => {
                 const authorLi = document.createElement("li");
                 authorLi.className = "authorLiBooks"
                 authorLi.id = `${author.id}`
                 authorLi.textContent = `${author.nombre} ${author.apellidos}`
-                if (Book.autores.length > 1) {
-                    if (index < Book.autores.length - 1) {
+                if (book.autores.length > 1) {
+                    if (index < book.autores.length - 1) {
                         authorLi.textContent += ",";
                     }
                 }
+                authorLi.addEventListener("click", (e) => createAuthorModal(e, author.id));
                 authorsUl.appendChild(authorLi);
             })
 
@@ -292,7 +242,7 @@ export const library = () => {
 
             const categoryUl = document.createElement("ul");
             categoryUl.className = "categoryUlBooks"
-            Book.categorias.forEach(category => {
+            book.categorias.forEach(category => {
                 if (category.id === null) {
                     return;
                 }
@@ -311,6 +261,168 @@ export const library = () => {
             div.appendChild(divDetails);
             insideDivLibrary.appendChild(div);
         })
+    };
+
+    const createBookModal = (e, book) => {
+        const divBookModalImg = document.querySelector("#divBookModalImg");
+        const divBookModalDetails = document.querySelector("#divBookModalDetails");
+
+        history.pushState(null, '', '/');
+        history.replaceState(null, '', `libreria/?libro/${book.libro_id}`)
+
+        modalBook.style.display = "flex";
+        divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
+        divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
+        divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+
+        iconXModalBook.addEventListener("click", () => {
+            history.pushState(null, '', '/libreria/');
+            modalBook.style.display = "none"
+            divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
+            divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+        });
+
+        const img = document.createElement("img");
+        img.className = "imgBooks";
+        img.src = `${book.libro_imagen}`;
+
+        divBookModalImg.appendChild(img);
+
+        const div = document.createElement("div");
+        div.id = "ModalBookDetailInfo";
+
+        const h3 = document.createElement("h3");
+        h3.textContent = book.libro_titulo;
+        const p = document.createElement("p");
+        p.textContent = book.libro_descripcion;
+        const spanPages = document.createElement("span");
+        spanPages.id = "pagesBookModal";
+        spanPages.textContent = book.libro_paginas;
+
+        const authorsUl = document.createElement("ul");
+        authorsUl.className = "authorsUlBooksModal"
+        book.autores.forEach((author, index) => {
+            const authorLi = document.createElement("li");
+            authorLi.className = "authorLiBooksModal"
+            authorLi.id = `${author.id}`
+            authorLi.textContent = `${author.nombre} ${author.apellidos}`
+            if (book.autores.length > 1) {
+                if (index < book.autores.length - 1) {
+                    authorLi.textContent += ",";
+                }
+            }
+            authorLi.addEventListener("click", (e) => createAuthorModal(e, author.id));
+            authorsUl.appendChild(authorLi);
+        })
+
+        divBookModalDetails.appendChild(authorsUl);
+
+        const categoryUl = document.createElement("ul");
+        categoryUl.className = "categoryUlBooksModal"
+        book.categorias.forEach(category => {
+            if (category.id === null) {
+                return;
+            }
+            const categoryLi = document.createElement("li");
+            categoryLi.className = "categoryLiBooksModal"
+            categoryLi.id = `${category.id}`;
+            categoryLi.textContent = `${category.categoria}`;
+            categoryLi.style.backgroundColor = `#402e18`;
+            categoryLi.style.color = "white";
+            categoryUl.appendChild(categoryLi);
+        })
+
+        div.appendChild(h3);
+        div.appendChild(authorsUl);
+        div.appendChild(spanPages);
+        div.appendChild(p);
+        div.appendChild(categoryUl);
+        divBookModalDetails.appendChild(div);
+    }
+
+    const createAuthorModal = async (e, authorId) => {
+        const divBookModalImg = document.querySelector("#divBookModalImg");
+        const divBookModalDetails = document.querySelector("#divBookModalDetails");
+
+        history.pushState(null, '', '/');
+        history.replaceState(null, '', `libreria/?autor/${authorId}`)
+
+        modalBook.style.display = "flex";
+        divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
+        divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
+        divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+
+        iconXModalBook.addEventListener("click", () => {
+            history.pushState(null, '', '/libreria/');
+            modalBook.style.display = "none"
+            divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
+            divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+        });
+
+        console.log(authorId);
+
+        try {
+            const response = await fetch(`https://icpf-api-production.up.railway.app/autores/${authorId}`);
+            const result = await response.json();
+
+            if (response.ok) {
+                console.log(result);
+                const divImg = document.createElement("div");
+                divImg.id = "divImgModalAuthor"
+
+                const img = document.createElement("img");
+                img.className = "imgAuthor";
+                img.src = `${result[0].autor_imagen}`;
+
+                divImg.appendChild(img);
+                divBookModalImg.appendChild(divImg);
+
+                const divDetails = document.createElement("div");
+                divDetails.id = "ModalAuthorDetailInfo";
+
+                const h3 = document.createElement("h3");
+                h3.textContent = result[0].autor_nombre + ' ' + result[0].autor_apellidos;
+                const p = document.createElement("p");
+                p.textContent = result[0].autor_descripcion;
+
+                divDetails.appendChild(h3);
+                divDetails.appendChild(p);
+                divBookModalDetails.appendChild(divDetails);
+
+                const divBooks = document.createElement("div");
+                divBooks.id = "divBooksAuthors";
+                result[0].libros.forEach(book => {
+                    const divEachBook = document.createElement("div");
+                    divEachBook.className = "divEachBookAuthors";
+                    const imgAuthorBook = document.createElement("img");
+                    imgAuthorBook.className = "imgAuthorBook";
+                    imgAuthorBook.src = `${book.imagen}`;
+                    imgAuthorBook.addEventListener("click", (e) => {
+                        dataFetch.filter(fetchedBook => {
+                            if (fetchedBook.libro_id == book.id) {
+                                createBookModal(e, fetchedBook);
+                            }
+                        })
+                    })
+                    const divTitleAuthorBook = document.createElement("div");
+                    divTitleAuthorBook.className = "divTitleAuthorBook";
+                    const titleAuthorBook = document.createElement("span");
+                    titleAuthorBook.className = "titleAuthorBook";
+                    titleAuthorBook.textContent = `${book.titulo}`;
+                    divTitleAuthorBook.appendChild(titleAuthorBook);
+
+                    divEachBook.appendChild(imgAuthorBook);
+                    divEachBook.appendChild(divTitleAuthorBook);
+                    divBooks.appendChild(divEachBook);
+                })
+
+                divBookModalDetails.appendChild(divBooks);
+
+            }
+
+        } catch (err) {
+            console.log("Error fetching author: ", err);
+        }
     };
 
     const createPagination = (data) => {
@@ -425,5 +537,35 @@ export const library = () => {
         }
     })
 
+    // Keyboard "Escape" Logic
+    document.addEventListener("keydown", (e) => {
+        const divBookModalImg = document.querySelector("#divBookModalImg");
+        const divBookModalDetails = document.querySelector("#divBookModalDetails");
+
+        if (e.key == "Escape") {
+            history.pushState(null, '', '/libreria/');
+            modalBook.style.display = "none"
+            divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
+            divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+        }
+    })
+
     iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
+
+    // Back & Forward Logic
+    let lastPath = sessionStorage.getItem("lastPath") || location.pathname;
+
+    window.addEventListener("popstate", () => {
+        const currentPath = location.pathname;
+
+        if (currentPath === lastPath) {
+            console.log("El usuario presionó 'Adelante'");
+        } else {
+            console.log("El usuario presionó 'Atrás'");
+        }
+
+        // Actualizar el último path registrado
+        sessionStorage.setItem("lastPath", currentPath);
+    });
+
 };
