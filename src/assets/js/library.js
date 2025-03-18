@@ -267,8 +267,7 @@ export const library = () => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
 
-        history.pushState(null, '', '/');
-        history.replaceState(null, '', `libreria/?libro/${book.libro_id}`)
+        history.pushState(null, '', `?libro/${book.libro_id}`)
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -344,8 +343,7 @@ export const library = () => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
 
-        history.pushState(null, '', '/');
-        history.replaceState(null, '', `libreria/?autor/${authorId}`)
+        history.pushState(null, '', `?autor/${authorId}`)
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -552,20 +550,25 @@ export const library = () => {
 
     iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
 
-    // Back & Forward Logic
-    let lastPath = sessionStorage.getItem("lastPath") || location.pathname;
+    // Back & Forward History Logic
 
     window.addEventListener("popstate", () => {
-        const currentPath = location.pathname;
-
-        if (currentPath === lastPath) {
-            console.log("El usuario presionó 'Adelante'");
+         console.log("POP")
+        if (hash.includes("libro")) {
+            console.log("LIBRO");
+            dataFetch.filter(book => {
+                if (book.libro_id == hashNumber) {
+                    createBookModal(null, book);
+                }
+            })
+        } else if (hash.includes("autor")) {
+           createAuthorModal(null, hashNumber);
         } else {
-            console.log("El usuario presionó 'Atrás'");
+            history.pushState(null, '', '/libreria/');
+            modalBook.style.display = "none"
+            divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
+            divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         }
-
-        // Actualizar el último path registrado
-        sessionStorage.setItem("lastPath", currentPath);
     });
 
 };
