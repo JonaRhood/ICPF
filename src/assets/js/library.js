@@ -275,6 +275,10 @@ export const library = () => {
     const createBookModal = (e, book) => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
+        divBookModalDetails.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
         
         history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
 
@@ -291,6 +295,7 @@ export const library = () => {
         });
 
         const img = document.createElement("img");
+        img.id = "imgBookDesktopModal"
         img.className = "imgBooks";
         img.src = `${book.libro_imagen}`;
 
@@ -340,7 +345,16 @@ export const library = () => {
             categoryUl.appendChild(categoryLi);
         })
 
+        const divImgClone = document.createElement("div");
+        divImgClone.id = "divImgClone"
+        
+        const imgClone = img.cloneNode(true);
+        imgClone.id = "imgBookMobileModal"
+        imgClone.style.display = "none";
+
         div.appendChild(h3);
+        divImgClone.appendChild(imgClone)
+        div.appendChild(divImgClone);
         div.appendChild(authorsUl);
         div.appendChild(spanPages);
         div.appendChild(p);

@@ -80,7 +80,7 @@
 
 #divSearchInputLibrary {
     height: 30px;
-    width: 30%;
+    width: 450px;
     margin-bottom: 20px;
     position: relative;
     display: flex;
@@ -151,20 +151,20 @@
     transition-property: transform, filter;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    animation: skeleton-books 2s infinite linear;
+    animation: 2s linear 0s infinite normal none running skeleton-books;
 }
 
 @keyframes skeleton-books {
     0% {
-        background-color: rgb(225 225 225);
+        background-color: rgb(225, 225, 225);
     }
 
     50% {
-        background-color: rgb(202 202 202);
+        background-color: rgb(202, 202, 202);
     }
 
     100% {
-        background-color: rgb(225 225 225);
+        background-color: rgb(225, 225, 225);
     }
 }
 
@@ -298,7 +298,7 @@
     left: 50%;
     transform: translate(-50%, -45%);
     width: 70%;
-    height: 70%;
+    height: 70vh;
     background-color: rgb(250, 250, 250);
     z-index: 1000;
 }
@@ -339,21 +339,20 @@
 
 #modalBook #divBookModalImg {
     width: 30%;
-    height: 450px;
+    min-width: 160px;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 #modalBook #divBookModalImg img {
-    position: absolute;
-    left: 0;
+    left: 0px;
+    top: 0px;
     width: 100%;
-    z-index: 10000 !important;
     min-height: 255px;
-    animation: skeleton-books 1.5s infinite linear;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
-    -webkit-animation: skeleton-books 1.5s infinite linear;
+    animation: 1.5s linear 0s infinite normal none running skeleton-books;
+    z-index: 10000 !important;
 }
 
 #modalBook #divBookModalDetails {
@@ -361,6 +360,19 @@
     width: 70%;
     padding: 0px 20px;
     font-size: 1.1rem;
+    overflow: hidden auto;
+}
+
+#modalBook #divBookModalDetails::-webkit-scrollbar {
+    width: 4px;
+}
+
+#modalBook #divBookModalDetails::-webkit-scrollbar-thumb {
+    background-color: lightgray !important;
+}
+
+#modalBook #divBookModalDetails::-webkit-scrollbar-track {
+    background-color: rgb(250, 250, 250) !important;
 }
 
 #modalBook #divBookModalDetails h3 {
@@ -396,19 +408,20 @@
 }
 
 #modalBook #divBookModalDetails .authorsUlBooksModal::before {
-    content: "Autor/es: ";
+    content: "Autor/es:Â ";
     color: black;
     font-weight: bold;
 }
 
 #modalBook #divBookModalDetails #pagesBookModal::before {
-    content: "Cantidad de Páginas: ";
+    content: "Cantidad de PÃ¡ginas:Â ";
     color: black;
     font-weight: bold;
 }
 
 #modalBook #divBookModalDetails p {
     height: 170px;
+    text-align: justify;
     overflow: hidden auto;
     padding: 5px 5px 50px;
     mask: linear-gradient(360deg, transparent, white 20%);
@@ -482,32 +495,27 @@
 }
 
 #divBooksAuthors .imgAuthorBook {
-    animation: skeleton-books 1.5s infinite linear;
     height: 180px;
     margin-top: 20px;
-    -webkit-animation: skeleton-books 1.5s infinite linear;
+    animation: 1.5s linear 0s infinite normal none running skeleton-books;
 }
 
 #divBooksAuthors .imgAuthorBook:hover {
     cursor: pointer;
 }
 
-
 .loaderLibrary {
     width: 100px;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background:
-        radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat,
-        conic-gradient(#0000 30%, #ffa516);
-    mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-    animation: l13 1s infinite linear;
+    background: radial-gradient(farthest-side, rgb(255, 165, 22) 94%, rgba(0, 0, 0, 0)) center top / 8px 8px no-repeat, conic-gradient(rgba(0, 0, 0, 0) 30%, rgb(255, 165, 22));
+    mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 8px), rgb(0, 0, 0) 0px);
+    animation: 1s linear 0s infinite normal none running l13;
 }
 
 @keyframes l13 {
     100% {
-        transform: rotate(1turn)
+        transform: rotate(1turn);
     }
 }
 
@@ -515,4 +523,87 @@
     position: absolute;
     top: 45%;
     left: 46%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #insideDivLibrary {
+        width: 95%;
+        gap: 40px;
+    }
+
+    .categoriesDivScroller {
+        width: 95%;
+    }
+
+    .categoriesDivScroller .liCategoriesLibrary {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    #insideDivLibrary .divBooks {
+        width: 160px;
+        height: 360px;
+    }
+
+    #insideDivLibrary .divImageBooks {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #modalBook {
+        border: 0px;
+        border-radius: 0px;
+        position: fixed;
+        top: 80px;
+        left: 0%;
+        transform: translate(0%, 0%);
+        width: 100%;
+        height: 92%;
+        background-color: rgb(250, 250, 250);
+    }
+
+    #divBookModalDetails {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    #divBookModalDetails h3 {
+        text-align: center;
+    }
+
+    #divBookModalImg {
+        display: none !important;
+    }
+
+    #divImgClone {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #imgBookMobileModal {
+        display: flex !important;
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+        justify-self: center;
+        margin: 10px 0px 30px 0px;
+        min-height: 255px;
+    }
+}
+
+@media only screen and (max-width: 604px) {
+    #insideDivLibrary {
+        gap: 25px 15px;
+    }
+
+    #divSearchInputLibrary {
+        width: 90%;
+    }
+
+    #divBookModalContent {
+        padding-inline: 0px !important;
+    }
 }
