@@ -13,6 +13,8 @@ export const library = () => {
     const iconXLibrary = document.querySelector("#iconXLibrary");
     const modalBook = document.querySelector("#modalBook");
     const iconXModalBook = document.querySelector("#iconXModalBook");
+    const loaderLibrary = document.querySelector("#loaderLibrary");
+    const loaderAuthors = document.querySelector("#loaderAuthors");
 
     // URL Logic
     const hash = window.location.search;
@@ -49,7 +51,7 @@ export const library = () => {
                     }
                 })
             } else if (hash.includes("autor")) {
-               createAuthorModal(null, hashNumber);
+                createAuthorModal(null, hashNumber);
             }
 
         } catch (err) {
@@ -203,9 +205,14 @@ export const library = () => {
             // book Modal
             divImage.addEventListener("click", (e) => createBookModal(e, book));
 
+            
             const img = document.createElement("img");
             img.className = "imgBooks";
             img.src = `${book.libro_imagen}`;
+
+            document.querySelectorAll("#insideDivLibrary .divImageBooks").forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
 
             divImage.appendChild(img);
 
@@ -260,14 +267,16 @@ export const library = () => {
             div.appendChild(divImage);
             div.appendChild(divDetails);
             insideDivLibrary.appendChild(div);
+
+            loaderLibrary.style.display = "none";
         })
     };
 
     const createBookModal = (e, book) => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
-
-        history.pushState(null, '', `?libro/${book.libro_id}`)
+        
+        history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -275,7 +284,7 @@ export const library = () => {
         divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
 
         iconXModalBook.addEventListener("click", () => {
-            history.pushState(null, '', '/libreria/');
+            history.pushState({ page: 'libreria' }, '', '/libreria/');
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -340,10 +349,11 @@ export const library = () => {
     }
 
     const createAuthorModal = async (e, authorId) => {
+        loaderAuthors.style.display = "flex";
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
 
-        history.pushState(null, '', `?autor/${authorId}`)
+        history.pushState({ page: 'autor' }, '', `?autor/${authorId}`)
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -351,7 +361,7 @@ export const library = () => {
         divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
 
         iconXModalBook.addEventListener("click", () => {
-            history.pushState(null, '', '/libreria/');
+            history.pushState({ page: 'libreria' }, '', '/libreria/');
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -371,9 +381,9 @@ export const library = () => {
                 const img = document.createElement("img");
                 img.className = "imgAuthor";
                 img.src = `${result[0].autor_imagen}`;
-
-                divImg.appendChild(img);
+                
                 divBookModalImg.appendChild(divImg);
+                divImg.appendChild(img);
 
                 const divDetails = document.createElement("div");
                 divDetails.id = "ModalAuthorDetailInfo";
@@ -414,6 +424,7 @@ export const library = () => {
                     divBooks.appendChild(divEachBook);
                 })
 
+                loaderAuthors.style.display = "none";
                 divBookModalDetails.appendChild(divBooks);
 
             }
@@ -541,7 +552,7 @@ export const library = () => {
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
 
         if (e.key == "Escape") {
-            history.pushState(null, '', '/libreria/');
+            history.pushState({ page: 'libreria' }, '', '/libreria/');
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -551,23 +562,24 @@ export const library = () => {
     iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
 
     // Back & Forward History Logic
-
     window.addEventListener("popstate", () => {
-         console.log("POP")
-        if (hash.includes("libro")) {
-            console.log("LIBRO");
-            dataFetch.filter(book => {
-                if (book.libro_id == hashNumber) {
-                    createBookModal(null, book);
-                }
-            })
-        } else if (hash.includes("autor")) {
-           createAuthorModal(null, hashNumber);
-        } else {
-            history.pushState(null, '', '/libreria/');
+        const hashPop = window.location.search;
+        const hashSplitPop = hashPop.split("/");
+        const hashNumberPop = hashSplitPop[1];
+
+        console.log(hashPop, hashNumberPop);
+        if (hashPop == "") {
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
+        } else if (hashPop.includes("libro")) {
+            dataFetch.filter(book => {
+                if (book.libro_id == hashNumberPop) {
+                    createBookModal(null, book);
+                }
+            })
+        } else if (hashPop.includes("autor")) {
+            createAuthorModal(null, hashNumberPop);
         }
     });
 
