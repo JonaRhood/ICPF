@@ -275,10 +275,12 @@ export const library = () => {
     const createBookModal = (e, book) => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
-        divBookModalDetails.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        setTimeout(() => {
+            divBookModalDetails.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }, 10); 
         
         history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
 
@@ -307,7 +309,16 @@ export const library = () => {
         const h3 = document.createElement("h3");
         h3.textContent = book.libro_titulo;
         const p = document.createElement("p");
-        p.textContent = book.libro_descripcion;
+        const text = book.libro_descripcion;
+        const parts = text.split('.');
+        if (parts.length > 2) {
+            const calc = Math.round(parts.length / 2);
+            const firstHalf = parts.slice(0, calc).join('.') + ".";
+            const secondHalf = parts.slice(calc).join('.');
+            p.innerHTML = firstHalf + "<br><br>" + secondHalf;
+        } else {
+            p.textContent = text;
+        }
         const spanPages = document.createElement("span");
         spanPages.id = "pagesBookModal";
         spanPages.textContent = book.libro_paginas;
@@ -404,10 +415,22 @@ export const library = () => {
 
                 const h3 = document.createElement("h3");
                 h3.textContent = result[0].autor_nombre + ' ' + result[0].autor_apellidos;
+                const imgClone = img.cloneNode(true);
+                imgClone.id = "imgBookMobileModal"
+                imgClone.style.display = "none";
                 const p = document.createElement("p");
-                p.textContent = result[0].autor_descripcion;
-
+                const text = result[0].autor_descripcion;
+                const parts = text.split('.');
+                if (parts.length > 2) {
+                    const calc = Math.round(parts.length / 2);
+                    const firstHalf = parts.slice(0, calc).join('.') + ".";
+                    const secondHalf = parts.slice(calc).join('.');
+                    p.innerHTML = firstHalf + "<br><br>" + secondHalf;
+                } else {
+                    p.textContent = text;
+                }
                 divDetails.appendChild(h3);
+                divDetails.appendChild(imgClone)
                 divDetails.appendChild(p);
                 divBookModalDetails.appendChild(divDetails);
 

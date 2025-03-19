@@ -340,12 +340,12 @@
 #modalBook #divBookModalImg {
     width: 30%;
     min-width: 160px;
-    display: flex;
+    height: 100%;
     justify-content: center;
     position: relative;
 }
 
-#modalBook #divBookModalImg img {
+#modalBook #divBookModalImg #imgBookDesktopModal {
     left: 0px;
     top: 0px;
     width: 100%;
@@ -408,13 +408,13 @@
 }
 
 #modalBook #divBookModalDetails .authorsUlBooksModal::before {
-    content: "Autor/es:Â ";
+    content: "Autor/es:Ã‚Â ";
     color: black;
     font-weight: bold;
 }
 
 #modalBook #divBookModalDetails #pagesBookModal::before {
-    content: "Cantidad de PÃ¡ginas:Â ";
+    content: "Cantidad de PÃƒÂ¡ginas:Ã‚Â ";
     color: black;
     font-weight: bold;
 }
@@ -453,7 +453,14 @@
     font-size: 0.8rem;
 }
 
+#divImgModalAuthor {
+    display: flex;
+    justify-content: center;
+}
+
 #divImgModalAuthor .imgAuthor {
+    animation: skeleton-books 1.5s infinite linear;
+    width: 100%;
     border-radius: 999px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
 }
@@ -542,12 +549,12 @@
 
 @media only screen and (max-width: 976px) {
     #insideDivLibrary .divBooks {
-        width: 160px;
-        height: 360px;
+        width: 140px;
+        height: 350px;
     }
 
     #insideDivLibrary .divImageBooks {
-        height: 230px;
+        height: 260px;
     }
 }
 
@@ -564,14 +571,24 @@
         background-color: rgb(250, 250, 250);
     }
 
+    #divBookModalContent {
+        padding: 0px !important;
+    }
+
+    #ModalBookDetailInfo {
+        margin-bottom: 50px;
+    }
+
     #divBookModalDetails {
         width: 100% !important;
-        display: flex !important;
         justify-content: center !important;
+        padding-top: 20px !important;
     }
 
     #divBookModalDetails h3 {
         text-align: center;
+        margin: 0px 30px;
+        font-size: 1.5rem !important;
     }
 
     #divBookModalImg {
@@ -585,12 +602,29 @@
     }
 
     #imgBookMobileModal {
-        display: flex !important;
         width: 200px;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
         justify-self: center;
-        margin: 10px 0px 30px 0px;
-        min-height: 255px;
+        margin: 10px 0px 30px;
+        min-height: 320px;
+        display: flex !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
+    }
+
+    #modalBook #divBookModalDetails p {
+        height: auto;
+        mask: none;
+        padding: 10px 0px;
+    }
+
+    #modalBook #iconXModalBook svg{
+        outline: 10px solid rgba(250,250,250,1);
+        background-color: rgba(250,250,250,1);
+    }
+
+    #divBooksAuthors {
+        height: auto;
+        mask: 0;
+        justify-content: space-around;
     }
 }
 
