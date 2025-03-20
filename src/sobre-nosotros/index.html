@@ -72,6 +72,7 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/about.css">
     <link rel="stylesheet" href="../assets/css/sermonPage.css">
+    <link rel="stylesheet" href="../assets/css/library.css">
 </head>
 
 <body data-router="wrapper">
@@ -116,11 +117,11 @@
                 <!-- NavBar -->
                 <nav id="firstNav" class="flex justify-center items-center text-white mr-[50px]">
                     <ul class="flex w-full justify-around gap-12">
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out">
                             <a href="/" aria-label="Link to Home Page">INICIO</a>
                         </li>
                         <li
-                            class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out relative">
+                            class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out relative">
                             <span class="is-active text-[#DFA878] hover:cursor-default" aria-label="Link to Home Page">
                                 SOBRE NOSOTROS
                                 <span id="headerSpan1"
@@ -129,16 +130,18 @@
                                     class="absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
                             </span>
                         </li>
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out">
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out">
                             <a href="/pastores/" aria-label="Link to Leaders Page">PASTORES</a>
                         </li>
 
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
                                 href="/sermones/" aria-label="Link to Sermons Page">SERMONES</a></li>
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
                                 href="/agenda/" aria-label="Link to Gospel Page">AGENDA</a></li>
-                        <li class="hover:text-[#DFA878] transition-colors transition-colors duration-300 ease-in-out"><a
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
                                 href="/ofrendar/" aria-label="Link to Give Page">OFRENDAR</a></li>
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
+                                href="/libreria/" aria-label="Link to Library Page">LIBRERÍA</a></li>
                     </ul>
                 </nav>
             </div>
@@ -191,6 +194,12 @@
                             <a href="/ofrendar/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
                                 aria-label="Link to Give Page">
                                 OFRENDAR
+                            </a>
+                        </li>
+                        <li class="hover:bg-amber-100/10 flex">
+                            <a href="/libreria/" class="flex w-full h-full p-3 justify-center liHiddenMenu"
+                                aria-label="Link to Library Page">
+                                LIBRERÍA
                             </a>
                         </li>
                         <li class="flex p-[10px] bg-[#212121]">
@@ -390,8 +399,7 @@
                                 </div>
                                 <div class="flex h-full w-[350px] content-center justify-center py-8">
                                     <div class="content-center w-[220px]">
-                                        <svg viewBox="0 0 670 470" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                        <svg viewBox="0 0 670 470" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g filter="url(#filter0_d_1_28)">
                                                 <path
                                                     d="M70.5 79.5L43.5 247C131.634 233.91 138.883 236.402 215.5 242.5C187.797 182.897 182.195 148.532 325 89.5C264.584 46.5178 183.817 48.6106 70.5 79.5Z"
@@ -481,7 +489,7 @@
                                     <path d="M1 4.5L4 1.5L7 4.5" stroke="#7B7B7B" />
                                 </svg>
                             </a>
-                            
+
                             <!-- Church Beliefs -->
                             <div id="divAbout-3"
                                 class="scrollableDiv scrollableDivJs absolute w-[900px] h-full py-8 pl-8 flex-col overflow-y-auto opacity-0 invisible z-20">
