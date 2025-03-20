@@ -502,11 +502,13 @@
 #divBooksAuthors .divTitleAuthorBook {
     height: 60px;
     overflow: hidden auto;
+    transition: color 1s ease-out;
 }
 
 #divBooksAuthors .divTitleAuthorBook:hover {
     cursor: pointer;
-    color: rgb(104, 86, 62);
+    color: rgb(36, 101, 255);
+    transition: color 0s;
 }
 
 #divBooksAuthors .divTitleAuthorBook::-webkit-scrollbar {

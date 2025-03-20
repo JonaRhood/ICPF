@@ -288,6 +288,7 @@ export const library = () => {
 
         document.documentElement.style.overflow = "hidden";
         document.documentElement.style.paddingRight = "8px";
+        document.querySelector("#firstNav").style.paddingRight = "8px"
         loaderAuthors.style.display = "none";
 
         history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
@@ -301,6 +302,7 @@ export const library = () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
             document.documentElement.style.overflow = "";
             document.documentElement.style.paddingRight = "";
+            document.querySelector("#firstNav").style.paddingRight = ""
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -394,6 +396,7 @@ export const library = () => {
 
         document.documentElement.style.overflow = "hidden";
         document.documentElement.style.paddingRight = "8px";
+        document.querySelector("#firstNav").style.paddingRight = "8px"
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -404,6 +407,7 @@ export const library = () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
             document.documentElement.style.overflow = "";
             document.documentElement.style.paddingRight = "";
+            document.querySelector("#firstNav").style.paddingRight = ""
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -548,40 +552,14 @@ export const library = () => {
     arrowLeftPagination.addEventListener("click", () => {
         if (page !== 1) {
             page--;
-            if (isDataFetch) {
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            } else if (isDataByCategory) {
-                createLibrary(dataByCategory);
-                createPagination(dataByCategory);
-            } else if (isDataBySearch) {
-                createLibrary(dataBySearch);
-                createPagination(dataBySearch);
-            }
-            window.scrollTo({
-                top: 200,
-                behavior: "smooth"
-            })
+            paginationLogic();
         }
     })
 
     arrowRightPagination.addEventListener("click", () => {
         if (page !== totalPages) {
             page++;
-            if (isDataFetch) {
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            } else if (isDataByCategory) {
-                createLibrary(dataByCategory);
-                createPagination(dataByCategory);
-            } else if (isDataBySearch) {
-                createLibrary(dataBySearch);
-                createPagination(dataBySearch);
-            }
-            window.scrollTo({
-                top: 200,
-                behavior: "smooth"
-            })
+            paginationLogic();
         }
     })
 
@@ -589,42 +567,33 @@ export const library = () => {
     doubleArrowLeftPagination.addEventListener("click", () => {
         if (page !== 1) {
             page = 1;
-            if (isDataFetch) {
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            } else if (isDataByCategory) {
-                createLibrary(dataByCategory);
-                createPagination(dataByCategory);
-            } else if (isDataBySearch) {
-                createLibrary(dataBySearch);
-                createPagination(dataBySearch);
-            }
-            window.scrollTo({
-                top: 200,
-                behavior: "smooth"
-            })
+            paginationLogic();
         }
     })
 
     doubleArrowRightPagination.addEventListener("click", () => {
         if (page !== totalPages) {
             page = totalPages;
-            if (isDataFetch) {
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            } else if (isDataByCategory) {
-                createLibrary(dataByCategory);
-                createPagination(dataByCategory);
-            } else if (isDataBySearch) {
-                createLibrary(dataBySearch);
-                createPagination(dataBySearch);
-            }
-            window.scrollTo({
-                top: 200,
-                behavior: "smooth"
-            })
+            paginationLogic();
         }
     })
+
+    const paginationLogic = () => {
+        if (isDataFetch) {
+            createLibrary(dataFetch);
+            createPagination(dataFetch);
+        } else if (isDataByCategory) {
+            createLibrary(dataByCategory);
+            createPagination(dataByCategory);
+        } else if (isDataBySearch) {
+            createLibrary(dataBySearch);
+            createPagination(dataBySearch);
+        }
+        window.scrollTo({
+            top: 200,
+            behavior: "smooth"
+        })
+    }
 
     // Keyboard "Escape" Logic
     document.addEventListener("keydown", (e) => {
@@ -634,7 +603,8 @@ export const library = () => {
         if (e.key == "Escape") {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
             document.documentElement.style.overflow = "";
-            document.documentElement.style.paddingRight = "";
+            document.documentElement.style.paddingRight = ""
+            document.querySelector("#firstNav").style.paddingRight = "";
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -655,6 +625,7 @@ export const library = () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
             document.documentElement.style.overflow = "";
             document.documentElement.style.paddingRight = "";
+            document.querySelector("#firstNav").style.paddingRight = ""
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         } else if (hashPop.includes("libro")) {
