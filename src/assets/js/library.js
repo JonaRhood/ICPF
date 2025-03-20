@@ -33,6 +33,8 @@ export const library = () => {
     let isDataBySearch = false;
     let isDataByCategory = false;
 
+    let controller = new AbortController();
+
     // Functions and Library Logic
     const fetchInitialData = async () => {
         try {
@@ -205,9 +207,10 @@ export const library = () => {
             // book Modal
             divImage.addEventListener("click", (e) => createBookModal(e, book));
 
-            
+
             const img = document.createElement("img");
             img.className = "imgBooks";
+            img.loading = "lazy";
             img.src = `${book.libro_imagen}`;
 
             document.querySelectorAll("#insideDivLibrary .divImageBooks").forEach((el, index) => {
@@ -225,6 +228,7 @@ export const library = () => {
             const title = document.createElement("span");
             title.className = "bookTitleSpan"
             title.textContent = `${book.libro_titulo}`;
+            title.addEventListener("click", (e) => createBookModal(e, book));
 
             divTitle.appendChild(title)
             divDetails.appendChild(divTitle);
@@ -280,8 +284,12 @@ export const library = () => {
                 top: 0,
                 behavior: "smooth"
             });
-        }, 10); 
-        
+        }, 10);
+
+        document.documentElement.style.overflow = "hidden";
+        document.documentElement.style.paddingRight = "8px";
+        loaderAuthors.style.display = "none";
+
         history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
 
         modalBook.style.display = "flex";
@@ -291,12 +299,15 @@ export const library = () => {
 
         iconXModalBook.addEventListener("click", () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
+            document.documentElement.style.overflow = "";
+            document.documentElement.style.paddingRight = "";
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         });
 
         const img = document.createElement("img");
+        img.loading = "lazy";
         img.id = "imgBookDesktopModal"
         img.className = "imgBooks";
         img.src = `${book.libro_imagen}`;
@@ -358,8 +369,9 @@ export const library = () => {
 
         const divImgClone = document.createElement("div");
         divImgClone.id = "divImgClone"
-        
+
         const imgClone = img.cloneNode(true);
+        imgClone.loading = "lazy";
         imgClone.id = "imgBookMobileModal"
         imgClone.style.display = "none";
 
@@ -380,6 +392,9 @@ export const library = () => {
 
         history.pushState({ page: 'autor' }, '', `?autor/${authorId}`)
 
+        document.documentElement.style.overflow = "hidden";
+        document.documentElement.style.paddingRight = "8px";
+
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
         divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
@@ -387,6 +402,8 @@ export const library = () => {
 
         iconXModalBook.addEventListener("click", () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
+            document.documentElement.style.overflow = "";
+            document.documentElement.style.paddingRight = "";
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -394,8 +411,13 @@ export const library = () => {
 
         console.log(authorId);
 
+        controller.abort();
+
+        controller = new AbortController();
+        const signal = controller.signal;
+
         try {
-            const response = await fetch(`https://icpf-api-production.up.railway.app/autores/${authorId}`);
+            const response = await fetch(`https://icpf-api-production.up.railway.app/autores/${authorId}`, { signal });
             const result = await response.json();
 
             if (response.ok) {
@@ -404,9 +426,12 @@ export const library = () => {
                 divImg.id = "divImgModalAuthor"
 
                 const img = document.createElement("img");
+                img.width = "500";
+                img.height = "500";
+                img.loading = "lazy";
                 img.className = "imgAuthor";
                 img.src = `${result[0].autor_imagen}`;
-                
+
                 divBookModalImg.appendChild(divImg);
                 divImg.appendChild(img);
 
@@ -415,8 +440,13 @@ export const library = () => {
 
                 const h3 = document.createElement("h3");
                 h3.textContent = result[0].autor_nombre + ' ' + result[0].autor_apellidos;
+                const divImgClone = document.createElement("div");
+                divImgClone.id = "divImgClone"
                 const imgClone = img.cloneNode(true);
                 imgClone.id = "imgBookMobileModal"
+                imgClone.width = "500";
+                imgClone.height = "500";
+                imgClone.loading = "lazy";
                 imgClone.style.display = "none";
                 const p = document.createElement("p");
                 const text = result[0].autor_descripcion;
@@ -430,7 +460,8 @@ export const library = () => {
                     p.textContent = text;
                 }
                 divDetails.appendChild(h3);
-                divDetails.appendChild(imgClone)
+                divImgClone.appendChild(imgClone)
+                divDetails.appendChild(divImgClone)
                 divDetails.appendChild(p);
                 divBookModalDetails.appendChild(divDetails);
 
@@ -441,6 +472,7 @@ export const library = () => {
                     divEachBook.className = "divEachBookAuthors";
                     const imgAuthorBook = document.createElement("img");
                     imgAuthorBook.className = "imgAuthorBook";
+                    imgAuthorBook.loading = "lazy";
                     imgAuthorBook.src = `${book.imagen}`;
                     imgAuthorBook.addEventListener("click", (e) => {
                         dataFetch.filter(fetchedBook => {
@@ -454,6 +486,13 @@ export const library = () => {
                     const titleAuthorBook = document.createElement("span");
                     titleAuthorBook.className = "titleAuthorBook";
                     titleAuthorBook.textContent = `${book.titulo}`;
+                    titleAuthorBook.addEventListener("click", (e) => {
+                        dataFetch.filter(fetchedBook => {
+                            if (fetchedBook.libro_id == book.id) {
+                                createBookModal(e, fetchedBook);
+                            }
+                        })
+                    })
                     divTitleAuthorBook.appendChild(titleAuthorBook);
 
                     divEachBook.appendChild(imgAuthorBook);
@@ -467,7 +506,11 @@ export const library = () => {
             }
 
         } catch (err) {
-            console.log("Error fetching author: ", err);
+            if (err.name === "AbortError") {
+                console.log("Solicitud Cancelada");
+            } else {
+                console.log("Error fetching author: ", err);
+            }
         }
     };
 
@@ -590,6 +633,8 @@ export const library = () => {
 
         if (e.key == "Escape") {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
+            document.documentElement.style.overflow = "";
+            document.documentElement.style.paddingRight = "";
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -607,15 +652,20 @@ export const library = () => {
         console.log(hashPop, hashNumberPop);
         if (hashPop == "") {
             modalBook.style.display = "none"
+            history.pushState({ page: 'libreria' }, '', '/libreria/');
+            document.documentElement.style.overflow = "";
+            document.documentElement.style.paddingRight = "";
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         } else if (hashPop.includes("libro")) {
             dataFetch.filter(book => {
                 if (book.libro_id == hashNumberPop) {
+                    history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
                     createBookModal(null, book);
                 }
             })
         } else if (hashPop.includes("autor")) {
+            history.pushState({ page: 'autor' }, '', `?autor/${hashNumberPop}`)
             createAuthorModal(null, hashNumberPop);
         }
     });
