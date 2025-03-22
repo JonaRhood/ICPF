@@ -87,25 +87,6 @@ export const animationScroll = () => {
         }
     }
 
-    // if (pathBanner50) {
-    //     gsap.to(pathBanner50, {
-    //         scrollTrigger: {
-    //             // trigger: header,
-    //             scrub: true,
-    //         },
-    //         y: 80,
-    //         duration: 1,
-    //     })
-    //     gsap.to(pathBanner75, {
-    //         scrollTrigger: {
-    //             // trigger: header,
-    //             scrub: true,
-    //         },
-    //         y: 50,
-    //         duration: 1,
-    //     })
-    // }
-
     if (latestSermon) {
         gsap.from(latestSermon, {
             scrollTrigger: {

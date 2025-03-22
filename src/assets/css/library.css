@@ -432,6 +432,8 @@
     overflow: hidden auto;
     padding: 5px 15px 50px 0px;
     mask: linear-gradient(360deg, transparent, white 20%);
+    scrollbar-width: thin; 
+    scrollbar-color: lightgray rgb(250, 250, 250); 
 }
 
 #modalBook #divBookModalDetails p::-webkit-scrollbar {
@@ -481,6 +483,8 @@
     overflow: hidden auto;
     mask: linear-gradient(360deg, transparent, white 20%);
     padding-bottom: 50px;
+    scrollbar-width: thin; 
+    scrollbar-color: lightgray rgb(250, 250, 250); 
 }
 
 #divBooksAuthors::-webkit-scrollbar {
@@ -503,6 +507,7 @@
     height: 60px;
     overflow: hidden auto;
     transition: color 1s ease-out;
+    scrollbar-width: none;
 }
 
 #divBooksAuthors .divTitleAuthorBook:hover {

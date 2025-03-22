@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 export const library = () => {
     console.log("Library")
     const insideDivLibrary = document.querySelector("#insideDivLibrary");
@@ -167,6 +169,12 @@ export const library = () => {
         } catch (err) {
             console.log("Error fetching categories: ", err)
         }
+
+        gsap.fromTo(
+            document.querySelectorAll(".ulCategoriesTagList"),
+            { opacity: 0 },
+            { opacity: 1, duration: 1}
+        )
     }
     fetchCategories();
 
@@ -272,6 +280,18 @@ export const library = () => {
             div.appendChild(divDetails);
             insideDivLibrary.appendChild(div);
 
+            gsap.fromTo(
+                insideDivLibrary.querySelectorAll(".divBooks"), 
+                { opacity: 0, y: 20 }, 
+                { opacity: 1, y: 0, duration: 1, stagger: 0.08, ease: "power2.out" } 
+            );
+            gsap.fromTo(
+                insideDivLibrary.querySelectorAll(".imgBooks"),
+                { filter: "blur(20px)" },
+                { filter: "blur(0px)", duration: 1 }
+            )
+
+
             loaderLibrary.style.display = "none";
         })
     };
@@ -285,24 +305,23 @@ export const library = () => {
                 behavior: "smooth"
             });
         }, 10);
+        
+        restoreScrollbar();
+        fixScrollbarGap();
 
-        document.documentElement.style.overflow = "hidden";
-        document.documentElement.style.paddingRight = "8px";
-        document.querySelector("#firstNav").style.paddingRight = "8px"
         loaderAuthors.style.display = "none";
 
         history.pushState({ page: 'libro' }, '', `?libro/${book.libro_id}`)
 
         modalBook.style.display = "flex";
+
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
         divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
         divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
 
         iconXModalBook.addEventListener("click", () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
-            document.documentElement.style.overflow = "";
-            document.documentElement.style.paddingRight = "";
-            document.querySelector("#firstNav").style.paddingRight = ""
+            restoreScrollbar();
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("img").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -314,7 +333,14 @@ export const library = () => {
         img.className = "imgBooks";
         img.src = `${book.libro_imagen}`;
 
+        
         divBookModalImg.appendChild(img);
+
+        gsap.fromTo(
+            divBookModalImg.querySelector(".imgBooks"),
+            { filter: "blur(10px)" },
+            { filter: "blur(0px", duration: 0.3 }
+        )
 
         const div = document.createElement("div");
         div.id = "ModalBookDetailInfo";
@@ -378,6 +404,7 @@ export const library = () => {
         imgClone.style.display = "none";
 
         div.appendChild(h3);
+
         divImgClone.appendChild(imgClone)
         div.appendChild(divImgClone);
         div.appendChild(authorsUl);
@@ -385,18 +412,24 @@ export const library = () => {
         div.appendChild(p);
         div.appendChild(categoryUl);
         divBookModalDetails.appendChild(div);
+
+        gsap.fromTo(
+            divImgClone.querySelector("#imgBookMobileModal"),
+            { filter: "blur(10px)" },
+            { filter: "blur(0px", duration: 0.3 }
+        )
     }
 
     const createAuthorModal = async (e, authorId) => {
-        loaderAuthors.style.display = "flex";
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
-
+        
         history.pushState({ page: 'autor' }, '', `?autor/${authorId}`)
-
-        document.documentElement.style.overflow = "hidden";
-        document.documentElement.style.paddingRight = "8px";
-        document.querySelector("#firstNav").style.paddingRight = "8px"
+        
+        loaderAuthors.style.display = "flex";
+        
+        restoreScrollbar();
+        fixScrollbarGap();
 
         modalBook.style.display = "flex";
         divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
@@ -405,9 +438,7 @@ export const library = () => {
 
         iconXModalBook.addEventListener("click", () => {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
-            document.documentElement.style.overflow = "";
-            document.documentElement.style.paddingRight = "";
-            document.querySelector("#firstNav").style.paddingRight = ""
+            restoreScrollbar()
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -439,6 +470,12 @@ export const library = () => {
                 divBookModalImg.appendChild(divImg);
                 divImg.appendChild(img);
 
+                gsap.fromTo(
+                    divBookModalImg.querySelector(".imgAuthor"),
+                    { filter: "blur(10px)" },
+                    { filter: "blur(0px", duration: 0.3 }
+                )
+
                 const divDetails = document.createElement("div");
                 divDetails.id = "ModalAuthorDetailInfo";
 
@@ -468,6 +505,12 @@ export const library = () => {
                 divDetails.appendChild(divImgClone)
                 divDetails.appendChild(p);
                 divBookModalDetails.appendChild(divDetails);
+
+                gsap.fromTo(
+                    divImgClone.querySelector("#imgBookMobileModal"),
+                    { filter: "blur(10px)" },
+                    { filter: "blur(0px", duration: 0.3 }
+                )
 
                 const divBooks = document.createElement("div");
                 divBooks.id = "divBooksAuthors";
@@ -602,9 +645,7 @@ export const library = () => {
 
         if (e.key == "Escape") {
             history.pushState({ page: 'libreria' }, '', '/libreria/');
-            document.documentElement.style.overflow = "";
-            document.documentElement.style.paddingRight = ""
-            document.querySelector("#firstNav").style.paddingRight = "";
+            restoreScrollbar();
             modalBook.style.display = "none"
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
@@ -623,9 +664,7 @@ export const library = () => {
         if (hashPop == "") {
             modalBook.style.display = "none"
             history.pushState({ page: 'libreria' }, '', '/libreria/');
-            document.documentElement.style.overflow = "";
-            document.documentElement.style.paddingRight = "";
-            document.querySelector("#firstNav").style.paddingRight = ""
+            restoreScrollbar();
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         } else if (hashPop.includes("libro")) {
@@ -641,4 +680,17 @@ export const library = () => {
         }
     });
 
+    // Scrollbar logic
+    function fixScrollbarGap() {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.documentElement.style.overflow = "hidden";
+        document.documentElement.style.paddingRight = `${scrollbarWidth}px`;
+        document.querySelector("#firstNav").style.paddingRight = `${scrollbarWidth}px`;
+    }
+    
+    function restoreScrollbar() {
+        document.documentElement.style.overflow = "";
+        document.documentElement.style.paddingRight = "";
+        document.querySelector("#firstNav").style.paddingRight = "";
+    }
 };
