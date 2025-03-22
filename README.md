@@ -57,7 +57,7 @@ Este proyecto representa una combinación cuidadosa de diseño y funcionalidad, 
 
 
     <p align="center">
-        <img src="/src/public/icpf-gif4.gif>
+        <img src="/src/public/icpf-gif4.gif">
     </p>
 
 
