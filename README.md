@@ -10,9 +10,7 @@
 </div>
 <br />
 
-<!-- **Enlace al proyecto en vivo:** <a href="web">web</a><br/> -->
-
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+**Enlace al proyecto en vivo:** <a href="[web](https://caminandoporfe.netlify.app/)">https://caminandoporfe.netlify.app/</a><br/>
 
 ## 📋 &nbsp; Tabla de Contenidos
 
