@@ -52,9 +52,13 @@ Este proyecto representa una combinación cuidadosa de diseño y funcionalidad, 
 - **Política de Privacidad y Control de Cookies**:
     - El sitio web respeta la privacidad del usuario con una política de cookies personalizable, permitiendo a los usuarios controlar la carga de contenido de terceros, como videos de YouTube y Google Maps. Esto garantiza que los usuarios puedan gestionar sus preferencias de privacidad de datos mientras acceden a toda la información disponible.
 - **Arquitectura Full Stack Escalable**:
-    - Se ha desarrollado una librería frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable. 
+    - Se ha desarrollado una librería en el frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable. 
     - Enlace al proyecto Backend: [https://github.com/JonaRhood/ICPF-API](https://github.com/JonaRhood/ICPF-API)
 
+
+    <p align="center">
+        <img src="/src/public/icpf-gif4.gif>
+    </p>
 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
