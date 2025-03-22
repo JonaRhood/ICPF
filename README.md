@@ -10,7 +10,7 @@
 </div>
 <br />
 
-**Enlace al proyecto en vivo:** <a href="[web](https://caminandoporfe.netlify.app/)">https://caminandoporfe.netlify.app/</a><br/>
+**Enlace al proyecto en vivo:** [web](https://caminandoporfe.netlify.app/libreria/)
 
 ## 📋 &nbsp; Tabla de Contenidos
 
@@ -36,7 +36,8 @@ Este proyecto representa una combinación cuidadosa de diseño y funcionalidad, 
 - **Centro Informativo**:
     - Diseñado como un recurso informativo integral, el sitio web proporciona contenido claro y accesible sobre la misión, ministerios y eventos comunitarios de la iglesia. Los visitantes pueden encontrar rápidamente horarios de servicios, aprender sobre programas de la iglesia y mantenerse actualizados sobre eventos próximos, convirtiéndolo en un punto central para información relacionada con la iglesia.
 - **Arquitectura Full Stack Escalable**:
-    - Se ha desarrollado una librería frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable.
+    - Se ha desarrollado una librería frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable. 
+    -**Enlace al proyecto Backend:** <a href="https://github.com/JonaRhood/ICPF-API">https://caminandoporfe.netlify.app/</a><br/>
 - **Integración con la API de YouTube v3**:  
     - La API de YouTube v3 se ha utilizado para obtener automáticamente información sobre los videos del canal de la iglesia. Esto permite crear y actualizar dinámicamente una página de sermones donde los usuarios pueden acceder fácilmente a los videos más recientes publicados en el canal de YouTube, proporcionando una experiencia automatizada y siempre actualizada para los visitantes.
 - **SPA con Barba.js**:
