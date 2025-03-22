@@ -549,8 +549,13 @@ export const library = () => {
 
                 loaderAuthors.style.display = "none";
                 divBookModalDetails.appendChild(divBooks);
-
             }
+
+            gsap.fromTo(
+                divBookModalDetails.querySelectorAll(".divEachBookAuthors"), 
+                { opacity: 0, translateY: 20 }, 
+                { opacity: 1, translateY: 0, duration: 0.3, stagger: 0.08, ease: "power2.out" } 
+            );
 
         } catch (err) {
             if (err.name === "AbortError") {
