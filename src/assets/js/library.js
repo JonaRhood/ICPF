@@ -45,8 +45,15 @@ export const library = () => {
 
             console.log(data);
             dataFetch = data;
-            createLibrary(dataFetch);
-            createPagination(dataFetch);
+
+            if (hash.includes("pagina")) {
+                page = hashNumber;
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            }
 
             if (hash.includes("libro")) {
                 dataFetch.filter(book => {
@@ -583,6 +590,7 @@ export const library = () => {
                 li.className = "liPaginationLibrary";
                 li.addEventListener("click", (e) => {
                     page = e.target.dataset.id;
+                    history.pushState({ page: 'pagina' }, '', `?pagina/${e.target.dataset.id}`);
                     createLibrary(data);
                     createPagination(data);
                     window.scrollTo({
@@ -668,7 +676,7 @@ export const library = () => {
         console.log(hashPop, hashNumberPop);
         if (hashPop == "") {
             modalBook.style.display = "none"
-            history.pushState({ page: 'libreria' }, '', '/libreria/');
+            history.pushState({ page: 'libreria' }, '', '/pagina/$');
             restoreScrollbar();
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
