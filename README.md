@@ -37,22 +37,29 @@ Este proyecto representa una combinación cuidadosa de diseño y funcionalidad, 
 
 ## 💿 &nbsp; <a id="features">Características</a>
 
-- **Centro Informativo**:
-    - Diseñado como un recurso informativo integral, el sitio web proporciona contenido claro y accesible sobre la misión, ministerios y eventos comunitarios de la iglesia. Los visitantes pueden encontrar rápidamente horarios de servicios, aprender sobre programas de la iglesia y mantenerse actualizados sobre eventos próximos, convirtiéndolo en un punto central para información relacionada con la iglesia.
-- **Integración con la API de YouTube v3**:  
-    - La API de YouTube v3 se ha utilizado para obtener automáticamente información sobre los videos del canal de la iglesia. Esto permite crear y actualizar dinámicamente una página de sermones donde los usuarios pueden acceder fácilmente a los videos más recientes publicados en el canal de YouTube, proporcionando una experiencia automatizada y siempre actualizada para los visitantes.
-- **SPA con Barba.js**:
-    - Este proyecto es una SPA (Single Page Application) optimizada con Barba.js para ofrecer transiciones fluidas entre secciones sin recargar la página, mejorando la experiencia del usuario y el rendimiento
-- **Sliders con Swiper.js**:
-    - Integración de **Swiper.js** para sliders de imágenes y contenido visualmente atractivos e interactivos, ideales para destacar eventos y anuncios importantes.
-- **Animaciones y Efectos Visuales con GSAP**:
-    - Con **GSAP**, el sitio presenta animaciones refinadas que crean un entorno dinámico y acogedor, mientras asegura un rendimiento optimizado.
-- **Adaptación Móvil**:
-    - El diseño es completamente responsivo, proporcionando una experiencia óptima en dispositivos de escritorio, tablets o smartphones.
-- **Política de Privacidad y Control de Cookies**:
-    - El sitio web respeta la privacidad del usuario con una política de cookies personalizable, permitiendo a los usuarios controlar la carga de contenido de terceros, como videos de YouTube y Google Maps. Esto garantiza que los usuarios puedan gestionar sus preferencias de privacidad de datos mientras acceden a toda la información disponible.
-- **Arquitectura Full Stack Escalable**:
-    - Se ha desarrollado una librería en el frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable. 
+- **📍 Centro Informativo**:  
+    Diseñado como un recurso informativo integral, el sitio web proporciona contenido claro y accesible sobre la misión, ministerios y eventos comunitarios de la iglesia. Los visitantes pueden encontrar rápidamente horarios de servicios, aprender sobre programas de la iglesia y mantenerse actualizados sobre eventos próximos, convirtiéndolo en un punto central para información relacionada con la iglesia.
+
+- **🎬 Integración con la API de YouTube v3**:  
+    API de YouTube v3 se ha utilizado para obtener automáticamente información sobre los videos del canal de la iglesia. Esto permite crear y actualizar dinámicamente una página de sermones donde los usuarios pueden acceder fácilmente a los videos más recientes publicados en el canal de YouTube, proporcionando una experiencia automatizada y siempre actualizada para los visitantes.
+
+- **⚡ SPA con Barba.js**:  
+    Este proyecto es una SPA (Single Page Application) optimizada con Barba.js para ofrecer transiciones fluidas entre secciones sin recargar la página, mejorando la experiencia del usuario y el rendimiento.
+
+- **🎡 Sliders con Swiper.js**:  
+    Integración de Swiper.js para sliders de imágenes y contenido visualmente atractivos e interactivos, ideales para destacar eventos y anuncios importantes.
+
+- **✨ Animaciones y Efectos Visuales con GSAP**:  
+    Con GSAP, el sitio presenta animaciones refinadas que crean un entorno dinámico y acogedor, mientras asegura un rendimiento optimizado.
+
+- **📱 Adaptación Móvil**:  
+    El diseño es completamente responsivo, proporcionando una experiencia óptima en dispositivos de escritorio, tablets o smartphones.
+
+- **🔒 Política de Privacidad y Control de Cookies**:  
+    El sitio web respeta la privacidad del usuario con una política de cookies personalizable, permitiendo a los usuarios controlar la carga de contenido de terceros, como videos de YouTube y Google Maps. Esto garantiza que los usuarios puedan gestionar sus preferencias de privacidad de datos mientras acceden a toda la información disponible.
+
+- **🖥️ Arquitectura Full Stack Escalable**:  
+    - Se ha desarrollado una librería en el frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable.  
     - Enlace al proyecto Backend: [https://github.com/JonaRhood/ICPF-API](https://github.com/JonaRhood/ICPF-API)
 
 
