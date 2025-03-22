@@ -45,7 +45,10 @@ barba.init({
             leave: ({ current }) => animationLeave(current.container),
             enter({ next }) {
                 animationEnter(next.container);
-                window.scrollTo(0, 0)
+                window.scrollTo(0, 0);
+                document.documentElement.style.overflow = "";
+                document.documentElement.style.paddingRight = "";
+                document.querySelector("#firstNav").style.paddingRight = "";
             },
         }
     ],

@@ -343,20 +343,16 @@
 }
 
 #modalBook #divBookModalImg {
-    width: 30%;
-    min-width: 180px;
+    width: 310px;
     height: 100%;
     justify-content: center;
     position: relative;
-    padding-left: 40px;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-left: 30px;
 }
 
 #modalBook #divBookModalImg #imgBookDesktopModal {
-    left: 0px;
-    top: 0px;
     width: 100%;
-    min-height: 255px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
     animation: 1.5s linear 0s infinite normal none running skeleton-books;
     z-index: 10000 !important;

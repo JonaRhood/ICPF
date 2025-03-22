@@ -55,6 +55,8 @@ Este proyecto representa una combinación cuidadosa de diseño y funcionalidad, 
     - Se ha desarrollado una librería frontend que se comunica con un backend en Railway, utilizando Supabase con PostgreSQL como base de datos, garantizando una integración eficiente y escalable. 
     - Enlace al proyecto Backend: [https://github.com/JonaRhood/ICPF-API](https://github.com/JonaRhood/ICPF-API)
 
+
+
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## ⚙️ &nbsp; <a id="technologies-used">Tecnologías Utilizadas</a>

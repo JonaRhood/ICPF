@@ -666,7 +666,7 @@ export const library = () => {
     })
 
     iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
-
+    
     // Back & Forward History Logic
     window.addEventListener("popstate", () => {
         const hashPop = window.location.search;
