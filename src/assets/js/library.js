@@ -95,6 +95,8 @@ export const library = () => {
 
             createLibrary(dataBySearch);
             createPagination(dataBySearch)
+
+            inputSearchLibrary.blur();
         }
     });
 
@@ -138,6 +140,7 @@ export const library = () => {
                             dataByCategory = dataFetch.filter(book =>
                                 book.categorias.some(categoria => categoria.id == e.target.dataset.id)
                             );
+                            page = 1;
                             createLibrary(dataByCategory);
                             createPagination(dataByCategory);
 
