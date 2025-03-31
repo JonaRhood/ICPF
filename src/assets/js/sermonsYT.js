@@ -70,7 +70,7 @@ export const sermonsYT = () => {
 
             // Sermons
             let visibleIndex = 0;
-            const maxDivs = 15;
+            const maxDivs = 18;
 
             data.items.forEach((item) => {
                 // Ignorar elementos que contengan "Highlight" en el título

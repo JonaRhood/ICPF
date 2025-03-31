@@ -38,6 +38,7 @@ export const animationScroll = () => {
     const agendaImg5 = document.querySelector("#agendaImg5");
     const agendaImg6 = document.querySelector("#agendaImg6");
     const agendaImg7 = document.querySelector("#agendaImg7");
+    const agendaImg8 = document.querySelector("#agendaImg8");
 
     const agendaFont1 = document.querySelectorAll(".gospelFontAnimateEnter1");
     const agendaFont2 = document.querySelectorAll(".gospelFontAnimateEnter2");
@@ -46,6 +47,7 @@ export const animationScroll = () => {
     const agendaFont5 = document.querySelectorAll(".gospelFontAnimateEnter5");
     const agendaFont6 = document.querySelectorAll(".gospelFontAnimateEnter6");
     const agendaFont7 = document.querySelectorAll(".gospelFontAnimateEnter7");
+    const agendaFont8 = document.querySelectorAll(".gospelFontAnimateEnter8");
 
     // Footer
     const logoFooter = document.querySelector("#logoOutlineBackground");
@@ -341,6 +343,23 @@ export const animationScroll = () => {
             },
             opacity: 0,
             x: -30,
+            duration: 1
+        });
+
+        gsap.from(agendaImg8, {
+            scrollTrigger: {
+                trigger: agendaImg8
+            },
+            opacity: 0,
+            clipPath: 'inset(0 100% 0 0)',
+            duration: 0.5
+        });
+        gsap.from(agendaFont8, {
+            scrollTrigger: {
+                trigger: agendaImg8
+            },
+            opacity: 0,
+            x: 30,
             duration: 1
         });
 
