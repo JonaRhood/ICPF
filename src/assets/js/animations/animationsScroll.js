@@ -31,7 +31,8 @@ export const animationScroll = () => {
     const nowPlaying = document.querySelector(".nowPlaying")
 
     // Agenda Page
-    const agendaImg1 = document.querySelector("#agendaImg1");
+    const agendaImgConferences1 = document.querySelector("#agendaImgConferences1");
+    const agendaImgConferences2 = document.querySelector("#agendaImgConferences2");
     const agendaImg2 = document.querySelector("#agendaImg2");
     const agendaImg3 = document.querySelector("#agendaImg3");
     const agendaImg4 = document.querySelector("#agendaImg4");
@@ -40,7 +41,8 @@ export const animationScroll = () => {
     const agendaImg7 = document.querySelector("#agendaImg7");
     const agendaImg8 = document.querySelector("#agendaImg8");
 
-    const agendaFont1 = document.querySelectorAll(".gospelFontAnimateEnter1");
+    const agendaFontConferences1 = document.querySelectorAll(".agendaFontConferences1");
+    const agendaFontConferences2 = document.querySelectorAll(".agendaFontConferences2");
     const agendaFont2 = document.querySelectorAll(".gospelFontAnimateEnter2");
     const agendaFont3 = document.querySelectorAll(".gospelFontAnimateEnter3");
     const agendaFont4 = document.querySelectorAll(".gospelFontAnimateEnter4");
@@ -227,23 +229,38 @@ export const animationScroll = () => {
     // Agenda Page 
 
     if (agendaImg2) {
-        gsap.from(agendaImg1, {
+        gsap.from(agendaImgConferences1, {
             scrollTrigger: {
-                trigger: agendaImg1
+                trigger: agendaImgConferences1
             },
             opacity: 0,
             clipPath: 'inset(0 100% 0 0)',
             duration: 0.8
         });
-        gsap.from(agendaFont1, {
+        gsap.from(agendaFontConferences1, {
             scrollTrigger: {
-                trigger: agendaImg1
+                trigger: agendaFontConferences1
             },
             opacity: 0,
             x: 30,
             duration: 1
         });
-
+        gsap.from(agendaImgConferences2, {
+            scrollTrigger: {
+                trigger: agendaImgConferences2
+            },
+            opacity: 0,
+            clipPath: 'inset(0 0 0 100%)',
+            duration: 0.8
+        });
+        gsap.from(agendaFontConferences2, {
+            scrollTrigger: {
+                trigger: agendaFontConferences2
+            },
+            opacity: 0,
+            x: -30,
+            duration: 1
+        });
         gsap.from(agendaImg2, {
             scrollTrigger: {
                 trigger: agendaImg2

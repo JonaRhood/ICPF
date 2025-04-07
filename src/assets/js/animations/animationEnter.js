@@ -28,13 +28,6 @@ const animationEnter = (container) => {
     const leaderName = container.querySelectorAll("#leaderName")
     const leaderMinistry = container.querySelectorAll("#leaderMinistry")
 
-    // Gospel animations
-    const divGospel = container.querySelector("#divGospelPage");
-    const gospelFont1 = container.querySelectorAll(".gospelFontAnimateEnter1");
-    const gospelFont2 = container.querySelectorAll(".gospelFontAnimateEnter2");
-    const divGospelImg1 = container.querySelectorAll(".divGospelPageImgAnimate1");
-    const divGospelImg2 = container.querySelectorAll(".divGospelPageImgAnimate2");
-
     // Sermons animations
     const sermonsLatestH2 = container.querySelector("#sermonsLatestH2")
     const sermonsLatestDiv = container.querySelector("#sermonsLatestDiv")
@@ -45,7 +38,6 @@ const animationEnter = (container) => {
 
     // Under construction animations
     const construction = container.querySelector(".underConstruction")
-
     const isSafari = /Safari/i.test(navigator.userAgent) && !/Chrome|CriOS/i.test(navigator.userAgent);
 
 
