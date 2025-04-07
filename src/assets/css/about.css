@@ -42,13 +42,11 @@
     scrollbar-color: #888 rgba(255, 255, 255, 0);
 }
 
-/* Internet Explorer */
-.scrollableDiv {
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
 
 .scrollableDiv {
     scrollbar-gutter: stable both-edges;
+    mask-image: linear-gradient(to bottom, white 80%, transparent 100%);
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 #arrowBeliefs:hover svg path {
@@ -371,6 +369,14 @@
 
     .divLoaderMap {
         height: 95%;
+    }
+
+    .giveDivMain {
+        width: 90%;
+        
+        p {
+            text-align: left;
+        }
     }
 }
 

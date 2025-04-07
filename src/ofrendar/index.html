@@ -108,12 +108,11 @@
                             <a href="/pastores/" aria-label="Link to Leaders Page">PASTORES</a>
                         </li>
 
-                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
-                                href="/sermones/" aria-label="Link to Sermons Page">SERMONES</a></li>
-                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
-                                href="/agenda/" aria-label="Link to Gospel Page">AGENDA</a></li>
-                        <li
-                            class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out relative">
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a href="/sermones/"
+                                aria-label="Link to Sermons Page">SERMONES</a></li>
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a href="/agenda/"
+                                aria-label="Link to Gospel Page">AGENDA</a></li>
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out relative">
                             <span class="is-active text-[#DFA878] hover:cursor-default" aria-label="Link to Home Page">
                                 OFRENDAR
                                 <span id="headerSpan1"
@@ -122,8 +121,8 @@
                                     class="absolute flex w-full h-[4px] transform translate-y-[25px] scale-150">&nbsp;</span>
                             </span>
                         </li>
-                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a
-                            href="/libreria/" aria-label="Link to Library Page">LIBRERÍA</a></li>
+                        <li class="hover:text-[#DFA878] transition-colors duration-300 ease-in-out"><a href="/libreria/"
+                                aria-label="Link to Library Page">LIBRERÍA</a></li>
                     </ul>
                 </nav>
             </div>
@@ -292,10 +291,58 @@
                 </h1>
                 <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
 
-                <div class="h-[70vh] flex justify-center">
-                    <div class="underConstruction flex justify-center items-center border-[1px] border-amber-900/30 w-[80%] h-[60vh] 
-                    bg-gray-400/10 rounded-3xl shadow text-[1.5rem] text-[#4b362e] text-center p-4">
-                        <p>Página en construcción...</p>
+                <div id="giveMainDiv" class="flex w-full justify-center gap-8 pb-[80px]">
+                    <!-- PayPal -->
+                    <div class="giveDivMain flex justify-center w-[560px]">
+                        <div class="giveDiv flex-column justify-center items-center border-2 border-amber-900/20 w-full
+                        bg-gray-100/70 rounded-3xl shadow text-[1.2rem] p-4">
+                            <div>
+                                <h2 class="text-center text-[1.5rem] py-[12px]">PayPal</h2>
+                            </div>
+                            <div class="flex justify-center w-full p-4">
+                                <a href="https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG" target="_blank">
+                                    <button class="flex bg-blue-500 py-2 px-8 rounded-full text-white transition-colors hover:bg-blue-400">
+                                        <svg viewBox="0 0 277 277" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[40px] pr-[10px]">
+                                            <path d="M114.609 149.926C115.763 149.926 142.54 151.08 158.467 147.156H158.582C176.934 142.655 202.441 129.728 209.02 87.4858C209.02 87.4858 223.678 34.625 150.965 34.625H88.5246C82.8692 34.625 78.0217 38.78 77.0983 44.32L50.5525 212.367C49.9754 215.829 52.7454 219.061 56.2079 219.061H95.7958L105.491 157.659C106.183 153.273 109.992 149.926 114.609 149.926Z" fill="white"/>
+                                            <path d="M219.176 95.6804C209.827 138.731 180.396 161.468 133.537 161.468H116.571L104.683 236.72C104.221 239.72 106.53 242.375 109.53 242.375H131.46C135.384 242.375 138.846 239.49 139.423 235.565C140.347 230.949 145.425 197.247 146.464 191.476C147.041 187.552 150.503 184.667 154.427 184.667H159.506C192.053 184.667 217.56 171.394 225.062 133.191C228.063 117.725 226.447 105.029 219.176 95.6804Z" fill="white"/>
+                                        </svg>
+                                        <span>
+                                            Donación via PayPal
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="flex">
+                                <p class="text-justify p-4">
+                                    Todas las donaciones realizadas a través de <strong>PayPal</strong> se
+                                    destinarán al fondo general. <br>
+                                    Para donar a un fondo específico, por favor utiliza la transferencia bancaria e
+                                    incluye una descripción.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BANK TRANSFER -->
+                    <div class="giveDivMain flex justify-center w-[560px]">
+                        <div class="giveDiv flex-column justify-center items-center border-2 border-amber-900/20 w-full
+                        bg-gray-100/70 rounded-3xl shadow text-[1.2rem] p-4">
+                            <div>
+                                <h2 class="text-center text-[1.5rem] py-[12px]">Transferencia Bancaria</h2>
+                            </div>
+                            <p class="text-justify p-4">
+                                Si deseas hacer una donación a Iglesia Caminando Por Fe,
+                                por favor realiza una transferencia bancaria utilizando los siguientes datos:
+                                <br><br>
+                                <strong>IBAN: </strong>ES53 0081 0039 8700 0165 1867 <br>
+                                <strong>Entidad Bancaria: </strong>Banco Sabadell <br>
+                                <strong>Código SWIFT: </strong> BSABESBBXXX <br>
+                                <br>
+                                Para donaciones a un fondo específico (distinto al fondo general de la iglesia),
+                                por favor indica claramente el propósito del donativo en la descripción.
+                                <br><br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -362,7 +409,8 @@
                                 <div class="mt-2 text-[0.9rem] text-white">
                                     <p>
                                         ICPF<br>
-                                        <a href="tel:+34658647797" aria-label="Link to Church Phone">(+34) 658 64 77 97</a><br />
+                                        <a href="tel:+34658647797" aria-label="Link to Church Phone">(+34) 658 64 77
+                                            97</a><br />
                                         iglesia.caminando.por.fe@live.com
                                     </p>
                                 </div>
