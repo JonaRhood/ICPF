@@ -115,7 +115,6 @@ export const library = () => {
             const response = await fetch("https://icpf-api-production.up.railway.app/categorias");
             const data = await response.json();
 
-            console.log(data);
             if (response.ok) {
                 categoriesDivScroller.forEach(div => {
                     const ul = document.createElement("ul");
@@ -269,6 +268,18 @@ export const library = () => {
 
             divDetails.appendChild(authorsUl);
 
+            if (book.libro_precio == null) {
+                console.log("NULL")
+            }
+            const divPrice = document.createElement("div");
+            divPrice.className = "divPriceBooks";
+            const spanPrice = document.createElement("span");
+            spanPrice.className = "spanPriceBooks";
+            spanPrice.textContent = `${book.libro_precio == null ? `-` : `${book.libro_precio.split('.')} €`}`;
+
+            divPrice.appendChild(spanPrice);
+            divDetails.appendChild(divPrice);
+
             const categoryUl = document.createElement("ul");
             categoryUl.className = "categoryUlBooks"
             book.categorias.forEach(category => {
@@ -371,6 +382,9 @@ export const library = () => {
         const spanPages = document.createElement("span");
         spanPages.id = "pagesBookModal";
         spanPages.textContent = book.libro_paginas;
+        const spanPrice = document.createElement("span");
+        spanPrice.id = "priceBookModal";
+        spanPrice.textContent = `${book.libro_precio.split('.')} €`;
 
         const authorsUl = document.createElement("ul");
         authorsUl.className = "authorsUlBooksModal"
@@ -418,6 +432,7 @@ export const library = () => {
         divImgClone.appendChild(imgClone)
         div.appendChild(divImgClone);
         div.appendChild(authorsUl);
+        div.appendChild(spanPrice);
         div.appendChild(spanPages);
         div.appendChild(p);
         div.appendChild(categoryUl);
@@ -453,8 +468,6 @@ export const library = () => {
             divBookModalImg.querySelectorAll("div").forEach(div => div.remove());
             divBookModalDetails.querySelectorAll("div").forEach(div => div.remove());
         });
-
-        console.log(authorId);
 
         controller.abort();
 
@@ -583,8 +596,6 @@ export const library = () => {
         const ul = document.createElement("ul");
         ul.className = "ulPaginationLibrary"
 
-        console.log(totalPages)
-
         for (let i = 0; i < totalPages; i++) {
             const li = document.createElement("li");
             li.dataset.id = i + 1;
@@ -601,6 +612,8 @@ export const library = () => {
                         behavior: "smooth"
                     })
                 })
+            } else {
+                li.className = "actualLiPagination";
             }
             ul.appendChild(li);
         }
