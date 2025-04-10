@@ -119,6 +119,7 @@ export const library = () => {
                 categoriesDivScroller.forEach(div => {
                     const ul = document.createElement("ul");
                     ul.className = "ulCategoriesTagList scroller_inner";
+                    ul.style.display = "none";
 
                     data.forEach((category, i) => {
                         const li = document.createElement("li");
@@ -171,6 +172,8 @@ export const library = () => {
 
                     // If category animation is not working, deletes one of its divs
                     setTimeout(() => {
+                        ul.style.display = "flex";
+
                         const el = document.querySelector('.ulCategoriesTagList');
                         if (!el) {
                             return;
