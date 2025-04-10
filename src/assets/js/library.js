@@ -18,6 +18,7 @@ export const library = () => {
     const loaderLibrary = document.querySelector("#loaderLibrary");
     const loaderAuthors = document.querySelector("#loaderAuthors");
 
+
     // URL Logic
     const hash = window.location.search;
     const hashSplit = hash.split("/");
@@ -167,6 +168,22 @@ export const library = () => {
                     });
 
                     div.appendChild(ul);
+
+                    setTimeout(() => {
+                        const el = document.querySelector('.ulCategoriesTagList');
+                        if (!el) {
+                          console.warn('❌ Elemento no encontrado');
+                          return;
+                        }
+                        const style = getComputedStyle(el);
+                        const transform = style.transform;
+                      
+                        if (transform && transform !== 'none') {
+                          console.log('✅ El elemento tiene una animación activa (transform detectado)');
+                        } else {
+                          console.warn('❌ El elemento NO se está animando (no hay transform)');
+                        }
+                    }, 100);
                 })
             }
 
@@ -718,8 +735,4 @@ export const library = () => {
         document.documentElement.style.paddingRight = "";
         document.querySelector("#firstNav").style.paddingRight = "";
     }
-
-    categoriesDivScroller.addEventListener("animationstart", () => {
-        console.log("Animación iniciada");
-    })
 };
