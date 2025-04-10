@@ -169,19 +169,21 @@ export const library = () => {
 
                     div.appendChild(ul);
 
+                    // If category animation is not working, deletes one of its divs
                     setTimeout(() => {
                         const el = document.querySelector('.ulCategoriesTagList');
                         if (!el) {
-                          console.warn('❌ Elemento no encontrado');
-                          return;
+                            return;
                         }
+                        
                         const style = getComputedStyle(el);
                         const transform = style.transform;
-                      
-                        if (transform && transform !== 'none') {
-                          console.log('✅ El elemento tiene una animación activa (transform detectado)');
-                        } else {
-                          console.warn('❌ El elemento NO se está animando (no hay transform)');
+
+                        if (!transform || transform === 'none') {
+                            const scroller = document.querySelector('.categoriesDivScroller:nth-child(3)');
+                            if (scroller) {
+                                scroller.remove();
+                            }
                         }
                     }, 100);
                 })
@@ -198,7 +200,7 @@ export const library = () => {
         gsap.fromTo(
             document.querySelectorAll(".ulCategoriesTagList"),
             { opacity: 0 },
-            { opacity: 1, duration: 1}
+            { opacity: 1, duration: 1 }
         )
     }
     fetchCategories();
@@ -315,9 +317,9 @@ export const library = () => {
             insideDivLibrary.appendChild(div);
 
             gsap.fromTo(
-                insideDivLibrary.querySelectorAll(".divBooks"), 
-                { opacity: 0, y: 20 }, 
-                { opacity: 1, y: 0, duration: 1, stagger: 0.08, ease: "power2.out" } 
+                insideDivLibrary.querySelectorAll(".divBooks"),
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 1, stagger: 0.08, ease: "power2.out" }
             );
             gsap.fromTo(
                 insideDivLibrary.querySelectorAll(".imgBooks"),
@@ -339,7 +341,7 @@ export const library = () => {
                 behavior: "smooth"
             });
         }, 10);
-        
+
         restoreScrollbar();
         fixScrollbarGap();
 
@@ -367,7 +369,7 @@ export const library = () => {
         img.className = "imgBooks";
         img.src = `${book.libro_imagen}`;
 
-        
+
         divBookModalImg.appendChild(img);
 
         gsap.fromTo(
@@ -461,11 +463,11 @@ export const library = () => {
     const createAuthorModal = async (e, authorId) => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
-        
+
         history.pushState({ page: 'autor' }, '', `?autor/${authorId}`)
-        
+
         loaderAuthors.style.display = "flex";
-        
+
         restoreScrollbar();
         fixScrollbarGap();
 
@@ -588,9 +590,9 @@ export const library = () => {
             }
 
             gsap.fromTo(
-                divBookModalDetails.querySelectorAll(".divEachBookAuthors"), 
-                { opacity: 0, translateY: 20 }, 
-                { opacity: 1, translateY: 0, duration: 0.3 } 
+                divBookModalDetails.querySelectorAll(".divEachBookAuthors"),
+                { opacity: 0, translateY: 20 },
+                { opacity: 1, translateY: 0, duration: 0.3 }
             );
 
         } catch (err) {
@@ -695,7 +697,7 @@ export const library = () => {
     })
 
     iconSearchLibrary.addEventListener("click", () => inputSearchLibrary.focus());
-    
+
     // Back & Forward History Logic
     window.addEventListener("popstate", () => {
         const hashPop = window.location.search;
@@ -729,7 +731,7 @@ export const library = () => {
         document.documentElement.style.paddingRight = `${scrollbarWidth}px`;
         document.querySelector("#firstNav").style.paddingRight = `${scrollbarWidth}px`;
     }
-    
+
     function restoreScrollbar() {
         document.documentElement.style.overflow = "";
         document.documentElement.style.paddingRight = "";
