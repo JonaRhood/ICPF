@@ -242,10 +242,10 @@ export const library = () => {
 
             const divTitle = document.createElement("div");
             divTitle.className = "divTitleBooks";
+            divTitle.addEventListener("click", (e) => createBookModal(e, book));
             const title = document.createElement("span");
             title.className = "bookTitleSpan"
             title.textContent = `${book.libro_titulo}`;
-            title.addEventListener("click", (e) => createBookModal(e, book));
 
             divTitle.appendChild(title)
             divDetails.appendChild(divTitle);
