@@ -43,7 +43,7 @@ export const library = () => {
             const response = await fetch("https://icpf-api-production.up.railway.app/libros");
             const data = await response.json();
 
-            console.log(data);
+            // console.log(data);
             dataFetch = data;
 
             if (hash.includes("pagina")) {
@@ -78,7 +78,6 @@ export const library = () => {
             isDataBySearch = true;
             isDataByCategory = false;
             const searchWords = e.target.value.toLowerCase().split(" ").filter(word => word.length > 0);
-            console.log(searchWords);
 
             page = 1
 
@@ -268,9 +267,6 @@ export const library = () => {
 
             divDetails.appendChild(authorsUl);
 
-            if (book.libro_precio == null) {
-                console.log("NULL")
-            }
             const divPrice = document.createElement("div");
             divPrice.className = "divPriceBooks";
             const spanPrice = document.createElement("span");
@@ -479,7 +475,7 @@ export const library = () => {
             const result = await response.json();
 
             if (response.ok) {
-                console.log(result);
+                // console.log(result);
                 const divImg = document.createElement("div");
                 divImg.id = "divImgModalAuthor"
 
@@ -722,4 +718,8 @@ export const library = () => {
         document.documentElement.style.paddingRight = "";
         document.querySelector("#firstNav").style.paddingRight = "";
     }
+
+    categoriesDivScroller.addEventListener("animationstart", () => {
+        console.log("Animación iniciada");
+    })
 };
