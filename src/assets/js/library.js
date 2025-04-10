@@ -577,7 +577,7 @@ export const library = () => {
             gsap.fromTo(
                 divBookModalDetails.querySelectorAll(".divEachBookAuthors"), 
                 { opacity: 0, translateY: 20 }, 
-                { opacity: 1, translateY: 0, duration: 0.3, stagger: 0.08, ease: "power2.out" } 
+                { opacity: 1, translateY: 0, duration: 0.3 } 
             );
 
         } catch (err) {

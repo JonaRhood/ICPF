@@ -14,7 +14,7 @@ Este es el **Frontend** de la **Full-Stack PENV App** creada para la Iglesia Cam
 
 El frontend ha sido desarrollado utilizando **Vanilla JavaScript**, asegurando una experiencia fluida y eficiente sin el uso de frameworks adicionales. Ha sido desplegado en **Netlify**, lo que facilita la integración continua y el despliegue automático, mejorando el flujo de trabajo en el desarrollo de aplicaciones web modernas.
 
-**Enlace al proyecto en vivo:** [https://caminandoporfe.netlify.app/](https://caminandoporfe.netlify.app/)
+**Enlace al proyecto en vivo:** [https://caminandoporfe.es/](https://caminandoporfe.es/)
 
 ## 📋 &nbsp; Tabla de Contenidos
 
