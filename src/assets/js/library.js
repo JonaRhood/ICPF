@@ -293,7 +293,7 @@ export const library = () => {
             divPrice.className = "divPriceBooks";
             const spanPrice = document.createElement("span");
             spanPrice.className = "spanPriceBooks";
-            spanPrice.textContent = `${book.libro_precio == null ? `-` : `${book.libro_precio.split('.')} €`}`;
+            spanPrice.textContent = `${book.libro_precio == null ? `-` : `${book.libro_precio.split(',')} €`}`;
 
             divPrice.appendChild(spanPrice);
             divDetails.appendChild(divPrice);
@@ -402,7 +402,7 @@ export const library = () => {
         spanPages.textContent = book.libro_paginas;
         const spanPrice = document.createElement("span");
         spanPrice.id = "priceBookModal";
-        spanPrice.textContent = `${book.libro_precio.split('.')} €`;
+        spanPrice.textContent = `${book.libro_precio.split(',')} €`;
 
         const authorsUl = document.createElement("ul");
         authorsUl.className = "authorsUlBooksModal"
