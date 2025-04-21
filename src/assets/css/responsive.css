@@ -133,7 +133,6 @@
 }
 
 @media only screen and (max-width: 1050px) {
-
     .is-active span {
         width: 75%;
         margin-left: 12%;
@@ -176,6 +175,10 @@
         flex-direction: column;
         width: 100%;
     }
+    #videoAgenda1 {
+
+    }
+
 }
 
 @media only screen and (max-width: 1035px) {

@@ -23,6 +23,9 @@ export const initCookies = () => {
     const cookieCheck = document.querySelector("#cookieCheck");
     const cookieCheck2 = document.querySelector("#cookieCheck2");
 
+    // Agenda Videos
+    const videoAgenda1 = document.querySelector("#videoAgenda1");
+
     // Cookie Background
     function createCookieBackground(rounded, index) {
         const cookieBackground = document.createElement("div");
@@ -155,6 +158,10 @@ export const initCookies = () => {
                 });
         }
 
+        if (videoAgenda1) {
+            videoAgenda1.appendChild(createYouTubeIframe('https://www.youtube-nocookie.com/embed/B9FvGDxQNOU?si=LW5VlsegzEqCpxAC', "YouTube video player: Answers in Genesis"));
+        }
+
     });
 
     // Cookie Reject Button
@@ -199,7 +206,10 @@ export const initCookies = () => {
                     }
                 });
         }
-        
+
+        if (videoAgenda1) {
+            videoAgenda1.appendChild(createYouTubeIframe('https://www.youtube-nocookie.com/embed/B9FvGDxQNOU?si=LW5VlsegzEqCpxAC', "YouTube video player: Answers in Genesis"));
+        }
 
         if (mapsAbout) {
             mapsAbout.appendChild(createMapsIframe("https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.712588243938!2d2.112206!3d41.3556063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f1ac1a1593%3A0xfc55cde8257bbf39!2sIglesia%20Caminando%20por%20Fe!5e0!3m2!1ses!2ses!4v1731659801026!5m2!1ses!2ses",
@@ -221,6 +231,10 @@ export const initCookies = () => {
             latestSermon.appendChild(createCookieBackground());
             message1.appendChild(createCookieBackground());
             message2.appendChild(createCookieBackground());
+        }
+
+        if (videoAgenda1) {
+            videoAgenda1.appendChild(createCookieBackground());
         }
 
         if (mapsAbout) {

@@ -776,6 +776,14 @@ video {
   display: none;
 }
 
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -1046,6 +1054,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .flex-1 {
@@ -2612,6 +2628,14 @@ main {
 
   .xl\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .xl\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
   }
 
   .xl\:flex-nowrap {
