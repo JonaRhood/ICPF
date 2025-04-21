@@ -459,7 +459,7 @@ export const library = () => {
         gsap.fromTo(
             divImgClone.querySelector("#imgBookMobileModal"),
             { filter: "blur(10px)" },
-            { filter: "blur(0px", duration: 0.3 }
+            { filter: "blur(0px", duration: 0.3, }
         )
     }
 
@@ -595,7 +595,7 @@ export const library = () => {
             gsap.fromTo(
                 divBookModalDetails.querySelectorAll(".divEachBookAuthors"),
                 { opacity: 0, translateY: 20 },
-                { opacity: 1, translateY: 0, duration: 0.3 }
+                { opacity: 1, translateY: 0, duration: 0.3, stagger: 0.08 }
             );
 
         } catch (err) {

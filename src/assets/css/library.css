@@ -511,7 +511,7 @@
     flex-wrap: wrap;
     height: 230px;
     overflow: hidden auto;
-    mask: linear-gradient(360deg, transparent, white 20%);
+    /* mask: linear-gradient(360deg, transparent, white 20%); */
     padding-bottom: 50px;
     scrollbar-width: thin;
     scrollbar-color: lightgray rgb(250, 250, 250);
