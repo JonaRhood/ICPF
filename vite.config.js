@@ -12,7 +12,6 @@ export default defineConfig({
     build: {
         outDir: '../dist',
         emptyOutDir: true,
-        // sourcemap: true,
         minify: 'esbuild',
         brotliSize: true,
         rollupOptions: {

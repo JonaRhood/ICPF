@@ -1,7 +1,6 @@
 import gsap from "gsap";
 
 export const library = () => {
-    console.log("Library")
     const insideDivLibrary = document.querySelector("#insideDivLibrary");
     const divNumbersPagination = document.querySelector("#divNumbersPagination");
     const categoriesDivScroller = document.querySelectorAll(".categoriesDivScroller");
@@ -178,7 +177,7 @@ export const library = () => {
                         if (!el) {
                             return;
                         }
-                        
+
                         const style = getComputedStyle(el);
                         const transform = style.transform;
 
@@ -233,7 +232,7 @@ export const library = () => {
 
         totalPages = Math.ceil(data.length / limit);
 
-        data.slice(dataMin, dataMax).forEach(book => {
+        data.slice(dataMin, dataMax).forEach((book, idx) => {
             const div = document.createElement("div");
             div.className = "divBooks";
 
@@ -248,8 +247,14 @@ export const library = () => {
 
             const img = document.createElement("img");
             img.className = "imgBooks";
+            img.alt = `Portada del libro: ${book.libro_titulo}`
             img.loading = "lazy";
             img.src = `${book.libro_imagen}`;
+            img.decoding = "sync"
+            img.setAttribute(
+                "fetchpriority",
+                idx < 10 ? "high" : "low"
+            );
 
             document.querySelectorAll("#insideDivLibrary .divImageBooks").forEach((el, index) => {
                 el.style.animationDelay = `${index * 0.2}s`;
@@ -627,7 +632,7 @@ export const library = () => {
                     createPagination(data);
                     window.scrollTo({
                         top: 200,
-                        behavior: "smooth"
+                        behavior: "instant"
                     })
                 })
             } else {

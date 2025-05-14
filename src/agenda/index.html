@@ -40,13 +40,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- IMAGE PRELOADING -->
     <link rel="preload" href="/img/agenda.webp" as="image" type="image/webp">
-    <link rel="preload" href="/img/1o1genesis.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/livingwaters.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/paper.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-2.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/vasos.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/glass.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/sermones.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/agenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/ofrenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/libreria-icpf1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/privacy.webp" as="image" type="image/webp">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://icpf-api-production.up.railway.app" crossorigin />
+    <link rel="dns-prefetch" href="https://icpf-api-production.up.railway.app" />
 
     <!-- STYLES -->
     <link href="../output.css" rel="stylesheet">
@@ -318,9 +332,8 @@
                     </div>
                     <div id="agendaImgConferences1"
                         class="divGospelPageImgAnimate1 divGospelImg w-[40%] xl:w-[40%] border-t-2 border-r-2 border-b-2 border-amber-900/10 divAgenda1Img aspect-video relative">
-                        <div class="flex h-full w-full object-cover"
-                        id="videoAgenda1">
-                    </div>
+                        <div class="flex h-full w-full object-cover" id="videoAgenda1">
+                        </div>
                         <!-- <img src="/img/1o1genesis.webp" alt="Book depitcting Eden"
                             class="w-full h-full object-cover brightness-150"> -->
                     </div>
@@ -337,7 +350,7 @@
                         </h2>
                         <p class="agendaFontConferences2 text-justify text-[1.1rem]">
                             <span class="font-bold">Conferencia junto al ministerio: Living Waters - <em>(Fecha por
-                                confirmar)</em></span>
+                                    confirmar)</em></span>
                             <br /><br>
                             Prepárate para compartir tu fe con valentía en la conferencia "Capacitándonos para
                             Evangelizar",
@@ -433,8 +446,8 @@
                     </div>
                     <div
                         class="divGospelBlocks flex flex-col bg-gray-100/70 w-[60%] xl:w-[50%] justify-center p-[80px] z-20 border-r-2 border-t-2 border-amber-900/10">
-                        <h2 class="gospelFontAnimateEnter5 font-bold text-[1.4rem] mb-2 text-[#5e4b3b]">Reunión de
-                            Varones - Mayo 3, Sábado de 8:00 a 12:00</h2>
+                        <h2 class="gospelFontAnimateEnter5 font-bold text-[1.4rem] mb-2 text-[#5e4b3b]">
+                            Reunión de Varones - Junio <em>(fecha por concretar)</em></h2>
                         <p class="gospelFontAnimateEnter5 text-justify text-[1.1rem]">
                             Cada mes, se organiza una reunión especial para hombres en nuestra iglesia. Es un espacio
                             dedicado a estudiar la Palabra de Dios, orar juntos y fortalecer nuestra fe. En estas
@@ -497,7 +510,7 @@
                     <div
                         class="divGospelBlocks flex flex-col bg-gray-200/70 w-[60%] xl:w-[50%] justify-center p-[80px] z-20 border-l-2 border-b-2 border-amber-900/10">
                         <h2 class="gospelFontAnimateEnter8 font-bold text-[1.4rem] mb-2 text-[#5e4b3b]">Ayuno
-                            Congregacional - Mayo 10, Sábado de 9:00 a 12:00</h2>
+                            Congregacional - Junio <em>(fecha por concretar)</em></h2>
                         <p class="gospelFontAnimateEnter8 text-justify text-[1.1rem]">
                             Cada mes, como iglesia, nos unimos en un tiempo de ayuno y oración, buscando a Dios con un
                             corazón rendido y expectante. Este tiempo especial nos permite fortalecer nuestra fe,
@@ -675,12 +688,6 @@
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>
         <script src="../main.js" type="module"></script>
-        <script src="../assets/js/gsap.js" type="module"></script>
-        <script src="../assets/js/three.js" type="module"></script>
-        <!-- <script src="../assets/js/youtube.js" type="module"></script> -->
-
-        <!-- Responsive Scripts -->
-        <!-- <script src="../assets/js/responsive.js" type="module"></script> -->
 
     </div>
 </body>

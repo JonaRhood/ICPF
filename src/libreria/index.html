@@ -40,11 +40,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- IMAGE PRELOADING -->
     <link rel="preload" href="/img/libreria-icpf1.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/paper.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-2.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/vasos.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/glass.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/sermones.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/agenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/ofrenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/libreria-icpf1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/privacy.webp" as="image" type="image/webp">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://icpf-api-production.up.railway.app" crossorigin />
+    <link rel="dns-prefetch" href="https://icpf-api-production.up.railway.app" />
 
     <!-- STYLES -->
     <link href="../output.css" rel="stylesheet">
@@ -292,7 +307,8 @@
                     style="z-index: 10;">
                     LIBRERÍA<br>BALUARTE DE LA FE
                 </h1>
-                <span class="flex w-ful justify-center pb-8"><em>(Precios sujetos a variaciones según el proveedor)</em></span>
+                <span class="flex w-ful justify-center pb-8 text-center"><em>(Precios sujetos a variaciones según el
+                        proveedor)</em></span>
                 <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
 
                 <!-- Library Content -->
@@ -422,7 +438,8 @@
                                 <div class="mt-2 text-[0.9rem] text-white">
                                     <p>
                                         ICPF<br>
-                                        <a href="tel:+34658647797" aria-label="Link to Church Phone">(+34) 658 64 77 97</a><br />
+                                        <a href="tel:+34658647797" aria-label="Link to Church Phone">(+34) 658 64 77
+                                            97</a><br />
                                         iglesia.caminando.por.fe@live.com
                                     </p>
                                 </div>
@@ -519,12 +536,6 @@
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>
         <script src="../main.js" type="module"></script>
-        <script src="../assets/js/gsap.js" type="module"></script>
-        <script src="../assets/js/three.js" type="module"></script>
-        <!-- <script src="../assets/js/youtube.js" type="module"></script> -->
-
-        <!-- Responsive Scripts -->
-        <!-- <script src="../assets/js/responsive.js" type="module"></script> -->
 
     </div>
 </body>

@@ -40,12 +40,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- IMAGE PRELOADING -->
     <link rel="preload" href="/img/glass.webp" as="image" type="image/webp">
-    <link rel="preload" href="/img/vaz-1.webp" as="image" type="image/webp">
+    <link rel="preload" href="/img/JM.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/paper.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-2.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/vasos.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/glass.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/sermones.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/agenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/ofrenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/libreria-icpf1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/privacy.webp" as="image" type="image/webp">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://icpf-api-production.up.railway.app" crossorigin />
+    <link rel="dns-prefetch" href="https://icpf-api-production.up.railway.app" />
 
     <!-- STYLES -->
     <link href="../output.css" rel="stylesheet">
@@ -295,20 +310,20 @@
                     PASTORES DE ICPF
                 </h1>
                 <div class="flex absolute w-full top-0 h-[100px] bg-gradient-to-b from-white"></div>
-                <div class="flex flex-col justify-center items-center">
 
+                <div class="flex flex-col justify-center items-center pb-10">
                     <div class="flex justify-center gap-4 px-[20px]" id="divContainerLeader">
                         <div class="relative flex-col" id="divContainerImageLeader">
-                            <div class="h-[auto] w-[270px] absolute justify-center flex" id="leaderPicture">
-                                <div class="flex absolute w-full h-[220px] content-center justify-center">
+                            <div class="h-[346px] w-[270px] absolute justify-center flex" id="leaderPicture">
+                                <div class="flex absolute w-full h-full content-center justify-center">
                                     <svg id="svgLoaderLeaders" viewBox="25 25 50 50" style="z-index: 0;">
                                         <circle id="circleLoaderLeaders" r="20" cy="50" cx="50"></circle>
                                     </svg>
                                 </div>
-                                <img src="/img/vaz-1.webp" alt="Portrait picture from Pastor Alin Tase" width="270"
+                                <img src="/img/JM.webp" alt="Portrait picture from Pastor Juan Manuel" width="270"
                                     height="auto" style="z-index: 1;" class="rounded">
                             </div>
-                            <div class="h-[220px] w-[270px] mt-[50px] bg-gradient-to-t from-gray-200 rounded">
+                            <div class="h-[346px] border- w-[270px] bg-gradient-to-t from-gray-200 rounded">
                             </div>
                             <h2 class="text-[1.5rem] mt-2 text-[#4b362e]" id="leaderName" style="z-index: 2;">Juan
                                 Manuel
@@ -352,21 +367,21 @@
 
                     <div class="flex justify-center gap-4 px-[20px]" id="divContainerLeader">
                         <div class="relative flex-col order-1" id="divContainerImageLeader2">
-                            <div class="h-[auto] w-[270px] absolute justify-center flex" id="leaderPicture">
-                                <div class="flex absolute w-full h-[220px] content-center justify-center">
+                            <div class="h-[346px] w-[270px] absolute justify-center flex" id="leaderPicture">
+                                <div class="flex absolute w-full h-full content-center justify-center">
                                     <svg id="svgLoaderLeaders" viewBox="25 25 50 50" style="z-index: 0;">
                                         <circle id="circleLoaderLeaders" r="20" cy="50" cx="50"></circle>
                                     </svg>
                                 </div>
-                                <img src="/img/maciel.webp" alt="Portrait picture from Pastor Alin Tase" width="270"
+                                <img src="/img/MM.webp" alt="Portrait picture from Pastor Alin Tase" width="270"
                                     height="auto" style="z-index: 1;" class="rounded">
                             </div>
-                            <div class="h-[220px] w-[270px] mt-[50px] bg-gradient-to-t from-gray-200 rounded">
+                            <div class="h-[346px] border- w-[270px] bg-gradient-to-t from-gray-200 rounded">
                             </div>
                             <h2 class="text-[1.5rem] mt-2 text-[#4b362e]" id="leaderName" style="z-index: 2;">
                                 Marcos Maciel
                             </h2>
-                            <h3 class="text-[0.9rem] mb-20" id="leaderMinistry" style="z-index: 3;">PASTOR</h3>
+                            <h3 class="text-[0.9rem]" id="leaderMinistry" style="z-index: 3;">PASTOR</h3>
                         </div>
                         <div class="bg-gray-100/70 p-6 w-[600px] mb-20 border-[1px] rounded border-amber-900/20"
                             id="divLeaders">
@@ -539,12 +554,6 @@
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>
         <script src="../main.js" type="module"></script>
-        <script src="../assets/js/gsap.js" type="module"></script>
-        <script src="../assets/js/three.js" type="module"></script>
-        <!-- <script src="../assets/js/youtube.js" type="module"></script> -->
-
-        <!-- Responsive Scripts -->
-        <!-- <script src="../assets/js/responsive.js" type="module"></script> -->
 
     </div>
 </body>

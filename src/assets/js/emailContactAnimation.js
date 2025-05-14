@@ -3,8 +3,6 @@ export const emailContactAnimation = () => {
     const divText = document.querySelector("#divSpanContact");
     const divMails = document.querySelector("#divMailsContact");
     const children = divMails.children;
-    const spanDesktop = document.querySelector("#spanContactDesktop");
-    const spanMobile = document.querySelector("#spanContactMobile");
 
     divButton.addEventListener("mouseover", () => {
         divButton.style.backgroundColor = 'rgb(59, 130, 246)';

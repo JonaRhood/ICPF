@@ -178,7 +178,6 @@
     #videoAgenda1 {
 
     }
-
 }
 
 @media only screen and (max-width: 1035px) {
@@ -449,6 +448,10 @@
 }
 
 @media only screen and (max-width: 510px) {
+    #divContainerLeader {
+        padding: 0px ;
+    }
+
     #divLeaders {
         width: 98%;
     }

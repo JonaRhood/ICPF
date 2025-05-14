@@ -1,7 +1,6 @@
 'use strict';
 
 import barba from '@barba/core';
-import gsap from 'gsap';
 import { animationEnter, animationLeave } from './animations';
 
 import { initSwipers } from './swiper';
@@ -40,7 +39,6 @@ barba.init({
         {
             once({ next }) {
                 animationEnter(next.container);
-                // initResponsiveMenu();
             },
             leave: ({ current }) => animationLeave(current.container),
             enter({ next }) {

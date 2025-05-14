@@ -1,6 +1,5 @@
 'use strict';
 
-
 document.addEventListener("DOMContentLoaded", function () {
     // Cargar la API de YouTube una vez
     var tag = document.createElement('script');
@@ -9,32 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 });
 
-// Variables para los jugadores
 let players = [];
 
 const API_KEY = import.meta.env.VITE_YOUTUBE;
 const CHANNEL_ID = "UCzpl6CJP6lo5vjsEAeIHnsg";
 const MAX_RESULTS = 5
-
-// async function fetchRecentVideos() {
-// //   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=${MAX_RESULTS}&type=videos`;
-  
-//   try {
-//     const response = await fetch(url);
-//     if (!response.ok) {
-//       throw new Error(`Error en la petición: ${response.statusText}`);
-//     }
-    
-//     const data = await response.json();
-//     console.log('Videos recientes:', data);
-//     return data.items; // Retorna los videos
-
-//   } catch (error) {
-//     console.error('Error al obtener los videos:', error);
-//   }
-// }
-
-// fetchRecentVideos();
 
 // Esta función se llama cuando la API de YouTube está lista
 window.onYouTubeIframeAPIReady = function() {
@@ -82,7 +60,6 @@ window.onYouTubeIframeAPIReady = function() {
     }));
 };
 
-// Funciones de evento para los jugadores
 function onPlayerReady(event) {
     event.target.playVideo();
 }

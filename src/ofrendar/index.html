@@ -40,11 +40,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- IMAGE PRELOADING -->
     <link rel="preload" href="/img/ofrenda.webp" as="image" type="image/webp">
     <link rel="preload" href="/img/paper.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/icpf-2.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/vasos.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/glass.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/sermones.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/agenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/ofrenda.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/libreria-icpf1.webp" as="image" type="image/webp">
+    <link rel="prefetch" href="/img/privacy.webp" as="image" type="image/webp">
+
+    <!-- PRECONNECT -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://icpf-api-production.up.railway.app" crossorigin />
+    <link rel="dns-prefetch" href="https://icpf-api-production.up.railway.app" />
 
     <!-- STYLES -->
     <link href="../output.css" rel="stylesheet">
@@ -304,10 +319,16 @@
                             </div>
                             <div class="flex justify-center w-full p-4">
                                 <a href="https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG" target="_blank">
-                                    <button class="flex bg-blue-500 py-2 px-8 rounded-full text-white transition-colors hover:bg-blue-400">
-                                        <svg viewBox="0 0 277 277" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[40px] pr-[10px]">
-                                            <path d="M114.609 149.926C115.763 149.926 142.54 151.08 158.467 147.156H158.582C176.934 142.655 202.441 129.728 209.02 87.4858C209.02 87.4858 223.678 34.625 150.965 34.625H88.5246C82.8692 34.625 78.0217 38.78 77.0983 44.32L50.5525 212.367C49.9754 215.829 52.7454 219.061 56.2079 219.061H95.7958L105.491 157.659C106.183 153.273 109.992 149.926 114.609 149.926Z" fill="white"/>
-                                            <path d="M219.176 95.6804C209.827 138.731 180.396 161.468 133.537 161.468H116.571L104.683 236.72C104.221 239.72 106.53 242.375 109.53 242.375H131.46C135.384 242.375 138.846 239.49 139.423 235.565C140.347 230.949 145.425 197.247 146.464 191.476C147.041 187.552 150.503 184.667 154.427 184.667H159.506C192.053 184.667 217.56 171.394 225.062 133.191C228.063 117.725 226.447 105.029 219.176 95.6804Z" fill="white"/>
+                                    <button
+                                        class="flex bg-blue-500 py-2 px-8 rounded-full text-white transition-colors hover:bg-blue-400">
+                                        <svg viewBox="0 0 277 277" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="w-[40px] pr-[10px]">
+                                            <path
+                                                d="M114.609 149.926C115.763 149.926 142.54 151.08 158.467 147.156H158.582C176.934 142.655 202.441 129.728 209.02 87.4858C209.02 87.4858 223.678 34.625 150.965 34.625H88.5246C82.8692 34.625 78.0217 38.78 77.0983 44.32L50.5525 212.367C49.9754 215.829 52.7454 219.061 56.2079 219.061H95.7958L105.491 157.659C106.183 153.273 109.992 149.926 114.609 149.926Z"
+                                                fill="white" />
+                                            <path
+                                                d="M219.176 95.6804C209.827 138.731 180.396 161.468 133.537 161.468H116.571L104.683 236.72C104.221 239.72 106.53 242.375 109.53 242.375H131.46C135.384 242.375 138.846 239.49 139.423 235.565C140.347 230.949 145.425 197.247 146.464 191.476C147.041 187.552 150.503 184.667 154.427 184.667H159.506C192.053 184.667 217.56 171.394 225.062 133.191C228.063 117.725 226.447 105.029 219.176 95.6804Z"
+                                                fill="white" />
                                         </svg>
                                         <span>
                                             Donar via PayPal
@@ -321,7 +342,7 @@
                                     ‘Ofrenda/Donativo iglesia + nombre’
                                     <br><br>
                                     Todas las donaciones realizadas a través de <strong>PayPal</strong> se
-                                    destinarán al fondo general. 
+                                    destinarán al fondo general.
                                     <br>
                                     Para donar a un fondo específico, por favor utiliza la transferencia bancaria e
                                     incluye una descripción.
@@ -514,12 +535,6 @@
         <!-- Scripts -->
         <script src="../assets/js/barba.js" type="module"></script>
         <script src="../main.js" type="module"></script>
-        <script src="../assets/js/gsap.js" type="module"></script>
-        <script src="../assets/js/three.js" type="module"></script>
-        <!-- <script src="../assets/js/youtube.js" type="module"></script> -->
-
-        <!-- Responsive Scripts -->
-        <!-- <script src="../assets/js/responsive.js" type="module"></script> -->
 
     </div>
 </body>
