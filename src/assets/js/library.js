@@ -375,6 +375,7 @@ export const library = () => {
         img.loading = "lazy";
         img.id = "imgBookDesktopModal"
         img.className = "imgBooks";
+        img.alt = `Portada del libro: ${book.libro_titulo}`
         img.src = `${book.libro_imagen}`;
 
 
@@ -511,6 +512,7 @@ export const library = () => {
                 img.height = "500";
                 img.loading = "lazy";
                 img.className = "imgAuthor";
+                img.alt = `Imagen del Autor: ${result[0].autor_nombre} + ' ' + ${result[0].autor_apellidos}`;
                 img.src = `${result[0].autor_imagen}`;
 
                 divBookModalImg.appendChild(divImg);

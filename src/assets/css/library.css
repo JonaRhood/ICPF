@@ -101,7 +101,7 @@
     padding: 8px;
     margin-left: 5px;
     display: flex;
-    width: auto;
+    width: 30px;
     position: absolute;
 }
 
@@ -179,6 +179,7 @@
 }
 
 #insideDivLibrary .divImageBooks img {
+    color: transparent;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
 }
@@ -499,6 +500,7 @@
 
 #divImgModalAuthor .imgAuthor {
     animation: 1.5s linear 0s infinite normal none running skeleton-books;
+    color: transparent;
     width: 100%;
     border-radius: 999px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px !important;
