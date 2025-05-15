@@ -262,12 +262,11 @@
 
     #divLeaders {
         width: 80%;
-        margin-top: -25px;
+        margin-top: -45px;
         margin-bottom: 40px;
         padding: 30px 20px;
         z-index: 0;
-          -webkit-mask-image: linear-gradient(to top, transparent, black 20%);
-  mask-image: linear-gradient(to top, transparent, black 20%);
+        mask-image: linear-gradient(to bottom, white 80%, transparent 100%);
     }
 
     #divLeaders p {
