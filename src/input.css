@@ -546,3 +546,15 @@ main {
   z-index: 1000;
   /* Asegúrate de que esté por encima de todo */
 }
+
+#divLeaders::-webkit-scrollbar {
+  width: 4px;
+}
+
+#divLeaders::-webkit-scrollbar-thumb {
+  background-color: lightgray !important;
+}
+
+#divLeaders::-webkit-scrollbar-track {
+  background-color: rgb(243 244 246 / 0.7);
+}

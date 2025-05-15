@@ -175,9 +175,8 @@
         flex-direction: column;
         width: 100%;
     }
-    #videoAgenda1 {
 
-    }
+    #videoAgenda1 {}
 }
 
 @media only screen and (max-width: 1035px) {
@@ -228,6 +227,7 @@
     #divContainerLeader {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0;
     }
 
     #divContainerLeader div h2 {
@@ -263,9 +263,11 @@
     #divLeaders {
         width: 80%;
         margin-top: -25px;
-        padding: 30px 30px;
+        margin-bottom: 40px;
+        padding: 30px 20px;
         z-index: 0;
-        border: 0;
+          -webkit-mask-image: linear-gradient(to top, transparent, black 20%);
+  mask-image: linear-gradient(to top, transparent, black 20%);
     }
 
     #divLeaders p {
@@ -449,11 +451,11 @@
 
 @media only screen and (max-width: 510px) {
     #divContainerLeader {
-        padding: 0px ;
+        padding: 0px;
     }
 
     #divLeaders {
-        width: 98%;
+        width: 92%;
     }
 
     #divLeaders p {
@@ -474,6 +476,28 @@
 
     .game-section .item.active .item-desc {
         height: 215px !important;
+    }
+
+    #divContainerImageLeader {
+        width: 90% !important;
+    }
+
+    #divContainerImageLeader2 {
+        width: 90%;
+    }
+
+    #leaderPicture {
+        width: 100%;
+        position: relative;
+    }
+
+    .loaderAuthor {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .grayDivLoader {
+        display: none;
     }
 }
 

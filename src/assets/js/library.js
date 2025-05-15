@@ -37,40 +37,6 @@ export const library = () => {
 
     let controller = new AbortController();
 
-    // Functions and Library Logic
-    const fetchInitialData = async () => {
-        try {
-            const response = await fetch("https://icpf-api-production.up.railway.app/libros");
-            const data = await response.json();
-
-            // console.log(data);
-            dataFetch = data;
-
-            if (hash.includes("pagina")) {
-                page = hashNumber;
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            } else {
-                createLibrary(dataFetch);
-                createPagination(dataFetch);
-            }
-
-            if (hash.includes("libro")) {
-                dataFetch.filter(book => {
-                    if (book.libro_id == hashNumber) {
-                        createBookModal(null, book);
-                    }
-                })
-            } else if (hash.includes("autor")) {
-                createAuthorModal(null, hashNumber);
-            }
-
-        } catch (err) {
-            console.log("Error fetching library data: ", err);
-        }
-    }
-    fetchInitialData();
-
     inputSearchLibrary.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             divCategorySelected.querySelectorAll("span").forEach(span => span.remove());
@@ -224,6 +190,39 @@ export const library = () => {
         })
     }
 
+    // Functions and Library Logic
+    const fetchInitialData = async () => {
+        try {
+            const response = await fetch("https://icpf-api-production.up.railway.app/libros");
+            const data = await response.json();
+
+            dataFetch = data;
+
+            if (hash.includes("pagina")) {
+                page = hashNumber;
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            } else {
+                createLibrary(dataFetch);
+                createPagination(dataFetch);
+            }
+
+            if (hash.includes("libro")) {
+                dataFetch.filter(book => {
+                    if (book.libro_id == hashNumber) {
+                        createBookModal(null, book);
+                    }
+                })
+            } else if (hash.includes("autor")) {
+                createAuthorModal(null, hashNumber);
+            }
+
+        } catch (err) {
+            console.log("Error fetching library data: ", err);
+        }
+    }
+    fetchInitialData();
+
     const createLibrary = (data) => {
         insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
 
@@ -243,7 +242,6 @@ export const library = () => {
 
             // book Modal
             divImage.addEventListener("click", (e) => createBookModal(e, book));
-
 
             const img = document.createElement("img");
             img.className = "imgBooks";
@@ -335,12 +333,12 @@ export const library = () => {
                 { filter: "blur(0px)", duration: 1 }
             )
 
-
             loaderLibrary.style.display = "none";
         })
     };
 
     const createBookModal = (e, book) => {
+        controller.abort();
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
         setTimeout(() => {
@@ -469,6 +467,19 @@ export const library = () => {
         )
     }
 
+    async function getImageSize(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => {
+                resolve({ width: img.naturalWidth, height: img.naturalHeight });
+            };
+            img.onerror = (e) => {
+                reject(e);
+            };
+            img.src = url;
+        });
+    }
+
     const createAuthorModal = async (e, authorId) => {
         const divBookModalImg = document.querySelector("#divBookModalImg");
         const divBookModalDetails = document.querySelector("#divBookModalDetails");
@@ -502,14 +513,18 @@ export const library = () => {
             const response = await fetch(`https://icpf-api-production.up.railway.app/autores/${authorId}`, { signal });
             const result = await response.json();
 
+            if (!response.ok) throw new Error('Error al obtener autor');
+
+            const imageUrl = result[0].autor_imagen;
+            const { width, height } = await getImageSize(imageUrl);
+
             if (response.ok) {
-                // console.log(result);
                 const divImg = document.createElement("div");
                 divImg.id = "divImgModalAuthor"
 
                 const img = document.createElement("img");
-                img.width = "500";
-                img.height = "500";
+                img.width = width;
+                img.height = height;
                 img.loading = "lazy";
                 img.className = "imgAuthor";
                 img.alt = `Imagen del Autor: ${result[0].autor_nombre} + ' ' + ${result[0].autor_apellidos}`;
@@ -533,8 +548,8 @@ export const library = () => {
                 divImgClone.id = "divImgClone"
                 const imgClone = img.cloneNode(true);
                 imgClone.id = "imgBookMobileModal"
-                imgClone.width = "500";
-                imgClone.height = "500";
+                imgClone.width = width;
+                imgClone.height = height;
                 imgClone.loading = "lazy";
                 imgClone.style.display = "none";
                 const p = document.createElement("p");
