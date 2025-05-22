@@ -250,7 +250,7 @@ export const library = () => {
             const img = document.createElement("img");
             img.className = "imgBooks";
             img.alt = `Portada del libro: ${book.libro_titulo}`;
-            img.loading = "lazy";
+            img.loading = "eager";
             img.src = `${book.libro_imagen}`;
             img.decoding = "sync";
             img.setAttribute("fetchpriority", idx < 10 ? "high" : "low");
