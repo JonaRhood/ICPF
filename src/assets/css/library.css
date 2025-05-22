@@ -156,6 +156,10 @@
     transition-timing-function: ease-out;
     animation: 2s linear 0s infinite normal none running skeleton-books;
     -webkit-animation: 2s linear 0s infinite normal none running skeleton-books;
+    background-image: url('/img/bookPlaceHolder.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 @keyframes skeleton-books {

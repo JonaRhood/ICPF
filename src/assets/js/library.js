@@ -17,7 +17,6 @@ export const library = () => {
     const loaderLibrary = document.querySelector("#loaderLibrary");
     const loaderAuthors = document.querySelector("#loaderAuthors");
 
-
     // URL Logic
     const hash = window.location.search;
     const hashSplit = hash.split("/");
@@ -223,7 +222,8 @@ export const library = () => {
     }
     fetchInitialData();
 
-    const createLibrary = (data) => {
+    const createLibrary = async (data) => {
+        loaderLibrary.style.display = "flex";
         insideDivLibrary.querySelectorAll(".divBooks").forEach(div => div.remove());
 
         const dataMax = page * limit;
@@ -231,36 +231,40 @@ export const library = () => {
 
         totalPages = Math.ceil(data.length / limit);
 
+        const bookDivs = [];
+        const imageLoadPromises = [];
+
+        const fragment = document.createDocumentFragment();
+
         data.slice(dataMin, dataMax).forEach((book, idx) => {
             const div = document.createElement("div");
             div.className = "divBooks";
+            div.style.opacity = 0; 
 
-            // Image Div
             const divImage = document.createElement("div");
             divImage.className = "divImageBooks";
             divImage.setAttribute("book-id", book.libro_id);
 
-            // book Modal
             divImage.addEventListener("click", (e) => createBookModal(e, book));
 
             const img = document.createElement("img");
             img.className = "imgBooks";
-            img.alt = `Portada del libro: ${book.libro_titulo}`
+            img.alt = `Portada del libro: ${book.libro_titulo}`;
             img.loading = "lazy";
             img.src = `${book.libro_imagen}`;
-            img.decoding = "sync"
-            img.setAttribute(
-                "fetchpriority",
-                idx < 10 ? "high" : "low"
-            );
+            img.decoding = "sync";
+            img.setAttribute("fetchpriority", idx < 10 ? "high" : "low");
 
-            document.querySelectorAll("#insideDivLibrary .divImageBooks").forEach((el, index) => {
-                el.style.animationDelay = `${index * 0.2}s`;
-            });
+            if (idx < 10) {
+                const promise = new Promise((resolve) => {
+                    img.onload = () => resolve();
+                    img.onerror = () => resolve();
+                });
+                imageLoadPromises.push(promise);
+            }
 
             divImage.appendChild(img);
 
-            // Details Div
             const divDetails = document.createElement("div");
             divDetails.className = "divDetailsBooks";
 
@@ -268,28 +272,21 @@ export const library = () => {
             divTitle.className = "divTitleBooks";
             divTitle.addEventListener("click", (e) => createBookModal(e, book));
             const title = document.createElement("span");
-            title.className = "bookTitleSpan"
+            title.className = "bookTitleSpan";
             title.textContent = `${book.libro_titulo}`;
-
-            divTitle.appendChild(title)
+            divTitle.appendChild(title);
             divDetails.appendChild(divTitle);
 
             const authorsUl = document.createElement("ul");
-            authorsUl.className = "authorsUlBooks"
+            authorsUl.className = "authorsUlBooks";
             book.autores.forEach((author, index) => {
                 const authorLi = document.createElement("li");
-                authorLi.className = "authorLiBooks"
-                authorLi.id = `${author.id}`
-                authorLi.textContent = `${author.nombre} ${author.apellidos}`
-                if (book.autores.length > 1) {
-                    if (index < book.autores.length - 1) {
-                        authorLi.textContent += ",";
-                    }
-                }
+                authorLi.className = "authorLiBooks";
+                authorLi.id = `${author.id}`;
+                authorLi.textContent = `${author.nombre} ${author.apellidos}${index < book.autores.length - 1 ? "," : ""}`;
                 authorLi.addEventListener("click", (e) => createAuthorModal(e, author.id));
                 authorsUl.appendChild(authorLi);
-            })
-
+            });
             divDetails.appendChild(authorsUl);
 
             const divPrice = document.createElement("div");
@@ -297,45 +294,53 @@ export const library = () => {
             const spanPrice = document.createElement("span");
             spanPrice.className = "spanPriceBooks";
             spanPrice.textContent = `${book.libro_precio == null ? `-` : `${book.libro_precio.split(',')} €`}`;
-
             divPrice.appendChild(spanPrice);
             divDetails.appendChild(divPrice);
 
             const categoryUl = document.createElement("ul");
-            categoryUl.className = "categoryUlBooks"
+            categoryUl.className = "categoryUlBooks";
             book.categorias.forEach(category => {
-                if (category.id === null) {
-                    return;
-                }
+                if (!category.id) return;
                 const categoryLi = document.createElement("li");
-                categoryLi.className = "categoryLiBooks"
+                categoryLi.className = "categoryLiBooks";
                 categoryLi.id = `${category.id}`;
                 categoryLi.textContent = `${category.categoria}`;
                 categoryLi.style.backgroundColor = `#402e18`;
                 categoryLi.style.color = "white";
                 categoryUl.appendChild(categoryLi);
-            })
-
+            });
             divDetails.appendChild(categoryUl);
 
             div.appendChild(divImage);
             div.appendChild(divDetails);
-            insideDivLibrary.appendChild(div);
 
-            gsap.fromTo(
-                insideDivLibrary.querySelectorAll(".divBooks"),
-                { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, duration: 1, stagger: 0.08, ease: "power2.out" }
-            );
-            gsap.fromTo(
-                insideDivLibrary.querySelectorAll(".imgBooks"),
-                { filter: "blur(20px)" },
-                { filter: "blur(0px)", duration: 1 }
-            )
+            bookDivs.push(div);
+            fragment.appendChild(div); 
+        });
 
-            loaderLibrary.style.display = "none";
-        })
+        insideDivLibrary.appendChild(fragment);
+
+        await Promise.all(imageLoadPromises);
+
+        loaderLibrary.style.display = "none";
+
+        bookDivs.forEach(div => {
+            div.style.opacity = 1;
+        });
+
+        gsap.fromTo(
+            insideDivLibrary.querySelectorAll(".divBooks"),
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 1, stagger: 0.08, ease: "power2.out" }
+        );
+        gsap.fromTo(
+            insideDivLibrary.querySelectorAll(".imgBooks"),
+            { filter: "blur(20px)" },
+            { filter: "blur(0px)", duration: 1 }
+        );
     };
+
+
 
     const createBookModal = (e, book) => {
         controller.abort();
@@ -406,7 +411,7 @@ export const library = () => {
         spanPages.textContent = book.libro_paginas;
         const spanPrice = document.createElement("span");
         spanPrice.id = "priceBookModal";
-        spanPrice.textContent = `${book.libro_precio.split(',')} €`;
+        spanPrice.textContent = `${book.libro_precio == null ? `-` : `${book.libro_precio.split(',')} €`}`;
 
         const authorsUl = document.createElement("ul");
         authorsUl.className = "authorsUlBooksModal"
