@@ -601,7 +601,6 @@
     }
 }
 
-
 .loaderLibrary {
     margin-top: 50px;
     width: 80px;
@@ -610,6 +609,7 @@
     background: radial-gradient(farthest-side, rgb(255, 165, 22) 94%, rgba(0, 0, 0, 0)) center top / 8px 8px no-repeat, conic-gradient(rgba(0, 0, 0, 0) 30%, rgb(255, 165, 22));
     mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 8px), rgb(0, 0, 0) 0px);
     animation: 1s linear 0s infinite normal none running l13;
+    -webkit-animation: 1s linear 0s infinite normal none running l13;
 }
 
 @keyframes l13 {
