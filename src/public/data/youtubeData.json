@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "oj1gK20uJ30G195eTwUoq72JwJA",
-  "nextPageToken": "EAAaHlBUOkNESWlFRUkwTmpaRE1qY3pPVGRDUVRaQ05rUQ",
+  "etag": "8pgUG0lcBR_FeKBHdqtZDWVHM6Y",
+  "nextPageToken": "EAAaHlBUOkNESWlFRVJCUTBZMU56SkdNak01TmpkQlF6SQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "GiNMANw-INt90iBitN27Zd1gzKo",
+      "etag": "pffP8Zcf1Mj7XvUPwn_Rpp7eNjQ",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkY2c21BXzhOOVFj",
+      "snippet": {
+        "publishedAt": "2025-06-09T12:00:06Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "Una Cordial Invitación / Conferencia / Juan Manuel Vaz",
+        "description": "Esperamos poder edificarnos, equiparnos y tener un bonito tiempo de comunión todos juntos.\n\n➡️\u200b Suscríbete, Activa las Notificaciones\n➡️\u200b COMPARTE el vídeo\n➡️\u200b Deja un ME GUSTA\n➡️\u200b  Deja un COMENTARIO\n\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n🌐 https://caminandoporfe.es",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/F6smA_8N9Qc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/F6smA_8N9Qc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/F6smA_8N9Qc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/F6smA_8N9Qc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/F6smA_8N9Qc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "F6smA_8N9Qc"
+        },
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "sHWoQvg3Rp-qKc8gYMEK_IQ7zKw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkJnek9sVkEySW5F",
       "snippet": {
         "publishedAt": "2025-06-08T12:00:16Z",
@@ -39,20 +86,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "BgzOlVA2InE"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "nVipbjGbt66HRZTClld-29RoA6o",
+      "etag": "1l-UpBZGUjLpx_Ulrof-m2gwDHs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnAxX2MxVVJXak40",
       "snippet": {
         "publishedAt": "2025-06-07T12:00:06Z",
@@ -86,20 +133,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "p1_c1URWjN4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "30D33DNSOI1EOouT0Zdxv6p07to",
+      "etag": "LYJPRtPvqdmMaC4G17Ee7nHNij0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmJUZGpaelFHZWZz",
       "snippet": {
         "publishedAt": "2025-06-06T12:01:09Z",
@@ -133,20 +180,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "bTdjZzQGefs"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "u9jywDwizk9S6vbZzZ01Hvq675E",
+      "etag": "idqyLt3siKwTNy5hTd3VaZAUuR0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkV6SjF3ZWRWLXlz",
       "snippet": {
         "publishedAt": "2025-06-05T12:00:06Z",
@@ -180,20 +227,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 3,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "EzJ1wedV-ys"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "qnjQb3qWer6KngGFFFThic7fqds",
+      "etag": "RL98U2hi4zjHVxlk7P42V4hvR0c",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk94RkFzbm80c3dz",
       "snippet": {
         "publishedAt": "2025-06-04T16:00:42Z",
@@ -227,20 +274,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 4,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "OxFAsno4sws"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "mSQwELp_TbDGOOukStgw0AcljVM",
+      "etag": "-qTh9dOKA5zV9xxrlkpaMS2wFXg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmg1M3hvYXRCTk1z",
       "snippet": {
         "publishedAt": "2025-06-03T16:00:06Z",
@@ -274,20 +321,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 5,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "h53xoatBNMs"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "-F8DGMH3PKsr6vbFeT_ufqc9Dyk",
+      "etag": "toWZRsl_fZHvjoS-i80iChI8gAI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlFQT3VIN1Nvd1VB",
       "snippet": {
         "publishedAt": "2025-06-02T12:00:06Z",
@@ -321,20 +368,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 6,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QPOuH7SowUA"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "yEGlCeZYvUhrLnpwybf6pg7IWDw",
+      "etag": "f016aAh2YyT32143cEKLA5UX1aE",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlNxS09GclBuVnhJ",
       "snippet": {
         "publishedAt": "2025-06-01T12:01:00Z",
@@ -368,20 +415,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 7,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SqKOFrPnVxI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "r1_XPJi6sj3zwytC-xkv4Ekfhos",
+      "etag": "hSUXMQi3F8kw0l9OuX2umwUIdcY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkRMaXhyb0V3aUw0",
       "snippet": {
         "publishedAt": "2025-05-31T12:00:06Z",
@@ -415,20 +462,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 8,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "DLixroEwiL4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "A-M4NNcO0MZqevyKE-qZKgP7ecA",
+      "etag": "KTc13wkNzN3rp7vYU1zBozHuc5Q",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmFBYjF0N0c3VXBZ",
       "snippet": {
         "publishedAt": "2025-05-30T12:00:00Z",
@@ -462,20 +509,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 9,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "aAb1t7G7UpY"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UaNXtvEsF8mdoBy1YxBESNAcuo4",
+      "etag": "O9lcnpqv82ijAnpsHTq_4iOW3pI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkYzVk9yNnFSQnYw",
       "snippet": {
         "publishedAt": "2025-05-29T12:00:06Z",
@@ -509,20 +556,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 10,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "F3VOr6qRBv0"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "WLxcwt_iumIkwS9Lg2i4pYu4nbU",
+      "etag": "dkZd--AZ0QckVJey3C5X9wvJXLc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmF6T2RTazhMTEpR",
       "snippet": {
         "publishedAt": "2025-05-28T12:00:06Z",
@@ -556,20 +603,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 11,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "azOdSk8LLJQ"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "BXZNtTjsjFQhMTZEhCxTu8eTkEQ",
+      "etag": "JVrPP6H5Vwqcsl5q1vznrbOH1cI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlhUQlhaM0doblk0",
       "snippet": {
         "publishedAt": "2025-05-27T17:00:06Z",
@@ -603,20 +650,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 12,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "XTBXZ3GhnY4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "b_LCvdDKf9NhZcC25SS39RCpBHg",
+      "etag": "i_BjUKAZpm8NDhmD983SvZm6PEk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmdua3drMndYWnZj",
       "snippet": {
         "publishedAt": "2025-05-26T16:00:06Z",
@@ -650,20 +697,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 13,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "gnkwk2wXZvc"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "3j_vd7psOTbvWTQsnqf8E_A5Xzo",
+      "etag": "DkCAdywJ1h070NY0UPNSDAPGxhU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkxVYzdkWVNZekdj",
       "snippet": {
         "publishedAt": "2025-05-25T12:00:06Z",
@@ -697,20 +744,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 14,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "LUc7dYSYzGc"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "3gpu1W05EWKJpXe51BtO1hOI4Rc",
+      "etag": "uYbY8OcciRMRtEOzIIqJGa3AVW4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlFIekhqdXR5OFkw",
       "snippet": {
         "publishedAt": "2025-05-24T11:00:06Z",
@@ -744,20 +791,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 15,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QHzHjuty8Y0"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "v5Eo7RBoe3i95_UQhh6MpmE33aY",
+      "etag": "-MszFtPOnVGwMH3Sp5rX3quDoQw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjN1eDNpSEVXRVdR",
       "snippet": {
         "publishedAt": "2025-05-23T11:00:08Z",
@@ -791,20 +838,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 16,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "3ux3iHEWEWQ"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "l-TO9JK7lSPqThujShcgUF53FLw",
+      "etag": "r9zV8Futva3kvohKtx5Hr4jaQ3U",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjAySk5GdVFZS3o0",
       "snippet": {
         "publishedAt": "2025-05-22T12:00:06Z",
@@ -838,20 +885,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 17,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "02JNFuQYKz4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "VqTK55t8rUysy548AH2u47gyVQ8",
+      "etag": "G9iJ47rXG7ey-HuSLtZzhLYOjJ4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZlYVFpS29jbi00",
       "snippet": {
         "publishedAt": "2025-05-21T12:01:47Z",
@@ -885,20 +932,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 18,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "veaQiKocn-4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "OPskhJBUHYFO0J5UO9UxPm5wG_E",
+      "etag": "mUdf2wWhG70t_35YBUDVgNOinzk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFVUDNxcjB3aFBB",
       "snippet": {
         "publishedAt": "2025-05-20T12:00:06Z",
@@ -932,20 +979,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 19,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AUP3qr0whPA"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9OK6oWpoPm2SUGN7EMvrYiVoXtU",
+      "etag": "jYLnmMBt2gYcjjCk8jxWqQTbl3w",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlZXZGpvUXNCSXUw",
       "snippet": {
         "publishedAt": "2025-05-19T12:00:06Z",
@@ -979,20 +1026,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 20,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VWdjoQsBIu0"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dvG_JlFnCpsT9UXEh1mA_ILXcL4",
+      "etag": "yyaHxgkGFzhG98BkURvQDaXYAng",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9jSmMxamJoRzZz",
       "snippet": {
         "publishedAt": "2025-05-18T12:00:57Z",
@@ -1026,20 +1073,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 21,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_cJc1jbhG6s"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "rLLVjL5EFBfiOo2vGiFYkcYVe1Y",
+      "etag": "_ElwoIqHysmbhMRrHrNNUqIszOA",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnYtQzZFdnl1R2hZ",
       "snippet": {
         "publishedAt": "2025-05-17T12:00:06Z",
@@ -1073,20 +1120,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 22,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "v-C6EvyuGhY"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "x7NpAxrG5mpb6AmP9peyfSL2gkE",
+      "etag": "hTQD4GGmw8HVOPgzMHIPt0Vscps",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmZ6d1JpWkRkU3Fz",
       "snippet": {
         "publishedAt": "2025-05-16T12:01:17Z",
@@ -1120,20 +1167,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 23,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fzwRiZDdSqs"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ZTVN4JS8YqJ97OvUuyhuhJyANEA",
+      "etag": "xJ1CXCYwbhICTjl7BPxgW_zIZGI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZmMTZnVTl6VUs0",
       "snippet": {
         "publishedAt": "2025-05-15T12:00:06Z",
@@ -1167,20 +1214,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 24,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vf16gU9zUK4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "x-oM5oYJTCgOr10w6O3OGLVOOhc",
+      "etag": "qhNAnFS9JCIZ1OuSn8vUehvyJyM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjBHMWRMMGZJMTIw",
       "snippet": {
         "publishedAt": "2025-05-14T17:00:06Z",
@@ -1214,20 +1261,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 25,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0G1dL0fI120"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "sGCdextuESMA17iVNOTWyb_-jC0",
+      "etag": "OW3cwXioivxrOXV2gBV2Kfa02X8",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmJvckU5TjUwMl9j",
       "snippet": {
         "publishedAt": "2025-05-14T11:01:07Z",
@@ -1261,20 +1308,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 26,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "borE9N502_c"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "zAeyN7XjS9Iy-Ayk51H1BqhldAI",
+      "etag": "TiNM2-jXnDY0v3hs1eXdBBwb_aA",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmg2c1AwaVFJLUw4",
       "snippet": {
         "publishedAt": "2025-05-13T12:00:06Z",
@@ -1308,20 +1355,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 27,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "h6sP0iQI-L8"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vaTbAXsjIlN1YbDk5Y_QnoHC8CA",
+      "etag": "JV00aWaRpoKJBqCRbw92b3ybBuc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFBTlJ1ME9TOVNz",
       "snippet": {
         "publishedAt": "2025-05-12T12:00:16Z",
@@ -1355,20 +1402,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 28,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AANRu0OS9Ss"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "lW2HWbh3HhIx1ejTCQPDW5x2Fjs",
+      "etag": "qMlH4F4EBMlgTdM_cWpJDP_R2cM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk1ad1VhNXJsUVNJ",
       "snippet": {
         "publishedAt": "2025-05-11T16:00:06Z",
@@ -1402,20 +1449,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 29,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MZwUa5rlQSI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "jWUw4nlZRe9Y-d9Cfos_WsznvbI",
+      "etag": "BVh7DJL9wsDngH2J9km-kaYVIHk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlNWNndBenI3dTRz",
       "snippet": {
         "publishedAt": "2025-05-10T12:00:06Z",
@@ -1449,20 +1496,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 30,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SV6wAzr7u4s"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vReQjA5JST3LHlhH5muRzvDLAJ4",
+      "etag": "Iea1k2Wx8n1jdvlnXBNzWQN13Cs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmxCR2Rud3daNnVv",
       "snippet": {
         "publishedAt": "2025-05-09T12:01:29Z",
@@ -1496,20 +1543,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 31,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "lBGdnwwZ6uo"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DkIEqB21fZe7O7iSh8GZaGRgfZs",
+      "etag": "xvvY3P4sbOzwXtxmwF79W_PDCr0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnAteEZqMHdxRmc0",
       "snippet": {
         "publishedAt": "2025-05-08T12:00:06Z",
@@ -1543,20 +1590,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 32,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "p-xFj0wqFg4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "cXWDthmQWDLdHNt317IrRi3jY8I",
+      "etag": "FdTEXOYnaPXPwV9unwUeizQHEo0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmluU2RUUTZjYk5B",
       "snippet": {
         "publishedAt": "2025-05-07T12:01:16Z",
@@ -1590,20 +1637,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 33,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "inSdTQ6cbNA"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TySu5iwsz67PkqEPJKxHCrzqLXw",
+      "etag": "am5JbxmskODt7q2G3JQejGefKS0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLno2RjAtdU9QWGZF",
       "snippet": {
         "publishedAt": "2025-05-06T12:00:06Z",
@@ -1637,20 +1684,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 34,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "z6F0-uOPXfE"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TWN2KOQlO6i5yPhK7bpYx5ttxNQ",
+      "etag": "gMVskNtAz8RYgE3gPufzjNycxl4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnNhYnJPQUlSNzlV",
       "snippet": {
         "publishedAt": "2025-05-05T11:00:06Z",
@@ -1684,20 +1731,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 35,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "sabrOAIR79U"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "B6wwM7svTKJBWhGrPHSCztR9M9I",
+      "etag": "i89vJQFMozOlSfjLLOlC-zbRnJc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLi16WEFOa3pILUlz",
       "snippet": {
         "publishedAt": "2025-05-04T12:00:04Z",
@@ -1731,20 +1778,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 36,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "-zXANkzH-Is"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Rx_YQJujMj7UdR0MXii2yDRoW-c",
+      "etag": "8ChXDBeGD17CMVFGIs-aTKOPMDw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFhMHd0eHVxdXhJ",
       "snippet": {
         "publishedAt": "2025-05-03T12:00:06Z",
@@ -1778,20 +1825,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 37,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Aa0wtxuquxI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GyDBT0s4m94xgyZI5MY3ll2Ye64",
+      "etag": "h6hCw3m6InQPy4jE-tiv0dpsPlM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnQ5VVFUWUdGQWFJ",
       "snippet": {
         "publishedAt": "2025-05-02T12:01:34Z",
@@ -1825,20 +1872,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 38,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "t9UQTYGFAaI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "OMzeVPT2ojl_KN_dSSCvDOz8jsc",
+      "etag": "seBwZGmWcK6DnsxFBcSlQZFRjgE",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlJ4RVV4dUhSbHM0",
       "snippet": {
         "publishedAt": "2025-05-01T12:00:06Z",
@@ -1872,20 +1919,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 39,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "RxEUxuHRls4"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GDRhODScMRdjY3I7O9oh4VSRks0",
+      "etag": "dR5cmTk7Z6jC6y8GytTyJG7BqFg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmo2dDdKWUpQMVBJ",
       "snippet": {
         "publishedAt": "2025-04-30T12:01:25Z",
@@ -1919,20 +1966,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 40,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "j6t7JYJP1PI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "D_cyeYyQny2jfskpzvx2j02nP6A",
+      "etag": "JT68agGhhETp_OFKG9EdlOgsavE",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkVHTDNfMnNteE9Z",
       "snippet": {
         "publishedAt": "2025-04-29T12:00:06Z",
@@ -1966,20 +2013,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 41,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "EGL3_2smxOY"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "4SgSZSMUPJ0w9zy986N1CwSdt-U",
+      "etag": "fzUCzu13Spre5BZF-ZTL0hgec2o",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLndMTDNWY3ZZNURN",
       "snippet": {
         "publishedAt": "2025-04-28T12:00:06Z",
@@ -2013,20 +2060,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 42,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "wLL3VcvY5DM"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pz2tngcBZ_K6u8eoAinITWQafwU",
+      "etag": "FZRTnc1hIWZn3vXApOdhBKv7aHk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk5JTlh3dlkxNkFn",
       "snippet": {
         "publishedAt": "2025-04-27T23:00:31Z",
@@ -2060,20 +2107,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 43,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "NINXwvY16Ag"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "15hcZngbnHyYr03kvuz3uGCl7SA",
+      "etag": "tP4XcQkygJSdziSC7g3m25vD8JA",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjM4azRVQWd0bXkw",
       "snippet": {
         "publishedAt": "2025-04-27T16:00:06Z",
@@ -2107,20 +2154,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 44,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "38k4UAgtmy0"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "6rDSjKt6kxAr9lKrSSdNqc2DzUU",
+      "etag": "XBJsLIw5krM_P2vwp5AxXo_RobU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk1XYXFHY3NQbURR",
       "snippet": {
         "publishedAt": "2025-04-26T16:00:06Z",
@@ -2154,20 +2201,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 45,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MWaqGcsPmDQ"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "tVYcOOaj725e8YSy876A1uZ0sqw",
+      "etag": "NlA8baQ5qvWxfPGIiS0gRWKUXRY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlZZS1RlTzVzMTNB",
       "snippet": {
         "publishedAt": "2025-04-25T16:00:06Z",
@@ -2201,20 +2248,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 46,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VYKTeO5s13A"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "yOBDOlvvo6UX2nOlYZzRqi5kNZM",
+      "etag": "esYYLLTEphcU61OWbtfV0agRqhk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmc0TTh3RllzbGM4",
       "snippet": {
         "publishedAt": "2025-04-25T10:45:36Z",
@@ -2248,20 +2295,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 47,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "g4M8wFYslc8"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "6EZeMqrIJ_nCLVfj4yPRNfs5o6c",
+      "etag": "aroxzWBlwEBJwrROZiMvLn05B8I",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLllmd2o4TWtaa0VJ",
       "snippet": {
         "publishedAt": "2025-04-24T12:00:06Z",
@@ -2295,67 +2342,20 @@
             "height": 720
           }
         },
-        "channelTitle": "Iglesia Caminando Por Fe",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 48,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "Yfwj8MkZkEI"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "f93Ml_CfXDqitNQmToRPlKRH868",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLi0tcGZLclhlbjY4",
-      "snippet": {
-        "publishedAt": "2025-04-23T12:00:01Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "Unánimes no es lo mismo que juntos / Highlight",
-        "description": "Sermón completo: https://www.youtube.com/watch?v=Dh_4qJlTZcM\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/--pfKrXen68/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/--pfKrXen68/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/--pfKrXen68/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/--pfKrXen68/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/--pfKrXen68/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe",
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
         "position": 49,
         "resourceId": {
           "kind": "youtube#video",
-          "videoId": "--pfKrXen68"
+          "videoId": "Yfwj8MkZkEI"
         },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe",
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
     }
   ],
   "pageInfo": {
-    "totalResults": 2124,
+    "totalResults": 2125,
     "resultsPerPage": 50
   }
 }
