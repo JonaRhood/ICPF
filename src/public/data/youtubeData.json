@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "ZLglvKl-Dk3WZuiuz2ElWqBco0s",
-  "nextPageToken": "EAAaHlBUOkNESWlFRVUwTkRnMlJqaEJRamd3UVRrNFJEVQ",
+  "etag": "UsxK78sup0Fz5rW0eQU5Jh1v0zo",
+  "nextPageToken": "EAAaHlBUOkNESWlFRGt4UkRVMVJqUTRNakE0TnpaRk1UUQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "7Dko-Z3Eku7g-IRg652ojVp5iiI",
+      "etag": "InMfoVAixSUeTU1FO-Q2njUUIM8",
+      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjV5dUxYQkJ2NGVF",
+      "snippet": {
+        "publishedAt": "2025-06-15T12:00:09Z",
+        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
+        "title": "Dios cumplirá su historia / Highlight",
+        "description": "Sermón completo: https://youtu.be/h3roqlFYQyE?si=YwXRqv6EF_kyjIn7\n\n➡️\u200b Suscríbete, Activa las Notificaciones\n➡️\u200b COMPARTE el vídeo\n➡️\u200b Deja un ME GUSTA\n➡️\u200b  Deja un COMENTARIO\n\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5yuLXBBv4eE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5yuLXBBv4eE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5yuLXBBv4eE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5yuLXBBv4eE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5yuLXBBv4eE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Sana Doctrina Sana Vida / JMV",
+        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5yuLXBBv4eE"
+        },
+        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
+        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "VqoJVQHYKAhms1v3O7XyBUD7gE4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmgzcm9xbEZZUXlF",
       "snippet": {
         "publishedAt": "2025-06-14T12:00:06Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "h3roqlFYQyE"
@@ -52,7 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "K_TdrVGoPSVG_ROwQliyMe8Fndw",
+      "etag": "feUB3hgqbkKXQV0vK2g2yeZx3rM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmlCZDFsRWt1RUw4",
       "snippet": {
         "publishedAt": "2025-06-14T09:40:38Z",
@@ -83,7 +130,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "iBd1lEkuEL8"
@@ -94,7 +141,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "IVM1SZ-1VyUEsqEhtvJ_mXIJXbw",
+      "etag": "6scGFYtbF2yXiDMrYdTJ0SXxhTo",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlBjd2x1QkRMU3dV",
       "snippet": {
         "publishedAt": "2025-06-14T07:58:50Z",
@@ -130,7 +177,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "PcwluBDLSwU"
@@ -141,7 +188,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "kMgW4Bby-6x7oqqqfHNTu9cnFB0",
+      "etag": "Kcm1Mbi1EJFl2My6lf1oZllonEA",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkdHelYzdUZxWVlZ",
       "snippet": {
         "publishedAt": "2025-06-13T12:00:27Z",
@@ -177,7 +224,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 3,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "GGzV3uFqYYY"
@@ -188,7 +235,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "L6McEWeK_cUTnjtlNseon8ndVtM",
+      "etag": "EIwF2AhHRxtAE3LRyI9kx6YGBxU",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjdMUlJEcEFvMjFV",
       "snippet": {
         "publishedAt": "2025-06-12T12:00:06Z",
@@ -224,7 +271,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 4,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "7LRRDpAo21U"
@@ -235,7 +282,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9pAi_s5FXa940ZFRHb2_YOH4ihk",
+      "etag": "orTtKT1bdTjcl8_nN9cUjDVVPsI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkVOQ2NBcTNBVXdF",
       "snippet": {
         "publishedAt": "2025-06-11T12:00:32Z",
@@ -271,7 +318,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 5,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ENCcAq3AUwE"
@@ -282,7 +329,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "2ooEbek_y-W9e1AZmj0W_bB3csk",
+      "etag": "BCIE1vjSujavKSzfUJ7N5rVJ-K4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnBXVzJSMVdKUU5n",
       "snippet": {
         "publishedAt": "2025-06-10T12:00:06Z",
@@ -318,7 +365,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 6,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "pWW2R1WJQNg"
@@ -329,7 +376,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "oxhx4DZ-DBAPXvVcM1P-h5mwlbU",
+      "etag": "oqMMvsh3N81_fUmU4C8aAgTP1PM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkY2c21BXzhOOVFj",
       "snippet": {
         "publishedAt": "2025-06-09T12:00:06Z",
@@ -365,7 +412,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 7,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "F6smA_8N9Qc"
@@ -376,7 +423,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "tTM6S3QbGIvi4bGNLWgDb1MZYV4",
+      "etag": "0ra-ZEFjtduB9aVssOiL970wL6A",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkJnek9sVkEySW5F",
       "snippet": {
         "publishedAt": "2025-06-08T12:00:16Z",
@@ -412,7 +459,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 8,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "BgzOlVA2InE"
@@ -423,7 +470,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Fw-tGHjVrXkiTeqb2ND6YI7c1BU",
+      "etag": "hMEDVYTPH-49TXxo7YGY1D_nmiQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnAxX2MxVVJXak40",
       "snippet": {
         "publishedAt": "2025-06-07T12:00:06Z",
@@ -459,7 +506,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 9,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "p1_c1URWjN4"
@@ -470,7 +517,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "_ztozooH2c2bkMmoteK0qVe3XpA",
+      "etag": "5jh5BFB9mHQ_jsqVUrEB7xnH4Wg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmJUZGpaelFHZWZz",
       "snippet": {
         "publishedAt": "2025-06-06T12:01:09Z",
@@ -506,7 +553,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 10,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "bTdjZzQGefs"
@@ -517,7 +564,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GNwJxLRGPaC6H7mSSIlEL4-0Od4",
+      "etag": "TWVKRKBL3Sepjfu7dOWqtaA8PVY",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkV6SjF3ZWRWLXlz",
       "snippet": {
         "publishedAt": "2025-06-05T12:00:06Z",
@@ -553,7 +600,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 11,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "EzJ1wedV-ys"
@@ -564,7 +611,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "mUsjkpnEhhTlb8SsV-M8onQaXB4",
+      "etag": "T10caeNpo1fIwD6sOz_6fvnhlXo",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk94RkFzbm80c3dz",
       "snippet": {
         "publishedAt": "2025-06-04T16:00:42Z",
@@ -600,7 +647,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 12,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "OxFAsno4sws"
@@ -611,7 +658,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "CE0vW9h8Dv0gDVIWnFsiNSk8wws",
+      "etag": "komOA5cnpUy1MXYLkqMWNMevEz0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmg1M3hvYXRCTk1z",
       "snippet": {
         "publishedAt": "2025-06-03T16:00:06Z",
@@ -647,7 +694,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 13,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "h53xoatBNMs"
@@ -658,7 +705,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dlHUgarStjHIx8bDfubrmX91aS8",
+      "etag": "W2qOFKiZnrt6D6NncK-W3AnisB0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlFQT3VIN1Nvd1VB",
       "snippet": {
         "publishedAt": "2025-06-02T12:00:06Z",
@@ -694,7 +741,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 14,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QPOuH7SowUA"
@@ -705,7 +752,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gLJCkguoBhJm1c-S2LIykw2wRd0",
+      "etag": "1jBxGWBtqwCWUoIrJuj_xzVQqd0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlNxS09GclBuVnhJ",
       "snippet": {
         "publishedAt": "2025-06-01T12:01:00Z",
@@ -741,7 +788,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 15,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SqKOFrPnVxI"
@@ -752,7 +799,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9dDsxATyYDFJGIpnzz6_1roph_s",
+      "etag": "Kfp9Hc2SrQU4wr5TQnFLAyCpBcs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkRMaXhyb0V3aUw0",
       "snippet": {
         "publishedAt": "2025-05-31T12:00:06Z",
@@ -788,7 +835,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 16,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "DLixroEwiL4"
@@ -799,7 +846,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "bPzmjT18l_Zp5b-6jLxbXFnFnGY",
+      "etag": "gfjZSyD06DgLwNqtaEMB3mcg3EQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmFBYjF0N0c3VXBZ",
       "snippet": {
         "publishedAt": "2025-05-30T12:00:00Z",
@@ -835,7 +882,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 17,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "aAb1t7G7UpY"
@@ -846,7 +893,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "HzMrWVWVtKGhbN5221wMJg0wOco",
+      "etag": "7c7ZKFHpM9vd4i06SH1o5OXPknw",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkYzVk9yNnFSQnYw",
       "snippet": {
         "publishedAt": "2025-05-29T12:00:06Z",
@@ -882,7 +929,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 18,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "F3VOr6qRBv0"
@@ -893,7 +940,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "xoiqB9gHSTYVPlijvS-J_xdb5OE",
+      "etag": "axbbBa6XdDH_rsgYWTpO8F8TeuI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmF6T2RTazhMTEpR",
       "snippet": {
         "publishedAt": "2025-05-28T12:00:06Z",
@@ -929,7 +976,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 19,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "azOdSk8LLJQ"
@@ -940,7 +987,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "JdwnZD7hhgWSXKibpBPRHXaLrIg",
+      "etag": "LJ0BC-VOdULogKy-Q06MyFpA6qM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlhUQlhaM0doblk0",
       "snippet": {
         "publishedAt": "2025-05-27T17:00:06Z",
@@ -976,7 +1023,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 20,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "XTBXZ3GhnY4"
@@ -987,7 +1034,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QRHVXSVrMozlB_RHlfCLYJKimPs",
+      "etag": "YXSKOFmxcrUb3OIOwCn6RSsV8P8",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmdua3drMndYWnZj",
       "snippet": {
         "publishedAt": "2025-05-26T16:00:06Z",
@@ -1023,7 +1070,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 21,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "gnkwk2wXZvc"
@@ -1034,7 +1081,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "jjVekyK-a6smP6uQqRe8jsUh9Go",
+      "etag": "QkD7QX16RD5I5CXB3y1UNobeg1A",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkxVYzdkWVNZekdj",
       "snippet": {
         "publishedAt": "2025-05-25T12:00:06Z",
@@ -1070,7 +1117,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 22,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "LUc7dYSYzGc"
@@ -1081,7 +1128,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uONcpIba_JtR-8JxhGLADq3p4q8",
+      "etag": "D9tsh153FMbJjfVFllDeEGD2ipM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlFIekhqdXR5OFkw",
       "snippet": {
         "publishedAt": "2025-05-24T11:00:06Z",
@@ -1117,7 +1164,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 23,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QHzHjuty8Y0"
@@ -1128,7 +1175,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "3uuxQauwiTgmtj2yIR4HKFap7tE",
+      "etag": "8YoD1z6r4sMBVZEa0rd3qm6qqAQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjN1eDNpSEVXRVdR",
       "snippet": {
         "publishedAt": "2025-05-23T11:00:08Z",
@@ -1164,7 +1211,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 24,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "3ux3iHEWEWQ"
@@ -1175,7 +1222,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "YiWl0_MxqJIRaa8ujCfJ150v5zw",
+      "etag": "73pWE7VWO16lEejvhT5xszpMGoM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjAySk5GdVFZS3o0",
       "snippet": {
         "publishedAt": "2025-05-22T12:00:06Z",
@@ -1211,7 +1258,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 25,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "02JNFuQYKz4"
@@ -1222,7 +1269,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UgZRnM6A_HyYc_LzYhCcqlKvJKA",
+      "etag": "iHbskKow7nVAlzkUHOhf0vio5T8",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZlYVFpS29jbi00",
       "snippet": {
         "publishedAt": "2025-05-21T12:01:47Z",
@@ -1258,7 +1305,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 26,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "veaQiKocn-4"
@@ -1269,7 +1316,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "CnrciMuLjjM_LjmDs_IpfPb98Vw",
+      "etag": "87HqqH1IsPI8vLFDU85KD6NUlp0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFVUDNxcjB3aFBB",
       "snippet": {
         "publishedAt": "2025-05-20T12:00:06Z",
@@ -1305,7 +1352,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 27,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AUP3qr0whPA"
@@ -1316,7 +1363,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TQqFVg45DOrqWTItXTcMVcUngOo",
+      "etag": "_7OtmMunUt1tBssGrAfVGGf1EO4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlZXZGpvUXNCSXUw",
       "snippet": {
         "publishedAt": "2025-05-19T12:00:06Z",
@@ -1352,7 +1399,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 28,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VWdjoQsBIu0"
@@ -1363,7 +1410,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "JzaYoiGUDt1RMJ1CJyueNE30HzA",
+      "etag": "yKWFZtoj05PJyNu54sMpBp1tizM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLl9jSmMxamJoRzZz",
       "snippet": {
         "publishedAt": "2025-05-18T12:00:57Z",
@@ -1399,7 +1446,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 29,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_cJc1jbhG6s"
@@ -1410,7 +1457,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "IkZGJu5BkuXn6B4cywU_G-FUE3c",
+      "etag": "qNV7f3IEUceQ81J5deCsWRM1Bys",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnYtQzZFdnl1R2hZ",
       "snippet": {
         "publishedAt": "2025-05-17T12:00:06Z",
@@ -1446,7 +1493,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 30,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "v-C6EvyuGhY"
@@ -1457,7 +1504,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DaUBP7UiMIBqTuxfP8qZKlZTJjg",
+      "etag": "C0BUCbZjvCVVRt-MuHKJ5tpi1Kg",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmZ6d1JpWkRkU3Fz",
       "snippet": {
         "publishedAt": "2025-05-16T12:01:17Z",
@@ -1493,7 +1540,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 31,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fzwRiZDdSqs"
@@ -1504,7 +1551,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "7TFX4PuQs3XXZQ0mbhmB2Z6-5QQ",
+      "etag": "KfEHqXPLyXPv93mNoCXbLSb5_Vs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnZmMTZnVTl6VUs0",
       "snippet": {
         "publishedAt": "2025-05-15T12:00:06Z",
@@ -1540,7 +1587,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 32,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vf16gU9zUK4"
@@ -1551,7 +1598,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "NZh-9qvSWpGY5A9NaK82qT30en4",
+      "etag": "R07Du6AHND8XciQ1gu6mICnd0m8",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLjBHMWRMMGZJMTIw",
       "snippet": {
         "publishedAt": "2025-05-14T17:00:06Z",
@@ -1587,7 +1634,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 33,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0G1dL0fI120"
@@ -1598,7 +1645,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "iFQnd6Z6Mgm0F4Pm-kjSZe0Q708",
+      "etag": "GJP3NkFNYwtCgS2uy78K9hJRN4c",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmJvckU5TjUwMl9j",
       "snippet": {
         "publishedAt": "2025-05-14T11:01:07Z",
@@ -1634,7 +1681,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 34,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "borE9N502_c"
@@ -1645,7 +1692,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "KeSF0_fVY-5fV2UFoP-CGMXrvEw",
+      "etag": "eb4KU5fs8WeaQMDVvqPdgJJv8Uc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmg2c1AwaVFJLUw4",
       "snippet": {
         "publishedAt": "2025-05-13T12:00:06Z",
@@ -1681,7 +1728,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 35,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "h6sP0iQI-L8"
@@ -1692,7 +1739,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "aLp_dYEnueJK1VYXO-QSksDvQ6A",
+      "etag": "1oXIFTiAFsxP2oScD29QENvkb5E",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFBTlJ1ME9TOVNz",
       "snippet": {
         "publishedAt": "2025-05-12T12:00:16Z",
@@ -1728,7 +1775,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 36,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "AANRu0OS9Ss"
@@ -1739,7 +1786,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "JKdfzeDuIH179vcOnOjLXXmSU_8",
+      "etag": "Xis4gxfNMjph3VH5AUoyyKu183g",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLk1ad1VhNXJsUVNJ",
       "snippet": {
         "publishedAt": "2025-05-11T16:00:06Z",
@@ -1775,7 +1822,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 37,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MZwUa5rlQSI"
@@ -1786,7 +1833,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "M2yE8vPBHyA6TR071nZD9_z5qSI",
+      "etag": "oojL2JDFTmWeDDgmsZUJz6B-Xv0",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlNWNndBenI3dTRz",
       "snippet": {
         "publishedAt": "2025-05-10T12:00:06Z",
@@ -1822,7 +1869,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 38,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SV6wAzr7u4s"
@@ -1833,7 +1880,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XRClyXOu68XA5l5FTOsKv7CGfg4",
+      "etag": "JufxJPm_G_044irTvctpE70_0PI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmxCR2Rud3daNnVv",
       "snippet": {
         "publishedAt": "2025-05-09T12:01:29Z",
@@ -1869,7 +1916,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 39,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "lBGdnwwZ6uo"
@@ -1880,7 +1927,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "N9zM3HFRldVig6lQBtIUhAOywXY",
+      "etag": "vSaxaCTtgaJ0uAJUSBymlKvKFIs",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnAteEZqMHdxRmc0",
       "snippet": {
         "publishedAt": "2025-05-08T12:00:06Z",
@@ -1916,7 +1963,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 40,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "p-xFj0wqFg4"
@@ -1927,7 +1974,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pjWLkytL5PG7Owkf5z_AmVhYOek",
+      "etag": "2xBCPLGLcVwth8hN__sxIxmLF1I",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmluU2RUUTZjYk5B",
       "snippet": {
         "publishedAt": "2025-05-07T12:01:16Z",
@@ -1963,7 +2010,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 41,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "inSdTQ6cbNA"
@@ -1974,7 +2021,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "cTLd80x3LSg163-UyErdqPYEVvs",
+      "etag": "Lz3le2CaTTrj4GifGjAdVbwN6zo",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLno2RjAtdU9QWGZF",
       "snippet": {
         "publishedAt": "2025-05-06T12:00:06Z",
@@ -2010,7 +2057,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 42,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "z6F0-uOPXfE"
@@ -2021,7 +2068,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XYgMllXajHLM-zilSylanlSjzlQ",
+      "etag": "uaaxrhP7brmqE-OcHfOIssdPLOI",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnNhYnJPQUlSNzlV",
       "snippet": {
         "publishedAt": "2025-05-05T11:00:06Z",
@@ -2057,7 +2104,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 43,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "sabrOAIR79U"
@@ -2068,7 +2115,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "VSctZ9WCCyyOnD5-_-oBgzhjfak",
+      "etag": "nMxSTnDKahbdL5Osp5EDShY6ouk",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLi16WEFOa3pILUlz",
       "snippet": {
         "publishedAt": "2025-05-04T12:00:04Z",
@@ -2104,7 +2151,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 44,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "-zXANkzH-Is"
@@ -2115,7 +2162,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "1WilyI2mVyHKmZMU74t-3DL3SuI",
+      "etag": "KihOTjSD5M7A8TASBzoIgWQp4r4",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkFhMHd0eHVxdXhJ",
       "snippet": {
         "publishedAt": "2025-05-03T12:00:06Z",
@@ -2151,7 +2198,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 45,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Aa0wtxuquxI"
@@ -2162,7 +2209,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "lg-ybm4kc7kTOkYMjQ7dDSjhdHE",
+      "etag": "RUHNx44WBSEDS0gswxlfy86gHtM",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLnQ5VVFUWUdGQWFJ",
       "snippet": {
         "publishedAt": "2025-05-02T12:01:34Z",
@@ -2198,7 +2245,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 46,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "t9UQTYGFAaI"
@@ -2209,7 +2256,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "vvihY9CRsqmFq0MKfGfZUZkEIUU",
+      "etag": "uc3djmvdS31J_OkZ4O5zqYjbgMQ",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLlJ4RVV4dUhSbHM0",
       "snippet": {
         "publishedAt": "2025-05-01T12:00:06Z",
@@ -2245,7 +2292,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 47,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "RxEUxuHRls4"
@@ -2256,7 +2303,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "RlW5d0tuieaomUeHxpCB76KT3FY",
+      "etag": "ShH67kHwYzfq9WH6itcnhRZuzRc",
       "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLmo2dDdKWUpQMVBJ",
       "snippet": {
         "publishedAt": "2025-04-30T12:01:25Z",
@@ -2292,7 +2339,7 @@
         },
         "channelTitle": "Sana Doctrina Sana Vida / JMV",
         "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 48,
+        "position": 49,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "j6t7JYJP1PI"
@@ -2300,57 +2347,10 @@
         "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
         "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "0YtClCbMPqBiWUh5YM060sT2k70",
-      "id": "VVVXU1VYaFpBU1hyVlMwWTYzSEJnem9RLkVHTDNfMnNteE9Z",
-      "snippet": {
-        "publishedAt": "2025-04-29T12:00:06Z",
-        "channelId": "UCWSUXhZASXrVS0Y63HBgzoQ",
-        "title": "Pentecostés, el Espíritu y las lenguas - Juan Manuel Vaz",
-        "description": "¿Lenguas como de fuego? ¿Que representa Pentecostés? ¿Se programa un Pentecostés?\n\n✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO\n\n🌐 https://caminandoporfe.es",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/EGL3_2smxOY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/EGL3_2smxOY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/EGL3_2smxOY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/EGL3_2smxOY/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/EGL3_2smxOY/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Sana Doctrina Sana Vida / JMV",
-        "playlistId": "UUWSUXhZASXrVS0Y63HBgzoQ",
-        "position": 49,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "EGL3_2smxOY"
-        },
-        "videoOwnerChannelTitle": "Sana Doctrina Sana Vida / JMV",
-        "videoOwnerChannelId": "UCWSUXhZASXrVS0Y63HBgzoQ"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 2132,
+    "totalResults": 2133,
     "resultsPerPage": 50
   }
 }
