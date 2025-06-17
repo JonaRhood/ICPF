@@ -76,7 +76,7 @@ export const library = () => {
 
     const fetchCategories = async () => {
         try {
-            const response = await fetch("https://icpf-api.onrender.com/categorias");
+            const response = await fetch("https://icpf-api-bjeh.onrender.com/categorias");
             const data = await response.json();
 
             if (response.ok) {
@@ -192,7 +192,7 @@ export const library = () => {
     // Functions and Library Logic
     const fetchInitialData = async () => {
         try {
-            const response = await fetch("https://icpf-api.onrender.com/libros");
+            const response = await fetch("https://icpf-api-bjeh.onrender.com/libros");
             const data = await response.json();
 
             dataFetch = data;
@@ -515,7 +515,7 @@ export const library = () => {
         const signal = controller.signal;
 
         try {
-            const response = await fetch(`https://icpf-api.onrender.com/autores/${authorId}`, { signal });
+            const response = await fetch(`https://icpf-api-bjeh.onrender.com/autores/${authorId}`, { signal });
             const result = await response.json();
 
             if (!response.ok) throw new Error('Error al obtener autor');
