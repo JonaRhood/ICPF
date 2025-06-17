@@ -229,22 +229,22 @@ export const animationScroll = () => {
     // Agenda Page 
 
     if (agendaImg2) {
-        gsap.from(agendaImgConferences1, {
-            scrollTrigger: {
-                trigger: agendaImgConferences1
-            },
-            opacity: 0,
-            clipPath: 'inset(0 100% 0 0)',
-            duration: 0.8
-        });
-        gsap.from(agendaFontConferences1, {
-            scrollTrigger: {
-                trigger: agendaFontConferences1
-            },
-            opacity: 0,
-            x: 30,
-            duration: 1
-        });
+        // gsap.from(agendaImgConferences1, {
+        //     scrollTrigger: {
+        //         trigger: agendaImgConferences1
+        //     },
+        //     opacity: 0,
+        //     clipPath: 'inset(0 100% 0 0)',
+        //     duration: 0.8
+        // });
+        // gsap.from(agendaFontConferences1, {
+        //     scrollTrigger: {
+        //         trigger: agendaFontConferences1
+        //     },
+        //     opacity: 0,
+        //     x: 30,
+        //     duration: 1
+        // });
         gsap.from(agendaImgConferences2, {
             scrollTrigger: {
                 trigger: agendaImgConferences2
