@@ -1,11 +1,58 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "VLJ33exvex-XcBKIagQvpiU1fSU",
-  "nextPageToken": "EAAaHlBUOkNESWlFRGM0UVRaQlFqTTNNMEUxUTBFeE5USQ",
+  "etag": "jdQts5X8mmPcTbEffi8trn8Evzs",
+  "nextPageToken": "EAAaHlBUOkNESWlFRE13UXpNMk1VSkJNVUpDTnpFeVJFUQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "Ahq5gsm8gc68EuNWOdBnuBNHQIM",
+      "etag": "EhJw4D4Z9rvf7K_7UeG3hOwG40E",
+      "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkQwMHBVazMzR3U4",
+      "snippet": {
+        "publishedAt": "2025-06-28T17:30:06Z",
+        "channelId": "UCOqe4Zs5paYE5XAOiaGkwMw",
+        "title": "La pureza, un camino a la felicidad - John Jairo Rivadeneira",
+        "description": "✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO\n\n🌐 https://caminandoporfe.es",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe Barcelona",
+        "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "D00pUk33Gu8"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
+        "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "zULv0z2aqTu6181mF8CynUBDCao",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lmdac0gwM2s1eHdV",
       "snippet": {
         "publishedAt": "2025-06-27T17:30:24Z",
@@ -41,7 +88,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "gZsH03k5xwU"
@@ -52,7 +99,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dk5D6nMePJmrosRdlz10fH9eQJc",
+      "etag": "lbxZMpbVfcgdp8_HHdnSlKZI-t0",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlVVQm5zeWNRZGhn",
       "snippet": {
         "publishedAt": "2025-06-25T17:30:11Z",
@@ -88,7 +135,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "UUBnsycQdhg"
@@ -99,7 +146,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "KPNYML8Sn8Z07QlUow_LDtlkano",
+      "etag": "5uynt_2ER7-haIzJFE5ba9v9qRw",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjlUR2Z3VFhudDc4",
       "snippet": {
         "publishedAt": "2025-06-22T17:30:03Z",
@@ -135,7 +182,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "9TGfwTXnt78"
@@ -146,7 +193,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "21MDPWpIsBFUtU_57eKJGs0Yi1k",
+      "etag": "tG0E7gg2T8J28tUeCAiR7UBZ_Do",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlFWcHAzVXoyeDRF",
       "snippet": {
         "publishedAt": "2025-06-21T17:00:06Z",
@@ -182,57 +229,10 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 3,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "QVpp3Uz2x4E"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
-        "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "pmnsT2GKtQqhsEGZOvXW9HIjHjU",
-      "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkQwMHBVazMzR3U4",
-      "snippet": {
-        "publishedAt": "2025-06-21T16:20:17Z",
-        "channelId": "UCOqe4Zs5paYE5XAOiaGkwMw",
-        "title": "La pureza, un camino a la felicidad - John Jairo Rivadeneira",
-        "description": "✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO\n\n🌐 https://caminandoporfe.es",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/D00pUk33Gu8/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe Barcelona",
-        "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
         "position": 4,
         "resourceId": {
           "kind": "youtube#video",
-          "videoId": "D00pUk33Gu8"
+          "videoId": "QVpp3Uz2x4E"
         },
         "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
         "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
