@@ -1,3 +1,5 @@
 User-agent: *
-Disallow: /privacidad-cookies
-Sitemap: https://caminandoporfe.es/sitemap.xml
+Allow: /
+Disallow: /privacidad-cookies/
+
+Sitemap: https://iglesiacaminandoporfe.com/sitemap.xml

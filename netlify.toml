@@ -1,3 +1,20 @@
+# Canonical host: www → apex. Consolida señales SEO en una sola URL.
+[[redirects]]
+  from = "https://www.iglesiacaminandoporfe.com/*"
+  to = "https://iglesiacaminandoporfe.com/:splat"
+  status = 301
+  force = true
+
+# Security & SEO headers globales
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
 [[headers]]
   for = "*.jpg"
   [headers.values]
