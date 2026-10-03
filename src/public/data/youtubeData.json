@@ -1,11 +1,63 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "jJ2YewvrTUqEXootQxJtsTA9vPE",
-  "nextPageToken": "EAAaHlBUOkNESWlFRFZDT0RJM09FTkVSRVExTXprNVEwWQ",
+  "etag": "-CAxm-qIZehoeumZ80mwQttzh8A",
+  "nextPageToken": "EAAaHlBUOkNESWlFREk0TkVSRU5rSXdORFkxUkRVM09UTQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "tGdbtED_RkTRZHowjOK5Vx49lc4",
+      "etag": "lrOmjQCMov_w5_punOwqH_MvElU",
+      "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkVySV9uVE13M1dn",
+      "snippet": {
+        "publishedAt": "2026-10-02T11:00:27Z",
+        "channelId": "UCOqe4Zs5paYE5XAOiaGkwMw",
+        "title": "El peligro de volverse insensible al pecado - Juan Manuel Vaz",
+        "description": "✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO\n\n🌐 https://iglesiacaminandoporfe.com",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/ErI_nTMw3Wg/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Iglesia Caminando Por Fe Barcelona",
+        "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "ErI_nTMw3Wg"
+        },
+        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
+        "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "3D8ZbFr09Zval7qOKDCIhX-ZyoA",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmFtV21LQ1FjeGM0",
       "snippet": {
         "publishedAt": "2026-09-30T11:00:34Z",
@@ -46,7 +98,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 0,
+        "position": 1,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "amWmKCQcxc4"
@@ -57,7 +109,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PPOR5rk8vQ-ajG24MYGBzGlFOFQ",
+      "etag": "BlaZf5kDfcMWTExINDOzTBN57-0",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlZOblZoVi1NS193",
       "snippet": {
         "publishedAt": "2026-09-28T11:00:35Z",
@@ -93,7 +145,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 1,
+        "position": 2,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VNnVhV-MK_w"
@@ -104,7 +156,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9i5ZEY7ZUuvpHWx3e2XH1_atw4c",
+      "etag": "__s9LiRec8fXp9yx3-7i6KsicU4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnVIZFljUWE5dlF3",
       "snippet": {
         "publishedAt": "2026-09-27T11:00:29Z",
@@ -140,7 +192,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 2,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uHdYcQa9vQw"
@@ -151,7 +203,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PeXL_QAeW8sHigwZPLD6S5rTrWg",
+      "etag": "CKUA-qA323Ym51tME82q3WWpLeQ",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnR2cnpSWDR4eTNj",
       "snippet": {
         "publishedAt": "2026-09-26T11:00:23Z",
@@ -192,7 +244,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 3,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "tvrzRX4xy3c"
@@ -203,7 +255,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QGkb0nK514vC-f-uup7mFIZWgvE",
+      "etag": "-uFuGZmYMAm4khnVWr6_hf9wMsE",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmNGaS1QeDAwZ0Qw",
       "snippet": {
         "publishedAt": "2026-09-23T11:00:12Z",
@@ -244,7 +296,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 4,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "cFi-Px00gD0"
@@ -255,7 +307,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "7mIHlCKnIaDMgAYu0QsraHafKTc",
+      "etag": "UzY6g_iosjo-vjjO6wryoYC4PlM",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlpQNGEtQU0ydW5r",
       "snippet": {
         "publishedAt": "2026-09-19T11:00:36Z",
@@ -296,7 +348,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 5,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ZP4a-AM2unk"
@@ -307,7 +359,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Hg3mHeS0Olb5QNo_2TRb2JeUleg",
+      "etag": "8JgGX-1baJS4q6_O29CwFzSmMGI",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlJGQUZuUHp3VHNJ",
       "snippet": {
         "publishedAt": "2026-09-17T11:00:34Z",
@@ -343,7 +395,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 6,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "RFAFnPzwTsI"
@@ -354,7 +406,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DNGPgsgg0s0ELX8Gi9hRjL3xuQE",
+      "etag": "d13-KxcCX6MPvsfGPWL_3STpjo0",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lk03dHF1QWRVbU5B",
       "snippet": {
         "publishedAt": "2026-09-16T13:54:32Z",
@@ -395,7 +447,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 7,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "M7tquAdUmNA"
@@ -406,7 +458,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "OtxA8GnQxaclr68_YI8BveR3S64",
+      "etag": "jlFJHEG26b02jCFYZNI1PZPmcBA",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlhFYzZ5RV9TWXhV",
       "snippet": {
         "publishedAt": "2026-09-12T14:37:49Z",
@@ -442,7 +494,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 8,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "XEc6yE_SYxU"
@@ -453,7 +505,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "G50Y7qZ82dXwYIJdO_zZ3qkwafw",
+      "etag": "18UAoY1hmRpHqOfGqRSx4ESui1c",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lm1HdDZscVpfMnRn",
       "snippet": {
         "publishedAt": "2026-09-10T11:30:06Z",
@@ -494,7 +546,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 9,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "mGt6lqZ_2tg"
@@ -505,7 +557,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "V_t5Raw9nL3Da9GYAhWUR41ul6c",
+      "etag": "-Ignei0zI77v2atjxIdqjAX_1Bo",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnpxdXJOMVo3N0hJ",
       "snippet": {
         "publishedAt": "2026-09-08T11:00:03Z",
@@ -546,7 +598,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 10,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "zqurN1Z77HI"
@@ -557,7 +609,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "czDRWn4ii7R23xNpcHXAkHDGyWE",
+      "etag": "KNU_KXvHFv1vljBb2_Pql8Y302Q",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjZrM29YQkhjUmV3",
       "snippet": {
         "publishedAt": "2026-09-07T16:00:36Z",
@@ -598,7 +650,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 11,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6k3oXBHcRew"
@@ -609,7 +661,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Ch_4qmY_ZSBSWb69rCx835ZObx0",
+      "etag": "_A1jkRTPV78yjioR0a0tFoinZq8",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lk81SjFDMVdSRzdJ",
       "snippet": {
         "publishedAt": "2026-09-06T18:58:00Z",
@@ -650,7 +702,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 12,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "O5J1C1WRG7I"
@@ -661,7 +713,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pRjD8ei0V2vYJIwyksA6jH_wOoc",
+      "etag": "aVhQXesy5U4d1HLqXO294ZY0cI8",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LklFbTREb1paNkt3",
       "snippet": {
         "publishedAt": "2026-09-04T15:00:11Z",
@@ -702,7 +754,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 13,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "IEm4DoZZ6Kw"
@@ -713,7 +765,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "fcuvBkYLLuLA0kDP0MV3L94tY0Q",
+      "etag": "DqMIVdcc1aQoRldpwa9f7Tf9_So",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkpaZ1FLUVhtZktn",
       "snippet": {
         "publishedAt": "2026-09-02T21:17:08Z",
@@ -749,7 +801,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 14,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "JZgQKQXmfKg"
@@ -760,7 +812,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "HrXwKyhlsaDpg6f82Z2AVfOC-IU",
+      "etag": "XxMpEXrl6OCvQHvItwl0vh8vcFQ",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lk1NSDlYdmdZMU80",
       "snippet": {
         "publishedAt": "2026-09-02T21:16:09Z",
@@ -801,7 +853,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 15,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MMH9XvgY1O4"
@@ -812,7 +864,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UgzMNtprnDVX_0FCUvinev5WQVo",
+      "etag": "92TPbEXV7IAQUssu5miRWY4JSFw",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lko3QUcyVHFOWl9Z",
       "snippet": {
         "publishedAt": "2026-09-01T09:26:33Z",
@@ -853,7 +905,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 16,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "J7AG2TqNZ_Y"
@@ -864,7 +916,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gB7MBXkC0cdBo6zCsdeAC4c2fFg",
+      "etag": "m1rB9VxiH3uZQ0S2OfuiFKEUYlE",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lm55NVI0WGJiWjdj",
       "snippet": {
         "publishedAt": "2026-08-28T11:00:34Z",
@@ -905,7 +957,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 17,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ny5R4XbbZ7c"
@@ -916,7 +968,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "hiFCGgl7lnPrbTV5EZr5devudkM",
+      "etag": "y9Egbk4Ww6d5u18209_3CmRWa8Q",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjVBVWxrR3VtZ0pz",
       "snippet": {
         "publishedAt": "2026-08-23T11:00:24Z",
@@ -957,7 +1009,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 18,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5AUlkGumgJs"
@@ -968,7 +1020,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "SapFwAAHjUVs6Zz0gnmhBKqf5EE",
+      "etag": "SrUPnGKezZESIYad6QGBIliA0O4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjFsYk1MVzdBcHkw",
       "snippet": {
         "publishedAt": "2026-08-21T11:00:33Z",
@@ -1009,7 +1061,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 19,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "1lbMLW7Apy0"
@@ -1020,7 +1072,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "BOJPfFs9xJ4TWrryw-OYQ6Kw4Zo",
+      "etag": "tswGsLBMahoxQbn5slaRqJEVnmY",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lm9WdjRYUTZtZlhr",
       "snippet": {
         "publishedAt": "2026-08-19T11:00:12Z",
@@ -1056,7 +1108,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 20,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "oVv4XQ6mfXk"
@@ -1067,7 +1119,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "u0XwY22pnI9BiNH9QOtOV4ihgSM",
+      "etag": "Ujz9gcYJbHVPHFJQ8fYz4n0Zb2Q",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjFZSXBkVlZFbnRZ",
       "snippet": {
         "publishedAt": "2026-08-16T11:00:01Z",
@@ -1103,7 +1155,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 21,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "1YIpdVVEntY"
@@ -1114,7 +1166,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "DwKZAVpDr0uRv9_se-51XccX56I",
+      "etag": "2FTaD53shr05z_Gvtgv04HUd99Y",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkJVMndnOTNaNW13",
       "snippet": {
         "publishedAt": "2026-08-14T10:21:00Z",
@@ -1155,7 +1207,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 22,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "BU2wg93Z5mw"
@@ -1166,7 +1218,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "aiaSnpv5zE_JgQPVNzPJRGMdDOQ",
+      "etag": "Xs27UF1jy7a9ELJoZOurUgvb1Ig",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnVmOUJZdGxsWW5j",
       "snippet": {
         "publishedAt": "2026-08-12T11:00:36Z",
@@ -1202,7 +1254,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 23,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uf9BYtllYnc"
@@ -1213,7 +1265,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UMtHz6CiSoJ-gBB5IUj1GAdzUlE",
+      "etag": "oY4xv7Q-HxdGnaQyIiBuviMwFtY",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmhzVWE1X09ZeFpF",
       "snippet": {
         "publishedAt": "2026-08-10T08:33:35Z",
@@ -1249,7 +1301,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 24,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "hsUa5_OYxZE"
@@ -1260,7 +1312,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "eHsq4QB1x1Te4RI2c209niQ34CE",
+      "etag": "oHCilmUxmynhvlSlpzFG5B57LZM",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnFibUhVZHZOSDFJ",
       "snippet": {
         "publishedAt": "2026-08-09T11:00:17Z",
@@ -1301,7 +1353,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 25,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "qbmHUdvNH1I"
@@ -1312,7 +1364,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "wAu2ioDJD3_5fijGpvGi7t4LsNI",
+      "etag": "23GCsSobFY4ELlY4KStAC2tfrRw",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LndHYWVjVFlNcjU0",
       "snippet": {
         "publishedAt": "2026-08-07T11:00:31Z",
@@ -1353,7 +1405,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 26,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "wGaecTYMr54"
@@ -1364,7 +1416,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "4tiZgaMr_1m5mvUeHyEfdpmrwYo",
+      "etag": "hqhsaOCjpsfvf6qqsW6t4Y1BITM",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjZhNEtzOGExMGdN",
       "snippet": {
         "publishedAt": "2026-08-05T11:00:06Z",
@@ -1400,7 +1452,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 27,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6a4Ks8a10gM"
@@ -1411,7 +1463,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "19IVn2KSC-fkgHXjMATJ52O9fFw",
+      "etag": "we0wfSONEHWRpInc5sI6hX3OXTU",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmFuYWtHZ1N1bkRj",
       "snippet": {
         "publishedAt": "2026-08-02T11:00:38Z",
@@ -1452,7 +1504,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 28,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "anakGgSunDc"
@@ -1463,7 +1515,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "e-NoyJpHus1l-enjXWxlD7tDsyE",
+      "etag": "YNcQheSSsiMqgN1Gszf8ep_Hi4Q",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkdTTWZCeVZ0VTNB",
       "snippet": {
         "publishedAt": "2026-07-31T11:00:10Z",
@@ -1504,7 +1556,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 29,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "GSMfByVtU3A"
@@ -1515,7 +1567,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TQ7joZaguojB2p8ERKeiYGYYdY4",
+      "etag": "vPMSQKrkYdaf_wVhT2g5XxKfcMA",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lk9peXU3NW9mZzhv",
       "snippet": {
         "publishedAt": "2026-07-29T11:00:28Z",
@@ -1556,7 +1608,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 30,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Oiyu75ofg8o"
@@ -1567,7 +1619,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "aFcH5OFoXy1s59bYWvYCSQVxXFQ",
+      "etag": "kAtqh78IhsDcm-Wlq27tHCbpIEg",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkM4R2xhS3RaRFM4",
       "snippet": {
         "publishedAt": "2026-07-26T11:00:11Z",
@@ -1608,7 +1660,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 31,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "C8GlaKtZDS8"
@@ -1619,7 +1671,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "swJ9eaaP3GUhTyA4d2T8N_LQZqc",
+      "etag": "DX9uF856O4xoqvwNL7ekbSMOP64",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lml4NEk2WTc3c0FZ",
       "snippet": {
         "publishedAt": "2026-07-24T11:00:40Z",
@@ -1660,7 +1712,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 32,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ix4I6Y77sAY"
@@ -1671,7 +1723,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "INE1nl_99KqjhP4mmxPFMhP9D-Q",
+      "etag": "i4O06cVeJflNm9EJPCSROdTxX0w",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmpfeFpjX3YzeU1n",
       "snippet": {
         "publishedAt": "2026-07-23T11:00:25Z",
@@ -1712,7 +1764,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 33,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "j_xZc_v3yMg"
@@ -1723,7 +1775,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "iTNvUpOVkCPZYtxVK4HaHT8wurs",
+      "etag": "3sQWZfRbDO_ssDIJSO5I1xf9wA4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkFEb1hza2M5cFQ4",
       "snippet": {
         "publishedAt": "2026-07-22T12:24:42Z",
@@ -1764,7 +1816,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 34,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ADoXskc9pT8"
@@ -1775,7 +1827,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "fpGXs50S7vT1w1o1PbHVOuwT0-I",
+      "etag": "_Eq4JBpTVzNfJjaIvBulyi-iHdg",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmpjLXUtdHVQZUJ3",
       "snippet": {
         "publishedAt": "2026-07-17T11:00:31Z",
@@ -1811,7 +1863,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 35,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "jc-u-tuPeBw"
@@ -1822,7 +1874,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ttddd88WYF_4i7pkYBkoLMXeHNo",
+      "etag": "zM7IwlWYnHtsq3MFpK9aM5hXgz0",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlZMWUY3M09wVGhB",
       "snippet": {
         "publishedAt": "2026-07-15T11:00:20Z",
@@ -1863,7 +1915,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 36,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VLYF73OpThA"
@@ -1874,7 +1926,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "eIgziEM8fG1jeRAggMCQCSMvnMI",
+      "etag": "raag4mqWxWbokO2OoT1x0AT8h9Y",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjlReVJiQmtWWjk4",
       "snippet": {
         "publishedAt": "2026-07-12T06:14:04Z",
@@ -1910,7 +1962,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 37,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "9QyRbBkVZ98"
@@ -1921,7 +1973,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "oAa5VCWg1UlK-hY6jacyMWg5jb0",
+      "etag": "yD-n0cdT6tIyPKoam9YyDGrUOAM",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjlyNGZjM2JQbkZV",
       "snippet": {
         "publishedAt": "2026-07-11T12:00:10Z",
@@ -1962,7 +2014,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 38,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "9r4fc3bPnFU"
@@ -1973,7 +2025,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "306Pf5ykxQQSeyJME-zYS9F4ZiU",
+      "etag": "nbNKlmBsJevSElH7S-_qtYOtNMU",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LjZ5dF9yLVl2R3FN",
       "snippet": {
         "publishedAt": "2026-07-08T11:00:24Z",
@@ -2014,7 +2066,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 39,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6yt_r-YvGqM"
@@ -2025,7 +2077,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ChXxSa2UqOlNbVMjbpVfNKmhM0I",
+      "etag": "AqRgf_yMzOWDovgJyY1-g257iHA",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013Lk5vYTFEc0Q3azZV",
       "snippet": {
         "publishedAt": "2026-07-05T11:00:09Z",
@@ -2066,7 +2118,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 40,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Noa1DsD7k6U"
@@ -2077,7 +2129,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "YRrG9DeJ2wVkVWG6Q6S3FPrj8H4",
+      "etag": "pqQ-mc5JWSf_NhPdoFHwkZvLLxs",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkZ3QjFMeURGcWVj",
       "snippet": {
         "publishedAt": "2026-07-04T13:28:21Z",
@@ -2118,7 +2170,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 41,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "FwB1LyDFqec"
@@ -2129,7 +2181,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "zcGaOZnyyCCyJ6i-m3rL6agyH_U",
+      "etag": "1HqOZax_q9Fn1zlT4U00ZNTyLh4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LldwVWdiV0pmOWFN",
       "snippet": {
         "publishedAt": "2026-07-03T11:30:27Z",
@@ -2170,7 +2222,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 42,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "WpUgbWJf9aM"
@@ -2181,7 +2233,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XUEGTbcyVvCS6dVdviSw_rOhdQk",
+      "etag": "1ij4SsXQvHzuwvsoS0atLM0z4Hw",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LklsUER6b09uZmdB",
       "snippet": {
         "publishedAt": "2026-07-01T11:00:18Z",
@@ -2222,7 +2274,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 43,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "IlPDzoOnfgA"
@@ -2233,7 +2285,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "n5dWbd_7g-yxckInb_Pzbuz8hIo",
+      "etag": "nuIAqlID2Chgd9zAzI--JCpHip4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnJHTllSM1ZtZUc0",
       "snippet": {
         "publishedAt": "2026-06-28T10:30:33Z",
@@ -2274,7 +2326,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 44,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "rGNYR3VmeG4"
@@ -2285,7 +2337,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gGwtk_CddcSK8jUZ_LmCne4ErOg",
+      "etag": "DrDwS4enJRzIJu1og3b9AjBetG4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LnNuWm1IcmloN3hB",
       "snippet": {
         "publishedAt": "2026-06-24T13:00:29Z",
@@ -2326,7 +2378,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 45,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "snZmHrih7xA"
@@ -2337,7 +2389,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "-fb7QliZkiXZifzaIqAtAdg-YHk",
+      "etag": "NaG1tR-gMaOfZlxURwmT_6isLG8",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LmtkUDhzbzR6SE5J",
       "snippet": {
         "publishedAt": "2026-06-21T12:00:00Z",
@@ -2378,7 +2430,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 46,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "kdP8so4zHNI"
@@ -2389,7 +2441,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "KhPJwdTcWjVfp0WHj1RIru48QeU",
+      "etag": "J3f-GdXCWrPZurcsIxDfnmWWxrs",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkhHZVVwR2cxSHZ3",
       "snippet": {
         "publishedAt": "2026-06-19T12:00:38Z",
@@ -2430,7 +2482,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 47,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "HGeUpGg1Hvw"
@@ -2441,7 +2493,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "2VXimbBNCmHO-ihUdX6w9uwNbuU",
+      "etag": "qKhGHLUEohoCEh8AeblujQL10A4",
       "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LlFtQzgwak1KYVBv",
       "snippet": {
         "publishedAt": "2026-06-18T12:00:00Z",
@@ -2482,7 +2534,7 @@
         },
         "channelTitle": "Iglesia Caminando Por Fe Barcelona",
         "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 48,
+        "position": 49,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QmC80jMJaPo"
@@ -2490,62 +2542,10 @@
         "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
         "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "4BodsWWc-iErXc-nKyX08JIreNg",
-      "id": "VVVPcWU0WnM1cGFZRTVYQU9pYUdrd013LkZXNUtEY09OSGJn",
-      "snippet": {
-        "publishedAt": "2026-06-14T12:00:03Z",
-        "channelId": "UCOqe4Zs5paYE5XAOiaGkwMw",
-        "title": "Falso arrepentimiento y tinieblas - Juan Manuel Vaz",
-        "description": "✅ Puedes donar/ofrendar de forma voluntaria a la iglesia desde este enlace: https://www.paypal.com/donate?hosted_button_id=42TEW4LZ34KYG\n\n⚠️ Suscríbete, Activa las Notificaciones\n😁 COMPARTE el vídeo\n🙏 Deja un ME GUSTA\n 🙌  Deja un COMENTARIO\n\n🌐 https://iglesiacaminandoporfe.com",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "fhd": {
-            "url": "https://i.ytimg.com/vi/FW5KDcONHbg/fhddefault.jpg",
-            "width": 1920,
-            "height": 1080
-          }
-        },
-        "channelTitle": "Iglesia Caminando Por Fe Barcelona",
-        "playlistId": "UUOqe4Zs5paYE5XAOiaGkwMw",
-        "position": 49,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "FW5KDcONHbg"
-        },
-        "videoOwnerChannelTitle": "Iglesia Caminando Por Fe Barcelona ",
-        "videoOwnerChannelId": "UCOqe4Zs5paYE5XAOiaGkwMw"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 443,
+    "totalResults": 444,
     "resultsPerPage": 50
   }
 }
